@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T074JD1WM5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T074JD1WM5');
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Stockholm Våldskarta 2024-2025 | Interaktiv Kriminalstatistik från Polisen</title>
+    <meta name="description" content="Interaktiv karta över våldsdåd i Stockholm 2024-2025. Aktuell kriminalstatistik från polisen.se med exakta koordinater och filtermöjligheter." />
+    <meta name="keywords" content="Stockholm våld, kriminalstatistik, polisen, våldskarta, misshandel, rån, skottlossning, explosion, säkerhet Stockholm, brottslighet" />
+    <meta name="author" content="Stockholm Våldskarta" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://08-violence.netlify.app/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://08-violence.netlify.app/" />
+    <meta property="og:title" content="Stockholm Våldskarta 2024-2025 | Interaktiv Kriminalstatistik" />
+    <meta property="og:description" content="Interaktiv karta över våldsdåd i Stockholm med aktuell data från polisen. Filtrera på år och våldstyp." />
+    <meta property="og:image" content="https://08-violence.netlify.app/og-image.jpg" />
+    <meta property="og:site_name" content="Stockholm Våldskarta" />
+    <meta property="og:locale" content="sv_SE" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://08-violence.netlify.app/" />
+    <meta property="twitter:title" content="Stockholm Våldskarta 2024-2025" />
+    <meta property="twitter:description" content="Interaktiv karta över våldsdåd i Stockholm med data från polisen." />
+    <meta property="twitter:image" content="https://08-violence.netlify.app/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNjM2NkYxIi8+Cjwvc3ZnPgo=" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Stockholm Våldskarta",
+      "description": "Interaktiv karta över våldsdåd i Stockholm-regionen baserat på data från polisen.se",
+      "url": "https://08-violence.netlify.app/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "SEK"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Stockholm Våldskarta"
+      },
+      "datePublished": "2025-06-16",
+      "dateModified": "2025-06-16",
+      "inLanguage": "sv-SE",
+      "isAccessibleForFree": true,
+      "keywords": "Stockholm, våld, kriminalstatistik, polisen, säkerhet, brottslighet",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "General Public"
+      }
+    }
+    </script>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin="" />
+    
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.6;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      /* Header */
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      
+      .header p {
+        font-size: 1.1rem;
+        text-align: center;
+        opacity: 0.9;
+      }
+      
+      /* SEO Content Section */
+      .seo-content {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .seo-content h2 {
+        color: #374151;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      
+      .seo-content p {
+        margin-bottom: 1rem;
+        color: #6b7280;
+      }
+      
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 1.5rem 0;
+      }
+      
+      .stat-card {
+        background: #f8fafc;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+      
+      .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #6366f1;
+      }
+      
+      .stat-label {
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+      
+      /* Navigation */
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        flex-wrap: wrap;
+      }
+      
+      .nav-link {
+        color: #6366f1;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        transition: all 0.2s;
+      }
+      
+      .nav-link:hover {
+        background: #6366f1;
+        color: white;
+      }
+      
+      /* Main layout */
+      .main-layout {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      @media (max-width: 768px) {
+        .main-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      /* Sidebar */
+      .sidebar {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: fit-content;
+      }
+      
+      .filter-section {
+        margin-bottom: 2rem;
+      }
+      
+      .filter-section h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #374151;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .filter-buttons {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+      
+      .filter-btn {
+        padding: 0.5rem 1rem;
+        border: 2px solid #e5e7eb;
+        background: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+      }
+      
+      .filter-btn:hover {
+        border-color: #6366f1;
+        background: #f8fafc;
+      }
+      
+      .filter-btn.active {
+        background: #6366f1;
+        color: white;
+        border-color: #6366f1;
+      }
+      
+      .violence-type-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 6px;
+        transition: background 0.2s;
+      }
+      
+      .violence-type-item:hover {
+        background: #f1f5f9;
+      }
+      
+      .violence-type-checkbox {
+        width: 18px;
+        height: 18px;
+        accent-color: #6366f1;
+      }
+      
+      .violence-type-label {
+        flex: 1;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+      
+      .violence-count {
+        background: #e5e7eb;
+        color: #374151;
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+      
+      /* Stats */
+      .stats-section {
+        background: #f8fafc;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .stat-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+      
+      .stat-row:last-child {
+        margin-bottom: 0;
+      }
+      
+      .stat-row span {
+        font-size: 0.9rem;
+      }
+      
+      .stat-row strong {
+        font-weight: 600;
+      }
+      
+      /* Quality indicators */
+      .quality-legend {
+        margin-top: 1rem;
+      }
+      
+      .quality-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+      }
+      
+      .quality-icon {
+        font-size: 1.1rem;
+      }
+      
+      /* Map container */
+      .map-container {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      
+      .map-header {
+        background: #f8fafc;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      
+      .map-header h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      
+      .map-stats {
+        display: flex;
+        gap: 2rem;
+        font-size: 0.9rem;
+      }
+      
+      .map-stat {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      
+      .map-stat-icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      
+      .high-quality { background: #10b981; }
+      .medium-quality { background: #f59e0b; }
+      .low-quality { background: #ef4444; }
+      
+      #map {
+        height: 600px;
+        width: 100%;
+      }
+      
+      /* Loading state */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        background: #f8fafc;
+        color: #6b7280;
+        font-size: 1.1rem;
+      }
+      
+      /* Popup styles */
+      .leaflet-popup-content {
+        font-family: inherit;
+        line-height: 1.5;
+      }
+      
+      .popup-header {
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .popup-detail {
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+      }
+      
+      .popup-detail strong {
+        color: #374151;
+      }
+      
+      .quality-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        background: #f1f5f9;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+      }
+      
+      /* Footer */
+      .footer {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-top: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      
+      .footer h3 {
+        color: #374151;
+        margin-bottom: 1rem;
+      }
+      
+      .footer p {
+        color: #6b7280;
+        margin-bottom: 0.5rem;
+      }
+      
+      .footer a {
+        color: #6366f1;
+        text-decoration: none;
+      }
+      
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+        
+        .header h1 {
+          font-size: 1.8rem;
+        }
+        
+        .map-stats {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        
+        #map {
+          height: 400px;
+        }
+        
+        .stats-grid {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+        
+        .nav-links {
+          justify-content: center;
+        }
+      }
+      
+      /* Custom marker styles */
+      .custom-marker {
+        border: 2px solid #10b981;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      .marker-improved {
+        border-color: #10b981;
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+      }
+      
+      .marker-medium {
+        border-color: #f59e0b;
+      }
+      
+      .marker-low {
+        border-color: #ef4444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>🗺️ Stockholm Våldskarta 2024-2025</h1>
+        <p>Interaktiv karta över våldsdåd i Stockholm-regionen baserat på aktuell data från polisen.se</p>
+      </header>
+      
+      <section class="seo-content">
+        <h2>Aktuell Kriminalstatistik för Stockholm</h2>
+        <p>
+          Stockholm Våldskarta är en interaktiv visualisering av våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se. 
+          Kartan visar aktuell kriminalstatistik för 2024 och 2025 med exakta koordinater och möjlighet att filtrera på olika typer av våld.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">198</div>
+            <div class="stat-label">Totala händelser</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">145</div>
+            <div class="stat-label">Hög kvalitet</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">22</div>
+            <div class="stat-label">Kommuner</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Unika platser</div>
+          </div>
+        </div>
+        
+        <p>
+          Kartan inkluderar olika typer av våldsdåd som misshandel, rån, skottlossning, explosioner, våldtäkt och mord. 
+          Alla koordinater har förbättrats för maximal noggrannhet och varje händelse visas på sin exakta plats i Stockholm-regionen.
+        </p>
+        
+        <nav class="nav-links">
+          <a href="#map" class="nav-link">Visa Karta</a>
+          <a href="#statistics" class="nav-link">Statistik</a>
+          <a href="#about" class="nav-link">Om Kartan</a>
+          <a href="#data-source" class="nav-link">Datakälla</a>
+        </nav>
+        
+        <h3>Vad visar kartan?</h3>
+        <p>
+          Stockholm Våldskarta visualiserar våldsdåd rapporterade av polisen i Stockholm-regionen. Data inkluderar:
+        </p>
+        <ul style="margin: 1rem 0; padding-left: 2rem; color: #6b7280;">
+          <li><strong>Misshandel och grov misshandel</strong> - Fysiskt våld mot personer</li>
+          <li><strong>Rån</strong> - Väpnade och oväpnade rån samt försök</li>
+          <li><strong>Skottlossning</strong> - Bekräftade och misstänkta skottlossningar</li>
+          <li><strong>Explosioner</strong> - Sprängdåd och explosioner</li>
+          <li><strong>Sexualbrott</strong> - Våldtäkt och andra sexualbrott</li>
+          <li><strong>Mord och dråp</strong> - Dödligt våld och försök</li>
+        </ul>
+        
+        <h3>Hur används kartan?</h3>
+        <p>
+          Använd filtren för att visa specifika år (2024 eller 2025) eller typer av våld. Klicka på markörer för detaljerad information om varje händelse. 
+          Kartan uppdateras automatiskt baserat på dina filterval och visar live statistik över vald data.
+        </p>
+      </section>
+      
+      <div class="main-layout">
+        <aside class="sidebar">
+          <div class="filter-section">
+            <h3>📅 Filtrera på år</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-year="all">Alla år</button>
+              <button class="filter-btn" data-year="2024">2024</button>
+              <button class="filter-btn" data-year="2025">2025</button>
+            </div>
+          </div>
+          
+          <div class="filter-section">
+            <h3>🎯 Våldstyper</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn" onclick="selectAllTypes()">Välj alla</button>
+              <button class="filter-btn" onclick="clearAllTypes()">Rensa alla</button>
+            </div>
+            <div id="violence-types"></div>
+          </div>
+          
+          <div class="stats-section" id="statistics">
+            <h3>📊 Dataförbättringar</h3>
+            <div class="stat-row">
+              <span>Totalt antal händelser:</span>
+              <strong id="total-events">198</strong>
+            </div>
+            <div class="stat-row">
+              <span>Förbättrade koordinater:</span>
+              <strong id="improved-coords">178</strong>
+            </div>
+            <div class="stat-row">
+              <span>Hög kvalitet (≥75%):</span>
+              <strong id="high-quality">145</strong>
+            </div>
+            <div class="stat-row">
+              <span>Senast uppdaterad:</span>
+              <strong>2025-06-16</strong>
+            </div>
+          </div>
+          
+          <div class="quality-legend" id="about">
+            <h3>🔍 Förklaring av kvalitetsikoner:</h3>
+            <div class="quality-item">
+              <span class="quality-icon">🎯</span>
+              <span>Utmärkt kvalitet (≥90%)</span>
+            </div>
+            <div class="quality-item">
+              <span class="quality-icon">👤</span>
+              <span>Användarkorrigering (80-89%)</span>
+            </div>
+            <div class="quality-item">
+              <span class="quality-icon">📍</span>
+              <span>Hög kvalitet (75-79%)</span>
+            </div>
+            <div class="quality-item">
+              <span class="quality-icon">🔧</span>
+              <span>Förbättrad kvalitet (65-74%)</span>
+            </div>
+            <div class="quality-item">
+              <span class="quality-icon">⚙️</span>
+              <span>Medel kvalitet (50-64%)</span>
+            </div>
+            <div class="quality-item">
+              <span class="quality-icon">📌</span>
+              <span>Ursprunglig plats (&lt;50%)</span>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #6b7280;">
+              💡 <strong>Tips:</strong> Gröna ramar runt markörer indikerar platser som har förbättrats för bättre noggrannhet.
+            </p>
+          </div>
+        </aside>
+        
+        <main class="map-container" id="map">
+          <div class="map-header">
+            <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
+            <div class="map-stats">
+              <div class="map-stat">
+                <div class="map-stat-icon high-quality"></div>
+                <span>Hög kvalitet: <strong id="map-high-quality">145</strong></span>
+              </div>
+              <div class="map-stat">
+                <div class="map-stat-icon medium-quality"></div>
+                <span>Medel kvalitet: <strong id="map-medium-quality">53</strong></span>
+              </div>
+              <div class="map-stat">
+                <div class="map-stat-icon low-quality"></div>
+                <span>Låg kvalitet: <strong id="map-low-quality">0</strong></span>
+              </div>
+              <div class="map-stat">
+                <span>🔧 Förbättrade: <strong id="map-improved">178</strong></span>
+              </div>
+            </div>
+          </div>
+          <div id="map-canvas" class="loading">Laddar interaktiv karta över Stockholm våldsdåd...</div>
+        </main>
+      </div>
+      
+      <footer class="footer" id="data-source">
+        <h3>Om Stockholm Våldskarta</h3>
+        <p>
+          Data kommer från <a href="https://polisen.se" target="_blank" rel="noopener">polisen.se</a> och uppdateras regelbundet. 
+          Alla koordinater har förbättrats för maximal noggrannhet med avancerade geolokaliserings-algoritmer.
+        </p>
+        <p>
+          Kartan syftar till att öka transparensen kring brottslighet i Stockholm och hjälpa invånare att fatta informerade beslut om säkerhet.
+        </p>
+        <p>
+          <strong>Senast uppdaterad:</strong> 16 juni 2025 | 
+          <strong>Datakälla:</strong> <a href="https://polisen.se" target="_blank" rel="noopener">Polisen.se</a>
+        </p>
+      </footer>
+    </div>
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+    
+    <script>
+      // Global variables
+      let map;
+      let allEvents = [];
+      let filteredEvents = [];
+      let markersLayer;
+      let selectedYear = 'all';
+      let selectedTypes = new Set();
+      
+      // Initialize the application
+      document.addEventListener('DOMContentLoaded', function() {
+        initializeMap();
+        loadData();
+        setupEventListeners();
+      });
+      
+      function initializeMap() {
+        // Initialize map centered on Stockholm
+        map = L.map('map-canvas').setView([59.3293, 18.0686], 10);
+        
+        // Add tile layer with alt text for accessibility
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          alt: 'Karta över Stockholm-regionen'
+        }).addTo(map);
+        
+        // Create markers layer group
+        markersLayer = L.layerGroup().addTo(map);
+      }
+      
+      async function loadData() {
+        try {
+          const response = await fetch('./stockholm_violence_data.json');
+          const data = await response.json();
+          
+          allEvents = data.events || [];
+          
+          // Initialize violence types
+          initializeViolenceTypes();
+          
+          // Initial filter and display
+          filterAndDisplayEvents();
+          
+          // Update stats
+          updateStats();
+          
+          // Track successful data load
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'data_loaded', {
+              'event_category': 'app_interaction',
+              'value': allEvents.length
+            });
+          }
+          
+        } catch (error) {
+          console.error('Error loading data:', error);
+          document.getElementById('map-canvas').innerHTML = 
+            '<div style="display: flex; justify-content: center; align-items: center; height: 100%; color: #ef4444;">Fel vid laddning av data. Kontrollera att stockholm_violence_data.json finns.</div>';
+            
+          // Track error
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'data_load_error', {
+              'event_category': 'app_error',
+              'value': 1
+            });
+          }
+        }
+      }
+      
+      function initializeViolenceTypes() {
+        const typeCounts = {};
+        
+        allEvents.forEach(event => {
+          const type = event.type || 'Okänd';
+          typeCounts[type] = (typeCounts[type] || 0) + 1;
+        });
+        
+        const sortedTypes = Object.entries(typeCounts)
+          .sort((a, b) => b[1] - a[1]);
+        
+        const container = document.getElementById('violence-types');
+        container.innerHTML = '';
+        
+        sortedTypes.forEach(([type, count]) => {
+          selectedTypes.add(type);
+          
+          const item = document.createElement('div');
+          item.className = 'violence-type-item';
+          item.innerHTML = `
+            <input type="checkbox" class="violence-type-checkbox" 
+                   id="type-${type}" checked 
+                   onchange="toggleViolenceType('${type}')"
+                   aria-label="Filtrera ${type}">
+            <label class="violence-type-label" for="type-${type}">${type}</label>
+            <span class="violence-count">${count}</span>
+          `;
+          container.appendChild(item);
+        });
+      }
+      
+      function setupEventListeners() {
+        // Year filter buttons
+        document.querySelectorAll('[data-year]').forEach(btn => {
+          btn.addEventListener('click', function() {
+            document.querySelectorAll('[data-year]').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            selectedYear = this.dataset.year;
+            filterAndDisplayEvents();
+            
+            // Track filter usage in Google Analytics
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'filter_year', {
+                'event_category': 'map_interaction',
+                'event_label': selectedYear,
+                'value': 1
+              });
+            }
+          });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+              e.preventDefault();
+              const target = document.querySelector(href);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          });
+        });
+      }
+      
+      function toggleViolenceType(type) {
+        if (selectedTypes.has(type)) {
+          selectedTypes.delete(type);
+        } else {
+          selectedTypes.add(type);
+        }
+        filterAndDisplayEvents();
+        
+        // Track filter usage in Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'filter_violence_type', {
+            'event_category': 'map_interaction',
+            'event_label': type,
+            'value': selectedTypes.has(type) ? 1 : 0
+          });
+        }
+      }
+      
+      function selectAllTypes() {
+        selectedTypes.clear();
+        allEvents.forEach(event => {
+          selectedTypes.add(event.type || 'Okänd');
+        });
+        
+        document.querySelectorAll('.violence-type-checkbox').forEach(cb => {
+          cb.checked = true;
+        });
+        
+        filterAndDisplayEvents();
+        
+        // Track action in Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'select_all_types', {
+            'event_category': 'map_interaction',
+            'value': 1
+          });
+        }
+      }
+      
+      function clearAllTypes() {
+        selectedTypes.clear();
+        
+        document.querySelectorAll('.violence-type-checkbox').forEach(cb => {
+          cb.checked = false;
+        });
+        
+        filterAndDisplayEvents();
+        
+        // Track action in Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'clear_all_types', {
+            'event_category': 'map_interaction',
+            'value': 1
+          });
+        }
+      }
+      
+      function filterAndDisplayEvents() {
+        filteredEvents = allEvents.filter(event => {
+          // Year filter
+          if (selectedYear !== 'all') {
+            const eventYear = new Date(event.datetime).getFullYear().toString();
+            if (eventYear !== selectedYear) return false;
+          }
+          
+          // Type filter
+          const eventType = event.type || 'Okänd';
+          if (!selectedTypes.has(eventType)) return false;
+          
+          return true;
+        });
+        
+        displayEventsOnMap();
+        updateStats();
+      }
+      
+      function displayEventsOnMap() {
+        // Clear existing markers
+        markersLayer.clearLayers();
+        
+        if (filteredEvents.length === 0) {
+          return;
+        }
+        
+        filteredEvents.forEach(event => {
+          if (!event.latitude || !event.longitude) return;
+          
+          const confidence = event.location_confidence || 0;
+          const icon = getConfidenceIcon(confidence);
+          const color = getEventColor(event.type);
+          
+          // Create custom marker
+          const marker = L.circleMarker([event.latitude, event.longitude], {
+            radius: 8,
+            fillColor: color,
+            color: confidence >= 0.65 ? '#10b981' : '#6b7280',
+            weight: confidence >= 0.65 ? 3 : 2,
+            opacity: 0.8,
+            fillOpacity: 0.7,
+            alt: `${event.type || 'Våldsdåd'} - ${event.location_name || 'Stockholm'}`
+          });
+          
+          // Create popup content
+          const popupContent = createPopupContent(event, icon);
+          marker.bindPopup(popupContent);
+          
+          // Track marker clicks in Google Analytics
+          marker.on('click', function() {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'marker_click', {
+                'event_category': 'map_interaction',
+                'event_label': event.type || 'Okänd',
+                'value': 1
+              });
+            }
+          });
+          
+          markersLayer.addLayer(marker);
+        });
+      }
+      
+      function getConfidenceIcon(confidence) {
+        if (confidence >= 0.9) return '🎯';
+        if (confidence >= 0.8) return '👤';
+        if (confidence >= 0.75) return '📍';
+        if (confidence >= 0.65) return '🔧';
+        if (confidence >= 0.5) return '⚙️';
+        return '📌';
+      }
+      
+      function getEventColor(type) {
+        const colors = {
+          'Misshandel': '#ef4444',
+          'Misshandel, grov': '#dc2626',
+          'Rån': '#f97316',
+          'Mord/dråp': '#7c2d12',
+          'Mord/dråp, försök': '#ea580c',
+          'Explosion': '#8b5cf6',
+          'Skottlossning': '#6366f1',
+          'Våldtäkt': '#ec4899',
+          'Sexualbrott': '#f472b6',
+          'Olaga hot': '#eab308',
+          'Våld/hot mot tjänsteman': '#84cc16'
+        };
+        return colors[type] || '#6b7280';
+      }
+      
+      function createPopupContent(event, icon) {
+        const date = new Date(event.datetime).toLocaleString('sv-SE');
+        const confidence = Math.round((event.location_confidence || 0) * 100);
+        const location = event.specific_location || event.location_name || 'Okänd plats';
+        
+        return `
+          <div class="popup-header">
+            <span style="font-size: 1.2em; color: ${getEventColor(event.type)};">●</span>
+            <strong>${event.type || 'Okänd händelse'}</strong>
+          </div>
+          <div class="popup-detail">
+            <strong>📅 Datum:</strong> ${date}
+          </div>
+          <div class="popup-detail">
+            <strong>📍 Plats:</strong> ${location}
+          </div>
+          ${event.kommun ? `<div class="popup-detail"><strong>Kommun:</strong> ${event.kommun}</div>` : ''}
+          <div class="quality-indicator">
+            <span>${icon}</span>
+            <strong>Koordinatkvalitet:</strong> ${getQualityText(event.location_confidence)}
+            ${event.correction_method ? `<br><strong>Metod:</strong> ${event.correction_method}` : ''}
+          </div>
+          ${event.summary ? `<div class="popup-detail" style="margin-top: 0.5rem;"><strong>📝 Beskrivning:</strong><br>${event.summary}</div>` : ''}
+        `;
+      }
+      
+      function getQualityText(confidence) {
+        const percent = Math.round((confidence || 0) * 100);
+        if (confidence >= 0.9) return `Utmärkt kvalitet (${percent}%)`;
+        if (confidence >= 0.8) return `Användarkorrigering (${percent}%)`;
+        if (confidence >= 0.75) return `Hög kvalitet (${percent}%)`;
+        if (confidence >= 0.65) return `Förbättrad kvalitet (${percent}%)`;
+        if (confidence >= 0.5) return `Medel kvalitet (${percent}%)`;
+        return `Ursprunglig plats (${percent}%)`;
+      }
+      
+      function updateStats() {
+        const total = filteredEvents.length;
+        const highQuality = filteredEvents.filter(e => (e.location_confidence || 0) >= 0.75).length;
+        const mediumQuality = filteredEvents.filter(e => (e.location_confidence || 0) >= 0.5 && (e.location_confidence || 0) < 0.75).length;
+        const lowQuality = filteredEvents.filter(e => (e.location_confidence || 0) < 0.5).length;
+        const improved = filteredEvents.filter(e => e.correction_method && e.correction_method !== 'original').length;
+        
+        document.getElementById('total-events').textContent = total;
+        document.getElementById('improved-coords').textContent = improved;
+        document.getElementById('high-quality').textContent = highQuality;
+        document.getElementById('map-high-quality').textContent = highQuality;
+        document.getElementById('map-medium-quality').textContent = mediumQuality;
+        document.getElementById('map-low-quality').textContent = lowQuality;
+        document.getElementById('map-improved').textContent = improved;
+      }
+      
+      // Track page view in Google Analytics
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_view', {
+          'page_title': 'Stockholm Våldskarta 2024-2025',
+          'page_location': window.location.href
+        });
+      }
+      
+      // Error handling
+      window.addEventListener('error', function(e) {
+        console.error('JavaScript Error:', e.error);
+        
+        // Track errors in Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'exception', {
+            'description': e.error ? e.error.toString() : 'Unknown error',
+            'fatal': false
+          });
+        }
+        
+        if (document.getElementById('map-canvas').innerHTML.includes('Laddar')) {
+          document.getElementById('map-canvas').innerHTML = 
+            '<div style="display: flex; justify-content: center; align-items: center; height: 100%; color: #ef4444; text-align: center; padding: 2rem;"><div><h3>Laddningsfel</h3><p>Applikationen kunde inte laddas korrekt. Detta kan bero på:</p><ul style="text-align: left; margin: 1rem 0;"><li>Adblocker som blockerar JavaScript</li><li>Gammal webbläsare</li><li>Nätverksproblem</li><li>JavaScript är inaktiverat</li></ul><button onclick="location.reload()" style="padding: 0.5rem 1rem; background: #6366f1; color: white; border: none; border-radius: 6px; cursor: pointer;">Försök igen</button></div></div>';
+        }
+      });
+    </script>
+  </body>
+</html>
+

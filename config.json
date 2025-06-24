@@ -1,0 +1,22 @@
+{
+  "data_file": "stockholm_violence_data.json",
+  "html_file": "index.html",
+  "backup_dir": "backups",
+  "days_back": 7,
+  "netlify": {
+    "site_id": "YOUR_NETLIFY_SITE_ID",
+    "access_token": "YOUR_NETLIFY_ACCESS_TOKEN"
+  },
+  "automation": {
+    "enabled": true,
+    "schedule": "0 */6 * * *",
+    "max_events_per_run": 100,
+    "notification_email": "your-email@example.com"
+  },
+  "data_quality": {
+    "min_confidence": 0.5,
+    "geocoding_enabled": true,
+    "duplicate_detection": true
+  }
+}
+
