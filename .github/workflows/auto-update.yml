@@ -2,9 +2,11 @@ name: Stockholm Våldskarta Auto Update
 
 on:
   schedule:
-    # Kör var 6:e timme
     - cron: '0 */6 * * *'
-  workflow_dispatch: # Tillåt manuell körning
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-data:
@@ -13,7 +15,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -31,16 +35,14 @@ jobs:
       run: |
         python auto_update.py
         
-    - name: Commit updated data
+    - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add stockholm_violence_data.json
-        git diff --staged --quiet || git commit -m "Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
-        
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
