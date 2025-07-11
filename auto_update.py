@@ -380,7 +380,7 @@ class AutomationOrchestrator:
                     'data_file': 'stockholm_violence_data.json',
                     'html_file': 'index.html',
                     'backup_dir': 'backups',
-                    'days_back': 7,
+                    'days_back': 14,
                     'netlify': {
                         'site_id': 'YOUR_NETLIFY_SITE_ID',
                         'access_token': 'YOUR_NETLIFY_ACCESS_TOKEN'
