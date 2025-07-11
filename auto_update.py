@@ -37,7 +37,7 @@ class PoliceDataFetcher:
             "Sollentuna", "Tyresö", "Värmdö"
         ]
         
-    def fetch_events(self, days_back: int = 7) -> List[Dict[str, Any]]:
+    def fetch_events(self, days_back: int = 14) -> List[Dict[str, Any]]:
         """Hämtar händelser från de senaste X dagarna"""
         try:
             # Beräkna datum
