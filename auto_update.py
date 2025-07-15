@@ -37,7 +37,7 @@ class PoliceDataFetcher:
             "Sollentuna", "Tyresö", "Värmdö"
         ]
         
-    def fetch_events(self, days_back: int = 14) -> List[Dict[str, Any]]:
+    def fetch_events(self, days_back: int = 7) -> List[Dict[str, Any]]:
         """Hämtar händelser från de senaste X dagarna"""
         try:
             # Beräkna datum
@@ -159,16 +159,6 @@ class DataProcessor:
     
     def __init__(self):
         self.location_enhancer = LocationEnhancer()
-
-print(f"🔍 Kontrollerar {len(new_events)} nya händelser mot {len(existing_signatures)} befintliga")
-
-for event in new_events:
-    signature = f"{event.get('datetime', '')}_{event.get('type', '')}_{event.get('location', {}).get('name', '')}"
-    if signature not in existing_signatures:
-        print(f"➕ Ny händelse: {signature}")
-    else:
-        print(f"🔄 Duplikat: {signature}")
-
     
     def process_events(self, new_events: List[Dict], existing_data: Dict) -> Dict:
         """Bearbetar nya händelser och slår ihop med befintlig data"""
@@ -424,6 +414,16 @@ class AutomationOrchestrator:
             
             # 3. Bearbeta och slå ihop data
             updated_data = self.data_processor.process_events(new_events, existing_data)
+
+            print(f"🔍 Kontrollerar {len(new_events)} nya händelser mot {len(existing_signatures)} befintliga")
+
+for event in new_events:
+    signature = f"{event.get('datetime', '')}_{event.get('type', '')}_{event.get('location', {}).get('name', '')}"
+    if signature not in existing_signatures:
+        print(f"➕ Ny händelse: {signature}")
+    else:
+        print(f"🔄 Duplikat: {signature}")
+
             
             # 4. Spara uppdaterad data
             self.save_data(updated_data)
