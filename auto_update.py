@@ -49,12 +49,12 @@ class PoliceDataFetcher:
                 'locationname': 'Stockholm'
             }
             logging.info(f"🔍 API URL: {self.base_url}")
-logging.info(f"📅 Datum: {start_date.date()} till {end_date.date()}")
-logging.info(f"📍 Locationname: Stockholm")
+            logging.info(f"📅 Datum: {start_date.date()} till {end_date.date()}")
+            logging.info(f"📍 Locationname: Stockholm")
             logging.info(f"Hämtar data från {start_date.date()} till {end_date.date()}")
             
             response = requests.get(self.base_url, params=params, timeout=30)
-logging.info(f"📡 API Response: {response.status_code}")
+            logging.info(f"📡 API Response: {response.status_code}")
 
             response.raise_for_status()
             
