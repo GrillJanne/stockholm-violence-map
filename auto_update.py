@@ -38,37 +38,37 @@ class PoliceDataFetcher:
         ]
         
     def fetch_events(self, days_back: int = 7) -> List[Dict[str, Any]]:
-    """Hämtar händelser från de senaste X dagarna"""
-    try:
-        # 🔧 FIX: Ta bort datum-parametern helt
-        params = {
-            'locationname': 'Stockholm'
-        }
-        
-        logging.info(f"🔍 API URL: {self.base_url}")
-        logging.info(f"📍 Locationname: Stockholm (utan datum-filter)")
-        
-        response = requests.get(self.base_url, params=params, timeout=30)
-        logging.info(f"📡 API Response: {response.status_code}")
-        
-        response.raise_for_status()
-        
-        events = response.json()
-        logging.info(f"📥 Hämtade {len(events)} händelser från polisen.se")
-        
-        # 🔧 FILTRERA DATUM I KODEN ISTÄLLET
-        recent_events = self.filter_recent_events(events, days_back)
-        logging.info(f"📅 Filtrerade till {len(recent_events)} händelser från senaste {days_back} dagarna")
-        
-        # Filtrera på våldsdåd
-        violence_events = self.filter_violence_events(recent_events)
-        logging.info(f"🚨 Filtrerade till {len(violence_events)} våldshändelser")
-        
-        return violence_events
-        
-    except Exception as e:
-        logging.error(f"Fel vid hämtning av data: {e}")
-        return []
+        """Hämtar händelser från de senaste X dagarna"""
+        try:
+            # 🔧 FIX: Ta bort datum-parametern helt
+            params = {
+                'locationname': 'Stockholm'
+            }
+            
+            logging.info(f"🔍 API URL: {self.base_url}")
+            logging.info(f"📍 Locationname: Stockholm (utan datum-filter)")
+            
+            response = requests.get(self.base_url, params=params, timeout=30)
+            logging.info(f"📡 API Response: {response.status_code}")
+            
+            response.raise_for_status()
+            
+            events = response.json()
+            logging.info(f"📥 Hämtade {len(events)} händelser från polisen.se")
+            
+            # 🔧 FILTRERA DATUM I KODEN ISTÄLLET
+            recent_events = self.filter_recent_events(events, days_back)
+            logging.info(f"📅 Filtrerade till {len(recent_events)} händelser från senaste {days_back} dagarna")
+            
+            # Filtrera på våldsdåd
+            violence_events = self.filter_violence_events(recent_events)
+            logging.info(f"🚨 Filtrerade till {len(violence_events)} våldshändelser")
+            
+            return violence_events
+            
+        except Exception as e:
+            logging.error(f"Fel vid hämtning av data: {e}")
+            return []
 
     
     def filter_violence_events(self, events: List[Dict]) -> List[Dict]:
