@@ -38,38 +38,38 @@ class PoliceDataFetcher:
         ]
         
     def fetch_events(self, days_back: int = 7) -> List[Dict[str, Any]]:
-        """Hämtar händelser från de senaste X dagarna"""
-        try:
-            # Beräkna datum
-            end_date = datetime.now()
-            start_date = end_date - timedelta(days=days_back)
-            
-            params = {
-                'DateTime': f"{start_date.strftime('%Y-%m-%d')},{end_date.strftime('%Y-%m-%d')}",
-                'locationname': 'Stockholm'
-            }
-            logging.info(f"🔍 API URL: {self.base_url}")
-            logging.info(f"📅 Datum: {start_date.date()} till {end_date.date()}")
-            logging.info(f"📍 Locationname: Stockholm")
-            logging.info(f"Hämtar data från {start_date.date()} till {end_date.date()}")
-            
-            response = requests.get(self.base_url, params=params, timeout=30)
-            logging.info(f"📡 API Response: {response.status_code}")
+    """Hämtar händelser från de senaste X dagarna"""
+    try:
+        # 🔧 FIX: Ta bort datum-parametern helt
+        params = {
+            'locationname': 'Stockholm'
+        }
+        
+        logging.info(f"🔍 API URL: {self.base_url}")
+        logging.info(f"📍 Locationname: Stockholm (utan datum-filter)")
+        
+        response = requests.get(self.base_url, params=params, timeout=30)
+        logging.info(f"📡 API Response: {response.status_code}")
+        
+        response.raise_for_status()
+        
+        events = response.json()
+        logging.info(f"📥 Hämtade {len(events)} händelser från polisen.se")
+        
+        # 🔧 FILTRERA DATUM I KODEN ISTÄLLET
+        recent_events = self.filter_recent_events(events, days_back)
+        logging.info(f"📅 Filtrerade till {len(recent_events)} händelser från senaste {days_back} dagarna")
+        
+        # Filtrera på våldsdåd
+        violence_events = self.filter_violence_events(recent_events)
+        logging.info(f"🚨 Filtrerade till {len(violence_events)} våldshändelser")
+        
+        return violence_events
+        
+    except Exception as e:
+        logging.error(f"Fel vid hämtning av data: {e}")
+        return []
 
-            response.raise_for_status()
-            
-            events = response.json()
-            logging.info(f"Hämtade {len(events)} händelser från polisen.se")
-            
-            # Filtrera på våldsdåd
-            violence_events = self.filter_violence_events(events)
-            logging.info(f"Filtrerade till {len(violence_events)} våldshändelser")
-            
-            return violence_events
-            
-        except Exception as e:
-            logging.error(f"Fel vid hämtning av data: {e}")
-            return []
     
     def filter_violence_events(self, events: List[Dict]) -> List[Dict]:
         """Filtrera ut våldshändelser"""
@@ -87,6 +87,36 @@ class PoliceDataFetcher:
                 filtered_events.append(event)
         
         return filtered_events
+
+def filter_recent_events(self, events: List[Dict], days_back: int) -> List[Dict]:
+    """Filtrera händelser till de senaste X dagarna"""
+    try:
+        cutoff_date = datetime.now() - timedelta(days=days_back)
+        recent_events = []
+        
+        for event in events:
+            event_datetime_str = event.get('datetime', '')
+            if event_datetime_str:
+                try:
+                    # Polisen.se använder format: 2024-01-15 14:30:00 +01:00
+                    # Ta bort timezone-delen för parsing
+                    clean_datetime = event_datetime_str.split(' +')[0]
+                    event_datetime = datetime.strptime(clean_datetime, '%Y-%m-%d %H:%M:%S')
+                    
+                    if event_datetime >= cutoff_date:
+                        recent_events.append(event)
+                        
+                except ValueError as e:
+                    # Om datum-parsing misslyckas, inkludera händelsen ändå
+                    logging.warning(f"Kunde inte parsa datum {event_datetime_str}: {e}")
+                    recent_events.append(event)
+        
+        return recent_events
+        
+    except Exception as e:
+        logging.error(f"Fel vid filtrering av datum: {e}")
+        return events  # Returnera alla händelser om filtrering misslyckas
+
 
 class LocationEnhancer:
     """Förbättrar koordinater för händelser"""
