@@ -27,6 +27,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
+    
+    - name: Run debug check
+      run: |
+        python simple_debug.py
         
     - name: Run data update
       env:
