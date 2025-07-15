@@ -88,34 +88,34 @@ class PoliceDataFetcher:
         
         return filtered_events
 
-def filter_recent_events(self, events: List[Dict], days_back: int) -> List[Dict]:
-    """Filtrera händelser till de senaste X dagarna"""
-    try:
-        cutoff_date = datetime.now() - timedelta(days=days_back)
-        recent_events = []
-        
-        for event in events:
-            event_datetime_str = event.get('datetime', '')
-            if event_datetime_str:
-                try:
-                    # Polisen.se använder format: 2024-01-15 14:30:00 +01:00
-                    # Ta bort timezone-delen för parsing
-                    clean_datetime = event_datetime_str.split(' +')[0]
-                    event_datetime = datetime.strptime(clean_datetime, '%Y-%m-%d %H:%M:%S')
-                    
-                    if event_datetime >= cutoff_date:
-                        recent_events.append(event)
+    def filter_recent_events(self, events: List[Dict], days_back: int) -> List[Dict]:
+        """Filtrera händelser till de senaste X dagarna"""
+        try:
+            cutoff_date = datetime.now() - timedelta(days=days_back)
+            recent_events = []
+            
+            for event in events:
+                event_datetime_str = event.get('datetime', '')
+                if event_datetime_str:
+                    try:
+                        # Polisen.se använder format: 2024-01-15 14:30:00 +01:00
+                        # Ta bort timezone-delen för parsing
+                        clean_datetime = event_datetime_str.split(' +')[0]
+                        event_datetime = datetime.strptime(clean_datetime, '%Y-%m-%d %H:%M:%S')
                         
-                except ValueError as e:
-                    # Om datum-parsing misslyckas, inkludera händelsen ändå
-                    logging.warning(f"Kunde inte parsa datum {event_datetime_str}: {e}")
-                    recent_events.append(event)
-        
+                        if event_datetime >= cutoff_date:
+                            recent_events.append(event)
+                            
+                    except ValueError as e:
+                        # Om datum-parsing misslyckas, inkludera händelsen ändå
+                        logging.warning(f"Kunde inte parsa datum {event_datetime_str}: {e}")
+                        recent_events.append(event)
+            
         return recent_events
         
-    except Exception as e:
-        logging.error(f"Fel vid filtrering av datum: {e}")
-        return events  # Returnera alla händelser om filtrering misslyckas
+        except Exception as e:
+            logging.error(f"Fel vid filtrering av datum: {e}")
+            return events  # Returnera alla händelser om filtrering misslyckas
 
 
 class LocationEnhancer:
