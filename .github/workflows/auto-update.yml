@@ -31,6 +31,10 @@ jobs:
     - name: Run debug check
       run: |
         python simple_debug.py
+
+    - name: Test Police API
+      run: |
+        python test_police_api.py
         
     - name: Run data update
       env:
