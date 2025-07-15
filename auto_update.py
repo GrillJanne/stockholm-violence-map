@@ -490,6 +490,17 @@ def main():
     """Huvudfunktion"""
     orchestrator = AutomationOrchestrator()
     success = orchestrator.run_update()
+
+    # I main() funktionen, lägg till:
+print(f"🔍 Kontrollerar {len(new_events)} nya händelser mot {len(existing_signatures)} befintliga")
+
+for event in new_events:
+    signature = f"{event.get('datetime', '')}_{event.get('type', '')}_{event.get('location', {}).get('name', '')}"
+    if signature not in existing_signatures:
+        print(f"➕ Ny händelse: {signature}")
+    else:
+        print(f"🔄 Duplikat: {signature}")
+
     
     if success:
         logging.info("Automatisering slutförd framgångsrikt")
