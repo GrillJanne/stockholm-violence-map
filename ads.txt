@@ -1,0 +1,13 @@
+# ads.txt för Stockholm Våldskarta
+# Detta verifierar att du är auktoriserad att visa annonser på denna webbplats
+
+# Google AdSense
+google.com, pub-8020465526285919, DIRECT, f08c47fec0942fa0
+
+# Lägg till andra annonsnätverk här när du registrerar dig
+# Exempel:
+# media.net, XXXXXXXXXX, DIRECT
+# ezoic.com, XXXXXXXXXX, DIRECT
+
+# Kommentar: Ersätt XXXXXXXXXX med ditt riktiga Publisher ID från AdSense
+

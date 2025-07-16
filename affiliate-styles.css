@@ -1,0 +1,370 @@
+/* Affiliate Marketing Styles för Stockholm Våldskarta */
+
+.affiliate-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.affiliate-section h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.affiliate-section .section-subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.affiliate-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.affiliate-product {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.affiliate-product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+}
+
+.product-image {
+    height: 150px;
+    overflow: hidden;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.affiliate-product:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.product-rating .rating-number {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.product-category {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.product-actions {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.affiliate-link {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.affiliate-link:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+}
+
+/* Contextual product recommendations */
+.contextual-products {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.contextual-products h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contextual-products .affiliate-products {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.contextual-products .affiliate-product {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+}
+
+/* Seasonal promotions */
+.seasonal-promotion {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.seasonal-promotion h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.seasonal-promotion .promotion-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.seasonal-promotion .affiliate-products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Inline product recommendations */
+.inline-recommendation {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inline-recommendation .product-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.inline-recommendation .product-info {
+    flex: 1;
+    padding: 0;
+}
+
+.inline-recommendation .product-name {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.inline-recommendation .product-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.inline-recommendation .affiliate-link {
+    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+/* Affiliate disclosure */
+.affiliate-disclosure {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    color: #92400e;
+}
+
+.affiliate-disclosure strong {
+    color: #78350f;
+}
+
+/* Product comparison table */
+.product-comparison {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table th {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #374151;
+}
+
+.comparison-table .product-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.comparison-table .price {
+    font-weight: 700;
+    color: #667eea;
+}
+
+.comparison-table .rating {
+    color: #fbbf24;
+}
+
+.comparison-table .affiliate-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    width: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .affiliate-products {
+        grid-template-columns: 1fr;
+    }
+    
+    .contextual-products .affiliate-products {
+        grid-template-columns: 1fr;
+    }
+    
+    .seasonal-promotion .affiliate-products {
+        grid-template-columns: 1fr;
+    }
+    
+    .inline-recommendation {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .inline-recommendation .affiliate-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    
+    .comparison-table {
+        font-size: 0.85rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Loading states */
+.affiliate-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #6b7280;
+}
+
+.affiliate-loading::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e5e7eb;
+    border-top: 2px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 0.5rem;
+}
+
+/* Error states */
+.affiliate-error {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Success states */
+.affiliate-success {
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    margin: 1rem 0;
+}
+

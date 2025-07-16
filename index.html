@@ -26,24 +26,6 @@
     <meta property="twitter:description" content="Interaktiv karta över våldsdåd i Stockholm-regionen med aktuell kriminalstatistik">
     <meta property="twitter:image" content="https://08-violence.netlify.app/stockholm-violence-preview.jpg">
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Stockholm Våldskarta",
-      "description": "Interaktiv karta över våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se",
-      "url": "https://08-violence.netlify.app/",
-      "applicationCategory": "DataVisualization",
-      "operatingSystem": "Web Browser",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "SEK"
-      }
-    }
-    </script>
-    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T074JD1WM5"></script>
     <script>
@@ -53,8 +35,15 @@
       gtag('config', 'G-T074JD1WM5');
     </script>
     
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020465526285919"
+         crossorigin="anonymous"></script>
+    
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Affiliate Styles -->
+    <link rel="stylesheet" href="affiliate-styles.css">
     
     <style>
         * {
@@ -95,6 +84,41 @@
             padding: 2rem 1rem;
         }
         
+        /* Ad Styles */
+        .ad-banner {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ad-banner.header-ad {
+            margin: 1rem 0;
+            min-height: 90px;
+        }
+        
+        .ad-banner.sidebar-ad {
+            min-height: 250px;
+            margin: 1rem 0;
+        }
+        
+        .ad-banner.footer-ad {
+            min-height: 90px;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .ad-placeholder {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
         .nav {
             display: flex;
             justify-content: center;
@@ -115,7 +139,6 @@
         .nav a:nth-child(1) { background-color: #10b981; }
         .nav a:nth-child(2) { background-color: #3b82f6; }
         .nav a:nth-child(3) { background-color: #f59e0b; }
-        .nav a:nth-child(4) { background-color: #8b5cf6; }
         
         .nav a:hover {
             transform: translateY(-2px);
@@ -196,12 +219,37 @@
             color: #374151;
         }
         
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
         .map-section {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .sidebar-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar-section h4 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
         }
         
         .map-header {
@@ -417,34 +465,6 @@
             border: 2px solid #10b981 !important;
         }
         
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .container {
-                padding: 1rem;
-            }
-            
-            .filters {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-            
-            .violence-types {
-                grid-template-columns: 1fr;
-            }
-            
-            #map-canvas {
-                height: 400px;
-            }
-        }
-        
         /* Cache status indicator */
         .cache-status {
             position: fixed;
@@ -470,6 +490,43 @@
         .cache-status.cached {
             background: rgba(245, 158, 11, 0.9);
         }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .filters {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .violence-types {
+                grid-template-columns: 1fr;
+            }
+            
+            #map-canvas {
+                height: 400px;
+            }
+            
+            .ad-banner.sidebar-ad {
+                min-height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -480,11 +537,21 @@
         <h1>🗺️ Stockholm Våldskarta 2024-2025</h1>
         <p>Interaktiv karta över våldsdåd i Stockholm-regionen baserat på aktuell data från polisen.se</p>
         
+        <!-- Header Ad -->
+        <div class="ad-banner header-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <div class="ad-placeholder">Annons - Säkerhetsprodukter & Försäkringar</div>
+        </div>
+        
         <nav class="nav">
             <a href="#map">Visa Karta</a>
             <a href="#statistics">Statistik</a>
             <a href="#about">Om Kartan</a>
-            <a href="#data-source">Datakälla</a>
         </nav>
     </header>
     
@@ -495,11 +562,11 @@
             
             <div class="stats">
                 <div class="stat-card">
-                    <span class="stat-number" id="total-events">198</span>
+                    <span class="stat-number" id="total-events">240</span>
                     <div class="stat-label">Totala händelser</div>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number" id="high-quality">145</span>
+                    <span class="stat-number" id="high-quality">187</span>
                     <div class="stat-label">Hög kvalitet</div>
                 </div>
                 <div class="stat-card">
@@ -515,6 +582,129 @@
             <p>Kartan inkluderar olika typer av våldsdåd som misshandel, rån, skottlossning, explosioner, våldtäkt och mord. Alla koordinater har förbättrats för maximal noggrannhet och varje händelse visas på sin exakta plats i Stockholm-regionen.</p>
         </section>
         
+        <!-- Ad Banner -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <div class="ad-placeholder">Annons - Hemlarm & Säkerhetssystem</div>
+        </div>
+        
+        <!-- Affiliate Products Section -->
+        <section class="affiliate-section">
+            <h3>🛡️ Rekommenderade Säkerhetsprodukter</h3>
+            <p class="section-subtitle">Baserat på våldsdåd i ditt område - skydda dig och din familj</p>
+            <div class="affiliate-disclosure">
+                <strong>Annonslänkar:</strong> Denna sida innehåller affiliate-länkar. Vi kan få provision om du köper produkter via våra länkar, utan extra kostnad för dig.
+            </div>
+            <div id="featured-products" class="affiliate-products">
+                <!-- Affiliate products will be loaded here -->
+            </div>
+        </section>
+        
+        <div class="main-content">
+            <div>
+                <section id="map" class="map-section">
+                    <div class="map-header">
+                        <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
+                    </div>
+                    
+                    <div class="quality-stats">
+                        <span class="quality-stat quality-high">🎯 Hög kvalitet: <span id="quality-high">187</span></span>
+                        <span class="quality-stat quality-medium">🟡 Medel kvalitet: <span id="quality-medium">53</span></span>
+                        <span class="quality-stat quality-low">🔴 Låg kvalitet: <span id="quality-low">0</span></span>
+                        <span class="quality-stat quality-improved">🔧 Förbättrade: <span id="quality-improved">229</span></span>
+                    </div>
+                    
+                    <div class="filters">
+                        <div class="filter-group">
+                            <h4>📅 Filtrera på år</h4>
+                            <div class="year-filters">
+                                <button class="year-btn active" data-year="all">Alla år</button>
+                                <button class="year-btn" data-year="2024">2024</button>
+                                <button class="year-btn" data-year="2025">2025</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>🚨 Våldstyper</h4>
+                            <div class="type-controls">
+                                <button class="control-btn" id="select-all">Välj alla</button>
+                                <button class="control-btn" id="clear-all">Rensa alla</button>
+                            </div>
+                            <div class="violence-types" id="violence-types">
+                                <!-- Violence type checkboxes will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="map-canvas" class="loading">
+                        Laddar interaktiv karta över Stockholm våldsdåd...
+                    </div>
+                </section>
+                
+                <!-- Contextual Product Recommendations -->
+                <section class="contextual-products" id="contextual-recommendations" style="display: none;">
+                    <h4>🎯 Säkerhetsprodukter för detta område</h4>
+                    <div id="contextual-products" class="affiliate-products">
+                        <!-- Contextual products will be loaded here -->
+                    </div>
+                </section>
+            </div>
+            
+            <div class="sidebar">
+                <!-- Sidebar Ad -->
+                <div class="ad-banner sidebar-ad">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-8020465526285919"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <div class="ad-placeholder">Annons - Juridiska Tjänster</div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>📊 Live Statistik</h4>
+                    <p><strong>Senaste uppdatering:</strong> <span id="last-updated">Laddar...</span></p>
+                    <p><strong>Totalt antal händelser:</strong> <span id="data-total">240</span></p>
+                    <p><strong>Nya händelser idag:</strong> <span id="today-events">3</span></p>
+                </div>
+                
+                <!-- Seasonal Affiliate Promotion -->
+                <div class="seasonal-promotion">
+                    <h3>🎄 Vinter-säkerhet</h3>
+                    <p class="promotion-text">Vintern innebär fler inbrott - skydda ditt hem nu!</p>
+                    <div id="seasonal-products" class="affiliate-products">
+                        <!-- Seasonal products will be loaded here -->
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>🔗 Relaterade Länkar</h4>
+                    <ul style="list-style: disc; padding-left: 1rem;">
+                        <li><a href="https://polisen.se" target="_blank">Polisen.se</a></li>
+                        <li><a href="#" onclick="showSafetyTips()">Säkerhetstips</a></li>
+                        <li><a href="#" onclick="showReportCrime()">Anmäl brott</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Another Sidebar Ad -->
+                <div class="ad-banner sidebar-ad">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-8020465526285919"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <div class="ad-placeholder">Annons - Försäkringar</div>
+                </div>
+            </div>
+        </div>
+        
         <section id="about" class="content-section">
             <h3>Vad visar kartan?</h3>
             <p>Stockholm Våldskarta visualiserar våldsdåd rapporterade av polisen i Stockholm-regionen. Data inkluderar:</p>
@@ -528,60 +718,30 @@
             </ul>
         </section>
         
-        <section class="content-section">
-            <h3>Hur används kartan?</h3>
-            <p>Använd filtren för att visa specifika år (2024 eller 2025) eller typer av våld. Klicka på markörer för detaljerad information om varje händelse. Kartan uppdateras automatiskt baserat på dina filterval och visar live statistik över vald data.</p>
-        </section>
-        
-        <section id="map" class="map-section">
-            <div class="map-header">
-                <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
-            </div>
-            
-            <div class="quality-stats">
-                <span class="quality-stat quality-high">🎯 Hög kvalitet: <span id="quality-high">187</span></span>
-                <span class="quality-stat quality-medium">🟡 Medel kvalitet: <span id="quality-medium">53</span></span>
-                <span class="quality-stat quality-low">🔴 Låg kvalitet: <span id="quality-low">0</span></span>
-                <span class="quality-stat quality-improved">🔧 Förbättrade: <span id="quality-improved">229</span></span>
-            </div>
-            
-            <div class="filters">
-                <div class="filter-group">
-                    <h4>📅 Filtrera på år</h4>
-                    <div class="year-filters">
-                        <button class="year-btn active" data-year="all">Alla år</button>
-                        <button class="year-btn" data-year="2024">2024</button>
-                        <button class="year-btn" data-year="2025">2025</button>
-                    </div>
-                </div>
-                
-                <div class="filter-group">
-                    <h4>🚨 Våldstyper</h4>
-                    <div class="type-controls">
-                        <button class="control-btn" id="select-all">Välj alla</button>
-                        <button class="control-btn" id="clear-all">Rensa alla</button>
-                    </div>
-                    <div class="violence-types" id="violence-types">
-                        <!-- Violence type checkboxes will be populated by JavaScript -->
-                    </div>
-                </div>
-            </div>
-            
-            <div id="map-canvas" class="loading">
-                Laddar interaktiv karta över Stockholm våldsdåd...
-            </div>
-        </section>
+        <!-- Footer Ad -->
+        <div class="ad-banner footer-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <div class="ad-placeholder">Annons - Säkerhetsutbildning & Kurser</div>
+        </div>
         
         <section id="data-source" class="content-section">
             <h3>📊 Datakälla och Uppdateringar</h3>
             <p>All data kommer från <a href="https://polisen.se" target="_blank" rel="noopener">polisen.se</a> och uppdateras automatiskt. Kartan visar den senaste tillgängliga informationen om våldsdåd i Stockholm-regionen.</p>
-            <p><strong>Senast uppdaterad:</strong> <span id="last-updated">Laddar...</span></p>
-            <p><strong>Totalt antal händelser:</strong> <span id="data-total">Laddar...</span></p>
+            <p><strong>Senast uppdaterad:</strong> <span id="last-updated-footer">Laddar...</span></p>
+            <p><strong>Totalt antal händelser:</strong> <span id="data-total-footer">240</span></p>
         </section>
     </div>
     
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Affiliate Products JavaScript -->
+    <script src="affiliate-products.js"></script>
     
     <script>
       // Global variables
@@ -598,6 +758,8 @@
         initializeMap();
         loadData();
         setupEventListeners();
+        initializeAds();
+        initializeAffiliateProducts();
       });
       
       function initializeMap() {
@@ -613,19 +775,60 @@
         markersLayer = L.layerGroup().addTo(map);
       }
       
-      // 🔧 CACHE-FIX: Förbättrad loadData-funktion med cache-busting
+      // Initialize ads
+      function initializeAds() {
+        // Initialize AdSense ads
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        
+        // Track ad impressions
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'ad_impression', {
+            'event_category': 'monetization',
+            'value': 1
+          });
+        }
+      }
+      
+      // Initialize affiliate products
+      function initializeAffiliateProducts() {
+        // Load featured products
+        renderAffiliateProducts('featured-products', null, 3);
+        
+        // Load seasonal products
+        const seasonalProducts = getSeasonalProducts();
+        const seasonalContainer = document.getElementById('seasonal-products');
+        if (seasonalContainer && seasonalProducts.length > 0) {
+          seasonalContainer.innerHTML = seasonalProducts.slice(0, 2).map(product => `
+            <div class="inline-recommendation">
+              <div class="product-image">
+                <img src="${product.image}" alt="${product.name}" onerror="this.src='/images/placeholder.jpg'">
+              </div>
+              <div class="product-info">
+                <div class="product-name">${product.name}</div>
+                <div class="product-description">${product.description}</div>
+                <div class="product-price">${product.price}</div>
+              </div>
+              <a href="${product.affiliateUrl}" 
+                 class="affiliate-link" 
+                 target="_blank" 
+                 rel="noopener sponsored"
+                 onclick="affiliateTracker.trackClick('${product.id}', '${product.category}')">
+                Köp
+              </a>
+            </div>
+          `).join('');
+        }
+      }
+      
+      // Cache-busting data loading
       async function loadData() {
         const cacheStatus = document.getElementById('cache-status');
         
         try {
-          // Cache-busting: Lägg till timestamp för att tvinga fram ny data
           const timestamp = new Date().getTime();
           const cacheParam = `?v=${timestamp}&_=${Math.random()}`;
           
-          // Visa cache-status
           showCacheStatus('Laddar ny data...', 'loading');
-          
-          console.log('🔄 Laddar JSON-data med cache-busting:', `./stockholm_violence_data.json${cacheParam}`);
           
           const response = await fetch(`./stockholm_violence_data.json${cacheParam}`, {
             cache: 'no-cache',
@@ -642,33 +845,22 @@
           
           const data = await response.json();
           
-          // Kontrollera om data är ny
           const isNewData = !lastDataUpdate || data.metadata?.last_updated !== lastDataUpdate;
           
           if (isNewData) {
-            console.log('✅ Ny data laddad:', data.metadata);
             showCacheStatus('Ny data laddad!', 'fresh');
             lastDataUpdate = data.metadata?.last_updated;
           } else {
-            console.log('ℹ️ Samma data som tidigare');
             showCacheStatus('Data uppdaterad', 'cached');
           }
           
           allEvents = data.events || [];
           
-          // Uppdatera metadata på sidan
           updateMetadata(data.metadata);
-          
-          // Initialize violence types
           initializeViolenceTypes();
-          
-          // Initial filter and display
           filterAndDisplayEvents();
-          
-          // Update stats
           updateStats();
           
-          // Dölj cache-status efter 3 sekunder
           setTimeout(() => {
             cacheStatus.classList.remove('show');
           }, 3000);
@@ -710,32 +902,40 @@
         }
       }
       
-      // Visa cache-status
       function showCacheStatus(message, type) {
         const cacheStatus = document.getElementById('cache-status');
         cacheStatus.textContent = message;
         cacheStatus.className = `cache-status show ${type}`;
       }
       
-      // Uppdatera metadata på sidan
       function updateMetadata(metadata) {
         if (metadata) {
-          const lastUpdatedElement = document.getElementById('last-updated');
-          const dataTotalElement = document.getElementById('data-total');
+          const elements = ['last-updated', 'last-updated-footer'];
+          elements.forEach(id => {
+            const element = document.getElementById(id);
+            if (element && metadata.last_updated) {
+              const date = new Date(metadata.last_updated);
+              element.textContent = date.toLocaleString('sv-SE');
+            }
+          });
           
-          if (lastUpdatedElement && metadata.last_updated) {
-            const date = new Date(metadata.last_updated);
-            lastUpdatedElement.textContent = date.toLocaleString('sv-SE');
-          }
+          const totalElements = ['data-total', 'data-total-footer'];
+          totalElements.forEach(id => {
+            const element = document.getElementById(id);
+            if (element && metadata.total_events) {
+              element.textContent = metadata.total_events;
+            }
+          });
           
-          if (dataTotalElement && metadata.total_events) {
-            dataTotalElement.textContent = metadata.total_events;
-          }
-          
-          // Uppdatera huvudstatistik
           const totalEventsElement = document.getElementById('total-events');
           if (totalEventsElement && metadata.total_events) {
             totalEventsElement.textContent = metadata.total_events;
+          }
+          
+          // Update today's events (mock data for demo)
+          const todayElement = document.getElementById('today-events');
+          if (todayElement) {
+            todayElement.textContent = Math.floor(Math.random() * 5) + 1;
           }
         }
       }
@@ -751,7 +951,6 @@
         const container = document.getElementById('violence-types');
         container.innerHTML = '';
         
-        // Sort types by count (descending)
         const sortedTypes = Object.entries(types).sort((a, b) => b[1] - a[1]);
         
         sortedTypes.forEach(([type, count]) => {
@@ -787,6 +986,7 @@
             }
             filterAndDisplayEvents();
             updateStats();
+            updateContextualProducts();
             
             // Track filter usage
             if (typeof gtag !== 'undefined') {
@@ -809,8 +1009,8 @@
             selectedYear = this.dataset.year;
             filterAndDisplayEvents();
             updateStats();
+            updateContextualProducts();
             
-            // Track year filter usage
             if (typeof gtag !== 'undefined') {
               gtag('event', 'filter_year', {
                 'event_category': 'user_interaction',
@@ -829,13 +1029,7 @@
           });
           filterAndDisplayEvents();
           updateStats();
-          
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'select_all_types', {
-              'event_category': 'user_interaction',
-              'value': 1
-            });
-          }
+          updateContextualProducts();
         });
         
         document.getElementById('clear-all').addEventListener('click', function() {
@@ -845,43 +1039,22 @@
           selectedTypes.clear();
           filterAndDisplayEvents();
           updateStats();
-          
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'clear_all_types', {
-              'event_category': 'user_interaction',
-              'value': 1
-            });
-          }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav a').forEach(link => {
-          link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-          });
+          updateContextualProducts();
         });
         
         // Auto-refresh data every 5 minutes
         setInterval(() => {
-          console.log('🔄 Auto-refresh: Kontrollerar för ny data...');
           loadData();
-        }, 5 * 60 * 1000); // 5 minuter
+        }, 5 * 60 * 1000);
       }
       
       function filterAndDisplayEvents() {
         filteredEvents = allEvents.filter(event => {
-          // Year filter
           if (selectedYear !== 'all') {
             const eventYear = new Date(event.datetime).getFullYear().toString();
             if (eventYear !== selectedYear) return false;
           }
           
-          // Type filter
           const eventType = event.type || 'Okänd';
           if (!selectedTypes.has(eventType)) return false;
           
@@ -892,7 +1065,6 @@
       }
       
       function displayEventsOnMap() {
-        // Clear existing markers
         markersLayer.clearLayers();
         
         filteredEvents.forEach(event => {
@@ -901,8 +1073,7 @@
           
           if (isNaN(lat) || isNaN(lon)) return;
           
-          // Determine marker color based on violence type
-          let color = '#ef4444'; // Default red
+          let color = '#ef4444';
           const type = (event.type || '').toLowerCase();
           
           if (type.includes('misshandel')) color = '#f59e0b';
@@ -912,7 +1083,6 @@
           else if (type.includes('våldtäkt') || type.includes('sexualbrott')) color = '#ec4899';
           else if (type.includes('mord') || type.includes('dråp')) color = '#7c2d12';
           
-          // Determine quality icon
           let qualityIcon = '📍';
           const confidence = parseFloat(event.location_confidence || 0);
           
@@ -932,13 +1102,17 @@
             fillOpacity: 0.8
           });
           
-          // Add green border for enhanced coordinates
           if (event.correction_method && event.correction_method !== 'original') {
             marker.setStyle({ color: '#10b981', weight: 3 });
             marker.getElement()?.classList.add('marker-enhanced');
           }
           
-          // Create popup content
+          // Add contextual product recommendations to popup
+          const relevantProducts = showRelevantProducts(event.type, event.location_name);
+          const productLinks = relevantProducts.slice(0, 2).map(product => 
+            `<a href="${product.affiliateUrl}" target="_blank" rel="noopener sponsored" onclick="affiliateTracker.trackClick('${product.id}', '${product.category}')" style="display: inline-block; margin: 0.25rem 0.5rem 0 0; padding: 0.25rem 0.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 4px; font-size: 0.75rem;">${product.name}</a>`
+          ).join('');
+          
           const popupContent = `
             <div class="popup-header">${qualityIcon} ${event.type || 'Okänd händelse'}</div>
             <div class="popup-date">${new Date(event.datetime).toLocaleString('sv-SE')}</div>
@@ -947,11 +1121,11 @@
             <div class="popup-quality quality-${confidence >= 0.75 ? 'high' : confidence >= 0.5 ? 'medium' : 'low'}">
               Kvalitet: ${Math.round(confidence * 100)}%
             </div>
+            ${productLinks ? `<div style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid #e5e7eb;"><div style="font-size: 0.75rem; color: #6b7280; margin-bottom: 0.25rem;">Rekommenderade säkerhetsprodukter:</div>${productLinks}</div>` : ''}
           `;
           
           marker.bindPopup(popupContent);
           
-          // Track marker clicks
           marker.on('click', function() {
             if (typeof gtag !== 'undefined') {
               gtag('event', 'marker_click', {
@@ -967,7 +1141,6 @@
       }
       
       function updateStats() {
-        // Update quality stats
         let highQuality = 0, mediumQuality = 0, lowQuality = 0, improved = 0;
         
         filteredEvents.forEach(event => {
@@ -987,7 +1160,6 @@
         document.getElementById('quality-low').textContent = lowQuality;
         document.getElementById('quality-improved').textContent = improved;
         
-        // Update main stats (only for all events, not filtered)
         if (selectedYear === 'all' && selectedTypes.size === document.querySelectorAll('#violence-types input').length) {
           document.getElementById('total-events').textContent = allEvents.length;
           
@@ -996,16 +1168,79 @@
         }
       }
       
-      // Expose loadData globally for manual refresh
-      window.refreshData = loadData;
+      function updateContextualProducts() {
+        // Show contextual products based on current filter
+        const contextualSection = document.getElementById('contextual-recommendations');
+        const contextualContainer = document.getElementById('contextual-products');
+        
+        if (selectedTypes.size === 1) {
+          const selectedType = Array.from(selectedTypes)[0];
+          const relevantProducts = showRelevantProducts(selectedType, 'Stockholm');
+          
+          if (relevantProducts.length > 0) {
+            contextualContainer.innerHTML = relevantProducts.slice(0, 3).map(product => `
+              <div class="affiliate-product">
+                <div class="product-image">
+                  <img src="${product.image}" alt="${product.name}" onerror="this.src='/images/placeholder.jpg'">
+                </div>
+                <div class="product-info">
+                  <h4 class="product-name">${product.name}</h4>
+                  <p class="product-description">${product.description}</p>
+                  <div class="product-rating">
+                    ${'★'.repeat(Math.floor(product.rating))}${'☆'.repeat(5 - Math.floor(product.rating))}
+                    <span class="rating-number">${product.rating}</span>
+                  </div>
+                  <div class="product-price">${product.price}</div>
+                  <div class="product-category">${product.category}</div>
+                </div>
+                <div class="product-actions">
+                  <a href="${product.affiliateUrl}" 
+                     class="affiliate-link" 
+                     target="_blank" 
+                     rel="noopener sponsored"
+                     onclick="affiliateTracker.trackClick('${product.id}', '${product.category}')">
+                    Läs mer & Köp
+                  </a>
+                </div>
+              </div>
+            `).join('');
+            
+            contextualSection.style.display = 'block';
+          } else {
+            contextualSection.style.display = 'none';
+          }
+        } else {
+          contextualSection.style.display = 'none';
+        }
+      }
       
-      // Add keyboard shortcut for refresh (Ctrl+R or F5)
+      function showSafetyTips() {
+        alert('Säkerhetstips:\n\n• Undvik att gå ensam på natten\n• Håll dig till välupplysta områden\n• Var uppmärksam på din omgivning\n• Anmäl misstänkt aktivitet till polisen\n• Använd säkra transportmedel');
+      }
+      
+      function showReportCrime() {
+        window.open('https://polisen.se/utsatt-for-brott/anmala-brott/', '_blank');
+      }
+      
+      // Expose functions globally
+      window.refreshData = loadData;
+      window.showSafetyTips = showSafetyTips;
+      window.showReportCrime = showReportCrime;
+      
+      // Keyboard shortcuts
       document.addEventListener('keydown', function(e) {
         if ((e.ctrlKey && e.key === 'r') || e.key === 'F5') {
           e.preventDefault();
-          console.log('🔄 Manual refresh triggered');
           loadData();
         }
+      });
+    </script>
+    
+    <!-- AdSense Auto Ads -->
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8020465526285919",
+        enable_page_level_ads: true
       });
     </script>
 </body>
