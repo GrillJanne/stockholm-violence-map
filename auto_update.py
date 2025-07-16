@@ -23,89 +23,125 @@ logging.basicConfig(
     ]
 )
 
+# --- PoliceDataFetcher ---
 class PoliceDataFetcher:
-    """Hämtar data från polisen.se API"""
+    ...
+
+# --- LocationEnhancer ---
+class LocationEnhancer:
+    ...
+
+# --- DataProcessor ---
+class DataProcessor:
+    """Bearbetar och formaterar data"""
 
     def __init__(self):
-        self.base_url = "https://polisen.se/api/events"
-        self.stockholm_regions = [
-            "Stockholm", "Stockholms län", "Huddinge", "Järfälla", 
-            "Nacka", "Solna", "Sundbyberg", "Södertälje", "Täby",
-            "Upplands Väsby", "Vallentuna", "Vaxholm", "Österåker",
-            "Botkyrka", "Danderyd", "Ekerö", "Haninge", "Lidingö",
-            "Norrtälje", "Nykvarn", "Nynäshamn", "Salem", "Sigtuna",
-            "Sollentuna", "Tyresö", "Värmdö"
-        ]
+        self.location_enhancer = LocationEnhancer()
 
-    def fetch_events(self, days_back: int = 7) -> List[Dict[str, Any]]:
-        """Hämtar händelser från de senaste X dagarna"""
+    def process_events(self, new_events: List[Dict], existing_data: Dict) -> Dict:
         try:
-            params = {
-                'locationname': 'Stockholm'
+            existing_events = existing_data.get('events', [])
+            existing_ids = {self.generate_event_id(event) for event in existing_events}
+            processed_new_events = []
+
+            for event in new_events:
+                event_id = self.generate_event_id(event)
+                if event_id in existing_ids:
+                    continue
+                enhanced_event = self.location_enhancer.enhance_location(event)
+                formatted_event = self.format_event(enhanced_event)
+                processed_new_events.append(formatted_event)
+
+            all_events = existing_events + processed_new_events
+            all_events.sort(key=lambda x: x.get('datetime', ''), reverse=True)
+
+            return {
+                'metadata': {
+                    'last_updated': datetime.now().isoformat(),
+                    'total_events': len(all_events),
+                    'new_events_added': len(processed_new_events),
+                    'data_source': 'polisen.se',
+                    'automation_version': '1.0'
+                },
+                'events': all_events
             }
 
-            logging.info(f"🔍 API URL: {self.base_url}")
-            logging.info(f"📍 Locationname: Stockholm (utan datum-filter)")
-
-            response = requests.get(self.base_url, params=params, timeout=30)
-            logging.info(f"📡 API Response: {response.status_code}")
-
-            response.raise_for_status()
-
-            events = response.json()
-            logging.info(f"📥 Hämtade {len(events)} händelser från polisen.se")
-
-            recent_events = self.filter_recent_events(events, days_back)
-            logging.info(f"🗕️ Filtrerade till {len(recent_events)} händelser från senaste {days_back} dagarna")
-
-            violence_events = self.filter_violence_events(recent_events)
-            logging.info(f"🚨 Filtrerade till {len(violence_events)} våldshändelser")
-
-            return violence_events
-
         except Exception as e:
-            logging.error(f"Fel vid hämtning av data: {e}")
-            return []
+            logging.error(f"Fel vid bearbetning av data: {e}")
+            return existing_data
 
-    def filter_violence_events(self, events: List[Dict]) -> List[Dict]:
-        """Filtrera ut våldshändelser"""
-        violence_keywords = [
-            'misshandel', 'rån', 'våldtäkt', 'mord', 'dråp', 'skottlossning',
-            'explosion', 'sprängning', 'sexualbrott', 'våld', 'hot'
+    def generate_event_id(self, event: Dict) -> str:
+        date_str = event.get('datetime', '')
+        event_type = event.get('type', '')
+        location = event.get('location', {}).get('name', '')
+        id_string = f"{date_str}_{event_type}_{location}"
+        return hashlib.md5(id_string.encode()).hexdigest()[:12]
+
+    def format_event(self, event: Dict) -> Dict:
+        return {
+            'id': self.generate_event_id(event),
+            'datetime': event.get('datetime', ''),
+            'type': event.get('type', ''),
+            'summary': event.get('summary', ''),
+            'location_name': event.get('location', {}).get('name', ''),
+            'specific_location': event.get('specific_location', ''),
+            'latitude': event.get('latitude'),
+            'longitude': event.get('longitude'),
+            'location_confidence': event.get('location_confidence', 0.5),
+            'correction_method': event.get('correction_method', 'unknown'),
+            'kommun': self.extract_kommun(event.get('location', {}).get('name', '')),
+            'url': event.get('url', ''),
+            'added_by_automation': True,
+            'added_timestamp': datetime.now().isoformat()
+        }
+
+    def extract_kommun(self, location_name: str) -> str:
+        kommuner = [
+            'Stockholm', 'Huddinge', 'Järfälla', 'Nacka', 'Solna', 'Sundbyberg',
+            'Södertälje', 'Täby', 'Upplands Väsby', 'Vallentuna', 'Vaxholm',
+            'Österåker', 'Botkyrka', 'Danderyd', 'Ekerö', 'Haninge', 'Lidingö',
+            'Norrtälje', 'Nykvarn', 'Nynäshamn', 'Salem', 'Sigtuna', 'Sollentuna',
+            'Tyresö', 'Värmdö'
         ]
+        for kommun in kommuner:
+            if kommun.lower() in location_name.lower():
+                return kommun
+        return 'Stockholm'
 
-        filtered_events = []
-        for event in events:
-            event_type = event.get('type', '').lower()
-            summary = event.get('summary', '').lower()
+# --- Huvudfunktion ---
+def main():
+    from pathlib import Path
+    class AutomationOrchestrator:
+        def __init__(self):
+            self.config = {
+                'data_file': 'data.json',
+                'days_back': 7
+            }
+            self.data_fetcher = PoliceDataFetcher()
+            self.data_processor = DataProcessor()
 
-            if any(keyword in event_type or keyword in summary for keyword in violence_keywords):
-                filtered_events.append(event)
+        def load_existing_data(self) -> Dict:
+            path = Path(self.config['data_file'])
+            if path.exists():
+                with path.open('r', encoding='utf-8') as f:
+                    return json.load(f)
+            return {'events': []}
 
-        return filtered_events
+        def save_data(self, data: Dict):
+            with open(self.config['data_file'], 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
 
-    def filter_recent_events(self, events: List[Dict], days_back: int) -> List[Dict]:
-        """Filtrera händelser till de senaste X dagarna"""
-        try:
-            cutoff_date = datetime.now() - timedelta(days=days_back)
-            recent_events = []
+        def run(self):
+            new_events = self.data_fetcher.fetch_events(self.config['days_back'])
+            if not new_events:
+                logging.info("Inga nya händelser hittades")
+                return
+            existing_data = self.load_existing_data()
+            updated_data = self.data_processor.process_events(new_events, existing_data)
+            self.save_data(updated_data)
 
-            for event in events:
-                event_datetime_str = event.get('datetime', '')
-                if event_datetime_str:
-                    try:
-                        clean_datetime = event_datetime_str.split(' +')[0]
-                        event_datetime = datetime.strptime(clean_datetime, '%Y-%m-%d %H:%M:%S')
+    orchestrator = AutomationOrchestrator()
+    orchestrator.run()
 
-                        if event_datetime >= cutoff_date:
-                            recent_events.append(event)
-
-                    except ValueError as e:
-                        logging.warning(f"Kunde inte parsa datum {event_datetime_str}: {e}")
-                        recent_events.append(event)
-
-            return recent_events
-
-        except Exception as e:
-            logging.error(f"Fel vid filtrering av datum: {e}")
-            return events
+if __name__ == '__main__':
+    main()
