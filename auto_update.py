@@ -266,7 +266,7 @@ def main():
         data_processor = DataProcessor()
         
         # Hämta nya händelser
-        new_events = data_fetcher.fetch_events(days_back=14)  # 14 dagar för att få fler händelser
+        new_events = data_fetcher.fetch_events(days_back=31)  # 14 dagar för att få fler händelser
         
         if not new_events:
             logging.info("ℹ️ Inga nya våldshändelser hittades")
