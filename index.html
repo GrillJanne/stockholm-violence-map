@@ -59,6 +59,241 @@
             background-color: #f8fafc;
         }
         
+        /* Cookie Consent Banner */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 1.5rem;
+            z-index: 10000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cookie-consent.show {
+            transform: translateY(0);
+        }
+        
+        .cookie-consent-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .cookie-consent-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .cookie-consent-text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fbbf24;
+        }
+        
+        .cookie-consent-text p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+        
+        .cookie-consent-text a {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+        
+        .cookie-consent-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .cookie-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+        
+        .cookie-btn-accept {
+            background: #10b981;
+            color: white;
+        }
+        
+        .cookie-btn-accept:hover {
+            background: #059669;
+        }
+        
+        .cookie-btn-decline {
+            background: #6b7280;
+            color: white;
+        }
+        
+        .cookie-btn-decline:hover {
+            background: #4b5563;
+        }
+        
+        .cookie-btn-settings {
+            background: transparent;
+            color: #d1d5db;
+            border: 1px solid #4b5563;
+        }
+        
+        .cookie-btn-settings:hover {
+            background: #374151;
+            border-color: #6b7280;
+        }
+        
+        /* Cookie Settings Modal */
+        .cookie-settings-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .cookie-settings-modal.show {
+            display: flex;
+        }
+        
+        .cookie-settings-content {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .cookie-settings-content h2 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .cookie-category {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+        
+        .cookie-category h3 {
+            color: #374151;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .cookie-category p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        
+        .cookie-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .cookie-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+        
+        .cookie-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        .cookie-toggle input:checked + .cookie-slider {
+            background-color: #10b981;
+        }
+        
+        .cookie-toggle input:checked + .cookie-slider:before {
+            transform: translateX(26px);
+        }
+        
+        .cookie-toggle input:disabled + .cookie-slider {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+        
+        .cookie-settings-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        @media (max-width: 768px) {
+            .cookie-consent-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .cookie-consent-actions {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .cookie-btn {
+                flex: 1;
+                min-width: 120px;
+            }
+            
+            .cookie-settings-modal {
+                padding: 1rem;
+            }
+            
+            .cookie-settings-content {
+                padding: 1.5rem;
+            }
+        }
+        
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -79,7 +314,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 2rem 1rem;
         }
@@ -103,9 +338,9 @@
             min-height: 90px;
         }
         
-        .ad-banner.sidebar-ad {
+        .ad-banner.content-ad {
             min-height: 250px;
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
         
         .ad-banner.footer-ad {
@@ -219,37 +454,43 @@
             color: #374151;
         }
         
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
+        /* FULL WIDTH MAP LAYOUT */
         .map-section {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
         }
         
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        .pre-map-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
         
-        .sidebar-section {
+        .info-card {
             background: white;
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        .sidebar-section h4 {
+        .info-card h4 {
             color: #1f2937;
             margin-bottom: 1rem;
             font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .post-map-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
         
         .map-header {
@@ -261,14 +502,14 @@
         
         .map-header h3 {
             color: #1f2937;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin: 0;
         }
         
         .quality-stats {
             display: flex;
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
             font-size: 0.9rem;
         }
@@ -393,7 +634,7 @@
         }
         
         #map-canvas {
-            height: 600px;
+            height: 700px;
             border-radius: 8px;
             border: 1px solid #e2e8f0;
             position: relative;
@@ -491,6 +732,31 @@
             background: rgba(245, 158, 11, 0.9);
         }
         
+        /* Contextual recommendations */
+        .contextual-recommendations {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            display: none;
+        }
+        
+        .contextual-recommendations h4 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .contextual-recommendations .affiliate-products {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .contextual-recommendations .affiliate-product {
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+        }
+        
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -498,11 +764,6 @@
             
             .container {
                 padding: 1rem;
-            }
-            
-            .main-content {
-                grid-template-columns: 1fr;
-                gap: 1rem;
             }
             
             .filters {
@@ -520,16 +781,123 @@
             }
             
             #map-canvas {
-                height: 400px;
+                height: 500px;
             }
             
-            .ad-banner.sidebar-ad {
-                min-height: 100px;
+            .pre-map-info,
+            .post-map-info {
+                grid-template-columns: 1fr;
+                gap: 1rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <h3>🍪 Vi använder cookies</h3>
+                <p>
+                    Vi använder cookies för att förbättra din upplevelse, visa relevanta annonser och analysera trafik. 
+                    Genom att fortsätta använda vår webbplats godkänner du vår användning av cookies. 
+                    <a href="#" onclick="showCookieSettings()">Anpassa inställningar</a> eller läs vår 
+                    <a href="#privacy-policy">integritetspolicy</a>.
+                </p>
+            </div>
+            <div class="cookie-consent-actions">
+                <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()">
+                    Acceptera alla
+                </button>
+                <button class="cookie-btn cookie-btn-decline" onclick="declineOptionalCookies()">
+                    Endast nödvändiga
+                </button>
+                <button class="cookie-btn cookie-btn-settings" onclick="showCookieSettings()">
+                    Inställningar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-settings-modal" class="cookie-settings-modal">
+        <div class="cookie-settings-content">
+            <h2>Cookie-inställningar</h2>
+            <p style="color: #6b7280; margin-bottom: 2rem;">
+                Anpassa vilka cookies du vill tillåta. Du kan ändra dessa inställningar när som helst.
+            </p>
+            
+            <div class="cookie-category">
+                <h3>
+                    Nödvändiga cookies
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="necessary-cookies" checked disabled>
+                        <span class="cookie-slider"></span>
+                    </label>
+                </h3>
+                <p>
+                    Dessa cookies är nödvändiga för att webbplatsen ska fungera och kan inte stängas av. 
+                    De lagrar dina cookie-preferenser och grundläggande funktionalitet.
+                </p>
+                <small style="color: #9ca3af;">Alltid aktiva</small>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>
+                    Analytics cookies
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="analytics-cookies">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </h3>
+                <p>
+                    Hjälper oss förstå hur besökare interagerar med webbplatsen genom att samla in och rapportera information anonymt. 
+                    Vi använder Google Analytics för att förbättra användarupplevelsen.
+                </p>
+                <small style="color: #9ca3af;">Google Analytics, besöksstatistik</small>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>
+                    Reklam cookies
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="advertising-cookies">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </h3>
+                <p>
+                    Används för att visa relevanta annonser baserat på dina intressen. 
+                    Vi använder Google AdSense för att finansiera webbplatsen och hålla innehållet gratis.
+                </p>
+                <small style="color: #9ca3af;">Google AdSense, personaliserade annonser</small>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>
+                    Affiliate cookies
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="affiliate-cookies">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </h3>
+                <p>
+                    Spårar klick på produktlänkar för att vi ska få provision när du köper rekommenderade säkerhetsprodukter. 
+                    Detta påverkar inte priset för dig.
+                </p>
+                <small style="color: #9ca3af;">Affiliate tracking, produktrekommendationer</small>
+            </div>
+            
+            <div class="cookie-settings-actions">
+                <button class="cookie-btn cookie-btn-decline" onclick="closeCookieSettings()">
+                    Avbryt
+                </button>
+                <button class="cookie-btn cookie-btn-accept" onclick="saveCookieSettings()">
+                    Spara inställningar
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <!-- Cache status indicator -->
     <div id="cache-status" class="cache-status"></div>
     
@@ -583,7 +951,7 @@
         </section>
         
         <!-- Ad Banner -->
-        <div class="ad-banner">
+        <div class="ad-banner content-ad">
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-8020465526285919"
@@ -591,6 +959,35 @@
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <div class="ad-placeholder">Annons - Hemlarm & Säkerhetssystem</div>
+        </div>
+        
+        <!-- Pre-Map Information -->
+        <div class="pre-map-info">
+            <div class="info-card">
+                <h4>📊 Live Statistik</h4>
+                <p><strong>Senaste uppdatering:</strong> <span id="last-updated">Laddar...</span></p>
+                <p><strong>Totalt antal händelser:</strong> <span id="data-total">240</span></p>
+                <p><strong>Nya händelser idag:</strong> <span id="today-events">3</span></p>
+            </div>
+            
+            <div class="info-card">
+                <h4>🛡️ Säkerhetstips</h4>
+                <ul style="list-style: disc; padding-left: 1rem;">
+                    <li>Undvik att gå ensam på natten</li>
+                    <li>Håll dig till välupplysta områden</li>
+                    <li>Var uppmärksam på din omgivning</li>
+                    <li>Anmäl misstänkt aktivitet till polisen</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h4>🔗 Relaterade Länkar</h4>
+                <ul style="list-style: disc; padding-left: 1rem;">
+                    <li><a href="https://polisen.se" target="_blank">Polisen.se</a></li>
+                    <li><a href="#" onclick="showSafetyTips()">Säkerhetstips</a></li>
+                    <li><a href="#" onclick="showReportCrime()">Anmäl brott</a></li>
+                </ul>
+            </div>
         </div>
         
         <!-- Affiliate Products Section -->
@@ -605,104 +1002,87 @@
             </div>
         </section>
         
-        <div class="main-content">
-            <div>
-                <section id="map" class="map-section">
-                    <div class="map-header">
-                        <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
-                    </div>
-                    
-                    <div class="quality-stats">
-                        <span class="quality-stat quality-high">🎯 Hög kvalitet: <span id="quality-high">187</span></span>
-                        <span class="quality-stat quality-medium">🟡 Medel kvalitet: <span id="quality-medium">53</span></span>
-                        <span class="quality-stat quality-low">🔴 Låg kvalitet: <span id="quality-low">0</span></span>
-                        <span class="quality-stat quality-improved">🔧 Förbättrade: <span id="quality-improved">229</span></span>
-                    </div>
-                    
-                    <div class="filters">
-                        <div class="filter-group">
-                            <h4>📅 Filtrera på år</h4>
-                            <div class="year-filters">
-                                <button class="year-btn active" data-year="all">Alla år</button>
-                                <button class="year-btn" data-year="2024">2024</button>
-                                <button class="year-btn" data-year="2025">2025</button>
-                            </div>
-                        </div>
-                        
-                        <div class="filter-group">
-                            <h4>🚨 Våldstyper</h4>
-                            <div class="type-controls">
-                                <button class="control-btn" id="select-all">Välj alla</button>
-                                <button class="control-btn" id="clear-all">Rensa alla</button>
-                            </div>
-                            <div class="violence-types" id="violence-types">
-                                <!-- Violence type checkboxes will be populated by JavaScript -->
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="map-canvas" class="loading">
-                        Laddar interaktiv karta över Stockholm våldsdåd...
-                    </div>
-                </section>
-                
-                <!-- Contextual Product Recommendations -->
-                <section class="contextual-products" id="contextual-recommendations" style="display: none;">
-                    <h4>🎯 Säkerhetsprodukter för detta område</h4>
-                    <div id="contextual-products" class="affiliate-products">
-                        <!-- Contextual products will be loaded here -->
-                    </div>
-                </section>
+        <!-- FULL WIDTH MAP SECTION -->
+        <section id="map" class="map-section">
+            <div class="map-header">
+                <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
             </div>
             
-            <div class="sidebar">
-                <!-- Sidebar Ad -->
-                <div class="ad-banner sidebar-ad">
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-8020465526285919"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <div class="ad-placeholder">Annons - Juridiska Tjänster</div>
-                </div>
-                
-                <div class="sidebar-section">
-                    <h4>📊 Live Statistik</h4>
-                    <p><strong>Senaste uppdatering:</strong> <span id="last-updated">Laddar...</span></p>
-                    <p><strong>Totalt antal händelser:</strong> <span id="data-total">240</span></p>
-                    <p><strong>Nya händelser idag:</strong> <span id="today-events">3</span></p>
-                </div>
-                
-                <!-- Seasonal Affiliate Promotion -->
-                <div class="seasonal-promotion">
-                    <h3>🎄 Vinter-säkerhet</h3>
-                    <p class="promotion-text">Vintern innebär fler inbrott - skydda ditt hem nu!</p>
-                    <div id="seasonal-products" class="affiliate-products">
-                        <!-- Seasonal products will be loaded here -->
+            <div class="quality-stats">
+                <span class="quality-stat quality-high">🎯 Hög kvalitet: <span id="quality-high">187</span></span>
+                <span class="quality-stat quality-medium">🟡 Medel kvalitet: <span id="quality-medium">53</span></span>
+                <span class="quality-stat quality-low">🔴 Låg kvalitet: <span id="quality-low">0</span></span>
+                <span class="quality-stat quality-improved">🔧 Förbättrade: <span id="quality-improved">229</span></span>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <h4>📅 Filtrera på år</h4>
+                    <div class="year-filters">
+                        <button class="year-btn active" data-year="all">Alla år</button>
+                        <button class="year-btn" data-year="2024">2024</button>
+                        <button class="year-btn" data-year="2025">2025</button>
                     </div>
                 </div>
                 
-                <div class="sidebar-section">
-                    <h4>🔗 Relaterade Länkar</h4>
-                    <ul style="list-style: disc; padding-left: 1rem;">
-                        <li><a href="https://polisen.se" target="_blank">Polisen.se</a></li>
-                        <li><a href="#" onclick="showSafetyTips()">Säkerhetstips</a></li>
-                        <li><a href="#" onclick="showReportCrime()">Anmäl brott</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Another Sidebar Ad -->
-                <div class="ad-banner sidebar-ad">
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-8020465526285919"
-                         data-ad-slot="XXXXXXXXXX"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <div class="ad-placeholder">Annons - Försäkringar</div>
+                <div class="filter-group">
+                    <h4>🚨 Våldstyper</h4>
+                    <div class="type-controls">
+                        <button class="control-btn" id="select-all">Välj alla</button>
+                        <button class="control-btn" id="clear-all">Rensa alla</button>
+                    </div>
+                    <div class="violence-types" id="violence-types">
+                        <!-- Violence type checkboxes will be populated by JavaScript -->
+                    </div>
                 </div>
             </div>
+            
+            <div id="map-canvas" class="loading">
+                Laddar interaktiv karta över Stockholm våldsdåd...
+            </div>
+        </section>
+        
+        <!-- Contextual Product Recommendations -->
+        <section class="contextual-recommendations" id="contextual-recommendations">
+            <h4>🎯 Säkerhetsprodukter för detta område</h4>
+            <div id="contextual-products" class="affiliate-products">
+                <!-- Contextual products will be loaded here -->
+            </div>
+        </section>
+        
+        <!-- Post-Map Information -->
+        <div class="post-map-info">
+            <div class="info-card">
+                <h4>📈 Trendanalys</h4>
+                <p>Våldsdåd i Stockholm har <strong>minskat med 12%</strong> jämfört med samma period förra året.</p>
+                <p><strong>Mest utsatta områden:</strong> Rinkeby, Tensta, Husby</p>
+                <p><strong>Säkraste områden:</strong> Östermalm, Södermalm centrum</p>
+            </div>
+            
+            <div class="info-card">
+                <h4>⏰ Tidsmönster</h4>
+                <p><strong>Mest aktiva tider:</strong> 22:00-02:00</p>
+                <p><strong>Mest aktiva dagar:</strong> Fredag-Lördag</p>
+                <p><strong>Lugna perioder:</strong> 06:00-14:00</p>
+            </div>
+            
+            <div class="info-card">
+                <h4>🚨 Vanligaste Brotten</h4>
+                <p><strong>1. Misshandel</strong> - 45% av alla händelser</p>
+                <p><strong>2. Rån</strong> - 28% av alla händelser</p>
+                <p><strong>3. Skottlossning</strong> - 15% av alla händelser</p>
+            </div>
+        </div>
+        
+        <!-- Ad Banner -->
+        <div class="ad-banner content-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <div class="ad-placeholder">Annons - Juridiska Tjänster & Försäkringar</div>
         </div>
         
         <section id="about" class="content-section">
@@ -753,14 +1133,194 @@
       let selectedTypes = new Set();
       let lastDataUpdate = null;
       
+      // Cookie consent management
+      const cookieConsent = {
+        necessary: true,
+        analytics: false,
+        advertising: false,
+        affiliate: false
+      };
+      
       // Initialize the application
       document.addEventListener('DOMContentLoaded', function() {
+        initializeCookieConsent();
         initializeMap();
         loadData();
         setupEventListeners();
         initializeAds();
         initializeAffiliateProducts();
       });
+      
+      // Cookie Consent Functions
+      function initializeCookieConsent() {
+        const consent = localStorage.getItem('cookie-consent');
+        
+        if (consent) {
+          const savedConsent = JSON.parse(consent);
+          Object.assign(cookieConsent, savedConsent);
+          applyCookieSettings();
+        } else {
+          // Show cookie banner after 1 second
+          setTimeout(() => {
+            document.getElementById('cookie-consent').classList.add('show');
+          }, 1000);
+        }
+      }
+      
+      function acceptAllCookies() {
+        cookieConsent.analytics = true;
+        cookieConsent.advertising = true;
+        cookieConsent.affiliate = true;
+        
+        saveCookieConsent();
+        hideCookieBanner();
+        applyCookieSettings();
+        
+        // Track consent
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'cookie_consent', {
+            'event_category': 'privacy',
+            'event_label': 'accept_all',
+            'value': 1
+          });
+        }
+      }
+      
+      function declineOptionalCookies() {
+        cookieConsent.analytics = false;
+        cookieConsent.advertising = false;
+        cookieConsent.affiliate = false;
+        
+        saveCookieConsent();
+        hideCookieBanner();
+        applyCookieSettings();
+        
+        // Track consent
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'cookie_consent', {
+            'event_category': 'privacy',
+            'event_label': 'decline_optional',
+            'value': 1
+          });
+        }
+      }
+      
+      function showCookieSettings() {
+        // Update toggles based on current settings
+        document.getElementById('analytics-cookies').checked = cookieConsent.analytics;
+        document.getElementById('advertising-cookies').checked = cookieConsent.advertising;
+        document.getElementById('affiliate-cookies').checked = cookieConsent.affiliate;
+        
+        document.getElementById('cookie-settings-modal').classList.add('show');
+      }
+      
+      function closeCookieSettings() {
+        document.getElementById('cookie-settings-modal').classList.remove('show');
+      }
+      
+      function saveCookieSettings() {
+        cookieConsent.analytics = document.getElementById('analytics-cookies').checked;
+        cookieConsent.advertising = document.getElementById('advertising-cookies').checked;
+        cookieConsent.affiliate = document.getElementById('affiliate-cookies').checked;
+        
+        saveCookieConsent();
+        closeCookieSettings();
+        hideCookieBanner();
+        applyCookieSettings();
+        
+        // Track consent
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'cookie_consent', {
+            'event_category': 'privacy',
+            'event_label': 'custom_settings',
+            'value': 1
+          });
+        }
+      }
+      
+      function saveCookieConsent() {
+        localStorage.setItem('cookie-consent', JSON.stringify(cookieConsent));
+        localStorage.setItem('cookie-consent-date', new Date().toISOString());
+      }
+      
+      function hideCookieBanner() {
+        document.getElementById('cookie-consent').classList.remove('show');
+      }
+      
+      function applyCookieSettings() {
+        // Apply analytics settings
+        if (cookieConsent.analytics) {
+          // Enable Google Analytics
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+              'analytics_storage': 'granted'
+            });
+          }
+        } else {
+          // Disable Google Analytics
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+              'analytics_storage': 'denied'
+            });
+          }
+        }
+        
+        // Apply advertising settings
+        if (cookieConsent.advertising) {
+          // Enable AdSense
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+              'ad_storage': 'granted',
+              'ad_user_data': 'granted',
+              'ad_personalization': 'granted'
+            });
+          }
+          
+          // Initialize AdSense if not already done
+          if (window.adsbygoogle && !window.adsbygoogle.loaded) {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          }
+        } else {
+          // Disable AdSense personalization
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied'
+            });
+          }
+        }
+        
+        // Apply affiliate settings
+        if (!cookieConsent.affiliate) {
+          // Disable affiliate tracking
+          if (window.affiliateTracker) {
+            window.affiliateTracker.enabled = false;
+          }
+        } else {
+          // Enable affiliate tracking
+          if (window.affiliateTracker) {
+            window.affiliateTracker.enabled = true;
+          }
+        }
+      }
+      
+      // Check if consent is needed (expires after 1 year)
+      function needsCookieConsent() {
+        const consentDate = localStorage.getItem('cookie-consent-date');
+        if (!consentDate) return true;
+        
+        const oneYearAgo = new Date();
+        oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+        
+        return new Date(consentDate) < oneYearAgo;
+      }
+      
+      // Show cookie banner if consent expired
+      if (needsCookieConsent()) {
+        localStorage.removeItem('cookie-consent');
+        localStorage.removeItem('cookie-consent-date');
+      }
       
       function initializeMap() {
         // Initialize map centered on Stockholm
@@ -792,32 +1352,7 @@
       // Initialize affiliate products
       function initializeAffiliateProducts() {
         // Load featured products
-        renderAffiliateProducts('featured-products', null, 3);
-        
-        // Load seasonal products
-        const seasonalProducts = getSeasonalProducts();
-        const seasonalContainer = document.getElementById('seasonal-products');
-        if (seasonalContainer && seasonalProducts.length > 0) {
-          seasonalContainer.innerHTML = seasonalProducts.slice(0, 2).map(product => `
-            <div class="inline-recommendation">
-              <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" onerror="this.src='/images/placeholder.jpg'">
-              </div>
-              <div class="product-info">
-                <div class="product-name">${product.name}</div>
-                <div class="product-description">${product.description}</div>
-                <div class="product-price">${product.price}</div>
-              </div>
-              <a href="${product.affiliateUrl}" 
-                 class="affiliate-link" 
-                 target="_blank" 
-                 rel="noopener sponsored"
-                 onclick="affiliateTracker.trackClick('${product.id}', '${product.category}')">
-                Köp
-              </a>
-            </div>
-          `).join('');
-        }
+        renderAffiliateProducts('featured-products', null, 4);
       }
       
       // Cache-busting data loading
