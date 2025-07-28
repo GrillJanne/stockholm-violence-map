@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2025-07-28T02:18:49.722649",
-    "total_events": 1689,
+    "last_updated": "2025-07-28T06:40:26.200820",
+    "total_events": 1720,
     "new_events_added": 31,
     "data_source": "polisen.se",
     "automation_version": "2.0",
@@ -129,6 +129,21 @@
       "added_timestamp": "2025-07-28T02:18:49.720906"
     },
     {
+      "id": "b5ad2869a518",
+      "datetime": "2025-07-26 7:37:44 +02:00",
+      "type": "Misshandel",
+      "summary": "Samtal om slagsmål i Råcksta.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/26/26-juli-05.18-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.198967"
+    },
+    {
       "id": "14be6448898b",
       "datetime": "2025-07-26 17:01:14 +02:00",
       "type": "Misshandel, grov",
@@ -217,6 +232,21 @@
       "url": "/aktuellt/handelser/2025/juli/26/26-juli-14.14-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.720842"
+    },
+    {
+      "id": "14be6448898b",
+      "datetime": "2025-07-26 17:01:14 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "En man misshandlar en annan man utomhus i Hässelby gård.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/26/26-juli-14.14-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.198866"
     },
     {
       "id": "61a066511657",
@@ -367,6 +397,21 @@
       "url": "/aktuellt/handelser/2025/juli/25/25-juli-17.35-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.720966"
+    },
+    {
+      "id": "61a066511657",
+      "datetime": "2025-07-25 19:34:12 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man blottar sig på klipporna i Kristineberg.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/25/25-juli-17.35-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199034"
     },
     {
       "id": "1d7f36887aa0",
@@ -609,6 +654,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721103"
     },
     {
+      "id": "1d7f36887aa0",
+      "datetime": "2025-07-24 7:16:39 +02:00",
+      "type": "Olaga intrång",
+      "summary": "Samtal om pågående inbrott.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-23.10-olaga-intrang-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199170"
+    },
+    {
       "id": "dcfa4ab74d5d",
       "datetime": "2025-07-24 21:43:29 +02:00",
       "type": "Sexualbrott",
@@ -802,6 +862,21 @@
       "url": "/aktuellt/handelser/2025/juli/24/24-juli-15.11-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721047"
+    },
+    {
+      "id": "dcfa4ab74d5d",
+      "datetime": "2025-07-24 21:43:29 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man blottar sig i Råcksta.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/24/24-juli-15.11-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199115"
     },
     {
       "id": "64fe7376be65",
@@ -1104,6 +1179,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721211"
     },
     {
+      "id": "64fe7376be65",
+      "datetime": "2025-07-23 8:35:33 +02:00",
+      "type": "Larm Inbrott",
+      "summary": "Inbrottslarm från en hotell- och konferensanläggning.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-04.17-larm-inbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199279"
+    },
+    {
       "id": "4db97ff7d222",
       "datetime": "2025-07-23 8:17:46 +02:00",
       "type": "Knivlagen",
@@ -1404,6 +1494,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721272"
     },
     {
+      "id": "4db97ff7d222",
+      "datetime": "2025-07-23 8:17:46 +02:00",
+      "type": "Knivlagen",
+      "summary": "En man springer omkring med kniv på hotell.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/22/22-juli-22.31-knivlagen-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199358"
+    },
+    {
       "id": "2185fbdd7b87",
       "datetime": "2025-07-23 17:22:06 +02:00",
       "type": "Misshandel",
@@ -1672,6 +1777,21 @@
       "url": "/aktuellt/handelser/2025/juli/23/23-juli-16.36-misshandel-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721157"
+    },
+    {
+      "id": "2185fbdd7b87",
+      "datetime": "2025-07-23 17:22:06 +02:00",
+      "type": "Misshandel",
+      "summary": "Man i Husby greps efter misshandel av kvinna han har relation med.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-16.36-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199222"
     },
     {
       "id": "1f86a3ccda91",
@@ -2244,6 +2364,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721326"
     },
     {
+      "id": "1f86a3ccda91",
+      "datetime": "2025-07-18 19:23:25 +02:00",
+      "type": "Olaga intrång",
+      "summary": "Flera anmälningar om misstänkta brott efter oenighet om en man får uppehålla sig på båt eller inte.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/18/18-juli-17.33-olaga-intrang-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199427"
+    },
+    {
       "id": "cedabef1d8f4",
       "datetime": "2025-07-18 17:23:39 +02:00",
       "type": "Misshandel",
@@ -2814,6 +2949,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721384"
     },
     {
+      "id": "cedabef1d8f4",
+      "datetime": "2025-07-18 17:23:39 +02:00",
+      "type": "Misshandel",
+      "summary": "Misstänkt misshandel i nära relation.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/18/18-juli-12.25-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199488"
+    },
+    {
       "id": "818edf109d3c",
       "datetime": "2025-07-18 17:23:35 +02:00",
       "type": "Sexualbrott",
@@ -3382,6 +3532,21 @@
       "url": "/aktuellt/handelser/2025/juli/18/18-juli-15.33-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721436"
+    },
+    {
+      "id": "818edf109d3c",
+      "datetime": "2025-07-18 17:23:35 +02:00",
+      "type": "Sexualbrott",
+      "summary": "Blottare i Skinnarviksparken.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/18/18-juli-15.33-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199547"
     },
     {
       "id": "c6e2e4c867bd",
@@ -4027,6 +4192,21 @@
       "url": "/aktuellt/handelser/2025/juli/17/17-juli-11.21-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721494"
+    },
+    {
+      "id": "c6e2e4c867bd",
+      "datetime": "2025-07-17 12:15:37 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man blottar sig för förbipasserande i närheten av tunnelbanestationen vid Stockholms universitet. Mannen gr",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/17/17-juli-11.21-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199605"
     },
     {
       "id": "978f95be1538",
@@ -4717,6 +4897,21 @@
       "url": "/aktuellt/handelser/2025/juli/16/16-juli-18.50-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721545"
+    },
+    {
+      "id": "978f95be1538",
+      "datetime": "2025-07-16 19:18:35 +02:00",
+      "type": "Sexualbrott",
+      "summary": "Samtal om man i Skärholmen som visade könet.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/16/16-juli-18.50-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199668"
     },
     {
       "id": "a1f82275a1ac",
@@ -5454,6 +5649,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721602"
     },
     {
+      "id": "a1f82275a1ac",
+      "datetime": "2025-07-16 11:13:38 +02:00",
+      "type": "Bedrägeri",
+      "summary": "En äldre person har under gårdagen blivit bestulen på bland annat guld av personer som utger sig komma från po",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/16/16-juli-11.00-bedrageri-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199720"
+    },
+    {
       "id": "657d0065a012",
       "datetime": "2025-07-16 10:42:29 +02:00",
       "type": "Misshandel",
@@ -6187,6 +6397,21 @@
       "url": "/aktuellt/handelser/2025/juli/16/16-juli-09.03-misshandel-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721653"
+    },
+    {
+      "id": "657d0065a012",
+      "datetime": "2025-07-16 10:42:29 +02:00",
+      "type": "Misshandel",
+      "summary": "Grannar larmar om bråk i en bostad i Vasastan. I bostaden misstänks en man ha utsatt en kvinna för grov missha",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/16/16-juli-09.03-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199784"
     },
     {
       "id": "2023529fae22",
@@ -6924,6 +7149,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721754"
     },
     {
+      "id": "2023529fae22",
+      "datetime": "2025-07-15 8:15:11 +02:00",
+      "type": "Misshandel",
+      "summary": "Vid ett bråk utomhus i centrala Stockholm har en person fått skär- alternativt stickskador och två misstänkta ",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/15/15-juli-02.31-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199881"
+    },
+    {
       "id": "be8d9460a64c",
       "datetime": "2025-07-15 14:06:27 +02:00",
       "type": "Rån",
@@ -7657,6 +7897,21 @@
       "url": "/aktuellt/handelser/2025/juli/15/15-juli-13.54-ran-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721704"
+    },
+    {
+      "id": "be8d9460a64c",
+      "datetime": "2025-07-15 14:06:27 +02:00",
+      "type": "Rån",
+      "summary": "En man försökte enligt ett antal vittnen råna en kvinna på Sveavägen i centrala Stockholm.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/15/15-juli-13.54-ran-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199834"
     },
     {
       "id": "7e639291e4ab",
@@ -8394,6 +8649,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721811"
     },
     {
+      "id": "7e639291e4ab",
+      "datetime": "2025-07-12 18:43:22 +02:00",
+      "type": "Misshandel",
+      "summary": "En kvinna på Enskedefältet ringer via en tolk till polisens ledningscentral  och berättar att hon blivit slage",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/12/12-juli-18.33-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199931"
+    },
+    {
       "id": "8326a0c03e70",
       "datetime": "2025-07-10 8:37:07 +02:00",
       "type": "Larm Inbrott",
@@ -9127,6 +9397,21 @@
       "url": "/aktuellt/handelser/2025/juli/10/10-juli-02.40-larm-inbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721970"
+    },
+    {
+      "id": "8326a0c03e70",
+      "datetime": "2025-07-10 8:37:07 +02:00",
+      "type": "Larm Inbrott",
+      "summary": "Två personer lastar varor från en butik på Södermalm.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/10/10-juli-02.40-larm-inbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200100"
     },
     {
       "id": "495d257a713f",
@@ -9864,6 +10149,21 @@
       "added_timestamp": "2025-07-28T02:18:49.721868"
     },
     {
+      "id": "495d257a713f",
+      "datetime": "2025-07-10 20:10:00 +02:00",
+      "type": "Rån",
+      "summary": "En man i 80-årsåldern har blivit rånad i sin bostad på Kungsholmen.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/10/10-juli-18.55-ran-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.199980"
+    },
+    {
       "id": "19465548d5df",
       "datetime": "2025-07-10 11:21:03 +02:00",
       "type": "Misshandel, grov",
@@ -10597,6 +10897,21 @@
       "url": "/aktuellt/handelser/2025/juli/10/10-juli-10.21-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.721920"
+    },
+    {
+      "id": "19465548d5df",
+      "datetime": "2025-07-10 11:21:03 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "En man misshandlar en kvinna i Blackeberg.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/10/10-juli-10.21-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200026"
     },
     {
       "id": "674d2e554ce0",
@@ -11334,6 +11649,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722036"
     },
     {
+      "id": "674d2e554ce0",
+      "datetime": "2025-07-09 7:11:44 +02:00",
+      "type": "Rån",
+      "summary": "Polisen har under en insats i norra Ängby gripit två män som är misstänkta för rån. De hade rånat en kvinna på",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/9/09-juli-02.01-ran-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200156"
+    },
+    {
       "id": "1eafdd8c0ad2",
       "datetime": "2025-07-08 21:17:33 +02:00",
       "type": "Misshandel, grov",
@@ -12067,6 +12397,21 @@
       "url": "/aktuellt/handelser/2025/juli/8/08-juli-20.30-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.722087"
+    },
+    {
+      "id": "1eafdd8c0ad2",
+      "datetime": "2025-07-08 21:17:33 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "En person har misshandlats i Rinkeby i Stockholm.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/8/08-juli-20.30-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200212"
     },
     {
       "id": "480406f00997",
@@ -12804,6 +13149,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722144"
     },
     {
+      "id": "480406f00997",
+      "datetime": "2025-07-07 21:17:26 +02:00",
+      "type": "Sexualbrott",
+      "summary": "Samtal om man i Liljeholmen som visar könet.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/7/07-juli-18.11-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200269"
+    },
+    {
       "id": "ff4cb4952806",
       "datetime": "2025-07-07 11:52:58 +02:00",
       "type": "Rån",
@@ -13537,6 +13897,21 @@
       "url": "/aktuellt/handelser/2025/juli/7/07-juli-11.34-ran-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.722193"
+    },
+    {
+      "id": "ff4cb4952806",
+      "datetime": "2025-07-07 11:52:58 +02:00",
+      "type": "Rån",
+      "summary": "En man med vapen har rånat en butik i köpcentrum Ringen.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/7/07-juli-11.34-ran-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200327"
     },
     {
       "id": "bf999734947d",
@@ -14274,6 +14649,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722240"
     },
     {
+      "id": "bf999734947d",
+      "datetime": "2025-07-04 7:46:17 +02:00",
+      "type": "Explosion",
+      "summary": "Okänd gärningsman har krossat ett fönster och kastat in pyroteknik som har startat en brand i ett café i Marie",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/4/04-juli-03.04-explosion-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200370"
+    },
+    {
       "id": "7afb5fa7fd12",
       "datetime": "2025-07-03 13:12:32 +02:00",
       "type": "Misshandel",
@@ -15009,6 +15399,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722287"
     },
     {
+      "id": "7afb5fa7fd12",
+      "datetime": "2025-07-03 13:12:32 +02:00",
+      "type": "Misshandel",
+      "summary": "En man slår sin sambo i ansiktet och grips av polis.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/3/03-juli-10.37-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200416"
+    },
+    {
       "id": "a7117f75f5c3",
       "datetime": "2025-06-30 20:16:24 +02:00",
       "type": "Misshandel, grov",
@@ -15727,6 +16132,21 @@
       "url": "/aktuellt/handelser/2025/juni/30/30-juni-18.51-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.722335"
+    },
+    {
+      "id": "a7117f75f5c3",
+      "datetime": "2025-06-30 20:16:24 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "Äldre man misshandlad och rånad på Södermalm.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juni/30/30-juni-18.51-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200471"
     },
     {
       "id": "1c1be27d8551",
@@ -16449,6 +16869,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722384"
     },
     {
+      "id": "1c1be27d8551",
+      "datetime": "2025-06-30 12:23:33 +02:00",
+      "type": "Mord/dråp, försök",
+      "summary": "Kvinna påhoppad av man med kniv.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juni/30/30-juni-09.35-morddrap-forsok-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200518"
+    },
+    {
       "id": "77f7009b20f0",
       "datetime": "2025-06-28 7:12:15 +02:00",
       "type": "Olaga hot",
@@ -17169,6 +17604,21 @@
       "added_timestamp": "2025-07-28T02:18:49.722430"
     },
     {
+      "id": "77f7009b20f0",
+      "datetime": "2025-06-28 7:12:15 +02:00",
+      "type": "Olaga hot",
+      "summary": "Vittne ringde in om att två personer slogs på tunnelbanan vid Gubbängen.",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juni/28/28-juni-04.35-olaga-hot-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200566"
+    },
+    {
       "id": "79109347cbd3",
       "datetime": "2025-06-28 7:06:44 +02:00",
       "type": "Stöld/inbrott",
@@ -17887,6 +18337,21 @@
       "url": "/aktuellt/handelser/2025/juni/28/28-juni-02.47-stoldinbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-07-28T02:18:49.722476"
+    },
+    {
+      "id": "79109347cbd3",
+      "datetime": "2025-06-28 7:06:44 +02:00",
+      "type": "Stöld/inbrott",
+      "summary": "Tre personer i Östberga iakttogs när de bröt sig in i ett förråd och fick med sig tillhörigheter från förrådet",
+      "location_name": "Stockholm",
+      "latitude": 59.329324,
+      "longitude": 18.068581,
+      "location_confidence": 0.8,
+      "correction_method": "original_gps",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juni/28/28-juni-02.47-stoldinbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-07-28T06:40:26.200610"
     },
     {
       "id": "732d2783b6b4",
