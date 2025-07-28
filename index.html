@@ -286,6 +286,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 2rem 0;
+            position: relative;
         }
         
         .map-header {
@@ -323,18 +324,23 @@
         .quality-dot.low { background: #ef4444; }
         .quality-dot.improved { background: #8b5cf6; }
         
-        /* Filters */
+        /* Filters - FIXED Z-INDEX */
         .filters {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1000; /* HÖGT Z-INDEX FÖR ATT SYNAS OVANPÅ KARTAN */
         }
         
         .filter-group {
             background: #f8fafc;
             padding: 1rem;
             border-radius: 8px;
+            position: relative;
+            z-index: 1001; /* ÄNNU HÖGRE Z-INDEX */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* SKUGGA FÖR BÄTTRE SYNLIGHET */
         }
         
         .filter-group h4 {
@@ -357,6 +363,8 @@
             cursor: pointer;
             transition: all 0.2s;
             font-size: 0.9rem;
+            position: relative;
+            z-index: 1002;
         }
         
         .year-button.active {
@@ -366,8 +374,14 @@
         }
         
         .crime-types {
-            max-height: 200px;
+            max-height: 300px; /* ÖKAD HÖJD FÖR BÄTTRE SYNLIGHET */
             overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            padding: 0.5rem;
+            position: relative;
+            z-index: 1002;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         .crime-type-item {
@@ -376,6 +390,8 @@
             justify-content: space-between;
             padding: 0.5rem 0;
             border-bottom: 1px solid #e5e7eb;
+            position: relative;
+            z-index: 1003;
         }
         
         .crime-type-item:last-child {
@@ -387,6 +403,7 @@
             align-items: center;
             gap: 0.5rem;
             flex: 1;
+            cursor: pointer;
         }
         
         .crime-type-count {
@@ -398,12 +415,14 @@
             font-weight: 600;
         }
         
-        /* Map Container */
+        /* Map Container - LÄGRE Z-INDEX */
         #map {
             width: 100%;
             height: 700px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* LÅGT Z-INDEX SÅ FILTER SYNS OVANPÅ */
         }
         
         @media (max-width: 768px) {
@@ -846,7 +865,7 @@
                     </div>
                 </div>
                 
-                <!-- Filters -->
+                <!-- Filters - NU MED KORREKT Z-INDEX -->
                 <div class="filters">
                     <div class="filter-group">
                         <h4>📅 Filtrera på år</h4>
@@ -860,8 +879,8 @@
                     <div class="filter-group">
                         <h4>🚨 Våldstyper</h4>
                         <div style="margin-bottom: 0.5rem;">
-                            <button onclick="selectAllCrimeTypes()" style="margin-right: 0.5rem; padding: 0.25rem 0.5rem; border: 1px solid #d1d5db; background: white; border-radius: 4px; cursor: pointer;">Välj alla</button>
-                            <button onclick="clearAllCrimeTypes()" style="padding: 0.25rem 0.5rem; border: 1px solid #d1d5db; background: white; border-radius: 4px; cursor: pointer;">Rensa alla</button>
+                            <button onclick="selectAllCrimeTypes()" style="margin-right: 0.5rem; padding: 0.25rem 0.5rem; border: 1px solid #d1d5db; background: white; border-radius: 4px; cursor: pointer; position: relative; z-index: 1004;">Välj alla</button>
+                            <button onclick="clearAllCrimeTypes()" style="padding: 0.25rem 0.5rem; border: 1px solid #d1d5db; background: white; border-radius: 4px; cursor: pointer; position: relative; z-index: 1004;">Rensa alla</button>
                         </div>
                         <div class="crime-types" id="crimeTypesList">
                             <!-- Crime types will be populated by JavaScript -->
