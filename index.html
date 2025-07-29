@@ -463,7 +463,34 @@
         .quality-dot.low { background: #ef4444; }
         .quality-dot.improved { background: #8b5cf6; }
         
-        /* FILTERS SECTION - OVANFÖR KARTAN */
+        /* MAP CONTAINER - OVANFÖR FILTREN */
+        .map-container {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 2rem;
+        }
+        
+        #map {
+            height: 700px;
+            width: 100%;
+        }
+        
+        /* Loading State */
+        .loading-message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 700px;
+            background: #f9fafb;
+            color: #6b7280;
+            font-size: 1.1rem;
+            border-radius: 10px;
+        }
+        
+        /* FILTERS SECTION - UNDER KARTAN */
         .filters-section {
             background: #f8fafc;
             border: 2px solid #e2e8f0;
@@ -611,30 +638,46 @@
             border-radius: 12px;
         }
         
-        /* MAP CONTAINER - UNDER FILTREN */
-        .map-container {
+        /* FÄRGKODNING LEGEND - UNDER FILTREN */
+        .color-legend {
             background: white;
+            border: 1px solid #e2e8f0;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            margin-top: 2rem;
         }
         
-        #map {
-            height: 700px;
-            width: 100%;
-        }
-        
-        /* Loading State */
-        .loading-message {
+        .color-legend h5 {
+            color: #374151;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            height: 700px;
+            gap: 0.5rem;
+        }
+        
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
             background: #f9fafb;
-            color: #6b7280;
-            font-size: 1.1rem;
-            border-radius: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
         }
         
         /* Analysis Section */
@@ -979,7 +1022,14 @@
                     </div>
                 </div>
 
-                <!-- FILTERS SECTION - OVANFÖR KARTAN -->
+                <!-- Map Container - OVANFÖR FILTREN -->
+                <div class="map-container">
+                    <div id="map" class="loading-message">
+                        Laddar interaktiv karta över Stockholm våldsdåd...
+                    </div>
+                </div>
+
+                <!-- FILTERS SECTION - UNDER KARTAN -->
                 <div class="filters-section">
                     <h4>🔍 Filtrera våldsdåd</h4>
                     
@@ -1006,12 +1056,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Map Container - UNDER FILTREN -->
-                <div class="map-container">
-                    <div id="map" class="loading-message">
-                        Laddar interaktiv karta över Stockholm våldsdåd...
+                    
+                    <!-- FÄRGKODNING LEGEND - UNDER FILTREN -->
+                    <div class="color-legend">
+                        <h5>🎨 Färgkodning</h5>
+                        <div class="legend-grid" id="colorLegend">
+                            <!-- Legend items will be populated by JavaScript -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1118,31 +1169,47 @@
         let filteredData = [];
         let selectedYear = 'all';
         let selectedCrimeTypes = new Set();
+        
+        // Färgpalette för brottstyper
+        const crimeTypeColors = {
+            'Misshandel': '#ef4444',
+            'Rån': '#f59e0b',
+            'Misshandel, grov': '#dc2626',
+            'Sexualbrott': '#7c3aed',
+            'Explosion': '#ea580c',
+            'Skottlossning': '#b91c1c',
+            'Mord/dråp': '#991b1b',
+            'Våldtäkt': '#6b21a8',
+            'Våldtäkt, grov': '#581c87',
+            'Rån, grovt': '#d97706',
+            'Olaga hot': '#059669',
+            'Våld mot tjänsteman': '#0d9488',
+            'Ofredande': '#0891b2',
+            'Hemfridsbrott': '#0284c7',
+            'Våld mot barn': '#7c2d12',
+            'default': '#6b7280'
+        };
 
         // Initialize the application
         document.addEventListener('DOMContentLoaded', function() {
-            initializeCookieConsent();
             initializeMap();
             loadData();
             setupEventListeners();
+            setupCookieConsent();
         });
 
         // Cookie Consent Functions
-        function initializeCookieConsent() {
+        function setupCookieConsent() {
             const consent = localStorage.getItem('cookieConsent');
             if (!consent) {
                 document.getElementById('cookieConsent').classList.add('show');
-            } else {
-                updateConsentSettings(consent);
             }
         }
 
         function acceptAllCookies() {
             localStorage.setItem('cookieConsent', 'all');
             document.getElementById('cookieConsent').classList.remove('show');
-            updateConsentSettings('all');
-            
-            // Update Google Analytics consent
+            // Initialize tracking
             gtag('consent', 'update', {
                 'analytics_storage': 'granted',
                 'ad_storage': 'granted'
@@ -1152,51 +1219,42 @@
         function acceptNecessaryCookies() {
             localStorage.setItem('cookieConsent', 'necessary');
             document.getElementById('cookieConsent').classList.remove('show');
-            updateConsentSettings('necessary');
-            
-            // Update Google Analytics consent
-            gtag('consent', 'update', {
-                'analytics_storage': 'denied',
-                'ad_storage': 'denied'
-            });
         }
 
         function showCookieSettings() {
-            alert('Cookie-inställningar kommer snart. Använd "Acceptera alla" eller "Endast nödvändiga" för tillfället.');
+            alert('Cookie-inställningar kommer snart. Kontakta oss för mer information.');
         }
 
-        function updateConsentSettings(consent) {
-            // Update cache status based on consent
-            updateCacheStatus('success', 'Ny data laddad!');
-        }
-
-        // Cache Status Functions
+        // Cache Status Update
         function updateCacheStatus(status, message) {
             const cacheStatus = document.getElementById('cacheStatus');
             cacheStatus.className = `cache-status ${status}`;
             cacheStatus.textContent = message;
         }
 
-        // Map Initialization
+        // Initialize Map
         function initializeMap() {
+            updateCacheStatus('loading', 'Laddar karta...');
+            
             map = L.map('map').setView([59.3293, 18.0686], 10);
             
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
-
+            
             markersLayer = L.layerGroup().addTo(map);
+            
+            console.log('✅ Karta initialiserad');
         }
 
-        // Data Loading
+        // Load Data
         async function loadData() {
             try {
                 updateCacheStatus('loading', 'Laddar data...');
                 
-                // Add cache-busting parameter
                 const timestamp = new Date().getTime();
-                const response = await fetch(`stockholm_violence_data.json?v=${timestamp}`, {
-                    cache: 'no-cache',
+                const response = await fetch(`stockholm_violence_data.json?t=${timestamp}&v=${Math.random()}`, {
+                    method: 'GET',
                     headers: {
                         'Cache-Control': 'no-cache, no-store, must-revalidate',
                         'Pragma': 'no-cache',
@@ -1216,6 +1274,7 @@
                 updateCacheStatus('success', 'Ny data laddad!');
                 updateStatistics();
                 populateCrimeTypes();
+                createColorLegend();
                 filterAndDisplayData();
                 
             } catch (error) {
@@ -1315,6 +1374,33 @@
             });
         }
 
+        // Create Color Legend
+        function createColorLegend() {
+            const colorLegend = document.getElementById('colorLegend');
+            colorLegend.innerHTML = '';
+            
+            // Get unique crime types from data
+            const uniqueTypes = [...new Set(violenceData.map(event => event.type || 'Okänt'))];
+            
+            uniqueTypes.forEach(type => {
+                const color = getCrimeTypeColor(type);
+                
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
+                
+                const colorDot = document.createElement('div');
+                colorDot.className = 'legend-color';
+                colorDot.style.backgroundColor = color;
+                
+                const label = document.createElement('span');
+                label.textContent = type;
+                
+                legendItem.appendChild(colorDot);
+                legendItem.appendChild(label);
+                colorLegend.appendChild(legendItem);
+            });
+        }
+
         // Event Listeners
         function setupEventListeners() {
             // Year filter buttons
@@ -1411,23 +1497,13 @@
         }
 
         function getCrimeTypeColor(type) {
-            const colors = {
-                'Misshandel': '#ef4444',
-                'Rån': '#f59e0b',
-                'Misshandel, grov': '#dc2626',
-                'Sexualbrott': '#7c3aed',
-                'Explosion': '#ea580c',
-                'Skottlossning': '#b91c1c',
-                'Mord/dråp': '#991b1b',
-                'Våldtäkt': '#6b21a8',
-                'default': '#6b7280'
-            };
-            return colors[type] || colors.default;
+            return crimeTypeColors[type] || crimeTypeColors.default;
         }
 
         function createPopupContent(event) {
             const date = new Date(event.datetime).toLocaleDateString('sv-SE');
             const time = new Date(event.datetime).toLocaleTimeString('sv-SE', {hour: '2-digit', minute: '2-digit'});
+            const color = getCrimeTypeColor(event.type);
             
             let qualityBadge = '';
             const confidence = event.location_confidence || 0;
@@ -1446,7 +1522,7 @@
             
             return `
                 <div style="min-width: 250px;">
-                    <h3 style="margin: 0 0 10px 0; color: #1f2937;">${event.type}</h3>
+                    <h3 style="margin: 0 0 10px 0; color: ${color};">${event.type}</h3>
                     <p style="margin: 5px 0;"><strong>📅 Datum:</strong> ${date}</p>
                     <p style="margin: 5px 0;"><strong>🕐 Tid:</strong> ${time}</p>
                     <p style="margin: 5px 0;"><strong>📍 Plats:</strong> ${event.location}</p>
