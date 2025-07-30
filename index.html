@@ -497,6 +497,10 @@
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
+            position: relative;
+            z-index: 1001; /* högre än Leaflet-lager */
+            background: white; /* om du behöver täcka kartan ordentligt */
+
         }
         
         .filters-section h4 {
