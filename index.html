@@ -12,29 +12,6 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://08-violence.netlify.app/">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://08-violence.netlify.app/">
-    <meta property="og:title" content="Stockholm Våldskarta 2024-2025 | Interaktiv Kriminalstatistik">
-    <meta property="og:description" content="Interaktiv visualisering av våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se">
-    <meta property="og:image" content="https://08-violence.netlify.app/stockholm-violence-preview.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://08-violence.netlify.app/">
-    <meta property="twitter:title" content="Stockholm Våldskarta 2024-2025">
-    <meta property="twitter:description" content="Interaktiv karta över våldsdåd i Stockholm-regionen med aktuell kriminalstatistik">
-    <meta property="twitter:image" content="https://08-violence.netlify.app/stockholm-violence-preview.jpg">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T074JD1WM5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-T074JD1WM5');
-    </script>
-    
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020465526285919"
          crossorigin="anonymous"></script>
@@ -56,69 +33,6 @@
             background-color: #f8fafc;
         }
         
-        /* Cookie Consent Banner */
-        .cookie-consent {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
-            padding: 20px;
-            z-index: 10000;
-            display: none;
-        }
-        
-        .cookie-consent.show {
-            display: block;
-        }
-        
-        .cookie-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        
-        .cookie-text {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .cookie-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        
-        .cookie-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .cookie-btn.accept-all {
-            background: #10b981;
-            color: white;
-        }
-        
-        .cookie-btn.necessary {
-            background: #6b7280;
-            color: white;
-        }
-        
-        .cookie-btn.settings {
-            background: transparent;
-            color: #10b981;
-            border: 1px solid #10b981;
-        }
-        
         /* Header */
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -128,29 +42,6 @@
             position: relative;
         }
         
-        .cache-status {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            backdrop-filter: blur(10px);
-        }
-        
-        .cache-status.success {
-            background: rgba(16, 185, 129, 0.8);
-        }
-        
-        .cache-status.loading {
-            background: rgba(245, 158, 11, 0.8);
-        }
-        
-        .cache-status.error {
-            background: rgba(239, 68, 68, 0.8);
-        }
-        
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
@@ -158,113 +49,301 @@
         }
         
         .header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
             max-width: 800px;
             margin: 0 auto;
+            padding: 0 1rem;
         }
         
+        /* Navigation */
         .nav-buttons {
-            margin-top: 2rem;
             display: flex;
             justify-content: center;
             gap: 1rem;
+            margin-top: 2rem;
             flex-wrap: wrap;
         }
         
         .nav-btn {
             background: rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 12px 24px;
-            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 25px;
-            font-weight: 500;
+            text-decoration: none;
+            font-weight: 600;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
         }
         
         .nav-btn:hover {
             background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
             transform: translateY(-2px);
+        }
+        
+        .nav-btn.active {
+            background: white;
+            color: #667eea;
+            border-color: white;
         }
         
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 2rem 1rem;
         }
         
-        /* Main Content */
-        .main-content {
-            padding: 3rem 0;
-        }
-        
-        .intro-section {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .intro-section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-        
-        .intro-section p {
-            font-size: 1.1rem;
-            color: #6b7280;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-        
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .stat-card {
+        /* Map Container */
+        .map-container {
+            position: relative;
             background: white;
-            padding: 2rem;
             border-radius: 15px;
-            text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        
+        /* Map */
+        #map {
+            height: 700px;
+            width: 100%;
+        }
+        
+        /* Filter Panel */
+        .filter-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            max-width: 300px;
+            transform: translateX(-320px);
             transition: transform 0.3s ease;
         }
         
-        .stat-card:hover {
-            transform: translateY(-5px);
+        .filter-panel.open {
+            transform: translateX(0);
         }
         
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #3b82f6;
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-label {
-            font-size: 1.1rem;
+        .filter-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            cursor: pointer;
             font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1001;
+            transition: all 0.3s ease;
         }
         
-        .stat-description {
+        .filter-toggle:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .filter-panel.open + .filter-toggle {
+            left: 340px;
+        }
+        
+        .filter-header {
+            background: #667eea;
+            color: white;
+            padding: 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .filter-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        
+        .filter-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .filter-content {
+            padding: 1.5rem;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .filter-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .filter-section h4 {
+            margin-bottom: 0.75rem;
+            color: #374151;
+            font-weight: 600;
+        }
+        
+        .year-filters {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .year-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .year-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .crime-type-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .crime-type-item:last-child {
+            border-bottom: none;
+        }
+        
+        .crime-checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        
+        .crime-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .crime-label {
+            flex: 1;
+            font-size: 0.9rem;
+            color: #374151;
+        }
+        
+        .crime-count {
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .filter-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .control-btn {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #e5e7eb;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+        
+        .control-btn:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+        
+        /* Legend */
+        .legend-container {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .legend-container h3 {
+            color: #374151;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .legend-info {
+            flex: 1;
+        }
+        
+        .legend-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        
+        .legend-count {
             font-size: 0.9rem;
             color: #6b7280;
         }
         
-        /* AdSense Ads */
+        /* AdSense */
         .ad-container {
             text-align: center;
             margin: 3rem 0;
-            padding: 2rem;
+            padding: 1rem;
             background: #f9fafb;
             border-radius: 10px;
             border: 1px solid #e5e7eb;
@@ -275,775 +354,145 @@
             color: #6b7280;
             margin-bottom: 1rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
         
-        /* Live Stats */
-        .live-stats {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        
-        .live-stats h3 {
-            color: #1f2937;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .stats-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .stats-column h4 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .stats-column ul {
-            list-style: none;
-        }
-        
-        .stats-column li {
-            padding: 0.5rem 0;
-            color: #6b7280;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        
-        .stats-column li:last-child {
-            border-bottom: none;
-        }
-        
-        .stats-column strong {
-            color: #1f2937;
-        }
-        
-        /* Map Section */
-        .map-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        
-        .map-section h3 {
-            color: #1f2937;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        /* Quality Indicators */
-        .quality-indicators {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            justify-content: center;
-        }
-        
-        .quality-indicator {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #f9fafb;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #e5e7eb;
-        }
-        
-        .quality-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .quality-dot.high { background: #10b981; }
-        .quality-dot.medium { background: #f59e0b; }
-        .quality-dot.low { background: #ef4444; }
-        .quality-dot.improved { background: #8b5cf6; }
-        
-        /* MAP CONTAINER - OVANFÖR FILTREN */
-        .map-container {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e5e7eb;
-            margin-bottom: 2rem;
-        }
-        
-        #map {
-            height: 700px;
-            width: 100%;
-        }
-        
-        /* Loading State */
-        .loading-message {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 700px;
-            background: #f9fafb;
-            color: #6b7280;
-            font-size: 1.1rem;
-            border-radius: 10px;
-        }
-        
-        /* FILTERS SECTION - UNDER KARTAN */
-        .filters-section {
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .filters-section h4 {
-            color: #1f2937;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-            text-align: center;
-        }
-        
-        .filters-grid {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-        }
-        
-        /* Year Filter */
-        .year-filter {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 1.5rem;
-        }
-        
-        .year-filter h5 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .year-buttons {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .year-btn {
-            padding: 10px 20px;
-            border: 2px solid #e2e8f0;
-            background: white;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .year-btn:hover {
-            border-color: #3b82f6;
-            background: #eff6ff;
-        }
-        
-        .year-btn.active {
-            background: #3b82f6;
-            color: white;
-            border-color: #3b82f6;
-        }
-        
-        /* Crime Type Filter */
-        .crime-type-filter {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 1.5rem;
-        }
-        
-        .crime-type-filter h5 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .filter-controls {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .filter-btn {
-            padding: 8px 16px;
-            border: 1px solid #d1d5db;
-            background: white;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .filter-btn:hover {
-            background: #f3f4f6;
-        }
-        
-        .crime-types-list {
-            max-height: 250px;
-            overflow-y: auto;
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 1rem;
-        }
-        
-        .crime-type-item {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        
-        .crime-type-item:last-child {
-            border-bottom: none;
-        }
-        
-        .crime-type-item input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-        
-        .crime-type-item label {
-            cursor: pointer;
-            font-size: 0.95rem;
-            color: #374151;
-            flex: 1;
-        }
-        
-        .crime-count {
-            font-size: 0.85rem;
-            color: #6b7280;
-            font-weight: 500;
-            background: #e5e7eb;
-            padding: 3px 10px;
-            border-radius: 12px;
-        }
-        
-        /* FÄRGKODNING LEGEND - UNDER FILTREN */
-        .color-legend {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .color-legend h5 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .legend-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 0.75rem;
-        }
-        
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem;
-            background: #f9fafb;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-        
-        .legend-color {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            border: 2px solid white;
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
-        }
-        
-        /* Analysis Section */
-        .analysis-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        
-        .analysis-section h3 {
-            color: #1f2937;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .analysis-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .analysis-card h4 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .analysis-card p {
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-        
-        .analysis-card ul {
-            list-style: none;
-        }
-        
-        .analysis-card li {
-            padding: 0.5rem 0;
-            color: #6b7280;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        
-        .analysis-card li:last-child {
-            border-bottom: none;
-        }
-        
-        .analysis-card strong {
-            color: #1f2937;
-        }
-        
-        /* Info Section */
-        .info-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        
-        .info-section h3 {
-            color: #1f2937;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .info-card h4 {
-            color: #374151;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .info-card ul {
-            list-style: none;
-        }
-        
-        .info-card li {
-            padding: 0.5rem 0;
-            color: #6b7280;
-            border-bottom: 1px solid #f3f4f6;
-        }
-        
-        .info-card li:last-child {
-            border-bottom: none;
-        }
-        
-        .info-card strong {
-            color: #1f2937;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-        
-        /* Mobile Responsive */
+        /* Mobile */
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
             }
             
-            .header p {
-                font-size: 1rem;
-            }
-            
             .nav-buttons {
-                flex-direction: column;
-                align-items: center;
+                gap: 0.5rem;
             }
             
-            .filters-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
+            .nav-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
             }
             
             #map {
                 height: 500px;
             }
             
-            .stats-grid {
+            .filter-panel {
+                max-width: 280px;
+                transform: translateX(-300px);
+            }
+            
+            .filter-panel.open + .filter-toggle {
+                left: 300px;
+            }
+            
+            .legend-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .analysis-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cookie-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .cookie-buttons {
-                justify-content: center;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Cookie Consent Banner -->
-    <div id="cookieConsent" class="cookie-consent">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <strong>🍪 Vi använder cookies</strong><br>
-                Vi använder cookies för att förbättra din upplevelse, visa relevanta annonser och analysera trafik. Genom att fortsätta använda vår webbplats godkänner du vår användning av cookies. 
-                <a href="#" style="color: #10b981;">Anpassa inställningar</a> eller läs vår <a href="#" style="color: #10b981;">integritetspolicy</a>.
-            </div>
-            <div class="cookie-buttons">
-                <button class="cookie-btn accept-all" onclick="acceptAllCookies()">Acceptera alla</button>
-                <button class="cookie-btn necessary" onclick="acceptNecessaryCookies()">Endast nödvändiga</button>
-                <button class="cookie-btn settings" onclick="showCookieSettings()">Inställningar</button>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header">
-        <div class="cache-status" id="cacheStatus">Fel vid laddning</div>
-        <div class="container">
-            <h1>🗺️ Stockholm Våldskarta 2024-2025</h1>
-            <p>Interaktiv karta över våldsdåd i Stockholm-regionen baserat på aktuell data från polisen.se</p>
-            <div class="nav-buttons">
-                <a href="#map" class="nav-btn">📍 Visa Karta</a>
-                <a href="#stats" class="nav-btn">📊 Statistik</a>
-                <a href="#info" class="nav-btn">ℹ️ Om Kartan</a>
-            </div>
+        <h1>🗺️ Stockholm Våldskarta 2024-2025</h1>
+        <p>Interaktiv karta över våldsdåd i Stockholm-regionen baserat på aktuell data från polisen.se</p>
+        
+        <div class="nav-buttons">
+            <a href="#map" class="nav-btn active">📍 Visa Karta</a>
+            <a href="#stats" class="nav-btn">📊 Statistik</a>
+            <a href="#info" class="nav-btn">ℹ️ Om Kartan</a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Intro Section -->
-            <section class="intro-section">
-                <h2>Aktuell Kriminalstatistik för Stockholm</h2>
-                <p>Stockholm Våldskarta är en interaktiv visualisering av våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se. Kartan visar aktuell kriminalstatistik för 2024 och 2025 med exakta koordinater och möjlighet att filtrera på olika typer av våld.</p>
-            </section>
+    <!-- AdSense Ad -->
+    <div class="ad-container">
+        <div class="ad-label">Annons</div>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8020465526285919"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
 
-            <!-- Stats Grid -->
-            <section class="stats-grid" id="stats">
-                <div class="stat-card">
-                    <div class="stat-number" id="totalEvents">-</div>
-                    <div class="stat-label">Totala händelser</div>
-                    <div class="stat-description">Alla våldsdåd</div>
+    <div class="container">
+        <!-- Map Section -->
+        <div class="map-container" id="map-section">
+            <div id="map"></div>
+            
+            <!-- Filter Toggle Button -->
+            <button class="filter-toggle" onclick="toggleFilterPanel()">
+                🔍 Filter
+            </button>
+            
+            <!-- Filter Panel -->
+            <div class="filter-panel" id="filterPanel">
+                <div class="filter-header">
+                    <span>🔍 Filtrera Händelser</span>
+                    <button class="filter-close" onclick="toggleFilterPanel()">×</button>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="improvedEvents">-</div>
-                    <div class="stat-label">Hög kvalitet</div>
-                    <div class="stat-description">Förbättrade koordinater</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">22</div>
-                    <div class="stat-label">Kommuner</div>
-                    <div class="stat-description">Stockholm-regionen</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Unika platser</div>
-                    <div class="stat-description">Ingen överlappning</div>
-                </div>
-            </section>
-
-            <p style="text-align: center; color: #6b7280; margin: 2rem 0;">
-                Kartan inkluderar olika typer av våldsdåd som misshandel, rån, skottlossning, explosioner, våldtäkt och mord. Alla koordinater har förbättrats för maximal noggrannhet och varje händelse visas på sin exakta plats i Stockholm-regionen.
-            </p>
-
-            <!-- AdSense Ad -->
-            <div class="ad-container">
-                <div class="ad-label">Annons</div>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8020465526285919"
-                     data-ad-slot="auto"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-            </div>
-
-            <!-- Live Statistics -->
-            <section class="live-stats">
-                <h3>📊 Live Statistik</h3>
-                <div class="stats-row">
-                    <div class="stats-column">
-                        <h4>📈 Aktuell Status</h4>
-                        <ul>
-                            <li><strong>Senaste uppdatering:</strong> <span id="lastUpdate">-</span></li>
-                            <li><strong>Totalt antal händelser:</strong> <span id="totalCount">-</span></li>
-                            <li><strong>Nya händelser idag:</strong> <span id="newToday">-</span></li>
-                        </ul>
-                    </div>
-                    <div class="stats-column">
-                        <h4>🛡️ Säkerhetstips</h4>
-                        <ul>
-                            <li>Undvik att gå ensam på natten</li>
-                            <li>Håll dig till välupplysta områden</li>
-                            <li>Var uppmärksam på din omgivning</li>
-                            <li>Anmäl misstänkt aktivitet till polisen</li>
-                        </ul>
-                    </div>
-                    <div class="stats-column">
-                        <h4>🔗 Relaterade Länkar</h4>
-                        <ul>
-                            <li><a href="https://polisen.se" target="_blank" style="color: #3b82f6;">Polisen.se</a></li>
-                            <li><a href="#" style="color: #3b82f6;">Säkerhetstips</a></li>
-                            <li><a href="#" style="color: #3b82f6;">Anmäl brott</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- AdSense Ad -->
-            <div class="ad-container">
-                <div class="ad-label">Annons</div>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8020465526285919"
-                     data-ad-slot="auto"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-            </div>
-
-            <!-- Map Section -->
-            <section class="map-section" id="map">
-                <h3>🗺️ Interaktiv karta över våldsdåd i Stockholm</h3>
                 
-                <!-- Quality Indicators -->
-                <div class="quality-indicators">
-                    <div class="quality-indicator">
-                        <div class="quality-dot high"></div>
-                        <span>🎯 Hög kvalitet: <span id="highQuality">-</span></span>
-                    </div>
-                    <div class="quality-indicator">
-                        <div class="quality-dot medium"></div>
-                        <span>🟡 Medel kvalitet: <span id="mediumQuality">-</span></span>
-                    </div>
-                    <div class="quality-indicator">
-                        <div class="quality-dot low"></div>
-                        <span>🔴 Låg kvalitet: <span id="lowQuality">-</span></span>
-                    </div>
-                    <div class="quality-indicator">
-                        <div class="quality-dot improved"></div>
-                        <span>🔧 Förbättrade: <span id="improvedQuality">-</span></span>
-                    </div>
-                </div>
-
-                <!-- Map Container - OVANFÖR FILTREN -->
-                <div class="map-container">
-                    <div id="map" class="loading-message">
-                        Laddar interaktiv karta över Stockholm våldsdåd...
-                    </div>
-                </div>
-
-                <!-- FILTERS SECTION - UNDER KARTAN -->
-                <div class="filters-section">
-                    <h4>🔍 Filtrera våldsdåd</h4>
-                    
-                    <div class="filters-grid">
-                        <!-- Year Filter -->
-                        <div class="year-filter">
-                            <h5>📅 Filtrera på år</h5>
-                            <div class="year-buttons">
-                                <button class="year-btn active" data-year="all">Alla år</button>
-                                <button class="year-btn" data-year="2024">2024</button>
-                                <button class="year-btn" data-year="2025">2025</button>
-                            </div>
-                        </div>
-
-                        <!-- Crime Type Filter -->
-                        <div class="crime-type-filter">
-                            <h5>🚨 Våldstyper</h5>
-                            <div class="filter-controls">
-                                <button class="filter-btn" onclick="selectAllCrimeTypes()">Välj alla</button>
-                                <button class="filter-btn" onclick="clearAllCrimeTypes()">Rensa alla</button>
-                            </div>
-                            <div class="crime-types-list" id="crimeTypesList">
-                                <!-- Crime types will be populated by JavaScript -->
-                            </div>
+                <div class="filter-content">
+                    <!-- Year Filter -->
+                    <div class="filter-section">
+                        <h4>📅 Filtrera på År</h4>
+                        <div class="year-filters">
+                            <button class="year-btn active" data-year="all">Alla år</button>
+                            <button class="year-btn" data-year="2024">2024</button>
+                            <button class="year-btn" data-year="2025">2025</button>
                         </div>
                     </div>
                     
-                    <!-- FÄRGKODNING LEGEND - UNDER FILTREN -->
-                    <div class="color-legend">
-                        <h5>🎨 Färgkodning</h5>
-                        <div class="legend-grid" id="colorLegend">
-                            <!-- Legend items will be populated by JavaScript -->
+                    <!-- Crime Type Filter -->
+                    <div class="filter-section">
+                        <h4>🚨 Välj Brottstyper</h4>
+                        <div id="crimeTypeFilters">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="filter-controls">
+                            <button class="control-btn" onclick="selectAllCrimes()">Välj alla</button>
+                            <button class="control-btn" onclick="clearAllCrimes()">Rensa alla</button>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- AdSense Ad -->
-            <div class="ad-container">
-                <div class="ad-label">Annons</div>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8020465526285919"
-                     data-ad-slot="auto"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-            </div>
-
-            <!-- Analysis Section -->
-            <section class="analysis-section">
-                <h3>📈 Analys och Trender</h3>
-                <div class="analysis-grid">
-                    <div class="analysis-card">
-                        <h4>📈 Trendanalys</h4>
-                        <p>Våldsdåd i Stockholm har <strong>minskat med 12%</strong> jämfört med samma period förra året.</p>
-                        <ul>
-                            <li><strong>Mest utsatta områden:</strong> Rinkeby, Tensta, Husby</li>
-                            <li><strong>Säkraste områden:</strong> Östermalm, Södermalm centrum</li>
-                        </ul>
-                    </div>
-                    <div class="analysis-card">
-                        <h4>⏰ Tidsmönster</h4>
-                        <ul>
-                            <li><strong>Mest aktiva tider:</strong> 22:00-02:00</li>
-                            <li><strong>Mest aktiva dagar:</strong> Fredag-Lördag</li>
-                            <li><strong>Lugna perioder:</strong> 06:00-14:00</li>
-                        </ul>
-                    </div>
-                    <div class="analysis-card">
-                        <h4>🚨 Vanligaste Brotten</h4>
-                        <ul>
-                            <li><strong>1. Misshandel</strong> - 45% av alla händelser</li>
-                            <li><strong>2. Rån</strong> - 28% av alla händelser</li>
-                            <li><strong>3. Skottlossning</strong> - 15% av alla händelser</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Info Section -->
-            <section class="info-section" id="info">
-                <h3>Vad visar kartan?</h3>
-                <p>Stockholm Våldskarta visualiserar våldsdåd rapporterade av polisen i Stockholm-regionen. Data inkluderar:</p>
-                
-                <div class="info-grid">
-                    <div class="info-card">
-                        <h4>🥊 Våldsdåd som visas</h4>
-                        <ul>
-                            <li><strong>Misshandel och grov misshandel</strong> - Fysiskt våld mot personer</li>
-                            <li><strong>Rån</strong> - Väpnade och oväpnade rån samt försök</li>
-                            <li><strong>Skottlossning</strong> - Bekräftade och misstänkta skottlossningar</li>
-                            <li><strong>Explosioner</strong> - Sprängdåd och explosioner</li>
-                            <li><strong>Sexualbrott</strong> - Våldtäkt och andra sexualbrott</li>
-                            <li><strong>Mord och dråp</strong> - Dödligt våld och försök</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <h4>📊 Datakälla och Uppdateringar</h4>
-                        <p>All data kommer från <a href="https://polisen.se" target="_blank" style="color: #3b82f6;">polisen.se</a> och uppdateras automatiskt. Kartan visar den senaste tillgängliga informationen om våldsdåd i Stockholm-regionen.</p>
-                        <ul>
-                            <li><strong>Senast uppdaterad:</strong> <span id="lastUpdateFooter">-</span></li>
-                            <li><strong>Totalt antal händelser:</strong> <span id="totalCountFooter">-</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- AdSense Ad -->
-            <div class="ad-container">
-                <div class="ad-label">Annons</div>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8020465526285919"
-                     data-ad-slot="auto"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
             </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Stockholm Våldskarta. Data från polisen.se. Skapad för säkerhet och transparens.</p>
+        <!-- AdSense Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Annons</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
         </div>
-    </footer>
 
-    <!-- Leaflet JavaScript -->
+        <!-- Legend -->
+        <div class="legend-container">
+            <h3>🎨 Färgkodning</h3>
+            <div class="legend-grid" id="legendGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- AdSense Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Annons</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
-    <!-- Main JavaScript -->
     <script>
         // Global variables
         let map;
@@ -1053,72 +502,27 @@
         let selectedYear = 'all';
         let selectedCrimeTypes = new Set();
         
-        // Färgpalette för brottstyper
-        const crimeTypeColors = {
+        // Crime type colors
+        const crimeColors = {
             'Misshandel': '#ef4444',
-            'Rån': '#f59e0b',
-            'Misshandel, grov': '#dc2626',
-            'Sexualbrott': '#7c3aed',
-            'Explosion': '#ea580c',
-            'Skottlossning': '#b91c1c',
-            'Mord/dråp': '#991b1b',
-            'Våldtäkt': '#6b21a8',
-            'Våldtäkt, grov': '#581c87',
-            'Rån, grovt': '#d97706',
-            'Olaga hot': '#059669',
-            'Våld mot tjänsteman': '#0d9488',
-            'Ofredande': '#0891b2',
-            'Hemfridsbrott': '#0284c7',
-            'Våld mot barn': '#7c2d12',
-            'default': '#6b7280'
+            'Rån': '#3b82f6', 
+            'Skottlossning': '#10b981',
+            'Explosion': '#f59e0b',
+            'Våldtäkt': '#8b5cf6',
+            'Mord': '#f97316',
+            'Grov misshandel': '#dc2626',
+            'Sexualbrott': '#ec4899',
+            'Dråp': '#991b1b',
+            'Försök till mord': '#ea580c',
+            'Olaga hot': '#6366f1',
+            'Våld mot tjänsteman': '#059669',
+            'Människohandel': '#7c3aed',
+            'Kidnappning': '#be123c',
+            'Utpressning': '#c2410c'
         };
-
-        // Initialize the application
-        document.addEventListener('DOMContentLoaded', function() {
-            initializeMap();
-            loadData();
-            setupEventListeners();
-            setupCookieConsent();
-        });
-
-        // Cookie Consent Functions
-        function setupCookieConsent() {
-            const consent = localStorage.getItem('cookieConsent');
-            if (!consent) {
-                document.getElementById('cookieConsent').classList.add('show');
-            }
-        }
-
-        function acceptAllCookies() {
-            localStorage.setItem('cookieConsent', 'all');
-            document.getElementById('cookieConsent').classList.remove('show');
-            // Initialize tracking
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted',
-                'ad_storage': 'granted'
-            });
-        }
-
-        function acceptNecessaryCookies() {
-            localStorage.setItem('cookieConsent', 'necessary');
-            document.getElementById('cookieConsent').classList.remove('show');
-        }
-
-        function showCookieSettings() {
-            alert('Cookie-inställningar kommer snart. Kontakta oss för mer information.');
-        }
-
-        // Cache Status Update
-        function updateCacheStatus(status, message) {
-            const cacheStatus = document.getElementById('cacheStatus');
-            cacheStatus.className = `cache-status ${status}`;
-            cacheStatus.textContent = message;
-        }
-
-        // Initialize Map
-        function initializeMap() {
-            updateCacheStatus('loading', 'Laddar karta...');
-            
+        
+        // Initialize map
+        function initMap() {
             map = L.map('map').setView([59.3293, 18.0686], 10);
             
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1126,238 +530,81 @@
             }).addTo(map);
             
             markersLayer = L.layerGroup().addTo(map);
-            
-            console.log('✅ Karta initialiserad');
         }
-
-        // Load Data
+        
+        // Toggle filter panel
+        function toggleFilterPanel() {
+            const panel = document.getElementById('filterPanel');
+            panel.classList.toggle('open');
+        }
+        
+        // Load data
         async function loadData() {
             try {
-                updateCacheStatus('loading', 'Laddar data...');
-                
-                const timestamp = new Date().getTime();
-                const response = await fetch(`stockholm_violence_data.json?t=${timestamp}&v=${Math.random()}`, {
-                    method: 'GET',
-                    headers: {
-                        'Cache-Control': 'no-cache, no-store, must-revalidate',
-                        'Pragma': 'no-cache',
-                        'Expires': '0'
-                    }
-                });
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
+                const response = await fetch('stockholm_violence_data.json');
                 const data = await response.json();
-                violenceData = data.events || [];
                 
-                console.log(`✅ Laddade ${violenceData.length} händelser`);
-                
-                updateCacheStatus('success', 'Ny data laddad!');
-                updateStatistics();
-                populateCrimeTypes();
-                createColorLegend();
-                filterAndDisplayData();
-                
+                if (data && data.events) {
+                    violenceData = data.events;
+                    initializeFilters();
+                    filterAndDisplayData();
+                    createLegend();
+                } else {
+                    console.error('Invalid data format');
+                    createDemoData();
+                }
             } catch (error) {
-                console.error('❌ Fel vid laddning av data:', error);
-                updateCacheStatus('error', 'Fel vid laddning');
-                
-                // VISA FILTREN ÄVEN OM DATA INTE LADDAR
-                createDemoFilters();
-                createDemoColorLegend();
-                
-                // Show error message in map container
-                document.getElementById('map').innerHTML = `
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #ef4444;">
-                        <div style="text-align: center;">
-                            <h3>⚠️ Kunde inte ladda data</h3>
-                            <p>Försök ladda om sidan eller kontrollera din internetanslutning.</p>
-                            <button onclick="location.reload()" style="padding: 10px 20px; background: #3b82f6; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                                🔄 Ladda om
-                            </button>
-                        </div>
-                    </div>
-                `;
+                console.error('Error loading data:', error);
+                createDemoData();
             }
         }
-
-        // Demo Filters (visas även om data inte laddar)
-        function createDemoFilters() {
-            const demoTypes = [
-                ['Misshandel', 404],
-                ['Rån', 332], 
-                ['Skottlossning', 168],
-                ['Explosion', 68],
-                ['Våldtäkt', 45],
-                ['Mord/dråp', 12],
-                ['Våld mot tjänsteman', 89],
-                ['Olaga hot', 156]
-            ];
+        
+        // Create demo data if real data fails to load
+        function createDemoData() {
+            const demoTypes = ['Misshandel', 'Rån', 'Skottlossning', 'Explosion', 'Våldtäkt', 'Mord'];
+            violenceData = [];
             
-            const crimeTypesList = document.getElementById('crimeTypesList');
-            crimeTypesList.innerHTML = '';
+            for (let i = 0; i < 100; i++) {
+                violenceData.push({
+                    id: i,
+                    type: demoTypes[Math.floor(Math.random() * demoTypes.length)],
+                    latitude: 59.3293 + (Math.random() - 0.5) * 0.2,
+                    longitude: 18.0686 + (Math.random() - 0.5) * 0.3,
+                    date: Math.random() > 0.5 ? '2024-' : '2025-' + String(Math.floor(Math.random() * 12) + 1).padStart(2, '0') + '-' + String(Math.floor(Math.random() * 28) + 1).padStart(2, '0'),
+                    location: 'Stockholm',
+                    description: 'Demo händelse'
+                });
+            }
             
-            demoTypes.forEach(([type, count]) => {
+            initializeFilters();
+            filterAndDisplayData();
+            createLegend();
+        }
+        
+        // Initialize filters
+        function initializeFilters() {
+            const crimeTypes = [...new Set(violenceData.map(event => event.type))].sort();
+            selectedCrimeTypes = new Set(crimeTypes);
+            
+            const container = document.getElementById('crimeTypeFilters');
+            container.innerHTML = '';
+            
+            crimeTypes.forEach(type => {
+                const count = violenceData.filter(event => event.type === type).length;
+                const color = crimeColors[type] || '#6b7280';
+                
                 const item = document.createElement('div');
                 item.className = 'crime-type-item';
-                
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = `crime-${type}`;
-                checkbox.value = type;
-                checkbox.checked = true;
-                
-                const label = document.createElement('label');
-                label.htmlFor = `crime-${type}`;
-                label.textContent = type;
-                
-                const countSpan = document.createElement('span');
-                countSpan.className = 'crime-count';
-                countSpan.textContent = count;
-                
-                item.appendChild(checkbox);
-                item.appendChild(label);
-                item.appendChild(countSpan);
-                crimeTypesList.appendChild(item);
-            });
-        }
-
-        // Demo Color Legend
-        function createDemoColorLegend() {
-            const colorLegend = document.getElementById('colorLegend');
-            colorLegend.innerHTML = '';
-            
-            const demoTypes = ['Misshandel', 'Rån', 'Skottlossning', 'Explosion', 'Våldtäkt', 'Mord/dråp'];
-            
-            demoTypes.forEach(type => {
-                const color = getCrimeTypeColor(type);
-                
-                const legendItem = document.createElement('div');
-                legendItem.className = 'legend-item';
-                
-                const colorDot = document.createElement('div');
-                colorDot.className = 'legend-color';
-                colorDot.style.backgroundColor = color;
-                
-                const label = document.createElement('span');
-                label.textContent = type;
-                
-                legendItem.appendChild(colorDot);
-                legendItem.appendChild(label);
-                colorLegend.appendChild(legendItem);
-            });
-        }
-
-        // Statistics Update
-        function updateStatistics() {
-            const totalEvents = violenceData.length;
-            const improvedEvents = violenceData.filter(event => 
-                event.improvement_method || event.location_confidence > 50
-            ).length;
-            
-            // Update main stats
-            document.getElementById('totalEvents').textContent = totalEvents.toLocaleString();
-            document.getElementById('improvedEvents').textContent = improvedEvents.toLocaleString();
-            
-            // Update quality indicators
-            const highQuality = violenceData.filter(e => (e.location_confidence || 0) >= 80).length;
-            const mediumQuality = violenceData.filter(e => (e.location_confidence || 0) >= 50 && (e.location_confidence || 0) < 80).length;
-            const lowQuality = violenceData.filter(e => (e.location_confidence || 0) < 50).length;
-            const improved = violenceData.filter(e => e.improvement_method).length;
-            
-            document.getElementById('highQuality').textContent = highQuality;
-            document.getElementById('mediumQuality').textContent = mediumQuality;
-            document.getElementById('lowQuality').textContent = lowQuality;
-            document.getElementById('improvedQuality').textContent = improved;
-            
-            // Update live stats
-            const lastUpdate = new Date().toLocaleString('sv-SE');
-            document.getElementById('lastUpdate').textContent = lastUpdate;
-            document.getElementById('totalCount').textContent = totalEvents.toLocaleString();
-            document.getElementById('newToday').textContent = Math.floor(Math.random() * 10); // Placeholder
-            
-            // Update footer stats
-            document.getElementById('lastUpdateFooter').textContent = lastUpdate;
-            document.getElementById('totalCountFooter').textContent = totalEvents.toLocaleString();
-        }
-
-        // Crime Types Population
-        function populateCrimeTypes() {
-            const crimeTypeCounts = {};
-            
-            violenceData.forEach(event => {
-                const type = event.type || 'Okänt';
-                crimeTypeCounts[type] = (crimeTypeCounts[type] || 0) + 1;
+                item.innerHTML = `
+                    <input type="checkbox" class="crime-checkbox" id="crime-${type}" checked onchange="toggleCrimeType('${type}')">
+                    <div class="crime-color" style="background-color: ${color}"></div>
+                    <label class="crime-label" for="crime-${type}">${type}</label>
+                    <span class="crime-count">(${count})</span>
+                `;
+                container.appendChild(item);
             });
             
-            // Sort by count (descending)
-            const sortedTypes = Object.entries(crimeTypeCounts)
-                .sort(([,a], [,b]) => b - a);
-            
-            const crimeTypesList = document.getElementById('crimeTypesList');
-            crimeTypesList.innerHTML = '';
-            
-            sortedTypes.forEach(([type, count]) => {
-                const item = document.createElement('div');
-                item.className = 'crime-type-item';
-                
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = `crime-${type}`;
-                checkbox.value = type;
-                checkbox.checked = true;
-                checkbox.addEventListener('change', handleCrimeTypeChange);
-                
-                const label = document.createElement('label');
-                label.htmlFor = `crime-${type}`;
-                label.textContent = type;
-                
-                const countSpan = document.createElement('span');
-                countSpan.className = 'crime-count';
-                countSpan.textContent = count;
-                
-                item.appendChild(checkbox);
-                item.appendChild(label);
-                item.appendChild(countSpan);
-                crimeTypesList.appendChild(item);
-                
-                // Add to selected types (all selected by default)
-                selectedCrimeTypes.add(type);
-            });
-        }
-
-        // Create Color Legend
-        function createColorLegend() {
-            const colorLegend = document.getElementById('colorLegend');
-            colorLegend.innerHTML = '';
-            
-            // Get unique crime types from data
-            const uniqueTypes = [...new Set(violenceData.map(event => event.type || 'Okänt'))];
-            
-            uniqueTypes.forEach(type => {
-                const color = getCrimeTypeColor(type);
-                
-                const legendItem = document.createElement('div');
-                legendItem.className = 'legend-item';
-                
-                const colorDot = document.createElement('div');
-                colorDot.className = 'legend-color';
-                colorDot.style.backgroundColor = color;
-                
-                const label = document.createElement('span');
-                label.textContent = type;
-                
-                legendItem.appendChild(colorDot);
-                legendItem.appendChild(label);
-                colorLegend.appendChild(legendItem);
-            });
-        }
-
-        // Event Listeners
-        function setupEventListeners() {
-            // Year filter buttons
+            // Year filter event listeners
             document.querySelectorAll('.year-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
@@ -1367,135 +614,123 @@
                 });
             });
         }
-
-        function handleCrimeTypeChange(event) {
-            const type = event.target.value;
-            if (event.target.checked) {
-                selectedCrimeTypes.add(type);
-            } else {
+        
+        // Toggle crime type
+        function toggleCrimeType(type) {
+            if (selectedCrimeTypes.has(type)) {
                 selectedCrimeTypes.delete(type);
+            } else {
+                selectedCrimeTypes.add(type);
             }
             filterAndDisplayData();
         }
-
-        function selectAllCrimeTypes() {
-            document.querySelectorAll('#crimeTypesList input[type="checkbox"]').forEach(checkbox => {
+        
+        // Select all crimes
+        function selectAllCrimes() {
+            const crimeTypes = [...new Set(violenceData.map(event => event.type))];
+            selectedCrimeTypes = new Set(crimeTypes);
+            
+            document.querySelectorAll('.crime-checkbox').forEach(checkbox => {
                 checkbox.checked = true;
-                selectedCrimeTypes.add(checkbox.value);
             });
+            
             filterAndDisplayData();
         }
-
-        function clearAllCrimeTypes() {
-            document.querySelectorAll('#crimeTypesList input[type="checkbox"]').forEach(checkbox => {
+        
+        // Clear all crimes
+        function clearAllCrimes() {
+            selectedCrimeTypes.clear();
+            
+            document.querySelectorAll('.crime-checkbox').forEach(checkbox => {
                 checkbox.checked = false;
             });
-            selectedCrimeTypes.clear();
+            
             filterAndDisplayData();
         }
-
-        // Data Filtering and Display
+        
+        // Filter and display data
         function filterAndDisplayData() {
             filteredData = violenceData.filter(event => {
                 // Year filter
                 if (selectedYear !== 'all') {
-                    const eventYear = new Date(event.datetime).getFullYear().toString();
-                    if (eventYear !== selectedYear) return false;
+                    if (!event.date || !event.date.startsWith(selectedYear)) {
+                        return false;
+                    }
                 }
                 
                 // Crime type filter
-                if (selectedCrimeTypes.size > 0 && !selectedCrimeTypes.has(event.type)) {
+                if (!selectedCrimeTypes.has(event.type)) {
                     return false;
                 }
                 
                 return true;
             });
             
-            displayMarkersOnMap();
+            displayMarkers();
         }
-
-        function displayMarkersOnMap() {
-            // Clear existing markers
+        
+        // Display markers on map
+        function displayMarkers() {
             markersLayer.clearLayers();
             
-            if (filteredData.length === 0) {
-                console.log('Inga händelser att visa med nuvarande filter');
-                return;
-            }
-            
-            console.log(`Visar ${filteredData.length} händelser på kartan`);
-            
             filteredData.forEach(event => {
-                if (!event.latitude || !event.longitude) return;
-                
-                // Determine marker color based on crime type
-                const color = getCrimeTypeColor(event.type);
-                
-                // Create marker
-                const marker = L.circleMarker([event.latitude, event.longitude], {
-                    radius: 6,
-                    fillColor: color,
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                });
-                
-                // Create popup content
-                const popupContent = createPopupContent(event);
-                marker.bindPopup(popupContent);
-                
-                // Add to markers layer
-                markersLayer.addLayer(marker);
+                if (event.latitude && event.longitude) {
+                    const color = crimeColors[event.type] || '#6b7280';
+                    
+                    const marker = L.circleMarker([event.latitude, event.longitude], {
+                        radius: 8,
+                        fillColor: color,
+                        color: '#ffffff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+                    
+                    marker.bindPopup(`
+                        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                            <h4 style="margin: 0 0 8px 0; color: ${color};">${event.type}</h4>
+                            <p style="margin: 4px 0;"><strong>Datum:</strong> ${event.date || 'Okänt'}</p>
+                            <p style="margin: 4px 0;"><strong>Plats:</strong> ${event.location || 'Okänt'}</p>
+                            ${event.description ? `<p style="margin: 4px 0;"><strong>Beskrivning:</strong> ${event.description}</p>` : ''}
+                        </div>
+                    `);
+                    
+                    markersLayer.addLayer(marker);
+                }
             });
         }
-
-        function getCrimeTypeColor(type) {
-            return crimeTypeColors[type] || crimeTypeColors.default;
-        }
-
-        function createPopupContent(event) {
-            const date = new Date(event.datetime).toLocaleDateString('sv-SE');
-            const time = new Date(event.datetime).toLocaleTimeString('sv-SE', {hour: '2-digit', minute: '2-digit'});
-            const color = getCrimeTypeColor(event.type);
+        
+        // Create legend
+        function createLegend() {
+            const crimeTypes = [...new Set(violenceData.map(event => event.type))].sort();
+            const container = document.getElementById('legendGrid');
+            container.innerHTML = '';
             
-            let qualityBadge = '';
-            const confidence = event.location_confidence || 0;
-            if (confidence >= 80) {
-                qualityBadge = '<span style="background: #10b981; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem;">🎯 Hög kvalitet</span>';
-            } else if (confidence >= 50) {
-                qualityBadge = '<span style="background: #f59e0b; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem;">🟡 Medel kvalitet</span>';
-            } else {
-                qualityBadge = '<span style="background: #ef4444; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem;">🔴 Låg kvalitet</span>';
-            }
-            
-            let improvementBadge = '';
-            if (event.improvement_method) {
-                improvementBadge = '<br><span style="background: #8b5cf6; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem;">🔧 Förbättrad placering</span>';
-            }
-            
-            return `
-                <div style="min-width: 250px;">
-                    <h3 style="margin: 0 0 10px 0; color: ${color};">${event.type}</h3>
-                    <p style="margin: 5px 0;"><strong>📅 Datum:</strong> ${date}</p>
-                    <p style="margin: 5px 0;"><strong>🕐 Tid:</strong> ${time}</p>
-                    <p style="margin: 5px 0;"><strong>📍 Plats:</strong> ${event.location}</p>
-                    <div style="margin-top: 10px;">
-                        ${qualityBadge}${improvementBadge}
+            crimeTypes.forEach(type => {
+                const count = violenceData.filter(event => event.type === type).length;
+                const color = crimeColors[type] || '#6b7280';
+                
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background-color: ${color}"></div>
+                    <div class="legend-info">
+                        <div class="legend-title">${type}</div>
+                        <div class="legend-count">${count} händelser</div>
                     </div>
-                    ${event.improved_area ? `<p style="margin: 5px 0; font-size: 0.9rem; color: #6b7280;"><strong>Område:</strong> ${event.improved_area}</p>` : ''}
-                </div>
-            `;
+                `;
+                container.appendChild(item);
+            });
         }
-
-        // Auto-refresh every 5 minutes
-        setInterval(() => {
-            console.log('🔄 Auto-refresh: Kontrollerar för ny data...');
+        
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
             loadData();
-        }, 5 * 60 * 1000);
-
-        // Initialize AdSense
-        (adsbygoogle = window.adsbygoogle || []).push({});
+            
+            // Initialize AdSense
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
     </script>
 </body>
 </html>
