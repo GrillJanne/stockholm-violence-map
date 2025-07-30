@@ -1281,6 +1281,10 @@
                 console.error('❌ Fel vid laddning av data:', error);
                 updateCacheStatus('error', 'Fel vid laddning');
                 
+                // VISA FILTREN ÄVEN OM DATA INTE LADDAR
+                createDemoFilters();
+                createDemoColorLegend();
+                
                 // Show error message in map container
                 document.getElementById('map').innerHTML = `
                     <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #ef4444;">
@@ -1294,6 +1298,73 @@
                     </div>
                 `;
             }
+        }
+
+        // Demo Filters (visas även om data inte laddar)
+        function createDemoFilters() {
+            const demoTypes = [
+                ['Misshandel', 404],
+                ['Rån', 332], 
+                ['Skottlossning', 168],
+                ['Explosion', 68],
+                ['Våldtäkt', 45],
+                ['Mord/dråp', 12],
+                ['Våld mot tjänsteman', 89],
+                ['Olaga hot', 156]
+            ];
+            
+            const crimeTypesList = document.getElementById('crimeTypesList');
+            crimeTypesList.innerHTML = '';
+            
+            demoTypes.forEach(([type, count]) => {
+                const item = document.createElement('div');
+                item.className = 'crime-type-item';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `crime-${type}`;
+                checkbox.value = type;
+                checkbox.checked = true;
+                
+                const label = document.createElement('label');
+                label.htmlFor = `crime-${type}`;
+                label.textContent = type;
+                
+                const countSpan = document.createElement('span');
+                countSpan.className = 'crime-count';
+                countSpan.textContent = count;
+                
+                item.appendChild(checkbox);
+                item.appendChild(label);
+                item.appendChild(countSpan);
+                crimeTypesList.appendChild(item);
+            });
+        }
+
+        // Demo Color Legend
+        function createDemoColorLegend() {
+            const colorLegend = document.getElementById('colorLegend');
+            colorLegend.innerHTML = '';
+            
+            const demoTypes = ['Misshandel', 'Rån', 'Skottlossning', 'Explosion', 'Våldtäkt', 'Mord/dråp'];
+            
+            demoTypes.forEach(type => {
+                const color = getCrimeTypeColor(type);
+                
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
+                
+                const colorDot = document.createElement('div');
+                colorDot.className = 'legend-color';
+                colorDot.style.backgroundColor = color;
+                
+                const label = document.createElement('span');
+                label.textContent = type;
+                
+                legendItem.appendChild(colorDot);
+                legendItem.appendChild(label);
+                colorLegend.appendChild(legendItem);
+            });
         }
 
         // Statistics Update
