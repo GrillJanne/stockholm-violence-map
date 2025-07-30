@@ -330,89 +330,6 @@
             color: #1f2937;
         }
         
-        /* Affiliate Products */
-        .affiliate-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        
-        .affiliate-section h3 {
-            color: #1f2937;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .affiliate-disclaimer {
-            background: #fef3c7;
-            border: 1px solid #f59e0b;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            color: #92400e;
-        }
-        
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .product-card {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .product-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
-        }
-        
-        .product-description {
-            color: #6b7280;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-        
-        .product-rating {
-            color: #f59e0b;
-            margin-bottom: 0.5rem;
-        }
-        
-        .product-price {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #10b981;
-            margin-bottom: 1rem;
-        }
-        
-        .product-category {
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-        
         /* Map Section */
         .map-section {
             background: white;
@@ -497,10 +414,6 @@
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
-            position: relative;
-            z-index: 1001; /* högre än Leaflet-lager */
-            background: white; /* om du behöver täcka kartan ordentligt */
-
         }
         
         .filters-section h4 {
@@ -827,10 +740,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-            
             .analysis-grid {
                 grid-template-columns: 1fr;
             }
@@ -920,7 +829,7 @@
 
             <!-- AdSense Ad -->
             <div class="ad-container">
-                <div class="ad-label">Annons - Säkerhetsprodukter & Försäkringar</div>
+                <div class="ad-label">Annons</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-8020465526285919"
@@ -961,46 +870,16 @@
                 </div>
             </section>
 
-            <!-- Affiliate Products -->
-            <section class="affiliate-section">
-                <h3>🛡️ Rekommenderade Säkerhetsprodukter</h3>
-                <p>Baserat på våldsdåd i ditt område - skydda dig och din familj</p>
-                
-                <div class="affiliate-disclaimer">
-                    <strong>Annonslänkar:</strong> Denna sida innehåller affiliate-länkar. Vi kan få provision om du köper produkter via våra länkar, utan extra kostnad för dig.
-                </div>
-
-                <div class="products-grid">
-                    <div class="product-card">
-                        <div class="product-title">Verisure Hemlarm</div>
-                        <div class="product-description">Komplett hemlarmssystem med 24/7 övervakning</div>
-                        <div class="product-rating">★★★★☆ 4.5</div>
-                        <div class="product-price">Från 299 kr/mån</div>
-                        <div class="product-category">Hemlarm</div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-title">Sector Alarm</div>
-                        <div class="product-description">Trådlöst larmsystem med app-styrning</div>
-                        <div class="product-rating">★★★★☆ 4.3</div>
-                        <div class="product-price">Från 199 kr/mån</div>
-                        <div class="product-category">Hemlarm</div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-title">Yale Doorman</div>
-                        <div class="product-description">Smart dörrlås med kodlås och app-kontroll</div>
-                        <div class="product-rating">★★★★☆ 4.4</div>
-                        <div class="product-price">2,995 kr</div>
-                        <div class="product-category">Smarta lås</div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-title">If Hemförsäkring</div>
-                        <div class="product-description">Omfattande hemförsäkring med inbrottsskydd</div>
-                        <div class="product-rating">★★★★☆ 4.2</div>
-                        <div class="product-price">Från 150 kr/mån</div>
-                        <div class="product-category">Försäkring</div>
-                    </div>
-                </div>
-            </section>
+            <!-- AdSense Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Annons</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-8020465526285919"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+            </div>
 
             <!-- Map Section -->
             <section class="map-section" id="map">
@@ -1073,7 +952,7 @@
 
             <!-- AdSense Ad -->
             <div class="ad-container">
-                <div class="ad-label">Annons - Juridiska Tjänster & Försäkringar</div>
+                <div class="ad-label">Annons</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-8020465526285919"
@@ -1143,7 +1022,7 @@
 
             <!-- AdSense Ad -->
             <div class="ad-container">
-                <div class="ad-label">Annons - Säkerhetsutbildning & Kurser</div>
+                <div class="ad-label">Annons</div>
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-8020465526285919"
