@@ -648,12 +648,45 @@
             filterAndDisplayData();
         }
         
+        // Format date for display
+        function formatDate(dateString) {
+            if (!dateString || dateString === 'Okänt') return 'Okänt';
+            
+            try {
+                // Handle different date formats
+                let date;
+                if (dateString.includes('T') || dateString.includes('+')) {
+                    // ISO format: "2025-07-26 7:37:44 +02:00" or "2025-07-26T07:37:44"
+                    date = new Date(dateString);
+                } else {
+                    // Simple format: "2025-07-26"
+                    date = new Date(dateString);
+                }
+                
+                if (isNaN(date.getTime())) {
+                    return dateString; // Return original if parsing fails
+                }
+                
+                return date.toLocaleDateString('sv-SE', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            } catch (error) {
+                return dateString; // Return original if error
+            }
+        }
+        
         // Filter and display data
         function filterAndDisplayData() {
             filteredData = violenceData.filter(event => {
                 // Year filter
                 if (selectedYear !== 'all') {
-                    if (!event.date || !event.date.startsWith(selectedYear)) {
+                    // Check both 'date' and 'datetime' fields
+                    const eventDate = event.date || event.datetime || '';
+                    if (!eventDate.startsWith(selectedYear)) {
                         return false;
                     }
                 }
@@ -689,9 +722,10 @@
                     marker.bindPopup(`
                         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
                             <h4 style="margin: 0 0 8px 0; color: ${color};">${event.type}</h4>
-                            <p style="margin: 4px 0;"><strong>Datum:</strong> ${event.date || 'Okänt'}</p>
-                            <p style="margin: 4px 0;"><strong>Plats:</strong> ${event.location || 'Okänt'}</p>
-                            ${event.description ? `<p style="margin: 4px 0;"><strong>Beskrivning:</strong> ${event.description}</p>` : ''}
+                            <p style="margin: 4px 0;"><strong>Datum:</strong> ${formatDate(event.datetime || event.date || 'Okänt')}</p>
+                            <p style="margin: 4px 0;"><strong>Plats:</strong> ${event.location_name || event.kommun || 'Okänt'}</p>
+                            ${event.summary ? `<p style="margin: 4px 0;"><strong>Beskrivning:</strong> ${event.summary}</p>` : ''}
+                            ${event.improved_area ? `<p style="margin: 4px 0; font-size: 0.9em; color: #666;"><strong>Område:</strong> ${event.improved_area}</p>` : ''}
                         </div>
                     `);
                     
