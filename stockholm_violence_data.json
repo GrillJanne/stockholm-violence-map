@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2025-08-05T06:40:08.980711",
-    "total_events": 2228,
+    "last_updated": "2025-08-05T12:56:29.860397",
+    "total_events": 2246,
     "new_events_added": 18,
     "new_events_improved": 18,
-    "total_improved_events": 2177,
-    "improvement_rate": 0.9771095152603232,
+    "total_improved_events": 2195,
+    "improvement_rate": 0.9772929652715939,
     "data_source": "polisen.se",
     "automation_version": "3.0",
     "github_actions": true,
@@ -101,6 +101,24 @@
       "url": "/aktuellt/handelser/2025/augusti/3/03-augusti-19.36-ran-ovrigt-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.977602"
+    },
+    {
+      "id": "af33fb37442a",
+      "datetime": "2025-08-04 7:59:51 +02:00",
+      "type": "Rån övrigt",
+      "summary": "En man börjar slåss med butikspersonal när han stoppas från att stjäla.",
+      "location_name": "Stockholm",
+      "latitude": 59.3382300610722,
+      "longitude": 18.089732445073167,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm baserat på Rån övrigt",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/3/03-augusti-19.36-ran-ovrigt-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857179"
     },
     {
       "id": "1ce3b2ac63de",
@@ -263,6 +281,24 @@
       "url": "/aktuellt/handelser/2025/augusti/3/03-augusti-03.47-valdtakt-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.977815"
+    },
+    {
+      "id": "1ce3b2ac63de",
+      "datetime": "2025-08-03 7:58:05 +02:00",
+      "type": "Våldtäkt",
+      "summary": "Hittills okänd gärningsman misstänks ha utsatt en kvinna för våldtäkt när hon är på väg hem. Brottet har skett",
+      "location_name": "Stockholm",
+      "latitude": 59.3106889077744,
+      "longitude": 18.052674941294182,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Södermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Södermalm centrum baserat på Våldtäkt",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/3/03-augusti-03.47-valdtakt-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857379"
     },
     {
       "id": "3471b2e0d636",
@@ -499,6 +535,24 @@
       "added_timestamp": "2025-08-05T06:40:08.978142"
     },
     {
+      "id": "3471b2e0d636",
+      "datetime": "2025-08-02 7:58:01 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man grips som misstänkt för köp av sexuell tjänst och misshandel då han misstänks ha slagit den person han ",
+      "location_name": "Stockholm",
+      "latitude": 59.33430496730116,
+      "longitude": 18.064814492725457,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Norrmalm",
+      "improvement_details": "Förbättrad från Stockholm centrum till Norrmalm baserat på Sexualbrott",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/2/02-augusti-05.38-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857702"
+    },
+    {
       "id": "f52eb5834904",
       "datetime": "2025-08-02 15:38:26 +02:00",
       "type": "Bråk",
@@ -695,6 +749,24 @@
       "url": "/aktuellt/handelser/2025/augusti/2/02-augusti-15.17-brak-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.977966"
+    },
+    {
+      "id": "f52eb5834904",
+      "datetime": "2025-08-02 15:38:26 +02:00",
+      "type": "Bråk",
+      "summary": "Två polispatruller rycker ut till en lägenhet i city från vilken ett vittne hör en kvinna skrika.",
+      "location_name": "Stockholm",
+      "latitude": 59.3224002133695,
+      "longitude": 18.055418403187335,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Norrmalm",
+      "improvement_details": "Förbättrad från Stockholm centrum till Norrmalm baserat på Bråk",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/2/02-augusti-15.17-brak-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857545"
     },
     {
       "id": "105819c0dd36",
@@ -985,6 +1057,24 @@
       "added_timestamp": "2025-08-05T06:40:08.978551"
     },
     {
+      "id": "105819c0dd36",
+      "datetime": "2025-08-01 8:51:36 +02:00",
+      "type": "Misshandel",
+      "summary": "En flick i tonåren förs till sjukhus efter att ha blivit hundbiten.",
+      "location_name": "Stockholm",
+      "latitude": 59.3448064822582,
+      "longitude": 18.07825514508681,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Norrmalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Norrmalm centrum baserat på Misshandel",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-01.05-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858157"
+    },
+    {
       "id": "188f4d5341ec",
       "datetime": "2025-08-01 8:43:37 +02:00",
       "type": "Misshandel, grov",
@@ -1271,6 +1361,24 @@
       "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-00.25-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.978722"
+    },
+    {
+      "id": "188f4d5341ec",
+      "datetime": "2025-08-01 8:43:37 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "Okänd bilförare försöker köra på en annan person.",
+      "location_name": "Stockholm",
+      "latitude": 59.3444509852086,
+      "longitude": 18.079080341877283,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm centrum baserat på Misshandel, grov",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-00.25-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858341"
     },
     {
       "id": "16493c74d6e8",
@@ -1579,6 +1687,24 @@
       "added_timestamp": "2025-08-05T06:40:08.978910"
     },
     {
+      "id": "16493c74d6e8",
+      "datetime": "2025-08-01 8:27:02 +02:00",
+      "type": "Misshandel",
+      "summary": "Tre personer frihetsberövas efter ett slagsmål på Hamngatan.",
+      "location_name": "Stockholm",
+      "latitude": 59.33988348911286,
+      "longitude": 18.058139712356898,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Norrmalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Norrmalm centrum baserat på Misshandel",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-02.55-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858496"
+    },
+    {
       "id": "6c26edf9a0c0",
       "datetime": "2025-08-01 7:55:54 +02:00",
       "type": "Misshandel",
@@ -1885,6 +2011,24 @@
       "added_timestamp": "2025-08-05T06:40:08.979057"
     },
     {
+      "id": "6c26edf9a0c0",
+      "datetime": "2025-08-01 7:55:54 +02:00",
+      "type": "Misshandel",
+      "summary": "Flera personer ringer polisen om att en man misshandlar en kvinna.",
+      "location_name": "Stockholm",
+      "latitude": 59.31965782551026,
+      "longitude": 18.068570503045798,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Norrmalm",
+      "improvement_details": "Förbättrad från Stockholm centrum till Norrmalm baserat på Misshandel",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/31/31-juli-22.43-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858644"
+    },
+    {
       "id": "fab438dc3d15",
       "datetime": "2025-08-01 14:43:59 +02:00",
       "type": "Misshandel, grov",
@@ -2173,6 +2317,24 @@
       "added_timestamp": "2025-08-05T06:40:08.978284"
     },
     {
+      "id": "fab438dc3d15",
+      "datetime": "2025-08-01 14:43:59 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "En person har misshandlats grovt på Fleminggatan. Tre personer är anhållna.",
+      "location_name": "Stockholm",
+      "latitude": 59.326225484097925,
+      "longitude": 18.08880389603154,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm centrum baserat på Misshandel, grov",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/31/31-juli-00.26-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857857"
+    },
+    {
       "id": "c1bb7975dcd0",
       "datetime": "2025-08-01 11:21:44 +02:00",
       "type": "Stöld",
@@ -2459,6 +2621,24 @@
       "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-11.36-stold-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.978410"
+    },
+    {
+      "id": "c1bb7975dcd0",
+      "datetime": "2025-08-01 11:21:44 +02:00",
+      "type": "Stöld",
+      "summary": "En person som misstänks ha stulit väskor grips på ett hotell i centrala Stockholm.",
+      "location_name": "Stockholm",
+      "latitude": 59.33228639731977,
+      "longitude": 18.08636298307017,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Gamla stan centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Gamla stan centrum baserat på Stöld",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/augusti/1/01-augusti-11.36-stold-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.857999"
     },
     {
       "id": "b5ad2869a518",
@@ -3227,6 +3407,24 @@
       "added_timestamp": "2025-08-05T06:40:08.979345"
     },
     {
+      "id": "b5ad2869a518",
+      "datetime": "2025-07-26 7:37:44 +02:00",
+      "type": "Misshandel",
+      "summary": "Samtal om slagsmål i Råcksta.",
+      "location_name": "Stockholm",
+      "latitude": 59.33024332264423,
+      "longitude": 18.090500153356707,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm centrum baserat på Misshandel",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/26/26-juli-05.18-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858928"
+    },
+    {
       "id": "14be6448898b",
       "datetime": "2025-07-26 17:01:14 +02:00",
       "type": "Misshandel, grov",
@@ -3953,6 +4151,24 @@
       "url": "/aktuellt/handelser/2025/juli/26/26-juli-14.14-misshandel-grov-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.979187"
+    },
+    {
+      "id": "14be6448898b",
+      "datetime": "2025-07-26 17:01:14 +02:00",
+      "type": "Misshandel, grov",
+      "summary": "En man misshandlar en annan man utomhus i Hässelby gård.",
+      "location_name": "Stockholm",
+      "latitude": 59.34109376489364,
+      "longitude": 18.082326189727933,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Gamla stan centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Gamla stan centrum baserat på Misshandel, grov",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/26/26-juli-14.14-misshandel-grov-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.858777"
     },
     {
       "id": "61a066511657",
@@ -4757,6 +4973,24 @@
       "url": "/aktuellt/handelser/2025/juli/25/25-juli-17.35-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.979439"
+    },
+    {
+      "id": "61a066511657",
+      "datetime": "2025-07-25 19:34:12 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man blottar sig på klipporna i Kristineberg.",
+      "location_name": "Stockholm",
+      "latitude": 59.32698953649686,
+      "longitude": 18.083978453281244,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Södermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Södermalm centrum baserat på Sexualbrott",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/25/25-juli-17.35-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859063"
     },
     {
       "id": "1d7f36887aa0",
@@ -5677,6 +5911,24 @@
       "added_timestamp": "2025-08-05T06:40:08.979678"
     },
     {
+      "id": "1d7f36887aa0",
+      "datetime": "2025-07-24 7:16:39 +02:00",
+      "type": "Olaga intrång",
+      "summary": "Samtal om pågående inbrott.",
+      "location_name": "Stockholm",
+      "latitude": 59.34296992071974,
+      "longitude": 18.079578720820827,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm baserat på Olaga intrång",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-23.10-olaga-intrang-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859364"
+    },
+    {
       "id": "dcfa4ab74d5d",
       "datetime": "2025-07-24 21:43:29 +02:00",
       "type": "Sexualbrott",
@@ -6536,6 +6788,24 @@
       "url": "/aktuellt/handelser/2025/juli/24/24-juli-15.11-sexualbrott-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.979543"
+    },
+    {
+      "id": "dcfa4ab74d5d",
+      "datetime": "2025-07-24 21:43:29 +02:00",
+      "type": "Sexualbrott",
+      "summary": "En man blottar sig i Råcksta.",
+      "location_name": "Stockholm",
+      "latitude": 59.33220194191878,
+      "longitude": 18.020298980989153,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Kungsholmen centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Kungsholmen centrum baserat på Sexualbrott",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/24/24-juli-15.11-sexualbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859219"
     },
     {
       "id": "64fe7376be65",
@@ -7532,6 +7802,24 @@
       "added_timestamp": "2025-08-05T06:40:08.979998"
     },
     {
+      "id": "64fe7376be65",
+      "datetime": "2025-07-23 8:35:33 +02:00",
+      "type": "Larm Inbrott",
+      "summary": "Inbrottslarm från en hotell- och konferensanläggning.",
+      "location_name": "Stockholm",
+      "latitude": 59.326209802598605,
+      "longitude": 18.070629285118986,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Gamla stan centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Gamla stan centrum baserat på Larm Inbrott",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-04.17-larm-inbrott-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859651"
+    },
+    {
       "id": "4db97ff7d222",
       "datetime": "2025-07-23 8:17:46 +02:00",
       "type": "Knivlagen",
@@ -8526,6 +8814,24 @@
       "added_timestamp": "2025-08-05T06:40:08.980136"
     },
     {
+      "id": "4db97ff7d222",
+      "datetime": "2025-07-23 8:17:46 +02:00",
+      "type": "Knivlagen",
+      "summary": "En man springer omkring med kniv på hotell.",
+      "location_name": "Stockholm",
+      "latitude": 59.32326927819131,
+      "longitude": 18.06946662237503,
+      "location_confidence": 0.7,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Gamla stan centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Gamla stan centrum baserat på Knivlagen",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/22/22-juli-22.31-knivlagen-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859788"
+    },
+    {
       "id": "2185fbdd7b87",
       "datetime": "2025-07-23 17:22:06 +02:00",
       "type": "Misshandel",
@@ -9480,6 +9786,24 @@
       "url": "/aktuellt/handelser/2025/juli/23/23-juli-16.36-misshandel-stockholm/",
       "added_by_automation": true,
       "added_timestamp": "2025-08-05T06:40:08.979853"
+    },
+    {
+      "id": "2185fbdd7b87",
+      "datetime": "2025-07-23 17:22:06 +02:00",
+      "type": "Misshandel",
+      "summary": "Man i Husby greps efter misshandel av kvinna han har relation med.",
+      "location_name": "Stockholm",
+      "latitude": 59.33789409459933,
+      "longitude": 18.089041672120814,
+      "location_confidence": 0.8999999999999999,
+      "correction_method": "unknown",
+      "improvement_method": "intelligent_area_analysis",
+      "improved_area": "Östermalm centrum",
+      "improvement_details": "Förbättrad från Stockholm centrum till Östermalm centrum baserat på Misshandel",
+      "kommun": "Stockholm",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-16.36-misshandel-stockholm/",
+      "added_by_automation": true,
+      "added_timestamp": "2025-08-05T12:56:29.859519"
     },
     {
       "id": "1f86a3ccda91",
