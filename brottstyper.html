@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brottstyper - Stockholm Våldskarta | Detaljerad Kategorisering</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Detaljerad förklaring av alla brottstyper som visas på Stockholm Våldskarta. Kategorisering och definition av våldsdåd från polisen.se">
+    <meta name="keywords" content="brottstyper, våldsdåd, misshandel, rån, skottlossning, explosion, våldtäkt, mord, kriminalstatistik">
+    <meta name="author" content="Stockholm Våldskarta">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020465526285919"
+         crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* Crime Type Cards */
+        .crime-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .crime-type-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .crime-type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .crime-type-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .crime-type-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .crime-type-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #374151;
+        }
+        
+        .crime-type-description {
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .crime-type-details {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .crime-type-details h4 {
+            color: #374151;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .crime-type-details ul {
+            margin-left: 1.5rem;
+            color: #6b7280;
+        }
+        
+        .crime-type-details li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .severity-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+        
+        .severity-level {
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .severity-stars {
+            color: #f59e0b;
+        }
+        
+        /* Info Section */
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .info-section h2 {
+            color: #374151;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-section h3 {
+            color: #4b5563;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+        
+        .info-section p {
+            margin-bottom: 1rem;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+        
+        .info-section ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #6b7280;
+        }
+        
+        .info-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        /* AdSense */
+        .ad-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .back-link {
+                position: static;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+            
+            .crime-types-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .crime-type-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="back-link">← Tillbaka till Kartan</a>
+        <h1>🚨 Brottstyper</h1>
+        <p>Detaljerad förklaring av alla våldsdåd som visas på Stockholm Våldskarta</p>
+    </header>
+
+    <div class="container">
+        <!-- Crime Types Grid -->
+        <div class="crime-types-grid">
+            <!-- Misshandel -->
+            <div class="crime-type-card" style="border-left-color: #ef4444;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #ef4444;">🤜</div>
+                    <div class="crime-type-title">Misshandel</div>
+                </div>
+                <div class="crime-type-description">
+                    Fysiskt våld mot person som orsakar smärta, skada eller sjukdom. Det vanligaste våldsbrott som rapporteras till polisen.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Inkluderar:</h4>
+                    <ul>
+                        <li>Slag, sparkar eller annan fysisk våldsamhet</li>
+                        <li>Användning av föremål som vapen</li>
+                        <li>Våld som orsakar synliga skador</li>
+                        <li>Våld utan synliga skador men med smärta</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★☆☆☆</span>
+                </div>
+            </div>
+
+            <!-- Grov Misshandel -->
+            <div class="crime-type-card" style="border-left-color: #dc2626;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #dc2626;">⚡</div>
+                    <div class="crime-type-title">Grov Misshandel</div>
+                </div>
+                <div class="crime-type-description">
+                    Särskilt allvarlig misshandel som innebär fara för offrets liv eller risk för svår kroppsskada.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Kännetecken:</h4>
+                    <ul>
+                        <li>Livshotande våld eller risk för bestående men</li>
+                        <li>Användning av farliga vapen</li>
+                        <li>Våld mot särskilt försvarslösa personer</li>
+                        <li>Våld av särskilt råt eller hänsynslöst slag</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★★☆</span>
+                </div>
+            </div>
+
+            <!-- Rån -->
+            <div class="crime-type-card" style="border-left-color: #3b82f6;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #3b82f6;">💰</div>
+                    <div class="crime-type-title">Rån</div>
+                </div>
+                <div class="crime-type-description">
+                    Stöld genom våld eller hot om våld mot person. Kombinerar egendomsbrott med våldsbrottslighet.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Typiska situationer:</h4>
+                    <ul>
+                        <li>Gatufrån med hot om våld</li>
+                        <li>Rån av butiker eller företag</li>
+                        <li>Hemfrån med våld eller hot</li>
+                        <li>Rån i kollektivtrafik</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★☆☆</span>
+                </div>
+            </div>
+
+            <!-- Skottlossning -->
+            <div class="crime-type-card" style="border-left-color: #10b981;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #10b981;">🔫</div>
+                    <div class="crime-type-title">Skottlossning</div>
+                </div>
+                <div class="crime-type-description">
+                    Avlossande av skott med skjutvapen, oavsett om någon träffas eller skadas. Särskilt allvarligt brott.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Omfattar:</h4>
+                    <ul>
+                        <li>Skott mot person (träff eller miss)</li>
+                        <li>Skott mot egendom eller fordon</li>
+                        <li>Varningsskott eller skrämselskott</li>
+                        <li>Skott i samband med andra brott</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★★★</span>
+                </div>
+            </div>
+
+            <!-- Explosion -->
+            <div class="crime-type-card" style="border-left-color: #f59e0b;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #f59e0b;">💥</div>
+                    <div class="crime-type-title">Explosion</div>
+                </div>
+                <div class="crime-type-description">
+                    Sprängningar och explosioner, ofta relaterade till organiserad brottslighet eller konflikter mellan kriminella grupper.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Typer av explosioner:</h4>
+                    <ul>
+                        <li>Handgranater och sprängämnen</li>
+                        <li>Bomber mot byggnader eller fordon</li>
+                        <li>Sprängningar vid bostäder</li>
+                        <li>Explosioner vid företag eller lokaler</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★★★</span>
+                </div>
+            </div>
+
+            <!-- Våldtäkt -->
+            <div class="crime-type-card" style="border-left-color: #8b5cf6;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #8b5cf6;">⚠️</div>
+                    <div class="crime-type-title">Våldtäkt</div>
+                </div>
+                <div class="crime-type-description">
+                    Sexualbrott som innebär samlag eller annan sexuell handling genom våld, hot eller med person som befinner sig i hjälplöst tillstånd.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Juridisk definition:</h4>
+                    <ul>
+                        <li>Samlag eller sexuell handling genom våld</li>
+                        <li>Sexualbrott genom hot om brottslig gärning</li>
+                        <li>Sexualbrott mot hjälplös person</li>
+                        <li>Grov våldtäkt vid särskilt allvarliga omständigheter</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★★★</span>
+                </div>
+            </div>
+
+            <!-- Mord -->
+            <div class="crime-type-card" style="border-left-color: #f97316;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #f97316;">💀</div>
+                    <div class="crime-type-title">Mord</div>
+                </div>
+                <div class="crime-type-description">
+                    Uppsåtligt dödande av annan person. Det allvarligaste våldsbrott som finns i svensk lagstiftning.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Inkluderar:</h4>
+                    <ul>
+                        <li>Mord - uppsåtligt dödande</li>
+                        <li>Dråp - dödande under förmildrande omständigheter</li>
+                        <li>Försök till mord eller dråp</li>
+                        <li>Barnamord - dödande av nyfött barn</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★★★</span>
+                </div>
+            </div>
+
+            <!-- Olaga Hot -->
+            <div class="crime-type-card" style="border-left-color: #6366f1;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #6366f1;">📢</div>
+                    <div class="crime-type-title">Olaga Hot</div>
+                </div>
+                <div class="crime-type-description">
+                    Hot om brottslig gärning som är ägnat att hos den hotade framkalla allvarlig fruktan för egen eller annans säkerhet.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Exempel på olaga hot:</h4>
+                    <ul>
+                        <li>Hot om våld mot person</li>
+                        <li>Hot om skada på egendom</li>
+                        <li>Dödshot eller hot om allvarlig skada</li>
+                        <li>Hot som framkallas genom ord, gester eller handlingar</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★☆☆☆</span>
+                </div>
+            </div>
+
+            <!-- Våld mot Tjänsteman -->
+            <div class="crime-type-card" style="border-left-color: #059669;">
+                <div class="crime-type-header">
+                    <div class="crime-type-icon" style="background-color: #059669;">👮</div>
+                    <div class="crime-type-title">Våld mot Tjänsteman</div>
+                </div>
+                <div class="crime-type-description">
+                    Våld eller hot mot person som utför offentlig tjänst, såsom polis, brandman, sjukvårdspersonal eller ordningsvakt.
+                </div>
+                <div class="crime-type-details">
+                    <h4>Omfattar våld mot:</h4>
+                    <ul>
+                        <li>Poliser och säkerhetspersonal</li>
+                        <li>Sjukvårdspersonal och ambulanspersonal</li>
+                        <li>Brandmän och räddningspersonal</li>
+                        <li>Ordningsvakter och väktare</li>
+                    </ul>
+                </div>
+                <div class="severity-indicator">
+                    <span class="severity-level">Allvarlighetsgrad:</span>
+                    <span class="severity-stars">★★★☆☆</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- AdSense Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Annons</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8020465526285919"
+                 data-ad-slot="auto"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <!-- Additional Information -->
+        <section class="info-section">
+            <h2>📊 Kategorisering och Statistik</h2>
+            
+            <h3>🎯 Hur kategoriseras brotten?</h3>
+            <p>Alla brottstyper kategoriseras enligt <strong>Polisens officiella klassificering</strong> som följer svensk lagstiftning. Kategoriseringen sker automatiskt baserat på brottskoden i polisens system.</p>
+            
+            <h3>📈 Statistisk Fördelning</h3>
+            <p>Fördelningen av brottstyper på Stockholm Våldskarta reflekterar den verkliga brottsligheten i regionen:</p>
+            <ul>
+                <li><strong>Misshandel</strong> - Vanligast (ca 40-50% av alla våldsdåd)</li>
+                <li><strong>Rån</strong> - Näst vanligast (ca 20-30%)</li>
+                <li><strong>Skottlossning</strong> - Mindre vanligt men allvarligt (ca 5-10%)</li>
+                <li><strong>Explosion</strong> - Ovanligt men mycket allvarligt (ca 2-5%)</li>
+                <li><strong>Våldtäkt</strong> - Allvarligt brott med mörkertal (ca 3-8%)</li>
+                <li><strong>Mord</strong> - Mycket ovanligt men allvarligast (ca 1-2%)</li>
+            </ul>
+            
+            <h3>⚖️ Juridiska Definitioner</h3>
+            <p>Alla definitioner följer <strong>Brottsbalken (BrB)</strong> och <strong>Polisens föreskrifter</strong> för brottsklassificering. Definitionerna uppdateras kontinuerligt enligt gällande lagstiftning.</p>
+            
+            <h3>🔍 Rapportering och Mörkertal</h3>
+            <p>Viktigt att komma ihåg:</p>
+            <ul>
+                <li><strong>Anmälda brott</strong> - Kartan visar endast brott som rapporterats till polisen</li>
+                <li><strong>Mörkertal</strong> - Många brott anmäls aldrig, särskilt våldtäkt och misshandel i nära relationer</li>
+                <li><strong>Geografisk spridning</strong> - Koordinater är approximativa för att skydda integritet</li>
+                <li><strong>Tidsfördröjning</strong> - Händelser visas vanligtvis inom 24-48 timmar efter anmälan</li>
+            </ul>
+        </section>
+
+        <!-- Sources -->
+        <section class="info-section">
+            <h2>📚 Källor och Referenser</h2>
+            
+            <h3>🏛️ Primära Källor</h3>
+            <ul>
+                <li><strong>Polisen.se</strong> - Officiell brottsstatistik och händelsedata</li>
+                <li><strong>Brottsbalken (BrB)</strong> - Juridiska definitioner av brottstyper</li>
+                <li><strong>Brå (Brottsförebyggande rådet)</strong> - Statistik och forskning</li>
+            </ul>
+            
+            <h3>📖 Ytterligare Läsning</h3>
+            <ul>
+                <li><a href="https://polisen.se/om-polisen/polisens-arbete/brottsstatistik/" target="_blank" style="color: #667eea;">Polisens brottsstatistik</a></li>
+                <li><a href="https://bra.se/" target="_blank" style="color: #667eea;">Brottsförebyggande rådet</a></li>
+                <li><a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/brottsbalk-1962700_sfs-1962-700" target="_blank" style="color: #667eea;">Brottsbalken</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Initialize AdSense
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
+
