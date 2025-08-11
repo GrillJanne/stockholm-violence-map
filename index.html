@@ -764,33 +764,19 @@
             cacheStatus.textContent = 'Laddar data...';
             
             try {
-                // Try to load the new complete dataset first
+                // Load the standard data file
                 let response;
-                let dataFile = 'stockholm_violence_complete_with_api.json';
+                let dataFile = 'stockholm_violence_data.json';
                 
-                try {
-                    const timestamp = new Date().getTime();
-                    response = await fetch(`${dataFile}?v=${timestamp}&_=${Math.random()}`, {
-                        cache: 'no-cache',
-                        headers: {
-                            'Cache-Control': 'no-cache, no-store, must-revalidate',
-                            'Pragma': 'no-cache',
-                            'Expires': '0'
-                        }
-                    });
-                } catch (e) {
-                    // Fallback to original data file
-                    dataFile = 'stockholm_violence_data.json';
-                    const timestamp = new Date().getTime();
-                    response = await fetch(`${dataFile}?v=${timestamp}&_=${Math.random()}`, {
-                        cache: 'no-cache',
-                        headers: {
-                            'Cache-Control': 'no-cache, no-store, must-revalidate',
-                            'Pragma': 'no-cache',
-                            'Expires': '0'
-                        }
-                    });
-                }
+                const timestamp = new Date().getTime();
+                response = await fetch(`${dataFile}?v=${timestamp}&_=${Math.random()}`, {
+                    cache: 'no-cache',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache',
+                        'Expires': '0'
+                    }
+                });
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}`);
