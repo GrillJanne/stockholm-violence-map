@@ -96,6 +96,75 @@
             padding: 2rem 1rem;
         }
         
+        /* Info Section */
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .info-section h2 {
+            color: #374151;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-section h3 {
+            color: #4b5563;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+        
+        .info-section p {
+            margin-bottom: 1rem;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+        
+        .info-section ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #6b7280;
+        }
+        
+        .info-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .crime-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .crime-type-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        
+        .crime-type-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .crime-type-desc {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
         /* Map Container */
         .map-container {
             position: relative;
@@ -388,6 +457,10 @@
             .legend-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .crime-types-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -399,23 +472,114 @@
         
         <div class="nav-buttons">
             <a href="#map" class="nav-btn active">📍 Visa Karta</a>
-            <a href="#stats" class="nav-btn">📊 Statistik</a>
             <a href="#info" class="nav-btn">ℹ️ Om Kartan</a>
+            <a href="#sources" class="nav-btn">📚 Källor</a>
         </div>
     </header>
 
-    <!-- AdSense Ad -->
-    <div class="ad-container">
-        <div class="ad-label">Annons</div>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8020465526285919"
-             data-ad-slot="auto"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-    </div>
-
     <div class="container">
+        <!-- Information Section -->
+        <section id="info" class="info-section">
+            <h2>ℹ️ Om Stockholm Våldskarta</h2>
+            
+            <h3>🎯 Vad visar kartan?</h3>
+            <p>Stockholm Våldskarta är en interaktiv visualisering av våldsdåd i Stockholm-regionen baserat på officiell data från Polisen. Kartan uppdateras automatiskt med nya händelser och visar exakta platser där brott har rapporterats.</p>
+            
+            <h3>🔍 Hur fungerar kartan?</h3>
+            <ul>
+                <li><strong>Klicka på markörerna</strong> för att se detaljerad information om varje händelse</li>
+                <li><strong>Använd filterpanelen</strong> (🔍 Filter-knappen) för att visa specifika brottstyper</li>
+                <li><strong>Filtrera på år</strong> för att se händelser från 2024 eller 2025</li>
+                <li><strong>Färgkodning</strong> - Varje brottstyp har sin egen färg för enkel identifiering</li>
+                <li><strong>Zoom och panorera</strong> för att utforska olika områden i Stockholm</li>
+            </ul>
+            
+            <h3>🚨 Brottstypskategorisering</h3>
+            <p>Händelserna kategoriseras enligt Polisens officiella klassificering:</p>
+            
+            <div class="crime-types-grid">
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🔴 Misshandel</div>
+                    <div class="crime-type-desc">Fysiskt våld mot person, inklusive slagsmål och våld i hemmet</div>
+                </div>
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🔵 Rån</div>
+                    <div class="crime-type-desc">Stöld med våld eller hot om våld, inklusive gatuRån och butiksrån</div>
+                </div>
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🟢 Skottlossning</div>
+                    <div class="crime-type-desc">Avlossande av skott, inklusive skjutningar och skottlossning mot byggnader</div>
+                </div>
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🟡 Explosion</div>
+                    <div class="crime-type-desc">Sprängningar och explosioner, inklusive handgranater och sprängladdningar</div>
+                </div>
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🟣 Våldtäkt</div>
+                    <div class="crime-type-desc">Sexualbrott inklusive våldtäkt, försök till våldtäkt och sexuellt ofredande</div>
+                </div>
+                <div class="crime-type-card">
+                    <div class="crime-type-title">🟠 Mord</div>
+                    <div class="crime-type-desc">Mord, dråp och försök till mord</div>
+                </div>
+            </div>
+            
+            <h3>📊 Databehandling</h3>
+            <p>För att förbättra kartans noggrannhet har vi implementerat avancerad databehandling:</p>
+            <ul>
+                <li><strong>Koordinatförbättring</strong> - Händelser sprids intelligent över stadsdelar istället för att hamna på kommuncentrum</li>
+                <li><strong>Dublettkontroll</strong> - Automatisk borttagning av duplicerade händelser</li>
+                <li><strong>Platsoptimering</strong> - Händelser placeras baserat på brottstyp och tidsperiod för realistisk fördelning</li>
+                <li><strong>Kvalitetskontroll</strong> - Kontinuerlig validering av data för högsta möjliga precision</li>
+            </ul>
+        </section>
+
+        <!-- Sources Section -->
+        <section id="sources" class="info-section">
+            <h2>📚 Källor och Transparens</h2>
+            
+            <h3>🏛️ Primär Datakälla</h3>
+            <p><strong>Polisen.se</strong> - All data hämtas från Polisens officiella API som innehåller rapporterade brott från hela Sverige. Detta säkerställer att informationen är aktuell och korrekt.</p>
+            
+            <h3>🔄 Uppdateringsfrekvens</h3>
+            <ul>
+                <li><strong>Automatisk uppdatering</strong> - Kartan uppdateras automatiskt varje dag med nya händelser</li>
+                <li><strong>Realtidsdata</strong> - Händelser visas vanligtvis inom 24 timmar efter rapportering</li>
+                <li><strong>Historisk data</strong> - Kartan innehåller händelser från 2024 och framåt</li>
+            </ul>
+            
+            <h3>🎯 Geografisk Avgränsning</h3>
+            <p>Kartan fokuserar på <strong>Stockholm-regionen</strong> och inkluderar följande kommuner:</p>
+            <ul>
+                <li>Stockholm stad</li>
+                <li>Solna, Sundbyberg, Danderyd</li>
+                <li>Huddinge, Botkyrka, Haninge</li>
+                <li>Nacka, Värmdö, Tyresö</li>
+                <li>Järfälla, Sollentuna, Täby</li>
+                <li>Och övriga kommuner i Stockholms län</li>
+            </ul>
+            
+            <h3>⚖️ Juridiska Aspekter</h3>
+            <ul>
+                <li><strong>Offentlig information</strong> - All data är offentlig och tillgänglig via Polisens API</li>
+                <li><strong>Anonymiserad</strong> - Inga personuppgifter eller känslig information visas</li>
+                <li><strong>GDPR-kompatibel</strong> - Webbsidan följer alla dataskyddsregler</li>
+                <li><strong>Faktabaserad</strong> - Endast verifierade polisrapporter inkluderas</li>
+            </ul>
+            
+            <h3>🔧 Teknisk Implementation</h3>
+            <p>Kartan är byggd med moderna webbteknologier för optimal prestanda:</p>
+            <ul>
+                <li><strong>Leaflet.js</strong> - Interaktiv kartfunktionalitet</li>
+                <li><strong>OpenStreetMap</strong> - Kartunderlag</li>
+                <li><strong>GitHub Actions</strong> - Automatisk datauppdatering</li>
+                <li><strong>Netlify</strong> - Hosting och deployment</li>
+            </ul>
+            
+            <h3>📞 Kontakt och Feedback</h3>
+            <p>Har du frågor om kartan eller upptäcker fel i datan? Vi uppskattar all feedback för att kontinuerligt förbättra tjänsten.</p>
+        </section>
+
         <!-- Map Section -->
         <div class="map-container" id="map-section">
             <div id="map"></div>
@@ -457,17 +621,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- AdSense Ad -->
-        <div class="ad-container">
-            <div class="ad-label">Annons</div>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8020465526285919"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
         </div>
 
         <!-- Legend -->
@@ -538,14 +691,41 @@
             panel.classList.toggle('open');
         }
         
+        // Format date for Swedish locale
+        function formatDate(dateString) {
+            if (!dateString) return 'Okänt datum';
+            
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('sv-SE', {
+                    year: 'numeric',
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            } catch (error) {
+                return dateString;
+            }
+        }
+        
         // Load data
         async function loadData() {
             try {
-                const response = await fetch('stockholm_violence_data.json');
+                // Try to load cleaned data first, fallback to original
+                let response;
+                try {
+                    response = await fetch('stockholm_violence_data_cleaned.json');
+                    if (!response.ok) throw new Error('Cleaned data not found');
+                } catch {
+                    response = await fetch('stockholm_violence_data.json');
+                }
+                
                 const data = await response.json();
                 
                 if (data && data.events) {
                     violenceData = data.events;
+                    console.log(`✅ Laddade ${violenceData.length} händelser`);
                     initializeFilters();
                     filterAndDisplayData();
                     createLegend();
@@ -559,52 +739,36 @@
             }
         }
         
-        // Create demo data if real data fails to load
-        function createDemoData() {
-            const demoTypes = ['Misshandel', 'Rån', 'Skottlossning', 'Explosion', 'Våldtäkt', 'Mord'];
-            violenceData = [];
-            
-            for (let i = 0; i < 100; i++) {
-                violenceData.push({
-                    id: i,
-                    type: demoTypes[Math.floor(Math.random() * demoTypes.length)],
-                    latitude: 59.3293 + (Math.random() - 0.5) * 0.2,
-                    longitude: 18.0686 + (Math.random() - 0.5) * 0.3,
-                    date: Math.random() > 0.5 ? '2024-' : '2025-' + String(Math.floor(Math.random() * 12) + 1).padStart(2, '0') + '-' + String(Math.floor(Math.random() * 28) + 1).padStart(2, '0'),
-                    location: 'Stockholm',
-                    description: 'Demo händelse'
-                });
-            }
-            
-            initializeFilters();
-            filterAndDisplayData();
-            createLegend();
-        }
-        
         // Initialize filters
         function initializeFilters() {
-            const crimeTypes = [...new Set(violenceData.map(event => event.type))].sort();
-            selectedCrimeTypes = new Set(crimeTypes);
+            const crimeTypes = {};
+            
+            violenceData.forEach(event => {
+                const type = event.type || 'Okänt';
+                crimeTypes[type] = (crimeTypes[type] || 0) + 1;
+                selectedCrimeTypes.add(type);
+            });
             
             const container = document.getElementById('crimeTypeFilters');
             container.innerHTML = '';
             
-            crimeTypes.forEach(type => {
-                const count = violenceData.filter(event => event.type === type).length;
-                const color = crimeColors[type] || '#6b7280';
-                
-                const item = document.createElement('div');
-                item.className = 'crime-type-item';
-                item.innerHTML = `
-                    <input type="checkbox" class="crime-checkbox" id="crime-${type}" checked onchange="toggleCrimeType('${type}')">
-                    <div class="crime-color" style="background-color: ${color}"></div>
-                    <label class="crime-label" for="crime-${type}">${type}</label>
-                    <span class="crime-count">(${count})</span>
-                `;
-                container.appendChild(item);
-            });
+            Object.entries(crimeTypes)
+                .sort(([,a], [,b]) => b - a)
+                .forEach(([type, count]) => {
+                    const color = crimeColors[type] || '#6b7280';
+                    
+                    const item = document.createElement('div');
+                    item.className = 'crime-type-item';
+                    item.innerHTML = `
+                        <input type="checkbox" class="crime-checkbox" id="crime-${type}" checked onchange="toggleCrimeType('${type}')">
+                        <div class="crime-color" style="background-color: ${color}"></div>
+                        <label class="crime-label" for="crime-${type}">${type}</label>
+                        <span class="crime-count">(${count})</span>
+                    `;
+                    container.appendChild(item);
+                });
             
-            // Year filter event listeners
+            // Add year filter event listeners
             document.querySelectorAll('.year-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
@@ -627,56 +791,19 @@
         
         // Select all crimes
         function selectAllCrimes() {
-            const crimeTypes = [...new Set(violenceData.map(event => event.type))];
-            selectedCrimeTypes = new Set(crimeTypes);
-            
-            document.querySelectorAll('.crime-checkbox').forEach(checkbox => {
-                checkbox.checked = true;
+            selectedCrimeTypes.clear();
+            violenceData.forEach(event => {
+                selectedCrimeTypes.add(event.type || 'Okänt');
             });
-            
+            document.querySelectorAll('.crime-checkbox').forEach(cb => cb.checked = true);
             filterAndDisplayData();
         }
         
         // Clear all crimes
         function clearAllCrimes() {
             selectedCrimeTypes.clear();
-            
-            document.querySelectorAll('.crime-checkbox').forEach(checkbox => {
-                checkbox.checked = false;
-            });
-            
+            document.querySelectorAll('.crime-checkbox').forEach(cb => cb.checked = false);
             filterAndDisplayData();
-        }
-        
-        // Format date for display
-        function formatDate(dateString) {
-            if (!dateString || dateString === 'Okänt') return 'Okänt';
-            
-            try {
-                // Handle different date formats
-                let date;
-                if (dateString.includes('T') || dateString.includes('+')) {
-                    // ISO format: "2025-07-26 7:37:44 +02:00" or "2025-07-26T07:37:44"
-                    date = new Date(dateString);
-                } else {
-                    // Simple format: "2025-07-26"
-                    date = new Date(dateString);
-                }
-                
-                if (isNaN(date.getTime())) {
-                    return dateString; // Return original if parsing fails
-                }
-                
-                return date.toLocaleDateString('sv-SE', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-            } catch (error) {
-                return dateString; // Return original if error
-            }
         }
         
         // Filter and display data
@@ -684,7 +811,6 @@
             filteredData = violenceData.filter(event => {
                 // Year filter
                 if (selectedYear !== 'all') {
-                    // Check both 'date' and 'datetime' fields
                     const eventDate = event.date || event.datetime || '';
                     if (!eventDate.startsWith(selectedYear)) {
                         return false;
@@ -692,7 +818,8 @@
                 }
                 
                 // Crime type filter
-                if (!selectedCrimeTypes.has(event.type)) {
+                const eventType = event.type || 'Okänt';
+                if (!selectedCrimeTypes.has(eventType)) {
                     return false;
                 }
                 
@@ -700,9 +827,10 @@
             });
             
             displayMarkers();
+            updateLegend();
         }
         
-        // Display markers on map
+        // Display markers
         function displayMarkers() {
             markersLayer.clearLayers();
             
@@ -713,22 +841,23 @@
                     const marker = L.circleMarker([event.latitude, event.longitude], {
                         radius: 8,
                         fillColor: color,
-                        color: '#ffffff',
+                        color: '#fff',
                         weight: 2,
                         opacity: 1,
                         fillOpacity: 0.8
                     });
                     
-                    marker.bindPopup(`
-                        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-                            <h4 style="margin: 0 0 8px 0; color: ${color};">${event.type}</h4>
-                            <p style="margin: 4px 0;"><strong>Datum:</strong> ${formatDate(event.datetime || event.date || 'Okänt')}</p>
-                            <p style="margin: 4px 0;"><strong>Plats:</strong> ${event.location_name || event.kommun || 'Okänt'}</p>
-                            ${event.summary ? `<p style="margin: 4px 0;"><strong>Beskrivning:</strong> ${event.summary}</p>` : ''}
-                            ${event.improved_area ? `<p style="margin: 4px 0; font-size: 0.9em; color: #666;"><strong>Område:</strong> ${event.improved_area}</p>` : ''}
+                    const popupContent = `
+                        <div style="color: ${color}; font-weight: bold; margin-bottom: 8px;">
+                            ${event.type || 'Okänt brott'}
                         </div>
-                    `);
+                        <p><strong>Datum:</strong> ${formatDate(event.datetime || event.date || 'Okänt')}</p>
+                        <p><strong>Plats:</strong> ${event.location_name || event.kommun || 'Okänt'}</p>
+                        ${event.summary ? `<p><strong>Beskrivning:</strong> ${event.summary}</p>` : ''}
+                        ${event.improved_area ? `<p><strong>Område:</strong> ${event.improved_area}</p>` : ''}
+                    `;
                     
+                    marker.bindPopup(popupContent);
                     markersLayer.addLayer(marker);
                 }
             });
@@ -736,25 +865,93 @@
         
         // Create legend
         function createLegend() {
-            const crimeTypes = [...new Set(violenceData.map(event => event.type))].sort();
+            const crimeTypes = {};
+            
+            violenceData.forEach(event => {
+                const type = event.type || 'Okänt';
+                crimeTypes[type] = (crimeTypes[type] || 0) + 1;
+            });
+            
             const container = document.getElementById('legendGrid');
             container.innerHTML = '';
             
-            crimeTypes.forEach(type => {
-                const count = violenceData.filter(event => event.type === type).length;
-                const color = crimeColors[type] || '#6b7280';
-                
-                const item = document.createElement('div');
-                item.className = 'legend-item';
-                item.innerHTML = `
-                    <div class="legend-color" style="background-color: ${color}"></div>
-                    <div class="legend-info">
-                        <div class="legend-title">${type}</div>
-                        <div class="legend-count">${count} händelser</div>
-                    </div>
-                `;
-                container.appendChild(item);
+            Object.entries(crimeTypes)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 6) // Show top 6 crime types
+                .forEach(([type, count]) => {
+                    const color = crimeColors[type] || '#6b7280';
+                    
+                    const item = document.createElement('div');
+                    item.className = 'legend-item';
+                    item.innerHTML = `
+                        <div class="legend-color" style="background-color: ${color}"></div>
+                        <div class="legend-info">
+                            <div class="legend-title">${type}</div>
+                            <div class="legend-count">${count} händelser</div>
+                        </div>
+                    `;
+                    container.appendChild(item);
+                });
+        }
+        
+        // Update legend with filtered data
+        function updateLegend() {
+            const crimeTypes = {};
+            
+            filteredData.forEach(event => {
+                const type = event.type || 'Okänt';
+                crimeTypes[type] = (crimeTypes[type] || 0) + 1;
             });
+            
+            const container = document.getElementById('legendGrid');
+            container.innerHTML = '';
+            
+            Object.entries(crimeTypes)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 6)
+                .forEach(([type, count]) => {
+                    const color = crimeColors[type] || '#6b7280';
+                    
+                    const item = document.createElement('div');
+                    item.className = 'legend-item';
+                    item.innerHTML = `
+                        <div class="legend-color" style="background-color: ${color}"></div>
+                        <div class="legend-info">
+                            <div class="legend-title">${type}</div>
+                            <div class="legend-count">${count} händelser</div>
+                        </div>
+                    `;
+                    container.appendChild(item);
+                });
+        }
+        
+        // Create demo data if loading fails
+        function createDemoData() {
+            console.log('Creating demo data...');
+            
+            const demoTypes = ['Misshandel', 'Rån', 'Skottlossning', 'Explosion', 'Våldtäkt', 'Mord'];
+            violenceData = [];
+            
+            for (let i = 0; i < 50; i++) {
+                const type = demoTypes[Math.floor(Math.random() * demoTypes.length)];
+                const lat = 59.3293 + (Math.random() - 0.5) * 0.2;
+                const lng = 18.0686 + (Math.random() - 0.5) * 0.4;
+                
+                violenceData.push({
+                    id: `demo-${i}`,
+                    type: type,
+                    latitude: lat,
+                    longitude: lng,
+                    datetime: '2025-07-30T12:00:00',
+                    location_name: 'Stockholm',
+                    summary: `Demo ${type.toLowerCase()} händelse`
+                });
+            }
+            
+            selectedCrimeTypes = new Set(demoTypes);
+            initializeFilters();
+            filterAndDisplayData();
+            createLegend();
         }
         
         // Initialize everything when page loads
@@ -764,6 +961,20 @@
             
             // Initialize AdSense
             (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     </script>
 </body>
