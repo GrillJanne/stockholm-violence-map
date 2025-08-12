@@ -8393,11 +8393,27 @@
       "longitude": 18.069573385330386,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 596449,
+      "datetime": "2025-08-12 7:42:01 +02:00",
+      "name": "11 augusti 23.59, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en man som har knivhuggit en annan man i Hägersten.",
+      "url": "/aktuellt/handelser/2025/augusti/11/11-augusti-23.59-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32913328189377,
+      "longitude": 18.066761343299465,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-12T01:57:27.142651",
-    "total_events": 385,
+    "last_updated": "2025-08-12T06:36:41.462981",
+    "total_events": 386,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
