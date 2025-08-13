@@ -17,9 +17,6 @@
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Leaflet MarkerCluster CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     
     <style>
         * {
@@ -409,105 +406,6 @@
             color: white;
         }
         
-        /* Multi-event popup styles */
-        .multi-popup-content {
-            min-width: 300px;
-            max-width: 400px;
-        }
-        
-        .multi-popup-header {
-            margin: 0 0 15px 0;
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #2d3748;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-        }
-        
-        .event-item {
-            margin-bottom: 15px;
-            padding: 12px;
-            background: #f8fafc;
-            border-radius: 8px;
-            border-left: 4px solid;
-        }
-        
-        .event-item:last-child {
-            margin-bottom: 0;
-        }
-        
-        .event-type {
-            font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-        
-        .event-date {
-            font-size: 0.85rem;
-            color: #718096;
-            margin-bottom: 6px;
-        }
-        
-        .event-summary {
-            font-size: 0.9rem;
-            line-height: 1.4;
-            margin-bottom: 8px;
-        }
-        
-        .event-link {
-            display: inline-block;
-            padding: 4px 8px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transition: background-color 0.2s ease;
-        }
-        
-        .event-link:hover {
-            background: #5a67d8;
-            color: white;
-        }
-        
-        /* Cluster styles */
-        .marker-cluster {
-            background-color: rgba(102, 126, 234, 0.6);
-            border: 3px solid rgba(102, 126, 234, 0.8);
-        }
-        
-        .marker-cluster div {
-            background-color: rgba(102, 126, 234, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        
-        .marker-cluster-small {
-            background-color: rgba(102, 126, 234, 0.6);
-        }
-        
-        .marker-cluster-small div {
-            background-color: rgba(102, 126, 234, 0.8);
-        }
-        
-        .marker-cluster-medium {
-            background-color: rgba(241, 196, 15, 0.6);
-        }
-        
-        .marker-cluster-medium div {
-            background-color: rgba(241, 196, 15, 0.8);
-        }
-        
-        .marker-cluster-large {
-            background-color: rgba(231, 76, 60, 0.6);
-        }
-        
-        .marker-cluster-large div {
-            background-color: rgba(231, 76, 60, 0.8);
-        }
-        
         /* AdSense Styles */
         .ad-container {
             text-align: center;
@@ -593,11 +491,6 @@
                 min-width: 200px;
                 max-width: 280px;
             }
-            
-            .multi-popup-content {
-                min-width: 250px;
-                max-width: 300px;
-            }
         }
         
         /* Loading Animation */
@@ -658,7 +551,7 @@
         <section class="map-section">
             <div class="map-header">
                 <h2>🗺️ Interaktiv Våldskarta</h2>
-                <p>Klicka på markörer för detaljer • Använd filter för att anpassa visningen • Närliggande brott grupperas automatiskt</p>
+                <p>Klicka på markörer för detaljer • Zooma in för att se separata händelser • Använd filter för att anpassa visningen</p>
             </div>
             
             <!-- Filter Toggle Button -->
@@ -705,8 +598,9 @@
             
             <h3>🔍 Funktioner</h3>
             <ul>
-                <li><strong>Automatisk gruppering:</strong> Närliggande brott grupperas för bättre översikt</li>
-                <li><strong>Detaljerade popups:</strong> Klicka på markörer för att se alla brott på den platsen</li>
+                <li><strong>Separata markörer:</strong> Varje brott visas som en egen klickbar punkt</li>
+                <li><strong>Smart spridning:</strong> Händelser på samma plats sprids ut automatiskt</li>
+                <li><strong>Zoombar karta:</strong> Zooma in för att se detaljer och separata händelser</li>
                 <li><strong>Färgkodning:</strong> Olika brottstyper har olika färger för enkel identifiering</li>
                 <li><strong>Filteralternativ:</strong> Filtrera efter år och brottstyp</li>
                 <li><strong>Direktlänkar:</strong> Läs mer om varje brott på polisen.se</li>
@@ -761,7 +655,6 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     
     <script>
         // Global variables
@@ -798,37 +691,7 @@
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
             
-            // Initialize marker cluster group
-            markersLayer = L.markerClusterGroup({
-                chunkedLoading: true,
-                chunkProgress: function(processed, total, elapsed) {
-                    if (processed === total) {
-                        console.log('Finished loading ' + total + ' markers');
-                    }
-                },
-                iconCreateFunction: function(cluster) {
-                    const count = cluster.getChildCount();
-                    let className = 'marker-cluster-small';
-                    
-                    if (count > 50) {
-                        className = 'marker-cluster-large';
-                    } else if (count > 10) {
-                        className = 'marker-cluster-medium';
-                    }
-                    
-                    return new L.DivIcon({
-                        html: '<div><span>' + count + '</span></div>',
-                        className: 'marker-cluster ' + className,
-                        iconSize: new L.Point(40, 40)
-                    });
-                },
-                maxClusterRadius: 50,
-                spiderfyOnMaxZoom: true,
-                showCoverageOnHover: false,
-                zoomToBoundsOnClick: true
-            });
-            
-            map.addLayer(markersLayer);
+            markersLayer = L.layerGroup().addTo(map);
         }
         
         // Load data with cache busting
@@ -1029,192 +892,144 @@
             displayEventsOnMap();
         }
         
-        // Group events by location with small tolerance
-        function groupEventsByLocation(events) {
-            const groups = [];
-            const tolerance = 0.001; // About 100 meters
+        // Apply smart offset to avoid overlapping markers
+        function applySmartOffset(events) {
+            const offsetEvents = [];
+            const locationGroups = {};
+            const tolerance = 0.0001; // Very small tolerance for exact matches
             
+            // Group events by exact location
             events.forEach(event => {
                 const lat = parseFloat(event.latitude);
                 const lng = parseFloat(event.longitude);
                 
                 if (isNaN(lat) || isNaN(lng)) return;
                 
-                // Find existing group within tolerance
-                let foundGroup = groups.find(group => {
-                    const groupLat = group.latitude;
-                    const groupLng = group.longitude;
-                    return Math.abs(lat - groupLat) < tolerance && Math.abs(lng - groupLng) < tolerance;
-                });
+                const key = `${lat.toFixed(6)},${lng.toFixed(6)}`;
                 
-                if (foundGroup) {
-                    foundGroup.events.push(event);
+                if (!locationGroups[key]) {
+                    locationGroups[key] = {
+                        originalLat: lat,
+                        originalLng: lng,
+                        events: []
+                    };
+                }
+                
+                locationGroups[key].events.push(event);
+            });
+            
+            // Apply offset to each group
+            Object.values(locationGroups).forEach(group => {
+                const { originalLat, originalLng, events } = group;
+                
+                if (events.length === 1) {
+                    // Single event - no offset needed
+                    offsetEvents.push({
+                        ...events[0],
+                        displayLat: originalLat,
+                        displayLng: originalLng
+                    });
                 } else {
-                    groups.push({
-                        latitude: lat,
-                        longitude: lng,
-                        events: [event]
+                    // Multiple events - apply circular offset
+                    const offsetRadius = 0.002; // About 200 meters
+                    
+                    events.forEach((event, index) => {
+                        const angle = (index / events.length) * 2 * Math.PI;
+                        const offsetLat = originalLat + offsetRadius * Math.cos(angle);
+                        const offsetLng = originalLng + offsetRadius * Math.sin(angle);
+                        
+                        offsetEvents.push({
+                            ...event,
+                            displayLat: offsetLat,
+                            displayLng: offsetLng,
+                            originalLat: originalLat,
+                            originalLng: originalLng,
+                            isOffset: true,
+                            groupSize: events.length
+                        });
                     });
                 }
             });
             
-            return groups;
-        }
-        
-        // Apply small random offset to avoid exact overlaps
-        function applyOffset(lat, lng, index, total) {
-            if (total === 1) return [lat, lng];
-            
-            const offsetRadius = 0.0005; // About 50 meters
-            const angle = (index / total) * 2 * Math.PI;
-            const offsetLat = lat + offsetRadius * Math.cos(angle);
-            const offsetLng = lng + offsetRadius * Math.sin(angle);
-            
-            return [offsetLat, offsetLng];
+            return offsetEvents;
         }
         
         // Display events on map
         function displayEventsOnMap() {
             markersLayer.clearLayers();
             
-            const eventGroups = groupEventsByLocation(filteredEvents);
+            const offsetEvents = applySmartOffset(filteredEvents);
             
-            eventGroups.forEach(group => {
-                if (group.events.length === 1) {
-                    // Single event - create normal marker
-                    const event = group.events[0];
-                    const color = crimeColors[event.type] || '#718096';
-                    
-                    const marker = L.circleMarker([group.latitude, group.longitude], {
-                        radius: 6,
-                        fillColor: color,
-                        color: '#fff',
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    });
-                    
-                    // Format date
-                    let formattedDate = 'Okänt datum';
-                    if (event.datetime) {
-                        try {
-                            const date = new Date(event.datetime);
-                            formattedDate = date.toLocaleDateString('sv-SE', {
-                                year: 'numeric',
-                                month: 'long',
-                                day: 'numeric',
-                                hour: '2-digit',
-                                minute: '2-digit'
-                            });
-                        } catch (e) {
-                            formattedDate = event.datetime;
-                        }
+            offsetEvents.forEach(event => {
+                const color = crimeColors[event.type] || '#718096';
+                
+                // Use display coordinates if available, otherwise original
+                const lat = event.displayLat || parseFloat(event.latitude);
+                const lng = event.displayLng || parseFloat(event.longitude);
+                
+                if (isNaN(lat) || isNaN(lng)) return;
+                
+                // Adjust marker size based on whether it's offset
+                const radius = event.isOffset ? 5 : 6;
+                const weight = event.isOffset ? 1.5 : 2;
+                
+                const marker = L.circleMarker([lat, lng], {
+                    radius: radius,
+                    fillColor: color,
+                    color: '#fff',
+                    weight: weight,
+                    opacity: 1,
+                    fillOpacity: event.isOffset ? 0.9 : 0.8
+                });
+                
+                // Format date
+                let formattedDate = 'Okänt datum';
+                if (event.datetime) {
+                    try {
+                        const date = new Date(event.datetime);
+                        formattedDate = date.toLocaleDateString('sv-SE', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                        });
+                    } catch (e) {
+                        formattedDate = event.datetime;
                     }
-                    
-                    // Create popup content with link
-                    let popupContent = `
-                        <div class="popup-content">
-                            <h4 class="popup-header" style="color: ${color};">${event.type || 'Okänd händelse'}</h4>
-                            <div class="popup-detail"><strong>📅 Datum:</strong> ${formattedDate}</div>
-                            <div class="popup-detail"><strong>📍 Plats:</strong> ${event.location_name || 'Okänd plats'}</div>
-                            <div class="popup-detail"><strong>📝 Beskrivning:</strong> ${event.summary || 'Ingen beskrivning tillgänglig'}</div>
-                    `;
-                    
-                    if (event.matched_area) {
-                        popupContent += `<div class="popup-detail"><strong>🎯 Område:</strong> ${event.matched_area}</div>`;
-                    }
-                    
-                    // Add link to police report if URL exists
-                    if (event.url && event.url.trim() !== '') {
-                        let fullUrl = event.url;
-                        if (!fullUrl.startsWith('http')) {
-                            fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
-                        }
-                        popupContent += `<a href="${fullUrl}" target="_blank" class="popup-link">📄 Läs mer på polisen.se</a>`;
-                    }
-                    
-                    popupContent += '</div>';
-                    
-                    marker.bindPopup(popupContent);
-                    markersLayer.addLayer(marker);
-                    
-                } else {
-                    // Multiple events - create larger marker with multi-event popup
-                    const dominantType = group.events.reduce((acc, event) => {
-                        acc[event.type] = (acc[event.type] || 0) + 1;
-                        return acc;
-                    }, {});
-                    
-                    const mostCommonType = Object.entries(dominantType)
-                        .sort((a, b) => b[1] - a[1])[0][0];
-                    
-                    const color = crimeColors[mostCommonType] || '#718096';
-                    
-                    // Larger marker for multiple events
-                    const marker = L.circleMarker([group.latitude, group.longitude], {
-                        radius: Math.min(12, 6 + group.events.length),
-                        fillColor: color,
-                        color: '#fff',
-                        weight: 3,
-                        opacity: 1,
-                        fillOpacity: 0.9
-                    });
-                    
-                    // Create multi-event popup
-                    let popupContent = `
-                        <div class="multi-popup-content">
-                            <h4 class="multi-popup-header">${group.events.length} händelser på denna plats</h4>
-                    `;
-                    
-                    // Sort events by date (newest first)
-                    const sortedEvents = group.events.sort((a, b) => {
-                        const dateA = new Date(a.datetime || 0);
-                        const dateB = new Date(b.datetime || 0);
-                        return dateB - dateA;
-                    });
-                    
-                    sortedEvents.forEach(event => {
-                        const eventColor = crimeColors[event.type] || '#718096';
-                        
-                        let formattedDate = 'Okänt datum';
-                        if (event.datetime) {
-                            try {
-                                const date = new Date(event.datetime);
-                                formattedDate = date.toLocaleDateString('sv-SE', {
-                                    year: 'numeric',
-                                    month: 'short',
-                                    day: 'numeric',
-                                    hour: '2-digit',
-                                    minute: '2-digit'
-                                });
-                            } catch (e) {
-                                formattedDate = event.datetime;
-                            }
-                        }
-                        
-                        popupContent += `
-                            <div class="event-item" style="border-left-color: ${eventColor};">
-                                <div class="event-type" style="color: ${eventColor};">${event.type || 'Okänd händelse'}</div>
-                                <div class="event-date">${formattedDate}</div>
-                                <div class="event-summary">${event.summary || 'Ingen beskrivning tillgänglig'}</div>
-                        `;
-                        
-                        if (event.url && event.url.trim() !== '') {
-                            let fullUrl = event.url;
-                            if (!fullUrl.startsWith('http')) {
-                                fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
-                            }
-                            popupContent += `<a href="${fullUrl}" target="_blank" class="event-link">📄 Läs mer</a>`;
-                        }
-                        
-                        popupContent += '</div>';
-                    });
-                    
-                    popupContent += '</div>';
-                    
-                    marker.bindPopup(popupContent);
-                    markersLayer.addLayer(marker);
                 }
+                
+                // Create popup content with link
+                let popupContent = `
+                    <div class="popup-content">
+                        <h4 class="popup-header" style="color: ${color};">${event.type || 'Okänd händelse'}</h4>
+                        <div class="popup-detail"><strong>📅 Datum:</strong> ${formattedDate}</div>
+                        <div class="popup-detail"><strong>📍 Plats:</strong> ${event.location_name || 'Okänd plats'}</div>
+                        <div class="popup-detail"><strong>📝 Beskrivning:</strong> ${event.summary || 'Ingen beskrivning tillgänglig'}</div>
+                `;
+                
+                if (event.matched_area) {
+                    popupContent += `<div class="popup-detail"><strong>🎯 Område:</strong> ${event.matched_area}</div>`;
+                }
+                
+                // Add info about offset if applicable
+                if (event.isOffset) {
+                    popupContent += `<div class="popup-detail" style="color: #718096; font-size: 0.8rem;"><strong>ℹ️ Info:</strong> Markör flyttad för synlighet (${event.groupSize} händelser på samma plats)</div>`;
+                }
+                
+                // Add link to police report if URL exists
+                if (event.url && event.url.trim() !== '') {
+                    let fullUrl = event.url;
+                    if (!fullUrl.startsWith('http')) {
+                        fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
+                    }
+                    popupContent += `<a href="${fullUrl}" target="_blank" class="popup-link">📄 Läs mer på polisen.se</a>`;
+                }
+                
+                popupContent += '</div>';
+                
+                marker.bindPopup(popupContent);
+                markersLayer.addLayer(marker);
             });
         }
         
