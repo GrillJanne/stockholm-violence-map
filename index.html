@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +17,9 @@
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Leaflet MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     
     <style>
         * {
@@ -97,146 +99,117 @@
             padding: 1rem;
         }
         
-        /* Map Container - FIRST! */
+        /* Map Container */
         .map-section {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
             overflow: hidden;
+            margin-bottom: 2rem;
             position: relative;
         }
         
         .map-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem;
-            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-bottom: 1px solid #e2e8f0;
         }
         
         .map-header h2 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            color: #2d3748;
         }
         
         .map-header p {
-            opacity: 0.9;
-            font-size: 0.9rem;
+            color: #718096;
+            font-size: 0.95rem;
         }
         
         #map {
-            height: 700px;
+            height: 600px;
             width: 100%;
-            position: relative;
         }
         
         /* Filter Panel */
+        .filter-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-toggle:hover {
+            background: #f7fafc;
+            transform: translateY(-1px);
+        }
+        
         .filter-panel {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            top: 70px;
+            left: 20px;
             z-index: 1000;
-            max-width: 300px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            padding: 1.5rem;
+            width: 320px;
+            max-height: 500px;
+            overflow-y: auto;
             transform: translateX(-100%);
-            transition: transform 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
         }
         
         .filter-panel.open {
             transform: translateX(0);
-        }
-        
-        .filter-toggle {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            z-index: 1001;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-        }
-        
-        .filter-toggle:hover {
-            background: #5a67d8;
-            transform: translateY(-1px);
-        }
-        
-        .filter-content {
-            padding: 1rem;
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        
-        .filter-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        
-        .filter-header h3 {
-            font-size: 1.1rem;
-            color: #2d3748;
-        }
-        
-        .close-filter {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #718096;
-            padding: 0;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .close-filter:hover {
-            color: #2d3748;
+            opacity: 1;
+            visibility: visible;
         }
         
         .filter-section {
             margin-bottom: 1.5rem;
         }
         
-        .filter-section h4 {
-            font-size: 0.9rem;
-            color: #4a5568;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
+        .filter-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
         }
         
-        .year-filters {
+        /* Year Filter */
+        .year-filter {
             display: flex;
             gap: 0.5rem;
-            margin-bottom: 1rem;
+            flex-wrap: wrap;
         }
         
         .year-btn {
-            padding: 0.4rem 0.8rem;
-            border: 1px solid #e2e8f0;
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
             background: white;
             border-radius: 6px;
             cursor: pointer;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 600;
             transition: all 0.2s ease;
         }
         
         .year-btn:hover {
             border-color: #667eea;
-            color: #667eea;
+            background: #f7fafc;
         }
         
         .year-btn.active {
@@ -245,49 +218,52 @@
             border-color: #667eea;
         }
         
+        /* Crime Type Filter */
+        .crime-types-list {
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        
         .crime-type-item {
             display: flex;
             align-items: center;
-            margin-bottom: 0.5rem;
-            padding: 0.3rem;
-            border-radius: 4px;
-            transition: background-color 0.2s ease;
-        }
-        
-        .crime-type-item:hover {
-            background-color: #f7fafc;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f5f9;
         }
         
         .crime-type-checkbox {
-            margin-right: 0.5rem;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
         }
         
         .crime-type-color {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            margin-right: 0.5rem;
-            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
         }
         
         .crime-type-label {
-            font-size: 0.85rem;
-            flex-grow: 1;
+            flex: 1;
+            font-size: 0.9rem;
+            cursor: pointer;
         }
         
         .crime-type-count {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             color: #718096;
             font-weight: 600;
         }
         
-        .control-buttons {
+        .filter-actions {
             display: flex;
             gap: 0.5rem;
             margin-top: 1rem;
         }
         
-        .control-btn {
+        .filter-btn {
             flex: 1;
             padding: 0.5rem;
             border: 1px solid #e2e8f0;
@@ -295,64 +271,55 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.8rem;
+            font-weight: 600;
             transition: all 0.2s ease;
         }
         
-        .control-btn:hover {
+        .filter-btn:hover {
+            background: #f7fafc;
             border-color: #667eea;
-            color: #667eea;
         }
         
-        /* Legend under map */
+        /* Legend */
         .legend-section {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
             padding: 1.5rem;
+            margin-bottom: 2rem;
         }
         
-        .legend-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .legend-header h3 {
+        .legend-section h3 {
             font-size: 1.3rem;
+            margin-bottom: 1rem;
             color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-        
-        .legend-header p {
-            color: #718096;
-            font-size: 0.9rem;
         }
         
         .legend-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
         }
         
         .legend-item {
             display: flex;
             align-items: center;
+            gap: 0.75rem;
             padding: 0.75rem;
-            background: #f8fafc;
             border-radius: 8px;
             border-left: 4px solid;
+            background: #f8fafc;
         }
         
         .legend-color {
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            margin-right: 0.75rem;
-            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
         }
         
         .legend-text {
-            flex-grow: 1;
+            flex: 1;
         }
         
         .legend-label {
@@ -364,40 +331,36 @@
         .legend-count {
             font-size: 0.8rem;
             color: #718096;
-            margin-top: 0.2rem;
         }
         
-        /* Information sections */
+        /* Info Sections */
         .info-section {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
             padding: 2rem;
+            margin-bottom: 2rem;
         }
         
         .info-section h2 {
             font-size: 1.5rem;
-            color: #2d3748;
             margin-bottom: 1rem;
-            text-align: center;
+            color: #2d3748;
         }
         
         .info-section h3 {
             font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem 0;
             color: #4a5568;
-            margin-bottom: 0.75rem;
-            margin-top: 1.5rem;
         }
         
         .info-section p {
-            color: #718096;
             margin-bottom: 1rem;
             line-height: 1.7;
+            color: #4a5568;
         }
         
         .info-section ul {
-            color: #718096;
             margin-bottom: 1rem;
             padding-left: 1.5rem;
         }
@@ -444,6 +407,105 @@
         .popup-link:hover {
             background: #5a67d8;
             color: white;
+        }
+        
+        /* Multi-event popup styles */
+        .multi-popup-content {
+            min-width: 300px;
+            max-width: 400px;
+        }
+        
+        .multi-popup-header {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        
+        .event-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .event-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .event-type {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+        
+        .event-date {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 6px;
+        }
+        
+        .event-summary {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        .event-link {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        
+        .event-link:hover {
+            background: #5a67d8;
+            color: white;
+        }
+        
+        /* Cluster styles */
+        .marker-cluster {
+            background-color: rgba(102, 126, 234, 0.6);
+            border: 3px solid rgba(102, 126, 234, 0.8);
+        }
+        
+        .marker-cluster div {
+            background-color: rgba(102, 126, 234, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .marker-cluster-small {
+            background-color: rgba(102, 126, 234, 0.6);
+        }
+        
+        .marker-cluster-small div {
+            background-color: rgba(102, 126, 234, 0.8);
+        }
+        
+        .marker-cluster-medium {
+            background-color: rgba(241, 196, 15, 0.6);
+        }
+        
+        .marker-cluster-medium div {
+            background-color: rgba(241, 196, 15, 0.8);
+        }
+        
+        .marker-cluster-large {
+            background-color: rgba(231, 76, 60, 0.6);
+        }
+        
+        .marker-cluster-large div {
+            background-color: rgba(231, 76, 60, 0.8);
         }
         
         /* AdSense Styles */
@@ -531,6 +593,11 @@
                 min-width: 200px;
                 max-width: 280px;
             }
+            
+            .multi-popup-content {
+                min-width: 250px;
+                max-width: 300px;
+            }
         }
         
         /* Loading Animation */
@@ -587,11 +654,11 @@
                  data-full-width-responsive="true"></ins>
         </div>
 
-        <!-- Map Section - FIRST! -->
+        <!-- Map Section -->
         <section class="map-section">
             <div class="map-header">
                 <h2>🗺️ Interaktiv Våldskarta</h2>
-                <p>Klicka på markörer för detaljer • Använd filter för att anpassa visningen</p>
+                <p>Klicka på markörer för detaljer • Använd filter för att anpassa visningen • Närliggande brott grupperas automatiskt</p>
             </div>
             
             <!-- Filter Toggle Button -->
@@ -599,105 +666,82 @@
             
             <!-- Filter Panel -->
             <div class="filter-panel" id="filterPanel">
-                <div class="filter-content">
-                    <div class="filter-header">
-                        <h3>🔍 Filter</h3>
-                        <button class="close-filter" onclick="toggleFilter()">×</button>
+                <div class="filter-section">
+                    <h3>📅 År</h3>
+                    <div class="year-filter">
+                        <button class="year-btn active" data-year="all">Alla</button>
+                        <button class="year-btn" data-year="2025">2025</button>
+                        <button class="year-btn" data-year="2024">2024</button>
                     </div>
-                    
-                    <!-- Year Filter -->
-                    <div class="filter-section">
-                        <h4>📅 Tidsperiod</h4>
-                        <div class="year-filters">
-                            <button class="year-btn active" data-year="all">Alla år</button>
-                            <button class="year-btn" data-year="2024">2024</button>
-                            <button class="year-btn" data-year="2025">2025</button>
-                        </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>🚨 Brottstyper</h3>
+                    <div class="filter-actions">
+                        <button class="filter-btn" onclick="selectAllCrimeTypes()">Välj alla</button>
+                        <button class="filter-btn" onclick="clearAllCrimeTypes()">Rensa alla</button>
                     </div>
-                    
-                    <!-- Crime Type Filter -->
-                    <div class="filter-section">
-                        <h4>🚨 Välj brottstyper att visa på kartan</h4>
-                        <div id="crimeTypesList">
-                            <!-- Will be populated by JavaScript -->
-                        </div>
-                        
-                        <div class="control-buttons">
-                            <button class="control-btn" onclick="selectAllCrimeTypes()">Välj alla</button>
-                            <button class="control-btn" onclick="clearAllCrimeTypes()">Rensa alla</button>
-                        </div>
+                    <div class="crime-types-list" id="crimeTypesList">
+                        <!-- Crime types will be populated by JavaScript -->
                     </div>
                 </div>
             </div>
             
-            <!-- Map -->
             <div id="map"></div>
         </section>
 
         <!-- Legend Section -->
         <section class="legend-section">
-            <div class="legend-header">
-                <h3>🎨 Färgkodning</h3>
-                <p>Varje brottstyp representeras av en unik färg på kartan</p>
-            </div>
+            <h3>🎨 Färgkodning</h3>
             <div class="legend-grid" id="colorLegend">
-                <!-- Will be populated by JavaScript -->
+                <!-- Legend will be populated by JavaScript -->
             </div>
         </section>
 
-        <!-- AdSense Ad -->
-        <div class="ad-container">
-            <div class="ad-label">Annons</div>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8020465526285919"
-                 data-ad-slot="9876543210"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-        </div>
-
-        <!-- Information Sections -->
+        <!-- Info Section -->
         <section class="info-section" id="om-kartan">
             <h2>ℹ️ Om Kartan</h2>
+            <p>Denna interaktiva karta visar våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se. Kartan uppdateras automatiskt med ny information och ger en översikt över brottsutvecklingen i olika områden.</p>
             
-            <h3>🎯 Vad visar kartan?</h3>
-            <p>Stockholm Våldskarta visualiserar våldsdåd i Stockholm-regionen baserat på officiell data från polisen.se. Kartan uppdateras automatiskt och visar händelser som misshandel, rån, skottlossning, explosioner och andra våldsbrott.</p>
-            
-            <h3>🔄 Hur fungerar det?</h3>
-            <p>Data hämtas automatiskt från polisens öppna API och bearbetas för att ge bästa möjliga platsangivelse. Varje händelse visas som en färgkodad markör på kartan där färgen indikerar brottstyp.</p>
-            
-            <h3>🎨 Färgkodning</h3>
-            <p>Olika brottstyper visas med olika färger för enkel identifiering. Se färgkodningen ovan kartan för detaljer om vilken färg som representerar vilken brottstyp.</p>
-            
-            <h3>🔍 Filter och Navigation</h3>
-            <p>Använd filterpanelen för att:</p>
+            <h3>🔍 Funktioner</h3>
             <ul>
-                <li>Filtrera på specifika brottstyper</li>
-                <li>Välja tidsperiod (2024, 2025 eller alla år)</li>
-                <li>Anpassa visningen efter dina intressen</li>
+                <li><strong>Automatisk gruppering:</strong> Närliggande brott grupperas för bättre översikt</li>
+                <li><strong>Detaljerade popups:</strong> Klicka på markörer för att se alla brott på den platsen</li>
+                <li><strong>Färgkodning:</strong> Olika brottstyper har olika färger för enkel identifiering</li>
+                <li><strong>Filteralternativ:</strong> Filtrera efter år och brottstyp</li>
+                <li><strong>Direktlänkar:</strong> Läs mer om varje brott på polisen.se</li>
+                <li><strong>Responsiv design:</strong> Fungerar på både dator och mobil</li>
             </ul>
             
-            <h3>🔗 Länka till Polisens Rapporter</h3>
-            <p>Klicka på "Läs mer på polisen.se" i popup-fönstret för att komma till polisens ursprungliga rapport med fullständig information om händelsen.</p>
+            <h3>📊 Datakällor</h3>
+            <ul>
+                <li>Polisen.se officiella händelserapporter</li>
+                <li>Automatisk uppdatering var 5:e minut</li>
+                <li>Geografisk positionering baserad på platsnamn i rapporter</li>
+            </ul>
         </section>
 
+        <!-- Sources Section -->
         <section class="info-section" id="källor">
-            <h2>🔍 Källor och Transparens</h2>
+            <h2>🔍 Källor och Metodik</h2>
+            <p>All data kommer från polisen.se:s officiella API och händelserapporter. Kartan visar endast våldsdåd som klassificeras som misshandel, rån, skottlossning, explosion, våldtäkt, sexualbrott, mord och olaga hot.</p>
             
-            <h3>📊 Datakällor</h3>
-            <p>All data kommer från polisen.se:s officiella API som tillhandahåller information om anmälda brott. Detta säkerställer att informationen är korrekt och aktuell.</p>
+            <h3>📈 Databehandling</h3>
+            <ul>
+                <li>Automatisk hämtning från polisen.se API</li>
+                <li>Filtrering på våldsdåd enligt ovan kategorier</li>
+                <li>Geografisk positionering baserad på platsnamn</li>
+                <li>Dublettkontroll för att undvika duplicerad data</li>
+                <li>Automatisk uppdatering för aktuell information</li>
+            </ul>
             
-            <h3>🔄 Uppdateringsfrekvens</h3>
-            <p>Kartan uppdateras automatiskt flera gånger per dag för att visa de senaste händelserna. Nya brott visas vanligtvis inom 24 timmar efter att de rapporterats.</p>
-            
-            <h3>📍 Platsangivelse</h3>
-            <p>Koordinater förbättras intelligent baserat på händelsebeskrivningar och kända områden för att ge så exakt placering som möjligt inom ramen för polisens dataskydd.</p>
-            
-            <h3>🛡️ Integritet och Säkerhet</h3>
-            <p>Inga personuppgifter visas. All information är redan offentlig genom polisen.se och presenteras endast i aggregerad, anonymiserad form.</p>
-            
-            <h3>⚖️ Juridiska Aspekter</h3>
-            <p>Kartan visar anmälda brott, inte dömda. Alla personer är oskyldiga tills motsatsen bevisats i domstol. Data används i enlighet med polisens användarvillkor.</p>
+            <h3>⚠️ Viktiga noteringar</h3>
+            <ul>
+                <li>Kartan visar endast anmälda brott som publicerats av polisen</li>
+                <li>Mörkertalet kan vara betydande för vissa brottstyper</li>
+                <li>Geografisk precision kan variera beroende på rapportens detaljnivå</li>
+                <li>Data uppdateras kontinuerligt men kan ha viss fördröjning</li>
+            </ul>
         </section>
 
         <!-- AdSense Ad -->
@@ -717,6 +761,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     
     <script>
         // Global variables
@@ -753,7 +798,37 @@
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
             
-            markersLayer = L.layerGroup().addTo(map);
+            // Initialize marker cluster group
+            markersLayer = L.markerClusterGroup({
+                chunkedLoading: true,
+                chunkProgress: function(processed, total, elapsed) {
+                    if (processed === total) {
+                        console.log('Finished loading ' + total + ' markers');
+                    }
+                },
+                iconCreateFunction: function(cluster) {
+                    const count = cluster.getChildCount();
+                    let className = 'marker-cluster-small';
+                    
+                    if (count > 50) {
+                        className = 'marker-cluster-large';
+                    } else if (count > 10) {
+                        className = 'marker-cluster-medium';
+                    }
+                    
+                    return new L.DivIcon({
+                        html: '<div><span>' + count + '</span></div>',
+                        className: 'marker-cluster ' + className,
+                        iconSize: new L.Point(40, 40)
+                    });
+                },
+                maxClusterRadius: 50,
+                spiderfyOnMaxZoom: true,
+                showCoverageOnHover: false,
+                zoomToBoundsOnClick: true
+            });
+            
+            map.addLayer(markersLayer);
         }
         
         // Load data with cache busting
@@ -954,70 +1029,192 @@
             displayEventsOnMap();
         }
         
-        // Display events on map
-        function displayEventsOnMap() {
-            markersLayer.clearLayers();
+        // Group events by location with small tolerance
+        function groupEventsByLocation(events) {
+            const groups = [];
+            const tolerance = 0.001; // About 100 meters
             
-            filteredEvents.forEach(event => {
+            events.forEach(event => {
                 const lat = parseFloat(event.latitude);
                 const lng = parseFloat(event.longitude);
                 
                 if (isNaN(lat) || isNaN(lng)) return;
                 
-                const color = crimeColors[event.type] || '#718096';
-                
-                const marker = L.circleMarker([lat, lng], {
-                    radius: 6,
-                    fillColor: color,
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
+                // Find existing group within tolerance
+                let foundGroup = groups.find(group => {
+                    const groupLat = group.latitude;
+                    const groupLng = group.longitude;
+                    return Math.abs(lat - groupLat) < tolerance && Math.abs(lng - groupLng) < tolerance;
                 });
                 
-                // Format date
-                let formattedDate = 'Okänt datum';
-                if (event.datetime) {
-                    try {
-                        const date = new Date(event.datetime);
-                        formattedDate = date.toLocaleDateString('sv-SE', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                            hour: '2-digit',
-                            minute: '2-digit'
-                        });
-                    } catch (e) {
-                        formattedDate = event.datetime;
+                if (foundGroup) {
+                    foundGroup.events.push(event);
+                } else {
+                    groups.push({
+                        latitude: lat,
+                        longitude: lng,
+                        events: [event]
+                    });
+                }
+            });
+            
+            return groups;
+        }
+        
+        // Apply small random offset to avoid exact overlaps
+        function applyOffset(lat, lng, index, total) {
+            if (total === 1) return [lat, lng];
+            
+            const offsetRadius = 0.0005; // About 50 meters
+            const angle = (index / total) * 2 * Math.PI;
+            const offsetLat = lat + offsetRadius * Math.cos(angle);
+            const offsetLng = lng + offsetRadius * Math.sin(angle);
+            
+            return [offsetLat, offsetLng];
+        }
+        
+        // Display events on map
+        function displayEventsOnMap() {
+            markersLayer.clearLayers();
+            
+            const eventGroups = groupEventsByLocation(filteredEvents);
+            
+            eventGroups.forEach(group => {
+                if (group.events.length === 1) {
+                    // Single event - create normal marker
+                    const event = group.events[0];
+                    const color = crimeColors[event.type] || '#718096';
+                    
+                    const marker = L.circleMarker([group.latitude, group.longitude], {
+                        radius: 6,
+                        fillColor: color,
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+                    
+                    // Format date
+                    let formattedDate = 'Okänt datum';
+                    if (event.datetime) {
+                        try {
+                            const date = new Date(event.datetime);
+                            formattedDate = date.toLocaleDateString('sv-SE', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit'
+                            });
+                        } catch (e) {
+                            formattedDate = event.datetime;
+                        }
                     }
-                }
-                
-                // Create popup content with link
-                let popupContent = `
-                    <div class="popup-content">
-                        <h4 class="popup-header" style="color: ${color};">${event.type || 'Okänd händelse'}</h4>
-                        <div class="popup-detail"><strong>📅 Datum:</strong> ${formattedDate}</div>
-                        <div class="popup-detail"><strong>📍 Plats:</strong> ${event.location_name || 'Okänd plats'}</div>
-                        <div class="popup-detail"><strong>📝 Beskrivning:</strong> ${event.summary || 'Ingen beskrivning tillgänglig'}</div>
-                `;
-                
-                if (event.improved_area) {
-                    popupContent += `<div class="popup-detail"><strong>🎯 Område:</strong> ${event.improved_area}</div>`;
-                }
-                
-                // Add link to police report if URL exists
-                if (event.url && event.url.trim() !== '') {
-                    let fullUrl = event.url;
-                    if (!fullUrl.startsWith('http')) {
-                        fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
+                    
+                    // Create popup content with link
+                    let popupContent = `
+                        <div class="popup-content">
+                            <h4 class="popup-header" style="color: ${color};">${event.type || 'Okänd händelse'}</h4>
+                            <div class="popup-detail"><strong>📅 Datum:</strong> ${formattedDate}</div>
+                            <div class="popup-detail"><strong>📍 Plats:</strong> ${event.location_name || 'Okänd plats'}</div>
+                            <div class="popup-detail"><strong>📝 Beskrivning:</strong> ${event.summary || 'Ingen beskrivning tillgänglig'}</div>
+                    `;
+                    
+                    if (event.matched_area) {
+                        popupContent += `<div class="popup-detail"><strong>🎯 Område:</strong> ${event.matched_area}</div>`;
                     }
-                    popupContent += `<a href="${fullUrl}" target="_blank" class="popup-link">📄 Läs mer på polisen.se</a>`;
+                    
+                    // Add link to police report if URL exists
+                    if (event.url && event.url.trim() !== '') {
+                        let fullUrl = event.url;
+                        if (!fullUrl.startsWith('http')) {
+                            fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
+                        }
+                        popupContent += `<a href="${fullUrl}" target="_blank" class="popup-link">📄 Läs mer på polisen.se</a>`;
+                    }
+                    
+                    popupContent += '</div>';
+                    
+                    marker.bindPopup(popupContent);
+                    markersLayer.addLayer(marker);
+                    
+                } else {
+                    // Multiple events - create larger marker with multi-event popup
+                    const dominantType = group.events.reduce((acc, event) => {
+                        acc[event.type] = (acc[event.type] || 0) + 1;
+                        return acc;
+                    }, {});
+                    
+                    const mostCommonType = Object.entries(dominantType)
+                        .sort((a, b) => b[1] - a[1])[0][0];
+                    
+                    const color = crimeColors[mostCommonType] || '#718096';
+                    
+                    // Larger marker for multiple events
+                    const marker = L.circleMarker([group.latitude, group.longitude], {
+                        radius: Math.min(12, 6 + group.events.length),
+                        fillColor: color,
+                        color: '#fff',
+                        weight: 3,
+                        opacity: 1,
+                        fillOpacity: 0.9
+                    });
+                    
+                    // Create multi-event popup
+                    let popupContent = `
+                        <div class="multi-popup-content">
+                            <h4 class="multi-popup-header">${group.events.length} händelser på denna plats</h4>
+                    `;
+                    
+                    // Sort events by date (newest first)
+                    const sortedEvents = group.events.sort((a, b) => {
+                        const dateA = new Date(a.datetime || 0);
+                        const dateB = new Date(b.datetime || 0);
+                        return dateB - dateA;
+                    });
+                    
+                    sortedEvents.forEach(event => {
+                        const eventColor = crimeColors[event.type] || '#718096';
+                        
+                        let formattedDate = 'Okänt datum';
+                        if (event.datetime) {
+                            try {
+                                const date = new Date(event.datetime);
+                                formattedDate = date.toLocaleDateString('sv-SE', {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric',
+                                    hour: '2-digit',
+                                    minute: '2-digit'
+                                });
+                            } catch (e) {
+                                formattedDate = event.datetime;
+                            }
+                        }
+                        
+                        popupContent += `
+                            <div class="event-item" style="border-left-color: ${eventColor};">
+                                <div class="event-type" style="color: ${eventColor};">${event.type || 'Okänd händelse'}</div>
+                                <div class="event-date">${formattedDate}</div>
+                                <div class="event-summary">${event.summary || 'Ingen beskrivning tillgänglig'}</div>
+                        `;
+                        
+                        if (event.url && event.url.trim() !== '') {
+                            let fullUrl = event.url;
+                            if (!fullUrl.startsWith('http')) {
+                                fullUrl = 'https://polisen.se' + (fullUrl.startsWith('/') ? '' : '/') + fullUrl;
+                            }
+                            popupContent += `<a href="${fullUrl}" target="_blank" class="event-link">📄 Läs mer</a>`;
+                        }
+                        
+                        popupContent += '</div>';
+                    });
+                    
+                    popupContent += '</div>';
+                    
+                    marker.bindPopup(popupContent);
+                    markersLayer.addLayer(marker);
                 }
-                
-                popupContent += '</div>';
-                
-                marker.bindPopup(popupContent);
-                markersLayer.addLayer(marker);
             });
         }
         
