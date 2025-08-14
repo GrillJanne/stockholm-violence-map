@@ -5591,177 +5591,96 @@
       "matched_municipality": "Österåker",
       "location_source": "api_coordinates_fallback",
       "match_type": "no_match"
+    },
+    {
+      "id": 595789,
+      "datetime": "2025-08-04 7:59:51 +02:00",
+      "name": "03 augusti 19.36, Rån övrigt, Stockholm",
+      "summary": "En man börjar slåss med butikspersonal när han stoppas från att stjäla.",
+      "url": "/aktuellt/handelser/2025/augusti/3/03-augusti-19.36-ran-ovrigt-stockholm/",
+      "type": "Rån övrigt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32687989415902,
+      "longitude": 18.06648390486423,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 594944,
+      "datetime": "2025-07-24 7:16:39 +02:00",
+      "name": "23 juli 23.10, Olaga intrång, Stockholm",
+      "summary": "Samtal om pågående inbrott.",
+      "url": "/aktuellt/handelser/2025/juli/23/23-juli-23.10-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32881233568955,
+      "longitude": 18.069074459448302,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 582914,
+      "datetime": "2025-05-12 9:52:11 +02:00",
+      "name": "12 maj 09.07, Trafikolycka, smitning från, Stockholm",
+      "summary": "Trafikolycka på centralbron mellan personbil och motorcykel.",
+      "url": "/aktuellt/handelser/2025/maj/12/12-maj-09.07-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3268865715597,
+      "longitude": 18.064784963362687,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 579412,
+      "datetime": "2025-04-16 8:26:13 +02:00",
+      "name": "16 april 07.48, Trafikolycka, smitning från, Stockholm",
+      "summary": "Trafikolycka på Essingeleden i höjd med Fredhäll.",
+      "url": "/aktuellt/handelser/2025/april/16/16-april-07.48-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33147474479071,
+      "longitude": 18.068462418500935,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 572598,
+      "datetime": "2025-02-25 7:39:13 +01:00",
+      "name": "25 februari 03.38, Olaga intrång, Stockholm",
+      "summary": "Väktare ringer in till polisen angående att två personer rör sig vid ett par container på ett avspärrat område",
+      "url": "/aktuellt/handelser/2025/februari/25/25-februari-03.38-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3332194399775,
+      "longitude": 18.066385467986333,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "total_events": 304,
-    "fetch_timestamp": "2025-08-14T08:24:33.538767",
-    "municipalities_count": 26,
-    "location_list_size": 152,
-    "matching_stats": {
-      "total_events": 304,
-      "matched_events": 120,
-      "api_fallback_events": 184,
-      "exact_matches": 110,
-      "substring_matches": 10
-    },
-    "municipality_stats": {
-      "Stockholm": {
-        "total": 500,
-        "violence": 161,
-        "matched": 69,
-        "api_fallback": 92
-      },
-      "Botkyrka": {
-        "total": 42,
-        "violence": 10,
-        "matched": 4,
-        "api_fallback": 6
-      },
-      "Danderyd": {
-        "total": 7,
-        "violence": 0,
-        "matched": 0,
-        "api_fallback": 0
-      },
-      "Ekerö": {
-        "total": 7,
-        "violence": 2,
-        "matched": 1,
-        "api_fallback": 1
-      },
-      "Haninge": {
-        "total": 45,
-        "violence": 12,
-        "matched": 6,
-        "api_fallback": 6
-      },
-      "Huddinge": {
-        "total": 57,
-        "violence": 13,
-        "matched": 3,
-        "api_fallback": 10
-      },
-      "Järfälla": {
-        "total": 38,
-        "violence": 12,
-        "matched": 7,
-        "api_fallback": 5
-      },
-      "Lidingö": {
-        "total": 21,
-        "violence": 3,
-        "matched": 1,
-        "api_fallback": 2
-      },
-      "Nacka": {
-        "total": 54,
-        "violence": 6,
-        "matched": 3,
-        "api_fallback": 3
-      },
-      "Norrtälje": {
-        "total": 40,
-        "violence": 10,
-        "matched": 1,
-        "api_fallback": 9
-      },
-      "Nykvarn": {
-        "total": 8,
-        "violence": 1,
-        "matched": 1,
-        "api_fallback": 0
-      },
-      "Nynäshamn": {
-        "total": 17,
-        "violence": 4,
-        "matched": 1,
-        "api_fallback": 3
-      },
-      "Salem": {
-        "total": 11,
-        "violence": 2,
-        "matched": 0,
-        "api_fallback": 2
-      },
-      "Sigtuna": {
-        "total": 60,
-        "violence": 9,
-        "matched": 3,
-        "api_fallback": 6
-      },
-      "Sollentuna": {
-        "total": 26,
-        "violence": 4,
-        "matched": 1,
-        "api_fallback": 3
-      },
-      "Solna": {
-        "total": 34,
-        "violence": 10,
-        "matched": 4,
-        "api_fallback": 6
-      },
-      "Sundbyberg": {
-        "total": 21,
-        "violence": 10,
-        "matched": 4,
-        "api_fallback": 6
-      },
-      "Södertälje": {
-        "total": 77,
-        "violence": 20,
-        "matched": 5,
-        "api_fallback": 15
-      },
-      "Tyresö": {
-        "total": 10,
-        "violence": 3,
-        "matched": 1,
-        "api_fallback": 2
-      },
-      "Täby": {
-        "total": 21,
-        "violence": 3,
-        "matched": 1,
-        "api_fallback": 2
-      },
-      "Upplands Väsby": {
-        "total": 17,
-        "violence": 4,
-        "matched": 2,
-        "api_fallback": 2
-      },
-      "Upplands-Bro": {
-        "total": 11,
-        "violence": 2,
-        "matched": 2,
-        "api_fallback": 0
-      },
-      "Vallentuna": {
-        "total": 8,
-        "violence": 1,
-        "matched": 0,
-        "api_fallback": 1
-      },
-      "Vaxholm": {
-        "total": 1,
-        "violence": 0,
-        "matched": 0,
-        "api_fallback": 0
-      },
-      "Värmdö": {
-        "total": 23,
-        "violence": 1,
-        "matched": 0,
-        "api_fallback": 1
-      },
-      "Österåker": {
-        "total": 11,
-        "violence": 1,
-        "matched": 0,
-        "api_fallback": 1
-      }
-    }
+    "last_updated": "2025-08-14T12:53:05.544062",
+    "total_events": 309,
+    "data_source": "polisen.se",
+    "version": "2.0",
+    "duplicate_removal": true,
+    "coordinate_improvement": true,
+    "update_frequency": "daily",
+    "geographic_scope": "Stockholm-regionen"
   }
 }
