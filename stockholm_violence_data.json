@@ -8887,11 +8887,27 @@
       "longitude": 18.06901724139789,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 596600,
+      "datetime": "2025-08-14 2:17:01 +02:00",
+      "name": "14 augusti 01.36, Misshandel, Stockholm",
+      "summary": "Två män har misshandlats i närheten av Kungsträdgården i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2025/augusti/14/14-augusti-01.36-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32730773797098,
+      "longitude": 18.07079441837803,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-13T18:34:22.817792",
-    "total_events": 420,
+    "last_updated": "2025-08-14T01:59:53.672340",
+    "total_events": 421,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
