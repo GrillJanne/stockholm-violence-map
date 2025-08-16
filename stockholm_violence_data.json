@@ -5717,11 +5717,43 @@
       "longitude": 18.067078687208852,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 596815,
+      "datetime": "2025-08-16 7:22:40 +02:00",
+      "name": "16 augusti 02.22, Misshandel, Stockholm",
+      "summary": "En kvinna slog två ordningsvakter utanför en krog på Södermalm.",
+      "url": "/aktuellt/handelser/2025/augusti/16/16-augusti-02.22-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32773332940707,
+      "longitude": 18.073257949529143,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 596814,
+      "datetime": "2025-08-16 7:18:57 +02:00",
+      "name": "16 augusti 03.55, Misshandel, Stockholm",
+      "summary": "En man blev knuffad och slagen av ett par personer vid Odenplan i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2025/augusti/16/16-augusti-03.55-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.326614680309056,
+      "longitude": 18.065529630689788,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-16T01:55:02.448591",
-    "total_events": 310,
+    "last_updated": "2025-08-16T06:33:40.757585",
+    "total_events": 312,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
