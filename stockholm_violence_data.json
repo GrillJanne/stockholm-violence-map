@@ -5749,11 +5749,43 @@
       "longitude": 18.065529630689788,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598036,
+      "datetime": "2025-08-18 20:13:16 +02:00",
+      "name": "18 augusti 18.43, Rån, Stockholm",
+      "summary": "Personrån i Kista.",
+      "url": "/aktuellt/handelser/2025/augusti/18/18-augusti-18.43-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332204208118604,
+      "longitude": 18.06892883205742,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598028,
+      "datetime": "2025-08-18 18:12:46 +02:00",
+      "name": "18 augusti 10.33, Våldtäkt, Stockholm",
+      "summary": "Två män grips för bland annat våldtäkt.",
+      "url": "/aktuellt/handelser/2025/augusti/18/18-augusti-10.33-valdtakt-stockholm/",
+      "type": "Våldtäkt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.328351447819436,
+      "longitude": 18.072752347209406,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-18T12:53:36.090445",
-    "total_events": 312,
+    "last_updated": "2025-08-18T18:36:05.483564",
+    "total_events": 314,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
