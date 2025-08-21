@@ -5781,11 +5781,27 @@
       "longitude": 18.072752347209406,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598328,
+      "datetime": "2025-08-21 16:23:07 +02:00",
+      "name": "21 augusti 14.11, Mord/dråp, Stockholm",
+      "summary": "Död person i lägenhet.",
+      "url": "/aktuellt/handelser/2025/augusti/21/21-augusti-14.11-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.324454972086976,
+      "longitude": 18.068950281295088,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-21T12:48:57.914472",
-    "total_events": 314,
+    "last_updated": "2025-08-21T18:32:10.434561",
+    "total_events": 315,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
