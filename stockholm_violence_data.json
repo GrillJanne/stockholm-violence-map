@@ -5813,11 +5813,27 @@
       "longitude": 18.06711692720665,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598555,
+      "datetime": "2025-08-23 19:39:48 +02:00",
+      "name": "23 augusti 19.16, Skottlossning, Stockholm",
+      "summary": "En man är skjuten utomhus i Sätra.",
+      "url": "/aktuellt/handelser/2025/augusti/23/23-augusti-19.16-skottlossning-stockholm/",
+      "type": "Skottlossning",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3313028984814,
+      "longitude": 18.06691886559386,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-23T12:43:03.583236",
-    "total_events": 316,
+    "last_updated": "2025-08-23T18:29:43.154607",
+    "total_events": 317,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
