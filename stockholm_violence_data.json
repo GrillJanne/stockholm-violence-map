@@ -5797,11 +5797,27 @@
       "longitude": 18.068950281295088,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598490,
+      "datetime": "2025-08-22 21:13:07 +02:00",
+      "name": "22 augusti 21.07, Explosion, Stockholm",
+      "summary": "Flera personer ringer polisen om en kraftig smäll i Östberga i södra Stockholm.",
+      "url": "/aktuellt/handelser/2025/augusti/22/22-augusti-21.07-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33084169357915,
+      "longitude": 18.06711692720665,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-22T18:32:27.040811",
-    "total_events": 315,
+    "last_updated": "2025-08-23T01:47:42.734604",
+    "total_events": 316,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
