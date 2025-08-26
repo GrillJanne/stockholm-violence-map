@@ -5861,11 +5861,27 @@
       "longitude": 18.071741367267563,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598728,
+      "datetime": "2025-08-25 20:41:08 +02:00",
+      "name": "25 augusti 18.14, Rån, Stockholm",
+      "summary": "Man rånar blomsterbutik.",
+      "url": "/aktuellt/handelser/2025/augusti/25/25-augusti-18.14-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.326010724902346,
+      "longitude": 18.071449149386464,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-25T18:34:02.331529",
-    "total_events": 319,
+    "last_updated": "2025-08-26T01:52:44.316001",
+    "total_events": 320,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
