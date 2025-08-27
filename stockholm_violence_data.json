@@ -5877,11 +5877,27 @@
       "longitude": 18.071449149386464,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598860,
+      "datetime": "2025-08-26 22:24:55 +02:00",
+      "name": "26 augusti 20.29, Olaga hot, Stockholm",
+      "summary": "Vid en dispyt om en trafiksituation ser en bilförare ett pistolliknande föremål.",
+      "url": "/aktuellt/handelser/2025/augusti/26/26-augusti-20.29-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.330789972629105,
+      "longitude": 18.063926085100572,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-26T18:32:16.108395",
-    "total_events": 320,
+    "last_updated": "2025-08-27T01:49:09.221799",
+    "total_events": 321,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
