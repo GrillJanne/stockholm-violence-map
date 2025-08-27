@@ -5893,11 +5893,43 @@
       "longitude": 18.063926085100572,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598958,
+      "datetime": "2025-08-27 18:12:52 +02:00",
+      "name": "27 augusti 16.55, Sexualbrott, Stockholm",
+      "summary": "En man onanerar offentligt i Solberga",
+      "url": "/aktuellt/handelser/2025/augusti/27/27-augusti-16.55-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32712640513399,
+      "longitude": 18.066457624287093,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598957,
+      "datetime": "2025-08-27 18:07:21 +02:00",
+      "name": "27 augusti 14.52, Misshandel, Stockholm",
+      "summary": "Man misshandlad vid Sergels torg.",
+      "url": "/aktuellt/handelser/2025/augusti/27/27-augusti-14.52-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33196181644524,
+      "longitude": 18.06878070054294,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-27T12:47:27.404063",
-    "total_events": 321,
+    "last_updated": "2025-08-27T18:31:23.974251",
+    "total_events": 323,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
