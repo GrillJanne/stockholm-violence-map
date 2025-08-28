@@ -5941,11 +5941,43 @@
       "longitude": 18.071630560755647,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598994,
+      "datetime": "2025-08-28 7:10:54 +02:00",
+      "name": "28 augusti 01.32, Olaga hot, Stockholm",
+      "summary": "En person på Stureplan uppgav att en man hotat denne och andra personer på en buss.",
+      "url": "/aktuellt/handelser/2025/augusti/28/28-augusti-01.32-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.324725250402345,
+      "longitude": 18.063795747300823,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 598991,
+      "datetime": "2025-08-28 7:06:27 +02:00",
+      "name": "28 augusti 02.18, Olaga intrång, Stockholm",
+      "summary": "En inringare i Liljeholmen uppger att denne hört brytljud från källaren och att ett par obehöriga personer bef",
+      "url": "/aktuellt/handelser/2025/augusti/28/28-augusti-02.18-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.329528635613286,
+      "longitude": 18.065477665556312,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-28T01:48:20.371328",
-    "total_events": 324,
+    "last_updated": "2025-08-28T06:34:18.308249",
+    "total_events": 326,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
