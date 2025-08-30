@@ -5973,11 +5973,59 @@
       "longitude": 18.065477665556312,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599245,
+      "datetime": "2025-08-30 7:42:36 +02:00",
+      "name": "30 augusti 03.03, Misshandel, Stockholm",
+      "summary": "Bråk i bostad i västra Stockholm och en kvinna grips som misstänkt för grov misshandel.",
+      "url": "/aktuellt/handelser/2025/augusti/30/30-augusti-03.03-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.328655651608955,
+      "longitude": 18.072884335929587,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599242,
+      "datetime": "2025-08-30 7:29:57 +02:00",
+      "name": "30 augusti 01.28, Misshandel, Stockholm",
+      "summary": "Det larmas om bråk i en bostad i västra Stockholm och en man tas med för tillnyktring samt är misstänkt för bl",
+      "url": "/aktuellt/handelser/2025/augusti/30/30-augusti-01.28-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32532799882601,
+      "longitude": 18.071577608126848,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599236,
+      "datetime": "2025-08-30 7:29:46 +02:00",
+      "name": "29 augusti 23.41, Våldtäkt, Stockholm",
+      "summary": "En man misstänks ha våldtagit en kvinna han känner i en bostad. Mannen grips.",
+      "url": "/aktuellt/handelser/2025/augusti/30/29-augusti-23.41-valdtakt-stockholm/",
+      "type": "Våldtäkt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33403715645519,
+      "longitude": 18.073062557919027,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-08-30T01:42:53.339562",
-    "total_events": 326,
+    "last_updated": "2025-08-30T06:29:51.934609",
+    "total_events": 329,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
