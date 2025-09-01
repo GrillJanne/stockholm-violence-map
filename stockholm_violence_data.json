@@ -6021,11 +6021,27 @@
       "longitude": 18.073062557919027,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599338,
+      "datetime": "2025-09-01 4:51:38 +02:00",
+      "name": "01 september 03.25, Explosion, Stockholm",
+      "summary": "Något har smällt vid flerfamiljshus i Hammarby sjöstad.",
+      "url": "/aktuellt/handelser/2025/september/1/01-september-03.25-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33149852558145,
+      "longitude": 18.070428041329063,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-01T02:03:45.806605",
-    "total_events": 329,
+    "last_updated": "2025-09-01T06:36:52.526019",
+    "total_events": 330,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
