@@ -6069,11 +6069,27 @@
       "longitude": 18.070968457937344,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599718,
+      "datetime": "2025-09-03 18:46:23 +02:00",
+      "name": "03 september 11.52, Olaga intrång, Stockholm",
+      "summary": "Två personer har tagit sig i ett förråd och lagt sig på en soffa.",
+      "url": "/aktuellt/handelser/2025/september/3/03-september-11.52-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33231289807413,
+      "longitude": 18.071531302208726,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-03T12:45:48.831164",
-    "total_events": 332,
+    "last_updated": "2025-09-03T18:31:23.085296",
+    "total_events": 333,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
