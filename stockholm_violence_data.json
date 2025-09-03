@@ -6053,11 +6053,27 @@
       "longitude": 18.07207407195034,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599677,
+      "datetime": "2025-09-03 13:25:28 +02:00",
+      "name": "03 september 11.08, Olaga hot, Stockholm",
+      "summary": "En man har varit inne i en butik i Hägersten och uppträtt hotfullt mot butikspersonal.",
+      "url": "/aktuellt/handelser/2025/september/3/03-september-11.08-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33089423144877,
+      "longitude": 18.070968457937344,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-03T06:32:12.547240",
-    "total_events": 331,
+    "last_updated": "2025-09-03T12:45:48.831164",
+    "total_events": 332,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
