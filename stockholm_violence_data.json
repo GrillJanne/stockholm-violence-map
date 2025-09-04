@@ -6085,11 +6085,27 @@
       "longitude": 18.071531302208726,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599730,
+      "datetime": "2025-09-03 20:48:42 +02:00",
+      "name": "03 september 17.43, Rån övrigt, Stockholm",
+      "summary": "En anmälan om rån skrivs efter att en man försökt stjäla en cykel.",
+      "url": "/aktuellt/handelser/2025/september/3/03-september-17.43-ran-ovrigt-stockholm/",
+      "type": "Rån övrigt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32575468658721,
+      "longitude": 18.072562226265052,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-03T18:31:23.085296",
-    "total_events": 333,
+    "last_updated": "2025-09-04T01:43:10.212251",
+    "total_events": 334,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
