@@ -6101,11 +6101,27 @@
       "longitude": 18.072562226265052,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 599763,
+      "datetime": "2025-09-04 7:12:33 +02:00",
+      "name": "04 september 03.43, Olaga intrång, Stockholm",
+      "summary": "En man sågs röra sig på en byggarbetsplats i centrala Stockholm. Mannen avlägsnades senare från platsen.",
+      "url": "/aktuellt/handelser/2025/september/4/04-september-03.43-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33210646138229,
+      "longitude": 18.068842085337064,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-04T01:43:10.212251",
-    "total_events": 334,
+    "last_updated": "2025-09-04T06:32:34.623033",
+    "total_events": 335,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
