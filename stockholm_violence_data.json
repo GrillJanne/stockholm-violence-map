@@ -6133,11 +6133,27 @@
       "longitude": 18.06927729920702,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600094,
+      "datetime": "2025-09-07 7:23:44 +02:00",
+      "name": "07 september 03.10, Sexualbrott, Stockholm",
+      "summary": "En man i Skärholmen överföll en kvinna utanför hennes port.",
+      "url": "/aktuellt/handelser/2025/september/7/07-september-03.10-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33360206417677,
+      "longitude": 18.07017718406781,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-07T01:51:24.100517",
-    "total_events": 336,
+    "last_updated": "2025-09-07T06:30:02.349824",
+    "total_events": 337,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
