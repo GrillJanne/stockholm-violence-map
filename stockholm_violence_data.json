@@ -6149,11 +6149,43 @@
       "longitude": 18.07017718406781,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600243,
+      "datetime": "2025-09-08 20:10:33 +02:00",
+      "name": "08 september 18.47, Sexualbrott, Stockholm",
+      "summary": "Sexuellt ofredande på Järvafältet.",
+      "url": "/aktuellt/handelser/2025/september/8/08-september-18.47-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.325362477947884,
+      "longitude": 18.069424289112327,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600229,
+      "datetime": "2025-09-08 17:32:17 +02:00",
+      "name": "08 september 16.24, Olaga intrång, Stockholm",
+      "summary": "Fyra ungdomar tar sig in i ett rivningshus i Örby.",
+      "url": "/aktuellt/handelser/2025/september/8/08-september-16.24-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33088484852557,
+      "longitude": 18.065526908536484,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-08T12:49:39.514288",
-    "total_events": 337,
+    "last_updated": "2025-09-08T18:33:01.026636",
+    "total_events": 339,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
