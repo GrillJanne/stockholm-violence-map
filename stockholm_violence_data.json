@@ -6213,11 +6213,27 @@
       "longitude": 18.066467683774867,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600712,
+      "datetime": "2025-09-12 18:22:49 +02:00",
+      "name": "12 september 16.24, Misshandel, Stockholm",
+      "summary": "Larm om skadad person i Gröndal/Liljeholmen.",
+      "url": "/aktuellt/handelser/2025/september/12/12-september-16.24-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33145239347106,
+      "longitude": 18.064169862910934,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-12T12:43:44.383431",
-    "total_events": 341,
+    "last_updated": "2025-09-12T18:27:39.713245",
+    "total_events": 342,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
