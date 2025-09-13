@@ -6261,11 +6261,43 @@
       "longitude": 18.065105524284736,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600757,
+      "datetime": "2025-09-13 8:15:39 +02:00",
+      "name": "13 september 03.20, Mord/dråp, Stockholm",
+      "summary": "Det kommer larm om ett sjukdomsfall från en bostad på Kungsholmen och en person konstateras avliden.",
+      "url": "/aktuellt/handelser/2025/september/13/13-september-03.20-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32944942989129,
+      "longitude": 18.068046574829413,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600743,
+      "datetime": "2025-09-13 7:08:52 +02:00",
+      "name": "13 september 05.39, Explosion, Stockholm",
+      "summary": "Något har smällt vid ett flerfamiljshus på Södermalm. Ingen är skadad men ett antal rutor har krossats.",
+      "url": "/aktuellt/handelser/2025/september/13/13-september-05.39-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33076613585352,
+      "longitude": 18.070817030109584,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-13T01:38:13.214355",
-    "total_events": 344,
+    "last_updated": "2025-09-13T06:29:27.805601",
+    "total_events": 346,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
