@@ -6309,11 +6309,27 @@
       "longitude": 18.065829589385867,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600801,
+      "datetime": "2025-09-14 7:47:16 +02:00",
+      "name": "14 september 00.29, Misshandel, Stockholm",
+      "summary": "En kvinna i norra Stockholm misshandlar den man hon lever med.",
+      "url": "/aktuellt/handelser/2025/september/14/14-september-00.29-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33397565983168,
+      "longitude": 18.065144874465716,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-14T01:50:57.168125",
-    "total_events": 347,
+    "last_updated": "2025-09-14T06:30:05.346621",
+    "total_events": 348,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
