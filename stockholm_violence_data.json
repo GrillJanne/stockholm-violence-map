@@ -6325,11 +6325,27 @@
       "longitude": 18.065144874465716,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 600983,
+      "datetime": "2025-09-15 21:03:46 +02:00",
+      "name": "15 september 20.06, Misshandel, Stockholm",
+      "summary": "En mamma larmar polisen efter samtal från sin dotter som berättar att hon har blivit slagen av sin pojkvän.",
+      "url": "/aktuellt/handelser/2025/september/15/15-september-20.06-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32458816522515,
+      "longitude": 18.064952759613252,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-15T18:32:16.147634",
-    "total_events": 348,
+    "last_updated": "2025-09-16T01:43:30.542990",
+    "total_events": 349,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
