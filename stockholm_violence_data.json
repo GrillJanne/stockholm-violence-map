@@ -6341,11 +6341,27 @@
       "longitude": 18.064952759613252,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 601180,
+      "datetime": "2025-09-17 16:03:26 +02:00",
+      "name": "17 september 15.26, Olaga hot, Stockholm",
+      "summary": "En person har hotat barnen på en skola på Södermalm.",
+      "url": "/aktuellt/handelser/2025/september/17/17-september-15.26-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3322546546555,
+      "longitude": 18.072088691052997,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-17T12:47:50.020533",
-    "total_events": 349,
+    "last_updated": "2025-09-17T18:32:29.970934",
+    "total_events": 350,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
