@@ -6373,11 +6373,27 @@
       "longitude": 18.066222220438746,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 601469,
+      "datetime": "2025-09-20 7:36:30 +02:00",
+      "name": "20 september 02.45, Misshandel, Stockholm",
+      "summary": "Man på Norrmalm påträffades misshandlad och fördes med ambulans till sjukhus.",
+      "url": "/aktuellt/handelser/2025/september/20/20-september-02.45-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.328565277486256,
+      "longitude": 18.071584385940508,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-20T01:41:51.962508",
-    "total_events": 351,
+    "last_updated": "2025-09-20T06:30:35.035999",
+    "total_events": 352,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
