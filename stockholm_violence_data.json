@@ -6389,11 +6389,59 @@
       "longitude": 18.071584385940508,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 601523,
+      "datetime": "2025-09-20 20:26:40 +02:00",
+      "name": "20 september 19.04, Skottlossning, Stockholm",
+      "summary": "Person skjuten utomhus i Hagsätra.",
+      "url": "/aktuellt/handelser/2025/september/20/20-september-19.04-skottlossning-stockholm/",
+      "type": "Skottlossning",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32759349985063,
+      "longitude": 18.066171764125393,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 601522,
+      "datetime": "2025-09-20 20:10:03 +02:00",
+      "name": "20 september 19.11, Mord/dråp, försök, Stockholm",
+      "summary": "En person stickskadad på Södermalm.",
+      "url": "/aktuellt/handelser/2025/september/20/20-september-19.11-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332050029370976,
+      "longitude": 18.067902745638857,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 601518,
+      "datetime": "2025-09-20 18:24:19 +02:00",
+      "name": "20 september 16.04, Misshandel, grov, Stockholm",
+      "summary": "Man gripen misstänkt för att ha misshandlat en kvinna han har en relation till.",
+      "url": "/aktuellt/handelser/2025/september/20/20-september-16.04-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33367907606873,
+      "longitude": 18.070116417538646,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-20T12:41:47.179061",
-    "total_events": 352,
+    "last_updated": "2025-09-20T18:27:46.180061",
+    "total_events": 355,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
