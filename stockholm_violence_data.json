@@ -6485,11 +6485,27 @@
       "longitude": 18.071440435843986,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 603721,
+      "datetime": "2025-09-23 8:29:52 +02:00",
+      "name": "22 september 22.27, Misshandel, Stockholm",
+      "summary": "Man misshandlad efter att ha sagt till en person att inte urinera offentligt.",
+      "url": "/aktuellt/handelser/2025/september/22/22-september-22.27-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.326761129007764,
+      "longitude": 18.068892641189972,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-23T01:44:23.685399",
-    "total_events": 358,
+    "last_updated": "2025-09-23T06:34:20.009077",
+    "total_events": 359,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
