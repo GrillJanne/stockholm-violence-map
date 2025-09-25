@@ -6501,11 +6501,43 @@
       "longitude": 18.068892641189972,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 603992,
+      "datetime": "2025-09-25 13:38:55 +02:00",
+      "name": "25 september 13.12, Mord/dråp, försök, Stockholm",
+      "summary": "Kvinna påträffas skadad utomhus.",
+      "url": "/aktuellt/handelser/2025/september/25/25-september-13.12-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32960713496894,
+      "longitude": 18.06841956805517,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 603990,
+      "datetime": "2025-09-25 13:17:21 +02:00",
+      "name": "25 september 09.36, Olaga intrång, Stockholm",
+      "summary": "En man gripen för försök till grov misshandel och olaga intrång.",
+      "url": "/aktuellt/handelser/2025/september/25/25-september-09.36-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32716440388751,
+      "longitude": 18.071183285135337,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-25T06:34:32.197387",
-    "total_events": 359,
+    "last_updated": "2025-09-25T12:49:34.416777",
+    "total_events": 361,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
