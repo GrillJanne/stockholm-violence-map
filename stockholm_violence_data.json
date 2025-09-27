@@ -6533,11 +6533,27 @@
       "longitude": 18.071183285135337,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604343,
+      "datetime": "2025-09-27 7:05:19 +02:00",
+      "name": "27 september 05.06, Misshandel, grov, Stockholm",
+      "summary": "Polisen har gripit fyra kvinnor i 20-årsåldern som är misstänkta för grov misshandel. Den bedömda brottsplatse",
+      "url": "/aktuellt/handelser/2025/september/27/27-september-05.06-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32782385473504,
+      "longitude": 18.069808656237758,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-27T01:41:29.765509",
-    "total_events": 361,
+    "last_updated": "2025-09-27T06:29:17.173202",
+    "total_events": 362,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
