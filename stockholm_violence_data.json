@@ -6549,11 +6549,27 @@
       "longitude": 18.069808656237758,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604568,
+      "datetime": "2025-09-29 17:00:05 +02:00",
+      "name": "29 september 15.10, Rån, försök, Stockholm",
+      "summary": "Person utsatt för rånförsök i Gubbängen.",
+      "url": "/aktuellt/handelser/2025/september/29/29-september-15.10-ran-forsok-stockholm/",
+      "type": "Rån, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.327056211059926,
+      "longitude": 18.070117058258027,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-09-29T12:50:22.833457",
-    "total_events": 362,
+    "last_updated": "2025-09-29T18:32:57.732754",
+    "total_events": 363,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
