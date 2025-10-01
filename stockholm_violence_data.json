@@ -6597,11 +6597,59 @@
       "longitude": 18.067845804928144,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604904,
+      "datetime": "2025-10-01 19:12:25 +02:00",
+      "name": "01 oktober 15.06, Misshandel, Stockholm",
+      "summary": "En man misshandlar sin granne.",
+      "url": "/aktuellt/handelser/2025/oktober/1/01-oktober-15.06-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32701741728281,
+      "longitude": 18.071880417899887,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604901,
+      "datetime": "2025-10-01 19:12:21 +02:00",
+      "name": "01 oktober 17.06, Sexualbrott, Stockholm",
+      "summary": "En kvinna anmäler att en man blottat sig för henne i Skarpnäcks gård.",
+      "url": "/aktuellt/handelser/2025/oktober/1/01-oktober-17.06-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332849421437736,
+      "longitude": 18.065368754538103,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604891,
+      "datetime": "2025-10-01 19:11:58 +02:00",
+      "name": "01 oktober 14.33, Misshandel, Stockholm",
+      "summary": "Misstänkt kvinnofridskränkning på hotell.",
+      "url": "/aktuellt/handelser/2025/oktober/1/01-oktober-14.33-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.331792423569155,
+      "longitude": 18.071909699531506,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-01T12:49:49.978824",
-    "total_events": 365,
+    "last_updated": "2025-10-01T18:32:42.893442",
+    "total_events": 368,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
