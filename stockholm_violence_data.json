@@ -6565,11 +6565,27 @@
       "longitude": 18.070117058258027,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604744,
+      "datetime": "2025-10-01 7:16:05 +02:00",
+      "name": "01 oktober 02.10, Sexualbrott, Stockholm",
+      "summary": "En utåtagerande man på Norrmalm försökte pussa på en person och tog även en öl från en annan man.",
+      "url": "/aktuellt/handelser/2025/oktober/1/01-oktober-02.10-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3325137081821,
+      "longitude": 18.07334743393225,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-01T01:56:06.824161",
-    "total_events": 363,
+    "last_updated": "2025-10-01T06:34:28.684802",
+    "total_events": 364,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
