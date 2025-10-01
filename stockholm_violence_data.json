@@ -6581,11 +6581,27 @@
       "longitude": 18.07334743393225,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 604802,
+      "datetime": "2025-10-01 14:14:36 +02:00",
+      "name": "01 oktober 12.18, Misshandel, Stockholm",
+      "summary": "En man på Norrmalm, misstänkt psykotisk, gick runt med ett stickföremål och slog två kvinnor. Därefter jagade ",
+      "url": "/aktuellt/handelser/2025/oktober/1/01-oktober-12.18-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.324542921041726,
+      "longitude": 18.067845804928144,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-01T06:34:28.684802",
-    "total_events": 364,
+    "last_updated": "2025-10-01T12:49:49.978824",
+    "total_events": 365,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
