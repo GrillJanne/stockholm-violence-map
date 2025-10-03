@@ -6677,11 +6677,27 @@
       "longitude": 18.068119139238465,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 605224,
+      "datetime": "2025-10-03 20:13:46 +02:00",
+      "name": "03 oktober 17.31, Misshandel, Stockholm",
+      "summary": "Två personer misstänks ha slagit varandra i en bostad i västra Stockholm. I bostaden finns också barn.",
+      "url": "/aktuellt/handelser/2025/oktober/3/03-oktober-17.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32990889728507,
+      "longitude": 18.066348715011912,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-03T12:45:08.069122",
-    "total_events": 370,
+    "last_updated": "2025-10-03T18:31:25.328993",
+    "total_events": 371,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
