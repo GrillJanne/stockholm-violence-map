@@ -6709,11 +6709,43 @@
       "longitude": 18.065291866794553,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 606802,
+      "datetime": "2025-10-09 15:08:09 +02:00",
+      "name": "09 oktober 14.51, Misshandel, Stockholm",
+      "summary": "Två personer skadades i ett bråk i Spånga. Enligt initiala uppgifter var flera personer inblandade.",
+      "url": "/aktuellt/handelser/2025/oktober/9/09-oktober-14.51-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32870074162697,
+      "longitude": 18.065860224432264,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 606800,
+      "datetime": "2025-10-09 14:52:10 +02:00",
+      "name": "09 oktober 13.25, Misshandel, Stockholm",
+      "summary": "En man misstänks för ringa misshandel och olaga hot mot en kvinna i  Mariehäll.",
+      "url": "/aktuellt/handelser/2025/oktober/9/09-oktober-13.25-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.331297906061856,
+      "longitude": 18.07181642697879,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-09T12:49:07.255708",
-    "total_events": 372,
+    "last_updated": "2025-10-09T18:32:17.179518",
+    "total_events": 374,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
