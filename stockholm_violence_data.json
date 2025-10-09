@@ -6693,11 +6693,27 @@
       "longitude": 18.066348715011912,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 606794,
+      "datetime": "2025-10-09 13:56:06 +02:00",
+      "name": "09 oktober 13.14, Rån, försök, Stockholm",
+      "summary": "Två män greps misstänkta för rånförsök på Odenplan.",
+      "url": "/aktuellt/handelser/2025/oktober/9/09-oktober-13.14-ran-forsok-stockholm/",
+      "type": "Rån, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33222094682715,
+      "longitude": 18.065291866794553,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-09T06:34:35.232666",
-    "total_events": 371,
+    "last_updated": "2025-10-09T12:49:07.255708",
+    "total_events": 372,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
