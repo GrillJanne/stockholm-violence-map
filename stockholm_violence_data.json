@@ -6741,11 +6741,27 @@
       "longitude": 18.07181642697879,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 606842,
+      "datetime": "2025-10-10 7:11:55 +02:00",
+      "name": "10 oktober 00.07, Mord/dråp, försök, Stockholm",
+      "summary": "Man skjuten utanför nattklubb vid Stureplan.",
+      "url": "/aktuellt/handelser/2025/oktober/10/10-oktober-00.07-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33218295568455,
+      "longitude": 18.066181352685444,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-10T01:46:26.201619",
-    "total_events": 374,
+    "last_updated": "2025-10-10T06:34:05.388881",
+    "total_events": 375,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
