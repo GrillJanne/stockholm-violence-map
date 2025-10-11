@@ -6757,11 +6757,27 @@
       "longitude": 18.066181352685444,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 606976,
+      "datetime": "2025-10-11 8:17:59 +02:00",
+      "name": "11 oktober 02.01, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en kvinna som är misstänkt för mordförsök på en man i Akalla.",
+      "url": "/aktuellt/handelser/2025/oktober/11/11-oktober-02.01-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.327729264769296,
+      "longitude": 18.066935905614546,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-11T01:41:40.649359",
-    "total_events": 375,
+    "last_updated": "2025-10-11T06:30:24.148668",
+    "total_events": 376,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
