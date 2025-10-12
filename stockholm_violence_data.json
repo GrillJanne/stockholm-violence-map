@@ -6773,11 +6773,27 @@
       "longitude": 18.066935905614546,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 607026,
+      "datetime": "2025-10-12 7:08:00 +02:00",
+      "name": "12 oktober 02.48, Olaga hot, Stockholm",
+      "summary": "En man som har riktat med ett gevär mot bilar på Södermalm har gripits av polis.",
+      "url": "/aktuellt/handelser/2025/oktober/12/12-oktober-02.48-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33048567799042,
+      "longitude": 18.070694282757202,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-12T01:49:40.791695",
-    "total_events": 376,
+    "last_updated": "2025-10-12T06:30:34.088198",
+    "total_events": 377,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
