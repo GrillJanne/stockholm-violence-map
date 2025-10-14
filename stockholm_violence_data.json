@@ -6821,11 +6821,27 @@
       "longitude": 18.071507222977473,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608270,
+      "datetime": "2025-10-14 9:43:50 +02:00",
+      "name": "14 oktober 07.36, Trafikolycka, smitning från, Stockholm",
+      "summary": "Cyklist påkörd på Södermalm.",
+      "url": "/aktuellt/handelser/2025/oktober/14/14-oktober-07.36-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.331313598352416,
+      "longitude": 18.06913109586615,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-14T06:33:57.860553",
-    "total_events": 379,
+    "last_updated": "2025-10-14T12:51:12.252360",
+    "total_events": 380,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
