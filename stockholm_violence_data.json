@@ -6789,11 +6789,27 @@
       "longitude": 18.070694282757202,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608218,
+      "datetime": "2025-10-13 20:33:50 +02:00",
+      "name": "13 oktober 19.05, Misshandel, Stockholm",
+      "summary": "Kvinna gripen misstänkt för att ha misshandlat en person som hon har en relation till.",
+      "url": "/aktuellt/handelser/2025/oktober/13/13-oktober-19.05-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32548960789037,
+      "longitude": 18.068196967034364,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-13T18:31:44.773105",
-    "total_events": 377,
+    "last_updated": "2025-10-14T01:46:40.399227",
+    "total_events": 378,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
