@@ -6805,11 +6805,27 @@
       "longitude": 18.068196967034364,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608256,
+      "datetime": "2025-10-14 7:40:43 +02:00",
+      "name": "13 oktober 23.57, Misshandel, Stockholm",
+      "summary": "Bråk mellan unga män i Hjulsta backar.",
+      "url": "/aktuellt/handelser/2025/oktober/13/13-oktober-23.57-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33182759726315,
+      "longitude": 18.071507222977473,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-14T01:46:40.399227",
-    "total_events": 378,
+    "last_updated": "2025-10-14T06:33:57.860553",
+    "total_events": 379,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
