@@ -6837,11 +6837,27 @@
       "longitude": 18.06913109586615,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608421,
+      "datetime": "2025-10-15 11:42:48 +02:00",
+      "name": "15 oktober 10.48, Mordbrand, Stockholm",
+      "summary": "Det brinner i en bostad i ett flerbostadshus i Gubbängen i södra Stockholm.",
+      "url": "/aktuellt/handelser/2025/oktober/15/15-oktober-10.48-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33179375199669,
+      "longitude": 18.072001304941057,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-15T06:34:35.502590",
-    "total_events": 380,
+    "last_updated": "2025-10-15T12:50:50.350137",
+    "total_events": 381,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
