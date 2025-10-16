@@ -6917,11 +6917,27 @@
       "longitude": 18.066617173609,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608613,
+      "datetime": "2025-10-16 20:15:15 +02:00",
+      "name": "16 oktober 17.19, Misshandel, Stockholm",
+      "summary": "Kvinna i södra Stockholm greps misstänkt för misshandel av barn.",
+      "url": "/aktuellt/handelser/2025/oktober/16/16-oktober-17.19-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.333549251119734,
+      "longitude": 18.068551267956053,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-16T12:50:33.048099",
-    "total_events": 385,
+    "last_updated": "2025-10-16T18:33:16.106304",
+    "total_events": 386,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
