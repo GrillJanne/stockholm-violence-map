@@ -6853,11 +6853,27 @@
       "longitude": 18.072001304941057,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608495,
+      "datetime": "2025-10-16 8:17:15 +02:00",
+      "name": "15 oktober 23.30, Misshandel, Stockholm",
+      "summary": "Utagerande berusad man vid Kungsträdgården.",
+      "url": "/aktuellt/handelser/2025/oktober/15/15-oktober-23.30-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32901222507442,
+      "longitude": 18.066061246650058,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-16T01:48:19.855741",
-    "total_events": 381,
+    "last_updated": "2025-10-16T06:34:13.381390",
+    "total_events": 382,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
