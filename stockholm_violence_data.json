@@ -6869,11 +6869,59 @@
       "longitude": 18.066061246650058,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608529,
+      "datetime": "2025-10-16 13:53:47 +02:00",
+      "name": "16 oktober 13.01, Misshandel, Stockholm",
+      "summary": "Larm om slagsmål mellan ungdomar i Liljeholmen.",
+      "url": "/aktuellt/handelser/2025/oktober/16/16-oktober-13.01-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32788847376154,
+      "longitude": 18.06463975739314,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608524,
+      "datetime": "2025-10-16 13:33:32 +02:00",
+      "name": "16 oktober 11.48, Trafikolycka, smitning från, Stockholm",
+      "summary": "En mopedist kör på en personbil på Rehnsgatan.",
+      "url": "/aktuellt/handelser/2025/oktober/16/16-oktober-11.48-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32589299918327,
+      "longitude": 18.068786283905002,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608523,
+      "datetime": "2025-10-16 13:24:27 +02:00",
+      "name": "16 oktober 10.39, Våldtäkt, försök, Stockholm",
+      "summary": "Polisen griper en man som misstänks för våldtäktsförsök.",
+      "url": "/aktuellt/handelser/2025/oktober/16/16-oktober-10.39-valdtakt-forsok-stockholm/",
+      "type": "Våldtäkt, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32489955383797,
+      "longitude": 18.066617173609,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-16T06:34:13.381390",
-    "total_events": 382,
+    "last_updated": "2025-10-16T12:50:33.048099",
+    "total_events": 385,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
