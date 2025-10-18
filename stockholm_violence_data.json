@@ -6933,11 +6933,43 @@
       "longitude": 18.068551267956053,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608770,
+      "datetime": "2025-10-18 8:21:03 +02:00",
+      "name": "18 oktober 04.31, Våldtäkt, Stockholm",
+      "summary": "Fyra män misstänks ha våldtagit en kvinna på en kryssningsfärja mellan Finland och Sverige.",
+      "url": "/aktuellt/handelser/2025/oktober/18/18-oktober-04.31-valdtakt-stockholm/",
+      "type": "Våldtäkt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32554086750987,
+      "longitude": 18.07295491835348,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 608761,
+      "datetime": "2025-10-18 7:30:34 +02:00",
+      "name": "17 oktober 22.36, Misshandel, grov, Stockholm",
+      "summary": "Tre män misshandlar en man i övre tonåren på ett tunnelbanetåg mellan Fridhemsplan och T-centralen.",
+      "url": "/aktuellt/handelser/2025/oktober/17/17-oktober-22.36-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32584939687354,
+      "longitude": 18.066994982998697,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-18T01:42:17.028086",
-    "total_events": 386,
+    "last_updated": "2025-10-18T06:31:23.907807",
+    "total_events": 388,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
