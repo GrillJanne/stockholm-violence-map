@@ -6981,11 +6981,27 @@
       "longitude": 18.06957707286843,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610095,
+      "datetime": "2025-10-21 20:40:35 +02:00",
+      "name": "21 oktober 19.20, Olaga hot, Stockholm",
+      "summary": "Påverkad man på restaurang omhändertogs.",
+      "url": "/aktuellt/handelser/2025/oktober/21/21-oktober-19.20-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32618268570251,
+      "longitude": 18.06822505454037,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-21T18:33:40.700987",
-    "total_events": 389,
+    "last_updated": "2025-10-22T01:53:30.736526",
+    "total_events": 390,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
