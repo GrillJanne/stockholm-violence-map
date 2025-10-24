@@ -7013,11 +7013,27 @@
       "longitude": 18.067703983454642,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610390,
+      "datetime": "2025-10-24 10:02:58 +02:00",
+      "name": "24 oktober 09.03, Trafikolycka, smitning från, Stockholm",
+      "summary": "En bil har kört på ett sätt som gjort att en cyklist kört omkull och skadat sig. Olyckan har skett vid Skeppsb",
+      "url": "/aktuellt/handelser/2025/oktober/24/24-oktober-09.03-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32965647518435,
+      "longitude": 18.069322916666945,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-24T06:33:32.400380",
-    "total_events": 391,
+    "last_updated": "2025-10-24T12:50:51.529712",
+    "total_events": 392,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
