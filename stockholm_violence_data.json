@@ -7029,11 +7029,27 @@
       "longitude": 18.069322916666945,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610488,
+      "datetime": "2025-10-24 16:19:59 +02:00",
+      "name": "24 oktober 13.36, Rån övrigt, Stockholm",
+      "summary": "En okänd man tvingar till sig tobak.",
+      "url": "/aktuellt/handelser/2025/oktober/24/24-oktober-13.36-ran-ovrigt-stockholm/",
+      "type": "Rån övrigt",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.330842915254564,
+      "longitude": 18.07023313603954,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-24T12:50:51.529712",
-    "total_events": 392,
+    "last_updated": "2025-10-24T18:31:15.058208",
+    "total_events": 393,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
