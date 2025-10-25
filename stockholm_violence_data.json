@@ -7045,11 +7045,27 @@
       "longitude": 18.07023313603954,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610532,
+      "datetime": "2025-10-25 3:26:05 +02:00",
+      "name": "25 oktober 01.12, Trafikolycka, smitning från, Stockholm",
+      "summary": "Person påkörd av bilförare i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2025/oktober/25/25-oktober-01.12-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33245318851312,
+      "longitude": 18.066870672796945,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-24T18:31:15.058208",
-    "total_events": 393,
+    "last_updated": "2025-10-25T01:46:32.664057",
+    "total_events": 394,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
