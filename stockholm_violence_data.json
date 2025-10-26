@@ -7061,11 +7061,27 @@
       "longitude": 18.066870672796945,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610584,
+      "datetime": "2025-10-25 21:57:09 +02:00",
+      "name": "25 oktober 21.36, Mord/dråp, försök, Stockholm",
+      "summary": "En person skottskadas i Rinkeby.",
+      "url": "/aktuellt/handelser/2025/oktober/25/25-oktober-21.36-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33336072324703,
+      "longitude": 18.072209221114562,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-25T18:30:15.527377",
-    "total_events": 394,
+    "last_updated": "2025-10-26T01:55:25.283900",
+    "total_events": 395,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
