@@ -7077,11 +7077,27 @@
       "longitude": 18.072209221114562,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610606,
+      "datetime": "2025-10-26 10:48:01 +01:00",
+      "name": "26 oktober 09.27, Misshandel, Stockholm",
+      "summary": "En man konfronterar misstänkta inbrottstjuvar och blir misshandlad.",
+      "url": "/aktuellt/handelser/2025/oktober/26/26-oktober-09.27-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.327147228844716,
+      "longitude": 18.063683380498688,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-26T06:32:30.597421",
-    "total_events": 395,
+    "last_updated": "2025-10-26T12:43:31.628269",
+    "total_events": 396,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
