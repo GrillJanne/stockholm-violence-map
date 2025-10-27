@@ -7109,11 +7109,27 @@
       "longitude": 18.073127050597975,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610719,
+      "datetime": "2025-10-27 18:15:38 +01:00",
+      "name": "27 oktober 13.34, Misshandel, grov, Stockholm",
+      "summary": "Två vuxna bröder bråkar.",
+      "url": "/aktuellt/handelser/2025/oktober/27/27-oktober-13.34-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33091454683854,
+      "longitude": 18.0674454746924,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-27T12:51:18.569130",
-    "total_events": 397,
+    "last_updated": "2025-10-27T18:34:10.851945",
+    "total_events": 398,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
