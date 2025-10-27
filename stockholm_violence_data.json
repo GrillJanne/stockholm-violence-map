@@ -7093,11 +7093,27 @@
       "longitude": 18.063683380498688,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610653,
+      "datetime": "2025-10-27 7:53:50 +01:00",
+      "name": "27 oktober 03.56, Mord/dråp, försök, Stockholm",
+      "summary": "En man har skadat en kvinna med ett stickvapen vid ett bråk i en bostad i Akalla.",
+      "url": "/aktuellt/handelser/2025/oktober/27/27-oktober-03.56-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3252246986699,
+      "longitude": 18.073127050597975,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-27T06:38:19.076786",
-    "total_events": 396,
+    "last_updated": "2025-10-27T12:51:18.569130",
+    "total_events": 397,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
