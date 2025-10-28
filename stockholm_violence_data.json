@@ -7125,11 +7125,27 @@
       "longitude": 18.0674454746924,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610822,
+      "datetime": "2025-10-28 12:40:55 +01:00",
+      "name": "28 oktober 10.53, Misshandel, Stockholm",
+      "summary": "En cyklist och en bilist började bråka efter en trafikincident på Kungsholmen. Ingen av de inblandade behövde ",
+      "url": "/aktuellt/handelser/2025/oktober/28/28-oktober-10.53-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.329512019024804,
+      "longitude": 18.064946365364232,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-28T06:36:09.696248",
-    "total_events": 398,
+    "last_updated": "2025-10-28T12:49:52.453891",
+    "total_events": 399,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
