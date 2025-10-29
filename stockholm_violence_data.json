@@ -7141,11 +7141,27 @@
       "longitude": 18.064946365364232,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 610913,
+      "datetime": "2025-10-29 8:41:54 +01:00",
+      "name": "29 oktober 06.22, Misshandel, Stockholm",
+      "summary": "En taxichaufför får ta emot slag från aggressiv kund i Stadshagen.",
+      "url": "/aktuellt/handelser/2025/oktober/29/29-oktober-06.22-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32898328134131,
+      "longitude": 18.06720399314108,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-29T06:36:40.498759",
-    "total_events": 399,
+    "last_updated": "2025-10-29T12:51:53.387436",
+    "total_events": 400,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
