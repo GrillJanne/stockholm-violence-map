@@ -7157,11 +7157,43 @@
       "longitude": 18.06720399314108,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611147,
+      "datetime": "2025-10-30 22:01:32 +01:00",
+      "name": "30 oktober 18.07, Rån, Stockholm",
+      "summary": "Personrån vid Sergels torg.",
+      "url": "/aktuellt/handelser/2025/oktober/30/30-oktober-18.07-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32601173210834,
+      "longitude": 18.068064181434707,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611132,
+      "datetime": "2025-10-30 20:08:18 +01:00",
+      "name": "30 oktober 19.08, Rån, Stockholm",
+      "summary": "Servering på Södermalm rånas.",
+      "url": "/aktuellt/handelser/2025/oktober/30/30-oktober-19.08-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.325594046448565,
+      "longitude": 18.069747657091686,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-10-30T18:34:28.716852",
-    "total_events": 400,
+    "last_updated": "2025-10-31T01:52:18.101981",
+    "total_events": 402,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
