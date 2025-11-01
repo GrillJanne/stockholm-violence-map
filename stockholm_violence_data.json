@@ -7189,11 +7189,27 @@
       "longitude": 18.069747657091686,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611279,
+      "datetime": "2025-11-01 7:26:07 +01:00",
+      "name": "01 november 04.46, Misshandel, Stockholm",
+      "summary": "Två kvinnor på Södermalm har anmält varandra för misshandel.",
+      "url": "/aktuellt/handelser/2025/november/1/01-november-04.46-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32896360450405,
+      "longitude": 18.065967069534764,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-01T01:55:43.052591",
-    "total_events": 402,
+    "last_updated": "2025-11-01T06:31:42.546022",
+    "total_events": 403,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
