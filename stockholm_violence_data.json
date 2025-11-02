@@ -7237,11 +7237,27 @@
       "longitude": 18.06735007202964,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611351,
+      "datetime": "2025-11-02 7:23:16 +01:00",
+      "name": "02 november 00.31, Misshandel, Stockholm",
+      "summary": "Inringare såg några män slåss, varav två män är målsägare. En av de slagna tog sig själv till sjukhus för kont",
+      "url": "/aktuellt/handelser/2025/november/2/02-november-00.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32902659610066,
+      "longitude": 18.064126734842382,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-02T01:57:56.356358",
-    "total_events": 405,
+    "last_updated": "2025-11-02T06:33:20.434780",
+    "total_events": 406,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
