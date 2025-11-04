@@ -7253,11 +7253,27 @@
       "longitude": 18.064126734842382,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611500,
+      "datetime": "2025-11-03 21:17:53 +01:00",
+      "name": "03 november 19.23, Misshandel, Stockholm",
+      "summary": "I Vårberg misshandlar en man dn kvinna han lever med.",
+      "url": "/aktuellt/handelser/2025/november/3/03-november-19.23-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.331066645457966,
+      "longitude": 18.069956923486934,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-03T18:32:28.508459",
-    "total_events": 406,
+    "last_updated": "2025-11-04T01:53:04.685507",
+    "total_events": 407,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
