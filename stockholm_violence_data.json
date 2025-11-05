@@ -7269,11 +7269,27 @@
       "longitude": 18.069956923486934,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611707,
+      "datetime": "2025-11-05 17:37:31 +01:00",
+      "name": "05 november 17.05, Skottlossning, Stockholm",
+      "summary": "Flera personer ringer polisen om skottlossning i Riksby, Bromma.",
+      "url": "/aktuellt/handelser/2025/november/5/05-november-17.05-skottlossning-stockholm/",
+      "type": "Skottlossning",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33013721320399,
+      "longitude": 18.066725396013805,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-05T12:51:01.785887",
-    "total_events": 407,
+    "last_updated": "2025-11-05T18:34:07.869660",
+    "total_events": 408,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
