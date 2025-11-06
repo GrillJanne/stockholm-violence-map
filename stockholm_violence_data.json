@@ -7285,11 +7285,43 @@
       "longitude": 18.066725396013805,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611782,
+      "datetime": "2025-11-06 8:44:32 +01:00",
+      "name": "06 november 03.16, Misshandel, Stockholm",
+      "summary": "En man i 35-årsåldern misshandlas på Kungsgatan och förlorar medvetandet.",
+      "url": "/aktuellt/handelser/2025/november/6/06-november-03.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32432904001694,
+      "longitude": 18.068627245868953,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611778,
+      "datetime": "2025-11-06 8:18:31 +01:00",
+      "name": "06 november 02.10, Misshandel, Stockholm",
+      "summary": "Tre män grips misstänkta för misshandel.",
+      "url": "/aktuellt/handelser/2025/november/6/06-november-02.10-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332661296384074,
+      "longitude": 18.06692802377333,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-06T06:35:47.584681",
-    "total_events": 408,
+    "last_updated": "2025-11-06T12:50:32.512754",
+    "total_events": 410,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
