@@ -7317,11 +7317,27 @@
       "longitude": 18.06692802377333,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611906,
+      "datetime": "2025-11-07 7:47:05 +01:00",
+      "name": "07 november 06.57, Mord/dråp, försök, Stockholm",
+      "summary": "Kvinna i Hässelby skadad med vasst föremål.",
+      "url": "/aktuellt/handelser/2025/november/7/07-november-06.57-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.330414731350494,
+      "longitude": 18.070141224998114,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-07T06:35:22.394052",
-    "total_events": 410,
+    "last_updated": "2025-11-07T12:49:35.576026",
+    "total_events": 411,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
