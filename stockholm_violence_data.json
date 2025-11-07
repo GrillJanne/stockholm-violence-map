@@ -7333,11 +7333,27 @@
       "longitude": 18.070141224998114,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612030,
+      "datetime": "2025-11-07 19:32:28 +01:00",
+      "name": "07 november 19.20, Misshandel, Stockholm",
+      "summary": "En man i Sköndal ringer till polisen om att han blivit slagen av en man som han känner sedan tidigare.",
+      "url": "/aktuellt/handelser/2025/november/7/07-november-19.20-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32810303666109,
+      "longitude": 18.068205887922876,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-07T12:49:35.576026",
-    "total_events": 411,
+    "last_updated": "2025-11-07T18:32:56.805975",
+    "total_events": 412,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
