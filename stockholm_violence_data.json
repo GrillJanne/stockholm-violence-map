@@ -7349,11 +7349,27 @@
       "longitude": 18.068205887922876,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612124,
+      "datetime": "2025-11-09 7:58:15 +01:00",
+      "name": "08 november 22.24, Mord/dråp, försök, Stockholm",
+      "summary": "Polis och ambulans larmas under fredagskvällen till Tallkrogen centrum efter larm om en knivskuren man.",
+      "url": "/aktuellt/handelser/2025/november/8/08-november-22.24-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33136227818815,
+      "longitude": 18.071408958185277,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-09T06:32:26.744584",
-    "total_events": 412,
+    "last_updated": "2025-11-09T12:43:07.180448",
+    "total_events": 413,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
