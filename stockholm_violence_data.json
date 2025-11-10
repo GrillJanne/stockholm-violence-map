@@ -7365,11 +7365,43 @@
       "longitude": 18.071408958185277,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612231,
+      "datetime": "2025-11-10 10:39:37 +01:00",
+      "name": "10 november 10.04, Olaga intrång, Stockholm",
+      "summary": "Personer har utan tillstånd begett sig in på ett företagskontor i city för att uttrycka sina åsikter om företa",
+      "url": "/aktuellt/handelser/2025/november/10/10-november-10.04-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33098418776767,
+      "longitude": 18.064955494681353,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 611707,
+      "datetime": "2025-11-05 17:37:31 +01:00",
+      "name": "05 november 17.05, Mord/dråp, Stockholm",
+      "summary": "Flera personer ringer polisen om skottlossning i Riksby, Bromma.",
+      "url": "/aktuellt/handelser/2025/november/5/05-november-17.05-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33268400785488,
+      "longitude": 18.07180629289757,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-10T06:37:56.874675",
-    "total_events": 413,
+    "last_updated": "2025-11-10T12:51:34.043011",
+    "total_events": 415,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
