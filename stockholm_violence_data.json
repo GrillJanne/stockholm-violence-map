@@ -7397,11 +7397,27 @@
       "longitude": 18.07180629289757,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612299,
+      "datetime": "2025-11-10 21:36:59 +01:00",
+      "name": "10 november 20.21, Misshandel, Stockholm",
+      "summary": "En man i Bagarmossen uppger att han blivit skjuten av ett luftgevär.",
+      "url": "/aktuellt/handelser/2025/november/10/10-november-20.21-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33030077120347,
+      "longitude": 18.071727289484976,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-10T18:34:43.960300",
-    "total_events": 415,
+    "last_updated": "2025-11-11T01:54:56.919454",
+    "total_events": 416,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
