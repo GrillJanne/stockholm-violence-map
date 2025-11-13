@@ -7429,11 +7429,27 @@
       "longitude": 18.066646149848676,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612590,
+      "datetime": "2025-11-13 7:29:56 +01:00",
+      "name": "13 november 02.45, Misshandel, grov, Stockholm",
+      "summary": "Man greps efter misshandel på Södermalm.",
+      "url": "/aktuellt/handelser/2025/november/13/13-november-02.45-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33203265287973,
+      "longitude": 18.06872348856675,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-13T01:55:38.140743",
-    "total_events": 417,
+    "last_updated": "2025-11-13T06:36:35.216411",
+    "total_events": 418,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
