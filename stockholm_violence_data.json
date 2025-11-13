@@ -7445,11 +7445,27 @@
       "longitude": 18.06872348856675,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 612613,
+      "datetime": "2025-11-13 10:59:12 +01:00",
+      "name": "13 november 10.15, Misshandel, Stockholm",
+      "summary": "En i Liljeholmen gripen för försök till grov misshandel.",
+      "url": "/aktuellt/handelser/2025/november/13/13-november-10.15-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.326303186125635,
+      "longitude": 18.073483174440014,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-13T06:36:35.216411",
-    "total_events": 418,
+    "last_updated": "2025-11-13T12:52:29.158428",
+    "total_events": 419,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
