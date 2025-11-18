@@ -7461,11 +7461,27 @@
       "longitude": 18.073483174440014,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 614045,
+      "datetime": "2025-11-18 8:11:27 +01:00",
+      "name": "18 november 01.29, Olaga hot, Stockholm",
+      "summary": "En man står utanför sitt ex bostad och hotar henne.",
+      "url": "/aktuellt/handelser/2025/november/18/18-november-01.29-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332752224742315,
+      "longitude": 18.06747528758765,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-18T06:35:46.868227",
-    "total_events": 419,
+    "last_updated": "2025-11-18T12:51:11.184188",
+    "total_events": 420,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
