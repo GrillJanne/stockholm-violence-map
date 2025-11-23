@@ -7493,11 +7493,27 @@
       "longitude": 18.06600872646011,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 614644,
+      "datetime": "2025-11-22 20:06:39 +01:00",
+      "name": "22 november 16.21, Rån, försök, Stockholm",
+      "summary": "Man vid Stockholms södra behöver hjälp efter ett rån.",
+      "url": "/aktuellt/handelser/2025/november/22/22-november-16.21-ran-forsok-stockholm/",
+      "type": "Rån, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32949433990817,
+      "longitude": 18.06900908635078,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-22T18:31:51.560726",
-    "total_events": 421,
+    "last_updated": "2025-11-23T02:07:48.966388",
+    "total_events": 422,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
