@@ -7525,11 +7525,27 @@
       "longitude": 18.067192286643305,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 614843,
+      "datetime": "2025-11-24 20:58:00 +01:00",
+      "name": "24 november 19.30, Misshandel, Stockholm",
+      "summary": "Polis frihetsberövar en man som är misstänkt för att ha misshandlat en kvinna som han har en nära relation med",
+      "url": "/aktuellt/handelser/2025/november/24/24-november-19.30-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.329795848899586,
+      "longitude": 18.07351826770119,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-24T18:35:52.837344",
-    "total_events": 423,
+    "last_updated": "2025-11-25T01:55:26.912621",
+    "total_events": 424,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
