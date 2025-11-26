@@ -7541,11 +7541,27 @@
       "longitude": 18.07351826770119,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 614948,
+      "datetime": "2025-11-25 21:50:15 +01:00",
+      "name": "25 november 18.58, Mord/dråp, Stockholm",
+      "summary": "Polis och ambulans kallas till en lägenhet i Västertorp med uppgifter om sjukdomsfall.",
+      "url": "/aktuellt/handelser/2025/november/25/25-november-18.58-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32453513716259,
+      "longitude": 18.06503977406024,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-25T18:36:53.521696",
-    "total_events": 424,
+    "last_updated": "2025-11-26T01:55:22.055354",
+    "total_events": 425,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
