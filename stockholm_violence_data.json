@@ -7557,11 +7557,27 @@
       "longitude": 18.06503977406024,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615047,
+      "datetime": "2025-11-26 19:12:10 +01:00",
+      "name": "26 november 18.20, Misshandel, Stockholm",
+      "summary": "Två personer har bråkat inne i Kista Galleria och den ena personen misstänks ha använt pepparspray eller dylik",
+      "url": "/aktuellt/handelser/2025/november/26/26-november-18.20-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32858319608459,
+      "longitude": 18.066142901314326,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-26T12:53:20.125405",
-    "total_events": 425,
+    "last_updated": "2025-11-26T18:31:56.858363",
+    "total_events": 426,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
