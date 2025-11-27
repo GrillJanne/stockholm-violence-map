@@ -7573,11 +7573,27 @@
       "longitude": 18.066142901314326,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615098,
+      "datetime": "2025-11-27 8:03:41 +01:00",
+      "name": "27 november 07.21, Misshandel, Stockholm",
+      "summary": "En man anträffas lindrigt skadad i ett trapphus i Hässelby gård.",
+      "url": "/aktuellt/handelser/2025/november/27/27-november-07.21-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.334242371644216,
+      "longitude": 18.065798510137384,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-27T06:37:53.339838",
-    "total_events": 426,
+    "last_updated": "2025-11-27T12:51:52.439404",
+    "total_events": 427,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
