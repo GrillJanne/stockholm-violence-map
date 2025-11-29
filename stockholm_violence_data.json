@@ -7589,11 +7589,43 @@
       "longitude": 18.065798510137384,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615366,
+      "datetime": "2025-11-29 9:34:37 +01:00",
+      "name": "29 november 06.51, Misshandel, Stockholm",
+      "summary": "Kvinna gripen misstänkt för att ha misshandlat en man hon har en relation med.",
+      "url": "/aktuellt/handelser/2025/november/29/29-november-06.51-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32776917629571,
+      "longitude": 18.072055334053143,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615357,
+      "datetime": "2025-11-29 7:43:57 +01:00",
+      "name": "29 november 03.11, Mord/dråp, försök, Stockholm",
+      "summary": "En skadad vid ett bråk vid en bensinstation.",
+      "url": "/aktuellt/handelser/2025/november/29/29-november-03.11-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32566245722397,
+      "longitude": 18.0660393181332,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-29T06:34:35.077791",
-    "total_events": 427,
+    "last_updated": "2025-11-29T12:46:40.816165",
+    "total_events": 429,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
