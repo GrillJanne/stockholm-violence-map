@@ -7621,11 +7621,27 @@
       "longitude": 18.0660393181332,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615447,
+      "datetime": "2025-11-30 13:43:52 +01:00",
+      "name": "30 november 10.51, Olaga hot, Stockholm",
+      "summary": "Väktare ser i övervakningskameror hur en man hotar en kvinna med ett knivliknande föremål.",
+      "url": "/aktuellt/handelser/2025/november/30/30-november-10.51-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32586447910693,
+      "longitude": 18.065785679101577,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-11-30T06:35:54.986349",
-    "total_events": 429,
+    "last_updated": "2025-11-30T12:46:04.030858",
+    "total_events": 430,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
