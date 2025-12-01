@@ -7637,11 +7637,27 @@
       "longitude": 18.065785679101577,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615526,
+      "datetime": "2025-12-01 10:18:26 +01:00",
+      "name": "01 december 08.19, Mord/dråp, försök, Stockholm",
+      "summary": "Tonåring jagas och knivhuggs i Fagersjö.",
+      "url": "/aktuellt/handelser/2025/december/1/01-december-08.19-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3302422000677,
+      "longitude": 18.06589097722983,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-01T06:40:06.717231",
-    "total_events": 430,
+    "last_updated": "2025-12-01T12:53:37.666738",
+    "total_events": 431,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
