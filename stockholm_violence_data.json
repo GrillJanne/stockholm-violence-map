@@ -7653,11 +7653,27 @@
       "longitude": 18.06589097722983,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615656,
+      "datetime": "2025-12-02 11:35:43 +01:00",
+      "name": "02 december 11.07, Misshandel, grov, Stockholm",
+      "summary": "Två kvinnor blir misshandlade av ett föremål i huvudet i Johanneshov.",
+      "url": "/aktuellt/handelser/2025/december/2/02-december-11.07-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32978227472601,
+      "longitude": 18.066409899057206,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-02T06:38:45.210933",
-    "total_events": 431,
+    "last_updated": "2025-12-02T12:54:11.450385",
+    "total_events": 432,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
