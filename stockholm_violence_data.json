@@ -7685,11 +7685,27 @@
       "longitude": 18.06883229716624,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615850,
+      "datetime": "2025-12-03 14:41:23 +01:00",
+      "name": "03 december 13.37, Olaga hot, Stockholm",
+      "summary": "En kvinna greps i södra Stockholm misstänkt för olaga hot mot en närstående.",
+      "url": "/aktuellt/handelser/2025/december/3/03-december-13.37-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32924609339322,
+      "longitude": 18.069670514284702,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-03T12:54:32.088212",
-    "total_events": 433,
+    "last_updated": "2025-12-03T18:38:10.642252",
+    "total_events": 434,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
