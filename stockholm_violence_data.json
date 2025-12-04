@@ -7701,11 +7701,27 @@
       "longitude": 18.069670514284702,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 615915,
+      "datetime": "2025-12-04 6:54:05 +01:00",
+      "name": "04 december 00.32, Misshandel, Stockholm",
+      "summary": "En grupp män i södra Hammarbyhamnen bevittnades när de bråkade utanför ett hotell.",
+      "url": "/aktuellt/handelser/2025/december/4/04-december-00.32-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32802143416864,
+      "longitude": 18.068175031302708,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-04T01:58:07.639872",
-    "total_events": 434,
+    "last_updated": "2025-12-04T06:38:03.568142",
+    "total_events": 435,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
