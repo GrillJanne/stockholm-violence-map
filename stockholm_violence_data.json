@@ -7733,11 +7733,27 @@
       "longitude": 18.063754126159996,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 616001,
+      "datetime": "2025-12-04 19:14:42 +01:00",
+      "name": "04 december 19.02, Mord/dråp, försök, Stockholm",
+      "summary": "Polisens ledningscentral har fått in information om att en person ska vara anträffad  som är svårt skadad i Gr",
+      "url": "/aktuellt/handelser/2025/december/4/04-december-19.02-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.329007555245944,
+      "longitude": 18.069218357049056,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-04T18:39:01.576229",
-    "total_events": 436,
+    "last_updated": "2025-12-05T01:58:17.724053",
+    "total_events": 437,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
