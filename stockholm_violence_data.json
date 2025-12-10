@@ -7765,11 +7765,27 @@
       "longitude": 18.064408408811445,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 616615,
+      "datetime": "2025-12-10 7:16:32 +01:00",
+      "name": "10 december 00.55, Olaga hot, Stockholm",
+      "summary": "En man anträffade tre ungdomar som såg ut att bryta sig in i ett källarförråd i Hammarby sjöstad.",
+      "url": "/aktuellt/handelser/2025/december/10/10-december-00.55-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32586165805379,
+      "longitude": 18.066193360987636,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-10T02:00:18.493759",
-    "total_events": 438,
+    "last_updated": "2025-12-10T06:39:25.942322",
+    "total_events": 439,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
