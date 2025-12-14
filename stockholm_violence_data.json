@@ -7781,11 +7781,27 @@
       "longitude": 18.066193360987636,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 617043,
+      "datetime": "2025-12-13 20:07:09 +01:00",
+      "name": "13 december 16.01, Misshandel, grov, Stockholm",
+      "summary": "Larm om att en kvinna misshandlar en man i Kista.",
+      "url": "/aktuellt/handelser/2025/december/13/13-december-16.01-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33274375923063,
+      "longitude": 18.070356504696452,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-13T18:32:09.662608",
-    "total_events": 439,
+    "last_updated": "2025-12-14T02:07:45.545606",
+    "total_events": 440,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
