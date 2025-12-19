@@ -7813,11 +7813,27 @@
       "longitude": 18.066353439756597,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 617787,
+      "datetime": "2025-12-18 22:36:08 +01:00",
+      "name": "18 december 09.30, Mord/dråp, Stockholm",
+      "summary": "En kvinna anträffas avliden i nära anslutning till ett flerbostadshus på Södermalm.",
+      "url": "/aktuellt/handelser/2025/december/18/18-december-09.30-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.324524450249385,
+      "longitude": 18.06955687738618,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-18T18:38:20.387962",
-    "total_events": 441,
+    "last_updated": "2025-12-19T02:00:40.605439",
+    "total_events": 442,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
