@@ -7829,11 +7829,43 @@
       "longitude": 18.06955687738618,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 617817,
+      "datetime": "2025-12-19 8:14:30 +01:00",
+      "name": "19 december 01.44, Misshandel, Stockholm",
+      "summary": "Datorspelande leder till misshandel.",
+      "url": "/aktuellt/handelser/2025/december/19/19-december-01.44-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.331494576825015,
+      "longitude": 18.07067755063566,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 617814,
+      "datetime": "2025-12-19 8:14:27 +01:00",
+      "name": "19 december 01.29, Misshandel, Stockholm",
+      "summary": "Polisen larmas om bråk i ett trapphus.",
+      "url": "/aktuellt/handelser/2025/december/19/19-december-01.29-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33358213380576,
+      "longitude": 18.06475381645834,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-19T06:38:24.968950",
-    "total_events": 442,
+    "last_updated": "2025-12-19T12:51:57.788718",
+    "total_events": 444,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
