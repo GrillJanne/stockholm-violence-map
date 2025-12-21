@@ -7861,11 +7861,43 @@
       "longitude": 18.06475381645834,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 618014,
+      "datetime": "2025-12-21 7:31:47 +01:00",
+      "name": "21 december 01.40, Olaga intrång, Stockholm",
+      "summary": "Två personer avlägsnades efter olaga intrång i källare i Hökarängen.",
+      "url": "/aktuellt/handelser/2025/december/21/21-december-01.40-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33115448658465,
+      "longitude": 18.070781366310506,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 618010,
+      "datetime": "2025-12-21 7:20:36 +01:00",
+      "name": "21 december 04.57, Trafikolycka, smitning från, Stockholm",
+      "summary": "Elsparkcykel kördes in i taxibil på Birger Jarlsgatan.",
+      "url": "/aktuellt/handelser/2025/december/21/21-december-04.57-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33200455242893,
+      "longitude": 18.068864406434606,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-21T02:07:42.519576",
-    "total_events": 444,
+    "last_updated": "2025-12-21T06:36:55.711306",
+    "total_events": 446,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
