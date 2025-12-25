@@ -7909,11 +7909,43 @@
       "longitude": 18.064809838529296,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619371,
+      "datetime": "2025-12-25 7:15:33 +01:00",
+      "name": "25 december 03.58, Misshandel, Stockholm",
+      "summary": "En man har misshandlat en annan man utanför en hamburgerrestaurang i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2025/december/25/25-december-03.58-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32886032504925,
+      "longitude": 18.072284773518945,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619368,
+      "datetime": "2025-12-25 7:10:38 +01:00",
+      "name": "25 december 00.08, Misshandel, Stockholm",
+      "summary": "En man har setts misshandla en kvinna utomhus i Hjulsta. Den misstänkte grips i närområdet.",
+      "url": "/aktuellt/handelser/2025/december/25/25-december-00.08-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.332329924854896,
+      "longitude": 18.06955362979696,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-25T02:02:19.663292",
-    "total_events": 447,
+    "last_updated": "2025-12-25T06:39:43.398104",
+    "total_events": 449,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
