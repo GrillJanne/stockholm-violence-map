@@ -7941,11 +7941,27 @@
       "longitude": 18.06955362979696,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619387,
+      "datetime": "2025-12-25 12:53:22 +01:00",
+      "name": "25 december 11.40, Misshandel, Stockholm",
+      "summary": "En man misstänks ha misshandlat en person han har en relation med.",
+      "url": "/aktuellt/handelser/2025/december/25/25-december-11.40-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32818800828076,
+      "longitude": 18.071025614776403,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-25T06:39:43.398104",
-    "total_events": 449,
+    "last_updated": "2025-12-25T12:51:38.417027",
+    "total_events": 450,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
