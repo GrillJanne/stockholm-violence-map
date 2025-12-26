@@ -7957,11 +7957,43 @@
       "longitude": 18.071025614776403,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619435,
+      "datetime": "2025-12-26 8:24:03 +01:00",
+      "name": "26 december 06.55, Rån, Stockholm",
+      "summary": "En man har blivit slagen och rånad på sin mobiltelefon av en annan man.",
+      "url": "/aktuellt/handelser/2025/december/26/26-december-06.55-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.3291844073057,
+      "longitude": 18.06649397288977,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619421,
+      "datetime": "2025-12-26 8:04:10 +01:00",
+      "name": "26 december 04.18, Misshandel, Stockholm",
+      "summary": "Larm om slagsmål vid Humlegården på Östermalm.",
+      "url": "/aktuellt/handelser/2025/december/26/26-december-04.18-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33256762095799,
+      "longitude": 18.07219346189688,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-26T06:38:55.912312",
-    "total_events": 450,
+    "last_updated": "2025-12-26T12:51:58.645833",
+    "total_events": 452,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
