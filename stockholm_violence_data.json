@@ -8005,11 +8005,27 @@
       "longitude": 18.066279139964106,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619721,
+      "datetime": "2025-12-29 20:24:38 +01:00",
+      "name": "29 december 19.57, Misshandel, Stockholm",
+      "summary": "Polisen är på plats i en lägenhet i Farsta. Patrullen har tagit kontroll över en man som har knuffat en kvinna",
+      "url": "/aktuellt/handelser/2025/december/29/29-december-19.57-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.328004115558194,
+      "longitude": 18.072994560557955,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-29T18:37:02.418517",
-    "total_events": 453,
+    "last_updated": "2025-12-30T02:03:04.506992",
+    "total_events": 454,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
