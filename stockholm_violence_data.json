@@ -8021,11 +8021,27 @@
       "longitude": 18.072994560557955,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 619863,
+      "datetime": "2025-12-31 19:06:36 +01:00",
+      "name": "31 december 18.41, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en man i 40 års-åldern som har knivhuggit en annan man på ett hotellhem i Farsta.",
+      "url": "/aktuellt/handelser/2025/december/31/31-december-18.41-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33211624770017,
+      "longitude": 18.069080559011677,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2025-12-31T12:52:51.676110",
-    "total_events": 454,
+    "last_updated": "2025-12-31T18:35:45.831198",
+    "total_events": 455,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
