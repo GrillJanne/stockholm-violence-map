@@ -8037,11 +8037,27 @@
       "longitude": 18.069080559011677,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620009,
+      "datetime": "2026-01-02 18:51:39 +01:00",
+      "name": "02 januari 16.25, Misshandel, Stockholm",
+      "summary": "En kvinna ringer från sin bostad i Hässelby och uppger att en manlig bekant är aggressiv mot henne.",
+      "url": "/aktuellt/handelser/2026/januari/2/02-januari-16.25-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32713349884563,
+      "longitude": 18.067210825929468,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-02T12:51:56.957153",
-    "total_events": 455,
+    "last_updated": "2026-01-02T18:36:35.795556",
+    "total_events": 456,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
