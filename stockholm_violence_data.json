@@ -8053,11 +8053,43 @@
       "longitude": 18.067210825929468,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620041,
+      "datetime": "2026-01-03 7:28:00 +01:00",
+      "name": "02 januari 22.20, Mord/dråp, försök, Stockholm",
+      "summary": "Två män i 50 årsåldern har gripits efter ett mordförsök mot en man och en misshandel av en kvinna på Södermalm",
+      "url": "/aktuellt/handelser/2026/januari/2/02-januari-22.20-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.324586270661094,
+      "longitude": 18.067675117700766,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620031,
+      "datetime": "2026-01-03 6:48:04 +01:00",
+      "name": "03 januari 04.19, Mordbrand, Stockholm",
+      "summary": "Polisen har inlett en brottsutredning om mordbrand i samband med en lägenhetsbrand på Kungsholmen.",
+      "url": "/aktuellt/handelser/2026/januari/3/03-januari-04.19-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.330184954980034,
+      "longitude": 18.072000971691846,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-03T01:58:09.976722",
-    "total_events": 456,
+    "last_updated": "2026-01-03T06:38:02.822516",
+    "total_events": 458,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
