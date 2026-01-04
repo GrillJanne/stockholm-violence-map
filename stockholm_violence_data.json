@@ -8085,11 +8085,43 @@
       "longitude": 18.072000971691846,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620123,
+      "datetime": "2026-01-04 13:44:32 +01:00",
+      "name": "04 januari 11.22, Våldtäkt, försök, Stockholm",
+      "summary": "Polisen får samtal gällande en våldtäkt på en kvinna i norra Stockholm.",
+      "url": "/aktuellt/handelser/2026/januari/4/04-januari-11.22-valdtakt-forsok-stockholm/",
+      "type": "Våldtäkt, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32472803268749,
+      "longitude": 18.069975194263716,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620117,
+      "datetime": "2026-01-04 13:22:48 +01:00",
+      "name": "04 januari 10.58, Olaga hot, Stockholm",
+      "summary": "Insatsen på ett hotell i centrala Stockholm är avslutad.",
+      "url": "/aktuellt/handelser/2026/januari/4/04-januari-10.58-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33012868614171,
+      "longitude": 18.06368433931878,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-04T06:38:21.584392",
-    "total_events": 458,
+    "last_updated": "2026-01-04T12:50:35.789838",
+    "total_events": 460,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
