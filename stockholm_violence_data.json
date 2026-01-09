@@ -8133,11 +8133,27 @@
       "longitude": 18.068760562133075,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620525,
+      "datetime": "2026-01-09 8:29:27 +01:00",
+      "name": "09 januari 06.09, Misshandel, Stockholm",
+      "summary": "En man i Hägersten har misshandlat sin sambo. Kvinnan har lämnat bostaden och tagit sin tillflykt till en gran",
+      "url": "/aktuellt/handelser/2026/januari/9/09-januari-06.09-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32752912586256,
+      "longitude": 18.070974342087492,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-09T06:41:02.734289",
-    "total_events": 461,
+    "last_updated": "2026-01-09T12:55:25.584320",
+    "total_events": 462,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
