@@ -8165,11 +8165,27 @@
       "longitude": 18.068271549327626,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 620983,
+      "datetime": "2026-01-13 20:19:29 +01:00",
+      "name": "13 januari 17.33, Misshandel, Stockholm",
+      "summary": "Man försöker tränga sig förbi en kvinna och slår henne i huvudet.",
+      "url": "/aktuellt/handelser/2026/januari/13/13-januari-17.33-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32785151543612,
+      "longitude": 18.067085642255222,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-13T18:37:39.500276",
-    "total_events": 463,
+    "last_updated": "2026-01-14T02:09:29.364261",
+    "total_events": 464,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
