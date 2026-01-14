@@ -8181,11 +8181,27 @@
       "longitude": 18.067085642255222,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 621512,
+      "datetime": "2026-01-14 16:35:00 +01:00",
+      "name": "14 januari 14.43, Rån, Stockholm",
+      "summary": "En man har blivit slagen och bestulen på sin väska utomhus i Hässselby Gård.",
+      "url": "/aktuellt/handelser/2026/januari/14/14-januari-14.43-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.32805802030627,
+      "longitude": 18.06549319807955,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-14T12:57:55.924903",
-    "total_events": 464,
+    "last_updated": "2026-01-14T18:39:52.414837",
+    "total_events": 465,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
