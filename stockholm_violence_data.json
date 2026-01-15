@@ -8197,11 +8197,27 @@
       "longitude": 18.06549319807955,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 621546,
+      "datetime": "2026-01-14 20:53:29 +01:00",
+      "name": "14 januari 19.17, Misshandel, Stockholm",
+      "summary": "En man har slagit en annan man vid en busshållplats i Hässelby Gård.",
+      "url": "/aktuellt/handelser/2026/januari/14/14-januari-19.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.33348100971721,
+      "longitude": 18.07229304469262,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-14T18:39:52.414837",
-    "total_events": 465,
+    "last_updated": "2026-01-15T02:04:15.782626",
+    "total_events": 466,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
