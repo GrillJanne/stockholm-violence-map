@@ -8213,11 +8213,27 @@
       "longitude": 18.07229304469262,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 621666,
+      "datetime": "2026-01-15 13:10:04 +01:00",
+      "name": "15 januari 11.11, Mord/dråp, försök, Stockholm",
+      "summary": "En man i Husby har knivskurit sin granne.",
+      "url": "/aktuellt/handelser/2026/januari/15/15-januari-11.11-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholm",
+        "gps": "59.329324,18.068581"
+      },
+      "latitude": 59.333255237957204,
+      "longitude": 18.069932071291426,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-15T06:40:56.980141",
-    "total_events": 466,
+    "last_updated": "2026-01-15T12:56:46.094173",
+    "total_events": 467,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
