@@ -8245,11 +8245,27 @@
       "longitude": 18.064559810195355,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622178,
+      "datetime": "2026-01-20 21:02:16 +01:00",
+      "name": "20 januari 19.26, Misshandel, Stockholm",
+      "summary": "Slagsmål mellan två män vid Zinkensdamm, Södermalm.",
+      "url": "/aktuellt/handelser/2026/januari/20/20-januari-19.26-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330176838280856,
+      "longitude": 18.066490416934087,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-20T18:46:30.324664",
-    "total_events": 468,
+    "last_updated": "2026-01-21T02:09:09.552327",
+    "total_events": 469,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
