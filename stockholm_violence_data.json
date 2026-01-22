@@ -8277,11 +8277,43 @@
       "longitude": 18.067906712368444,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622410,
+      "datetime": "2026-01-22 18:26:06 +01:00",
+      "name": "22 januari 15.39, Misshandel, Stockholm",
+      "summary": "Polisen larmas om att en man misshandlar en kvinna i Långbro.",
+      "url": "/aktuellt/handelser/2026/januari/22/22-januari-15.39-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32923174970662,
+      "longitude": 18.069395481556903,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622406,
+      "datetime": "2026-01-22 18:01:38 +01:00",
+      "name": "22 januari 15.15, Mord/dråp, Stockholm",
+      "summary": "Död person anträffad inomhus.",
+      "url": "/aktuellt/handelser/2026/januari/22/22-januari-15.15-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33103731258328,
+      "longitude": 18.072599051364165,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-22T13:00:52.382581",
-    "total_events": 470,
+    "last_updated": "2026-01-22T18:40:18.015424",
+    "total_events": 472,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
