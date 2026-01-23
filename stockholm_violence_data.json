@@ -8309,11 +8309,27 @@
       "longitude": 18.072599051364165,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622431,
+      "datetime": "2026-01-22 21:32:08 +01:00",
+      "name": "22 januari 19.17, Mord/dråp, försök, Stockholm",
+      "summary": "Misshandel på av stadens sociala boenden.",
+      "url": "/aktuellt/handelser/2026/januari/22/22-januari-19.17-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33309721036789,
+      "longitude": 18.06644652515956,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-22T18:40:18.015424",
-    "total_events": 472,
+    "last_updated": "2026-01-23T02:05:57.348872",
+    "total_events": 473,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
