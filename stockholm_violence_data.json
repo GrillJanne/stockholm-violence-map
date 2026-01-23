@@ -8325,11 +8325,27 @@
       "longitude": 18.06644652515956,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622447,
+      "datetime": "2026-01-23 6:34:27 +01:00",
+      "name": "23 januari 02.29, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit tre män i 35-40 årsåldern. De greps i Spånga och är misstänkta för att ha kastat ut en man ",
+      "url": "/aktuellt/handelser/2026/januari/23/23-januari-02.29-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32750637730528,
+      "longitude": 18.072251744694057,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-23T02:05:57.348872",
-    "total_events": 473,
+    "last_updated": "2026-01-23T06:41:49.434305",
+    "total_events": 474,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
