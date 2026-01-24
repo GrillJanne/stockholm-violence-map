@@ -8357,11 +8357,27 @@
       "longitude": 18.06616021421736,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622582,
+      "datetime": "2026-01-24 7:14:36 +01:00",
+      "name": "24 januari 04.23, Misshandel, Stockholm",
+      "summary": "Ett antal personer har slagits utanför en nattklubb i centrala Stockholm. Ingen är allvarligt skadad.",
+      "url": "/aktuellt/handelser/2026/januari/24/24-januari-04.23-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333057448629205,
+      "longitude": 18.064336536757104,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-24T02:02:29.097435",
-    "total_events": 475,
+    "last_updated": "2026-01-24T06:38:17.402970",
+    "total_events": 476,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
