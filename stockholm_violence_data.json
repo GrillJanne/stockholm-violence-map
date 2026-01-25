@@ -8389,11 +8389,27 @@
       "longitude": 18.068183457349356,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622650,
+      "datetime": "2026-01-25 10:50:48 +01:00",
+      "name": "25 januari 00.19, Misshandel, Stockholm",
+      "summary": "Misshandel utomhus vid Gullmarsplan.",
+      "url": "/aktuellt/handelser/2026/januari/25/25-januari-00.19-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32810871657423,
+      "longitude": 18.0638826110219,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-25T06:38:56.415917",
-    "total_events": 477,
+    "last_updated": "2026-01-25T12:52:56.317666",
+    "total_events": 478,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
