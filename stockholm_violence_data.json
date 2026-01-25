@@ -8373,11 +8373,27 @@
       "longitude": 18.064336536757104,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622623,
+      "datetime": "2026-01-24 21:43:27 +01:00",
+      "name": "24 januari 19.45, Misshandel, grov, Stockholm",
+      "summary": "En person gripen misstänkt för att ha misshandlat en man.",
+      "url": "/aktuellt/handelser/2026/januari/24/24-januari-19.45-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3278135190027,
+      "longitude": 18.068183457349356,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-24T18:36:33.178056",
-    "total_events": 476,
+    "last_updated": "2026-01-25T02:23:27.563428",
+    "total_events": 477,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
