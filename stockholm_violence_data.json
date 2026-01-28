@@ -8421,11 +8421,27 @@
       "longitude": 18.070969070797283,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622946,
+      "datetime": "2026-01-28 11:39:24 +01:00",
+      "name": "28 januari 08.09, Misshandel, grov, Stockholm",
+      "summary": "Polisen griper en man misstänkt för att ha misshandlat sin dotter.",
+      "url": "/aktuellt/handelser/2026/januari/28/28-januari-08.09-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33257648247628,
+      "longitude": 18.06795440387859,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-28T06:43:41.814607",
-    "total_events": 479,
+    "last_updated": "2026-01-28T13:01:57.489003",
+    "total_events": 480,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
