@@ -8405,11 +8405,27 @@
       "longitude": 18.0638826110219,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622902,
+      "datetime": "2026-01-28 2:30:13 +01:00",
+      "name": "28 januari 00.35, Explosion, Stockholm",
+      "summary": "Explosion vid flerfamiljshus i Fagersjö.",
+      "url": "/aktuellt/handelser/2026/januari/28/28-januari-00.35-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32945288363877,
+      "longitude": 18.070969070797283,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-27T18:47:31.373511",
-    "total_events": 478,
+    "last_updated": "2026-01-28T02:08:46.418219",
+    "total_events": 479,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
