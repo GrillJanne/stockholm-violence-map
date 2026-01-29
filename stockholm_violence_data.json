@@ -8437,11 +8437,27 @@
       "longitude": 18.06795440387859,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 622993,
+      "datetime": "2026-01-28 21:04:55 +01:00",
+      "name": "28 januari 18.34, Sexualbrott, Stockholm",
+      "summary": "Sexuellt övergrepp mot pojke i Liljeholmen.",
+      "url": "/aktuellt/handelser/2026/januari/28/28-januari-18.34-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33266581385449,
+      "longitude": 18.07265725449188,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-01-28T18:44:02.431118",
-    "total_events": 480,
+    "last_updated": "2026-01-29T02:30:32.672360",
+    "total_events": 481,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
