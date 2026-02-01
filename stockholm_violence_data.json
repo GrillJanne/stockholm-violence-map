@@ -8453,11 +8453,27 @@
       "longitude": 18.07265725449188,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623268,
+      "datetime": "2026-02-01 6:51:19 +01:00",
+      "name": "01 februari 05.20, Rån, Stockholm",
+      "summary": "En kvinna har blivit råna av knivbeväpnade män i Vasastaden. Hon blev i samband med rånet skuren i handen.",
+      "url": "/aktuellt/handelser/2026/februari/1/01-februari-05.20-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325325445842935,
+      "longitude": 18.06979602785881,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-01T02:51:33.461792",
-    "total_events": 481,
+    "last_updated": "2026-02-01T06:56:48.869965",
+    "total_events": 482,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
