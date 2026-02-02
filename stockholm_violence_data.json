@@ -8469,11 +8469,27 @@
       "longitude": 18.06979602785881,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623332,
+      "datetime": "2026-02-02 8:31:11 +01:00",
+      "name": "02 februari 01.08, Misshandel, grov, Stockholm",
+      "summary": "Skadad man anträffad i Johanneshov.",
+      "url": "/aktuellt/handelser/2026/februari/2/02-februari-01.08-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33161837548458,
+      "longitude": 18.071371587925782,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-02T07:08:23.168502",
-    "total_events": 482,
+    "last_updated": "2026-02-02T13:11:25.176895",
+    "total_events": 483,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
