@@ -8485,11 +8485,43 @@
       "longitude": 18.071371587925782,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623434,
+      "datetime": "2026-02-03 8:21:21 +01:00",
+      "name": "02 februari 22.11, Misshandel, Stockholm",
+      "summary": "Samtal om att en kvinna med kniv beter sig hotfullt i en lägenhet.",
+      "url": "/aktuellt/handelser/2026/februari/2/02-februari-22.11-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33290940973902,
+      "longitude": 18.06489352509979,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623435,
+      "datetime": "2026-02-03 8:21:08 +01:00",
+      "name": "03 februari 03.08, Misshandel, Stockholm",
+      "summary": "Kvinnoskrik från en lägenhet i Traneberg.",
+      "url": "/aktuellt/handelser/2026/februari/3/03-februari-03.08-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.324315113847234,
+      "longitude": 18.065943573466814,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-03T06:58:48.613363",
-    "total_events": 483,
+    "last_updated": "2026-02-03T13:12:31.062571",
+    "total_events": 485,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
