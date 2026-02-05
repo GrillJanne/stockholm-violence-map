@@ -8517,11 +8517,27 @@
       "longitude": 18.065943573466814,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623775,
+      "datetime": "2026-02-05 17:35:12 +01:00",
+      "name": "05 februari 15.21, Misshandel, Stockholm",
+      "summary": "Flera ungdomar misshandlar en ensam man vid station Liljeholmen.",
+      "url": "/aktuellt/handelser/2026/februari/5/05-februari-15.21-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32754735178467,
+      "longitude": 18.072232761830602,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-05T13:13:41.914767",
-    "total_events": 485,
+    "last_updated": "2026-02-05T18:56:42.838330",
+    "total_events": 486,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
