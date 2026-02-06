@@ -8533,11 +8533,27 @@
       "longitude": 18.072232761830602,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623809,
+      "datetime": "2026-02-05 21:48:53 +01:00",
+      "name": "05 februari 17.46, Misshandel, grov, Stockholm",
+      "summary": "Misshandlad tonåring ringer 112 från Sätra.",
+      "url": "/aktuellt/handelser/2026/februari/5/05-februari-17.46-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32656231164565,
+      "longitude": 18.06823893577675,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-05T18:56:42.838330",
-    "total_events": 486,
+    "last_updated": "2026-02-06T02:33:49.861823",
+    "total_events": 487,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
