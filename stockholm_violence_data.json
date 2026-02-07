@@ -8581,11 +8581,27 @@
       "longitude": 18.070343915074183,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623986,
+      "datetime": "2026-02-07 16:26:25 +01:00",
+      "name": "07 februari 15.33, Rån, Stockholm",
+      "summary": "En ung man ringer till polisen och anmäler att han har blivit rånad i närheten av Rålambshovsparken.",
+      "url": "/aktuellt/handelser/2026/februari/7/07-februari-15.33-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33186026798574,
+      "longitude": 18.065953381502997,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-07T13:00:06.547171",
-    "total_events": 489,
+    "last_updated": "2026-02-07T18:42:23.751814",
+    "total_events": 490,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
