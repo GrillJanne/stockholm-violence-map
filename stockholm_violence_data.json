@@ -8549,11 +8549,27 @@
       "longitude": 18.06823893577675,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 623956,
+      "datetime": "2026-02-07 7:35:56 +01:00",
+      "name": "07 februari 04.34, Misshandel, Stockholm",
+      "summary": "En man misstänks ha blivit misshandlad av en kvinna vid en hamburgerrestaurang i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/februari/7/07-februari-04.34-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32508797167506,
+      "longitude": 18.070080593189473,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-07T02:29:17.042095",
-    "total_events": 487,
+    "last_updated": "2026-02-07T06:50:41.618997",
+    "total_events": 488,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
