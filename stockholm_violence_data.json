@@ -8597,11 +8597,27 @@
       "longitude": 18.065953381502997,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624014,
+      "datetime": "2026-02-08 7:45:04 +01:00",
+      "name": "08 februari 04.48, Misshandel, Stockholm",
+      "summary": "Det har varit en bråk utanför en nattklubb på Södermalm där en man uppges ha blivit slagen med ett tillhygge i",
+      "url": "/aktuellt/handelser/2026/februari/8/08-februari-04.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.324377077225286,
+      "longitude": 18.072177890271004,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-08T02:56:43.752245",
-    "total_events": 490,
+    "last_updated": "2026-02-08T06:57:23.376191",
+    "total_events": 491,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
