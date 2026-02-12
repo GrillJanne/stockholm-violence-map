@@ -8629,11 +8629,27 @@
       "longitude": 18.068583566410574,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624349,
+      "datetime": "2026-02-12 7:11:48 +01:00",
+      "name": "12 februari 02.07, Misshandel, Stockholm",
+      "summary": "Slagsmål utbröt mellan två personer utanför en krog i city på Norrmalm.",
+      "url": "/aktuellt/handelser/2026/februari/12/12-februari-02.07-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32543313911078,
+      "longitude": 18.071291995663167,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-12T02:43:18.329583",
-    "total_events": 492,
+    "last_updated": "2026-02-12T07:08:07.984322",
+    "total_events": 493,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
