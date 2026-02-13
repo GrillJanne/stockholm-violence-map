@@ -8645,11 +8645,27 @@
       "longitude": 18.071291995663167,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624446,
+      "datetime": "2026-02-13 7:33:55 +01:00",
+      "name": "13 februari 04.21, Olaga intrång, Stockholm",
+      "summary": "En anmälare på Södermalm ringde in om ett misstänkt pågående inbrott i förråd.",
+      "url": "/aktuellt/handelser/2026/februari/13/13-februari-04.21-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333258721048026,
+      "longitude": 18.072529635112645,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-13T02:44:15.192396",
-    "total_events": 493,
+    "last_updated": "2026-02-13T07:05:28.166142",
+    "total_events": 494,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
