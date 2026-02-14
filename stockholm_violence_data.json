@@ -8661,11 +8661,27 @@
       "longitude": 18.072529635112645,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624561,
+      "datetime": "2026-02-14 9:41:17 +01:00",
+      "name": "14 februari 02.28, Misshandel, grov, Stockholm",
+      "summary": "Två kvinnor i 20-årsåldern grips misstänks för att ha misshandlat en man i 80-årsåldern på Vasagatan.",
+      "url": "/aktuellt/handelser/2026/februari/14/14-februari-02.28-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32790444994793,
+      "longitude": 18.072166566191886,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-14T06:53:45.200295",
-    "total_events": 494,
+    "last_updated": "2026-02-14T12:59:57.780625",
+    "total_events": 495,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
