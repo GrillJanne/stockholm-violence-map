@@ -8677,11 +8677,43 @@
       "longitude": 18.072166566191886,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624598,
+      "datetime": "2026-02-15 7:11:44 +01:00",
+      "name": "15 februari 03.22, Misshandel, Stockholm",
+      "summary": "Ett bråk mellan ett antal personer utanför en hamburgerrestaurang leder till att två personer grips som misstä",
+      "url": "/aktuellt/handelser/2026/februari/15/15-februari-03.22-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32739291695117,
+      "longitude": 18.072488849857876,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624597,
+      "datetime": "2026-02-15 7:06:47 +01:00",
+      "name": "15 februari 00.05, Misshandel, Stockholm",
+      "summary": "En kvinna misstänks ha misshandlat en man på ett hotell i Stockholm. Kvinnan grips.",
+      "url": "/aktuellt/handelser/2026/februari/15/15-februari-00.05-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332310405852006,
+      "longitude": 18.072384822065334,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-15T02:44:35.777498",
-    "total_events": 495,
+    "last_updated": "2026-02-15T06:57:28.653163",
+    "total_events": 497,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
