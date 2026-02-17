@@ -8709,11 +8709,27 @@
       "longitude": 18.072384822065334,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624777,
+      "datetime": "2026-02-17 1:56:07 +01:00",
+      "name": "17 februari 00.46, Explosion, Stockholm",
+      "summary": "Explosion förstör port i Rinkeby.",
+      "url": "/aktuellt/handelser/2026/februari/17/17-februari-00.46-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33153514409768,
+      "longitude": 18.068692465641327,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-16T18:52:20.977173",
-    "total_events": 497,
+    "last_updated": "2026-02-17T02:36:14.692465",
+    "total_events": 498,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
