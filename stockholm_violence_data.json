@@ -8725,11 +8725,27 @@
       "longitude": 18.068692465641327,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 624903,
+      "datetime": "2026-02-18 3:20:17 +01:00",
+      "name": "18 februari 01.35, Explosion, Stockholm",
+      "summary": "Explosion i Rinkeby.",
+      "url": "/aktuellt/handelser/2026/februari/18/18-februari-01.35-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32849477028422,
+      "longitude": 18.06725623719139,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-17T19:03:56.756111",
-    "total_events": 498,
+    "last_updated": "2026-02-18T02:40:01.394158",
+    "total_events": 499,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
