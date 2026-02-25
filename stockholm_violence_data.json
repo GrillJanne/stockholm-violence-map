@@ -8741,11 +8741,27 @@
       "longitude": 18.06725623719139,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 625631,
+      "datetime": "2026-02-25 8:45:31 +01:00",
+      "name": "25 februari 03.54, Misshandel, Stockholm",
+      "summary": "Två män misshandlar en annan man på Medborgarplatsen, Södermalm.",
+      "url": "/aktuellt/handelser/2026/februari/25/25-februari-03.54-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32924336029567,
+      "longitude": 18.06568349919864,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-25T07:08:10.857249",
-    "total_events": 499,
+    "last_updated": "2026-02-25T13:17:17.344017",
+    "total_events": 500,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
