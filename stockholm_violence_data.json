@@ -8757,11 +8757,27 @@
       "longitude": 18.06568349919864,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 625713,
+      "datetime": "2026-02-25 21:10:35 +01:00",
+      "name": "25 februari 20.09, Rån, Stockholm",
+      "summary": "Två personer rånas på sina bilar i Tensta.",
+      "url": "/aktuellt/handelser/2026/februari/25/25-februari-20.09-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33051166577369,
+      "longitude": 18.065238052123345,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-25T19:12:46.370843",
-    "total_events": 500,
+    "last_updated": "2026-02-26T02:33:26.638818",
+    "total_events": 501,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
