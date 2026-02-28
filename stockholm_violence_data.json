@@ -8773,11 +8773,27 @@
       "longitude": 18.065238052123345,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 625941,
+      "datetime": "2026-02-27 21:33:17 +01:00",
+      "name": "27 februari 20.43, Misshandel, Stockholm",
+      "summary": "Slagsmål på tvärbanestationen i Globen med flera personer inblandade.",
+      "url": "/aktuellt/handelser/2026/februari/27/27-februari-20.43-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3283237497124,
+      "longitude": 18.063625929711563,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-02-27T18:52:41.738173",
-    "total_events": 501,
+    "last_updated": "2026-02-28T02:22:15.560278",
+    "total_events": 502,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
