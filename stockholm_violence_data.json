@@ -8789,11 +8789,27 @@
       "longitude": 18.063625929711563,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626009,
+      "datetime": "2026-03-01 8:57:37 +01:00",
+      "name": "01 mars 04.48, Misshandel, Stockholm",
+      "summary": "En man i Bromma har misshandlat en kvinna han har, eller har haft, en relation med.",
+      "url": "/aktuellt/handelser/2026/mars/1/01-mars-04.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32825934195101,
+      "longitude": 18.073449212810832,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-01T06:54:01.707250",
-    "total_events": 502,
+    "last_updated": "2026-03-01T12:59:08.354640",
+    "total_events": 503,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
