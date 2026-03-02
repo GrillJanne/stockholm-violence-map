@@ -8805,11 +8805,27 @@
       "longitude": 18.073449212810832,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626160,
+      "datetime": "2026-03-02 19:09:27 +01:00",
+      "name": "02 mars 17.16, Misshandel, Stockholm",
+      "summary": "Polis larmas till Södermalm efter uppgifter om en utåtagerande person.",
+      "url": "/aktuellt/handelser/2026/mars/2/02-mars-17.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32702493148589,
+      "longitude": 18.068547216061813,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-02T13:10:38.642719",
-    "total_events": 503,
+    "last_updated": "2026-03-02T18:56:32.239448",
+    "total_events": 504,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
