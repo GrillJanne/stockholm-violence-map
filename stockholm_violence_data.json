@@ -8821,11 +8821,27 @@
       "longitude": 18.068547216061813,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626369,
+      "datetime": "2026-03-04 18:00:29 +01:00",
+      "name": "04 mars 15.10, Rån övrigt, Stockholm",
+      "summary": "I samband med att en väktare skulle gripa en man som stulit varor i en butik, i Stockholm city, uppstod tumult",
+      "url": "/aktuellt/handelser/2026/mars/4/04-mars-15.10-ran-ovrigt-stockholm/",
+      "type": "Rån övrigt",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33217601688745,
+      "longitude": 18.06627810012779,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-04T13:07:48.788563",
-    "total_events": 504,
+    "last_updated": "2026-03-04T18:58:11.669701",
+    "total_events": 505,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
