@@ -8869,11 +8869,27 @@
       "longitude": 18.072517796730228,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626718,
+      "datetime": "2026-03-07 10:46:33 +01:00",
+      "name": "07 mars 10.00, Misshandel, Stockholm",
+      "summary": "Larm om bråk i bostad där en man uppges ha slagit en kvinna. Mannen grips och anmälan om misshandel och barnfr",
+      "url": "/aktuellt/handelser/2026/mars/7/07-mars-10.00-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32501672970544,
+      "longitude": 18.065348561835954,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-07T06:50:01.318853",
-    "total_events": 507,
+    "last_updated": "2026-03-07T12:57:52.544077",
+    "total_events": 508,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
