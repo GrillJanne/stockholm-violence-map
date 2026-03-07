@@ -8885,11 +8885,27 @@
       "longitude": 18.065348561835954,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626737,
+      "datetime": "2026-03-07 18:31:43 +01:00",
+      "name": "07 mars 17.22, Skottlossning, Stockholm",
+      "summary": "En person har påträffats skottskadad i Fagersjö i södra Stockholm.",
+      "url": "/aktuellt/handelser/2026/mars/7/07-mars-17.22-skottlossning-stockholm/",
+      "type": "Skottlossning",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32934262812634,
+      "longitude": 18.066680195890136,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-07T12:57:52.544077",
-    "total_events": 508,
+    "last_updated": "2026-03-07T18:40:37.051052",
+    "total_events": 509,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
