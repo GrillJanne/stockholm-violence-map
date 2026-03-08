@@ -8901,11 +8901,27 @@
       "longitude": 18.066680195890136,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626761,
+      "datetime": "2026-03-08 7:39:34 +01:00",
+      "name": "08 mars 03.36, Misshandel, grov, Stockholm",
+      "summary": "Två greps misstänka för grov misshandel vid tunnelbanan i Hornstull.",
+      "url": "/aktuellt/handelser/2026/mars/8/08-mars-03.36-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32878889811925,
+      "longitude": 18.068832991925518,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-08T02:37:06.190256",
-    "total_events": 509,
+    "last_updated": "2026-03-08T06:51:44.523114",
+    "total_events": 510,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
