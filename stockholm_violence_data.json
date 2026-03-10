@@ -8917,11 +8917,27 @@
       "longitude": 18.068832991925518,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 626937,
+      "datetime": "2026-03-10 8:08:43 +01:00",
+      "name": "10 mars 02.04, Misshandel, grov, Stockholm",
+      "summary": "Misshandlad man i trapphus i Tensta.",
+      "url": "/aktuellt/handelser/2026/mars/10/10-mars-02.04-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32758840398257,
+      "longitude": 18.069442738219582,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-10T06:57:46.839367",
-    "total_events": 510,
+    "last_updated": "2026-03-10T13:12:49.568364",
+    "total_events": 511,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
