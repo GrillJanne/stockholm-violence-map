@@ -8933,11 +8933,27 @@
       "longitude": 18.069442738219582,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627049,
+      "datetime": "2026-03-11 7:52:27 +01:00",
+      "name": "11 mars 03.00, Våldtäkt, Stockholms län",
+      "summary": "En man misstänks ha våldtagit en kvinna på ett hotell.",
+      "url": "/aktuellt/handelser/2026/mars/11/11-mars-03.00-valdtakt-stockholms-lan/",
+      "type": "Våldtäkt",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32785696047413,
+      "longitude": 18.069294411788228,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-11T02:29:07.253485",
-    "total_events": 511,
+    "last_updated": "2026-03-11T07:01:12.197875",
+    "total_events": 512,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
