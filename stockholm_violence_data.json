@@ -8981,11 +8981,27 @@
       "longitude": 18.06917774472994,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627247,
+      "datetime": "2026-03-12 17:36:20 +01:00",
+      "name": "12 mars 15.56, Sexualbrott, Stockholm",
+      "summary": "En man i Västberga onanerar framför barn.",
+      "url": "/aktuellt/handelser/2026/mars/12/12-mars-15.56-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332043471310605,
+      "longitude": 18.06600183156303,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-12T13:12:39.077945",
-    "total_events": 514,
+    "last_updated": "2026-03-12T19:00:30.668670",
+    "total_events": 515,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
