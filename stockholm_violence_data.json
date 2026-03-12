@@ -8949,11 +8949,43 @@
       "longitude": 18.069294411788228,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627137,
+      "datetime": "2026-03-11 21:06:26 +01:00",
+      "name": "11 mars 13.40, Misshandel, Stockholm",
+      "summary": "Polisen griper en kvinna som misstänks ha misshandlat sitt barn.",
+      "url": "/aktuellt/handelser/2026/mars/11/11-mars-13.40-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32480456454722,
+      "longitude": 18.06578581374978,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627141,
+      "datetime": "2026-03-11 21:06:10 +01:00",
+      "name": "11 mars 15.41, Sexualbrott, Stockholm",
+      "summary": "Samtal om att en man blottar sig i Tessinparken.",
+      "url": "/aktuellt/handelser/2026/mars/11/11-mars-15.41-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32626212224862,
+      "longitude": 18.06917774472994,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-11T18:59:41.954595",
-    "total_events": 512,
+    "last_updated": "2026-03-12T02:35:05.688923",
+    "total_events": 514,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
