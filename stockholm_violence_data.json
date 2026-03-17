@@ -9013,11 +9013,27 @@
       "longitude": 18.066979901897668,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627734,
+      "datetime": "2026-03-17 13:57:50 +01:00",
+      "name": "17 mars 12.34, Olaga hot, Stockholm",
+      "summary": "En man beter sig störande på ett kafé.",
+      "url": "/aktuellt/handelser/2026/mars/17/17-mars-12.34-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32874834330383,
+      "longitude": 18.067497069920943,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-17T07:11:12.959615",
-    "total_events": 516,
+    "last_updated": "2026-03-17T13:23:16.019993",
+    "total_events": 517,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
