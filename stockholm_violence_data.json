@@ -8997,11 +8997,27 @@
       "longitude": 18.06600183156303,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627703,
+      "datetime": "2026-03-17 7:57:47 +01:00",
+      "name": "17 mars 01.41, Misshandel, Stockholm",
+      "summary": "En man grips för att ha slagit sin fru.",
+      "url": "/aktuellt/handelser/2026/mars/17/17-mars-01.41-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.324828707715376,
+      "longitude": 18.066979901897668,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-17T02:34:45.329821",
-    "total_events": 515,
+    "last_updated": "2026-03-17T07:11:12.959615",
+    "total_events": 516,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
