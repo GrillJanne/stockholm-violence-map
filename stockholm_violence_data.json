@@ -9029,11 +9029,27 @@
       "longitude": 18.067497069920943,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627771,
+      "datetime": "2026-03-17 19:33:27 +01:00",
+      "name": "17 mars 17.03, Rån, Stockholm",
+      "summary": "Polis kallas till Södermalm med anledning av att en man blivit utsatt för ett rån.",
+      "url": "/aktuellt/handelser/2026/mars/17/17-mars-17.03-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32710228538471,
+      "longitude": 18.0723552594602,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-17T13:23:16.019993",
-    "total_events": 517,
+    "last_updated": "2026-03-17T19:09:40.050833",
+    "total_events": 518,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
