@@ -9045,11 +9045,27 @@
       "longitude": 18.0723552594602,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 627807,
+      "datetime": "2026-03-18 8:16:16 +01:00",
+      "name": "18 mars 03.43, Olaga hot, Stockholm",
+      "summary": "Fårhuvud lämnas på restaurang.",
+      "url": "/aktuellt/handelser/2026/mars/18/18-mars-03.43-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.329799009214014,
+      "longitude": 18.066010668557336,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-18T07:08:23.937127",
-    "total_events": 518,
+    "last_updated": "2026-03-18T13:24:06.867634",
+    "total_events": 519,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
