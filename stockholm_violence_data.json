@@ -9061,11 +9061,27 @@
       "longitude": 18.066010668557336,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 628159,
+      "datetime": "2026-03-20 20:41:48 +01:00",
+      "name": "20 mars 20.08, Misshandel, Stockholm",
+      "summary": "En man har gripits av polis efter det att han har misshandlat en annan man med ett tillhygge i Farsta",
+      "url": "/aktuellt/handelser/2026/mars/20/20-mars-20.08-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32464746021652,
+      "longitude": 18.066671617362385,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-20T18:57:03.007111",
-    "total_events": 519,
+    "last_updated": "2026-03-21T02:27:56.408377",
+    "total_events": 520,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
