@@ -9077,11 +9077,27 @@
       "longitude": 18.066671617362385,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 628233,
+      "datetime": "2026-03-22 7:40:37 +01:00",
+      "name": "22 mars 04.13, Sexualbrott, Stockholms län",
+      "summary": "En man har filmat en sexuell handlin utan tillåtelse och detta har upptäckts. Mannen grips som misstänks för k",
+      "url": "/aktuellt/handelser/2026/mars/22/22-mars-04.13-sexualbrott-stockholms-lan/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32432039181079,
+      "longitude": 18.067239030655124,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-22T02:43:40.434436",
-    "total_events": 520,
+    "last_updated": "2026-03-22T06:57:59.091601",
+    "total_events": 521,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
