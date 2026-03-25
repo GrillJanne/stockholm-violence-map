@@ -9093,11 +9093,43 @@
       "longitude": 18.067239030655124,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 628622,
+      "datetime": "2026-03-24 21:05:49 +01:00",
+      "name": "24 mars 14.01, Misshandel, Stockholm",
+      "summary": "Larm om att en man slår en kvinna i en bostad Tensta.",
+      "url": "/aktuellt/handelser/2026/mars/24/24-mars-14.01-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33187366771782,
+      "longitude": 18.063818558088364,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 628621,
+      "datetime": "2026-03-24 21:05:43 +01:00",
+      "name": "24 mars 17.16, Rån, Stockholm",
+      "summary": "Tonåring rånad på telefon i Sätra.",
+      "url": "/aktuellt/handelser/2026/mars/24/24-mars-17.16-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32618282011282,
+      "longitude": 18.068529128033575,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-24T19:10:57.869504",
-    "total_events": 521,
+    "last_updated": "2026-03-25T02:40:25.685383",
+    "total_events": 523,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
