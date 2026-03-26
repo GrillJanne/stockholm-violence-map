@@ -9125,11 +9125,27 @@
       "longitude": 18.068529128033575,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 628758,
+      "datetime": "2026-03-25 22:59:04 +01:00",
+      "name": "25 mars 19.40, Rån, försök, Stockholm",
+      "summary": "Flera äldre personer får bedrägeri-sms. I ett fall övergår händelsen i ett rånförsök.",
+      "url": "/aktuellt/handelser/2026/mars/25/25-mars-19.40-ran-forsok-stockholm/",
+      "type": "Rån, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33292042061246,
+      "longitude": 18.070805059671375,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-25T19:02:24.296851",
-    "total_events": 523,
+    "last_updated": "2026-03-26T02:47:35.297459",
+    "total_events": 524,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
