@@ -9157,11 +9157,27 @@
       "longitude": 18.06396166638368,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 629129,
+      "datetime": "2026-03-29 9:39:55 +02:00",
+      "name": "29 mars 05.02, Misshandel, grov, Stockholms län",
+      "summary": "En patrull uppmärksammar en skadad man utanför en krog på Södermalm.",
+      "url": "/aktuellt/handelser/2026/mars/29/29-mars-05.02-misshandel-grov-stockholms-lan/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325516446868114,
+      "longitude": 18.069190474279193,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-03-29T07:11:15.852015",
-    "total_events": 525,
+    "last_updated": "2026-03-29T13:06:46.338647",
+    "total_events": 526,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
