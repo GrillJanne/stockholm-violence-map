@@ -9173,11 +9173,27 @@
       "longitude": 18.069190474279193,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 629405,
+      "datetime": "2026-04-01 7:14:52 +02:00",
+      "name": "01 april 03.02, Misshandel, Stockholm",
+      "summary": "En man och en kvinna blev påhoppade av ett par män efter att paret lämnat en krog på Södermalm.",
+      "url": "/aktuellt/handelser/2026/april/1/01-april-03.02-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325644428689074,
+      "longitude": 18.073575476240006,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-01T03:19:20.404691",
-    "total_events": 526,
+    "last_updated": "2026-04-01T07:41:39.113834",
+    "total_events": 527,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
