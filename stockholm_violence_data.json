@@ -9205,11 +9205,27 @@
       "longitude": 18.070921616210754,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 629724,
+      "datetime": "2026-04-02 20:58:14 +02:00",
+      "name": "02 april 17.40, Rån, Stockholm",
+      "summary": "Man gripen misstänkt för rån då han ska ha stulit varor i en matbutik.",
+      "url": "/aktuellt/handelser/2026/april/2/02-april-17.40-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32588834110895,
+      "longitude": 18.067975362180903,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-02T13:25:26.891696",
-    "total_events": 528,
+    "last_updated": "2026-04-02T19:02:51.769296",
+    "total_events": 529,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
