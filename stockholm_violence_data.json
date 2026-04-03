@@ -9221,11 +9221,27 @@
       "longitude": 18.067975362180903,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 629752,
+      "datetime": "2026-04-03 7:48:11 +02:00",
+      "name": "03 april 03.30, Misshandel, Stockholm",
+      "summary": "Man greps i bostad misstänkt för misshandel.",
+      "url": "/aktuellt/handelser/2026/april/3/03-april-03.30-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33024848971032,
+      "longitude": 18.06643427498484,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-03T02:48:00.688904",
-    "total_events": 529,
+    "last_updated": "2026-04-03T07:17:02.902636",
+    "total_events": 530,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
