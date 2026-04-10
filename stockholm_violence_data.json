@@ -9269,11 +9269,27 @@
       "longitude": 18.065805061139777,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 630502,
+      "datetime": "2026-04-10 19:36:13 +02:00",
+      "name": "10 april 18.13, Misshandel, Stockholm",
+      "summary": "En kvinna i Spånga ringer polisen och säger att hennes tidigare pojkvän förföljer henne.",
+      "url": "/aktuellt/handelser/2026/april/10/10-april-18.13-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32436438570738,
+      "longitude": 18.063760396297692,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-10T13:21:51.169211",
-    "total_events": 532,
+    "last_updated": "2026-04-10T19:01:24.085014",
+    "total_events": 533,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
