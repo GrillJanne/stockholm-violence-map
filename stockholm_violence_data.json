@@ -9301,11 +9301,27 @@
       "longitude": 18.073551076659893,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 630859,
+      "datetime": "2026-04-14 18:04:29 +02:00",
+      "name": "14 april 15.22, Sexualbrott, Stockholm",
+      "summary": "En kvinna blottar sig för barn i Högdalen.",
+      "url": "/aktuellt/handelser/2026/april/14/14-april-15.22-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32677650830737,
+      "longitude": 18.069853739109664,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-14T13:56:39.135042",
-    "total_events": 534,
+    "last_updated": "2026-04-14T19:23:37.198637",
+    "total_events": 535,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
