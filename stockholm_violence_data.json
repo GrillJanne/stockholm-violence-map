@@ -9317,11 +9317,27 @@
       "longitude": 18.069853739109664,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 630876,
+      "datetime": "2026-04-14 21:32:45 +02:00",
+      "name": "14 april 19.53, Misshandel, Stockholm",
+      "summary": "Flera personer blir vittne till hur en man misshandlas på Västerlånggatan.",
+      "url": "/aktuellt/handelser/2026/april/14/14-april-19.53-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33075624863526,
+      "longitude": 18.072711728608407,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-14T19:23:37.198637",
-    "total_events": 535,
+    "last_updated": "2026-04-15T02:56:47.784123",
+    "total_events": 536,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
