@@ -9333,11 +9333,27 @@
       "longitude": 18.072711728608407,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 631231,
+      "datetime": "2026-04-18 7:12:12 +02:00",
+      "name": "18 april 04.02, Misshandel, Stockholm",
+      "summary": "En kvinna blev sparkad av en eller två män i centrala Norrmalm.",
+      "url": "/aktuellt/handelser/2026/april/18/18-april-04.02-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3318682230444,
+      "longitude": 18.070262798535083,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-18T02:50:49.566538",
-    "total_events": 536,
+    "last_updated": "2026-04-18T07:16:14.508693",
+    "total_events": 537,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
