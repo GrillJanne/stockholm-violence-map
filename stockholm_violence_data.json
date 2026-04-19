@@ -9349,11 +9349,27 @@
       "longitude": 18.070262798535083,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 631295,
+      "datetime": "2026-04-19 7:22:14 +02:00",
+      "name": "19 april 00.09, Misshandel, grov, Stockholm",
+      "summary": "Ett bråk uppstod mellan två bilister på centrala Norrmalm. Tre personer i den ena bilen misshandlade den andre",
+      "url": "/aktuellt/handelser/2026/april/19/19-april-00.09-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32842377627813,
+      "longitude": 18.066273968883614,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-19T03:25:54.185325",
-    "total_events": 537,
+    "last_updated": "2026-04-19T07:26:26.789606",
+    "total_events": 538,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
