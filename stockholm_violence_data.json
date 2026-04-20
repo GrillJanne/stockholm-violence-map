@@ -9365,11 +9365,27 @@
       "longitude": 18.066273968883614,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 632359,
+      "datetime": "2026-04-20 8:14:02 +02:00",
+      "name": "20 april 03.59, Misshandel, grov, Stockholm",
+      "summary": "Knivskadad man på sjukhus.",
+      "url": "/aktuellt/handelser/2026/april/20/20-april-03.59-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33429125047287,
+      "longitude": 18.070222097030726,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-20T03:28:14.809102",
-    "total_events": 538,
+    "last_updated": "2026-04-20T08:17:46.080520",
+    "total_events": 539,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
