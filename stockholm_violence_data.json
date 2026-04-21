@@ -9397,11 +9397,27 @@
       "longitude": 18.072199448318322,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 632491,
+      "datetime": "2026-04-21 8:32:18 +02:00",
+      "name": "20 april 22.00, Misshandel, grov, Stockholm",
+      "summary": "Man misshandlad i lägenhet.",
+      "url": "/aktuellt/handelser/2026/april/20/20-april-22.00-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33264403292918,
+      "longitude": 18.067991993779543,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-21T03:19:30.923040",
-    "total_events": 540,
+    "last_updated": "2026-04-21T08:00:35.261875",
+    "total_events": 541,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
