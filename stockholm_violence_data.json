@@ -9413,11 +9413,27 @@
       "longitude": 18.067991993779543,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 632687,
+      "datetime": "2026-04-22 21:46:28 +02:00",
+      "name": "22 april 20.48, Misshandel, Stockholm",
+      "summary": "Man greps misstänkt för misshandel av kvinna.",
+      "url": "/aktuellt/handelser/2026/april/22/22-april-20.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33407421498637,
+      "longitude": 18.067102165936667,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-22T19:21:23.826533",
-    "total_events": 541,
+    "last_updated": "2026-04-23T03:21:40.399615",
+    "total_events": 542,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
