@@ -9445,11 +9445,27 @@
       "longitude": 18.06389080744209,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 632805,
+      "datetime": "2026-04-24 8:00:47 +02:00",
+      "name": "24 april 05.43, Rån väpnat, Stockholm",
+      "summary": "En person som är anställd vid en butik i Kälvesta har genom vapenhot rånats på personliga tillhörigheter.",
+      "url": "/aktuellt/handelser/2026/april/24/24-april-05.43-ran-vapnat-stockholm/",
+      "type": "Rån väpnat",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32621339101925,
+      "longitude": 18.072315922698643,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-24T03:24:04.444085",
-    "total_events": 543,
+    "last_updated": "2026-04-24T08:11:28.924432",
+    "total_events": 544,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
