@@ -9461,11 +9461,27 @@
       "longitude": 18.072315922698643,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 633436,
+      "datetime": "2026-04-29 14:28:38 +02:00",
+      "name": "29 april 13.37, Sexualbrott, Stockholm",
+      "summary": "Kontroll av misstänkt blottare.",
+      "url": "/aktuellt/handelser/2026/april/29/29-april-13.37-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325283682286184,
+      "longitude": 18.063949641042363,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-04-29T08:25:35.790966",
-    "total_events": 544,
+    "last_updated": "2026-04-29T14:10:14.507604",
+    "total_events": 545,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
