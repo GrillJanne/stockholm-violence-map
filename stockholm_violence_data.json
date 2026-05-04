@@ -9493,11 +9493,27 @@
       "longitude": 18.068738254604394,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 633898,
+      "datetime": "2026-05-04 17:21:35 +02:00",
+      "name": "04 maj 16.08, Sexualbrott, Stockholm",
+      "summary": "En man har ofredat en kvinna på en simhall i Skärholmen.",
+      "url": "/aktuellt/handelser/2026/maj/4/04-maj-16.08-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3296756364242,
+      "longitude": 18.070852692348193,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-04T14:14:53.489932",
-    "total_events": 546,
+    "last_updated": "2026-05-04T19:46:40.953858",
+    "total_events": 547,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
