@@ -9477,11 +9477,27 @@
       "longitude": 18.063949641042363,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 633808,
+      "datetime": "2026-05-03 22:48:00 +02:00",
+      "name": "03 maj 22.27, Explosion, Stockholm",
+      "summary": "Ett okänt föremål har exploderat i en port i Tensta. Polisen genomför en omfattande insats i norra Stockholm.",
+      "url": "/aktuellt/handelser/2026/maj/3/03-maj-22.27-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32924615416936,
+      "longitude": 18.068738254604394,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-03T19:06:45.827987",
-    "total_events": 545,
+    "last_updated": "2026-05-04T03:41:14.928340",
+    "total_events": 546,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
