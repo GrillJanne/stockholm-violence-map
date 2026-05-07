@@ -9509,11 +9509,27 @@
       "longitude": 18.070852692348193,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 634275,
+      "datetime": "2026-05-07 20:16:50 +02:00",
+      "name": "07 maj 17.06, Misshandel, grov, Stockholm",
+      "summary": "En man som misstänks ha blivit misshandlad i Grimsta förs till sjukhus.",
+      "url": "/aktuellt/handelser/2026/maj/7/07-maj-17.06-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332828943011066,
+      "longitude": 18.07036295872981,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-07T14:26:52.017232",
-    "total_events": 547,
+    "last_updated": "2026-05-07T19:46:50.434094",
+    "total_events": 548,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
