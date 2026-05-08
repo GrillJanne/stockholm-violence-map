@@ -9525,11 +9525,27 @@
       "longitude": 18.07036295872981,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 634325,
+      "datetime": "2026-05-08 10:40:16 +02:00",
+      "name": "08 maj 06.01, Våldtäkt, försök, Stockholm",
+      "summary": "Två personer befann sig i en lokal i centrala Stockholm när mannen misstänks för att ha visat ett fysiskt sexu",
+      "url": "/aktuellt/handelser/2026/maj/8/08-maj-06.01-valdtakt-forsok-stockholm/",
+      "type": "Våldtäkt, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330103688935544,
+      "longitude": 18.06825649913733,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-08T07:47:43.778915",
-    "total_events": 548,
+    "last_updated": "2026-05-08T14:01:03.904418",
+    "total_events": 549,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
