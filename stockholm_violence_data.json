@@ -9541,11 +9541,27 @@
       "longitude": 18.06825649913733,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 634929,
+      "datetime": "2026-05-13 17:51:45 +02:00",
+      "name": "13 maj 16.04, Rån, Stockholm",
+      "summary": "En kvinna i 85-årsåldern som bor på Östermalm har efter ett bedrägeriförsök blivit rånad på smycken.",
+      "url": "/aktuellt/handelser/2026/maj/13/13-maj-16.04-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332354182864975,
+      "longitude": 18.06830898726003,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-13T14:45:22.499975",
-    "total_events": 549,
+    "last_updated": "2026-05-13T20:01:19.418574",
+    "total_events": 550,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
