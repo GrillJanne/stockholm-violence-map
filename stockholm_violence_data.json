@@ -9573,11 +9573,27 @@
       "longitude": 18.06702157912981,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635000,
+      "datetime": "2026-05-14 19:33:48 +02:00",
+      "name": "14 maj 18.03, Misshandel, grov, Stockholm",
+      "summary": "En pojke i 15-årsåldern har blivit nedslagen och därefter sparkad på i Hässelby Villastad.",
+      "url": "/aktuellt/handelser/2026/maj/14/14-maj-18.03-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32852877005388,
+      "longitude": 18.068311545985836,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-14T14:25:34.309739",
-    "total_events": 551,
+    "last_updated": "2026-05-14T19:51:21.831859",
+    "total_events": 552,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
