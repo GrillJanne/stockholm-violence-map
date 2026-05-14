@@ -9557,11 +9557,27 @@
       "longitude": 18.06830898726003,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 634965,
+      "datetime": "2026-05-14 7:33:27 +02:00",
+      "name": "14 maj 01.56, Misshandel, Stockholm",
+      "summary": "En kvinna på Kungsholmen misshandlades utomhus av två andra kvinnor.",
+      "url": "/aktuellt/handelser/2026/maj/14/14-maj-01.56-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32499294831711,
+      "longitude": 18.06702157912981,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-14T03:50:58.151823",
-    "total_events": 550,
+    "last_updated": "2026-05-14T08:43:40.033993",
+    "total_events": 551,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
