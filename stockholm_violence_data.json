@@ -9589,11 +9589,27 @@
       "longitude": 18.068311545985836,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635323,
+      "datetime": "2026-05-16 7:42:18 +02:00",
+      "name": "15 maj 23.28, Olaga intrång, Stockholm",
+      "summary": "Polis larmas till ett flerfamiljshus på Södermalm med anledning av att obehöriga tagit sig in i fastighetens t",
+      "url": "/aktuellt/handelser/2026/maj/15/15-maj-23.28-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.331893959786285,
+      "longitude": 18.071565844780977,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-16T03:36:28.049594",
-    "total_events": 552,
+    "last_updated": "2026-05-16T08:09:31.494957",
+    "total_events": 553,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
