@@ -9605,11 +9605,43 @@
       "longitude": 18.071565844780977,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635549,
+      "datetime": "2026-05-18 21:29:47 +02:00",
+      "name": "18 maj 18.59, Sexualbrott, Stockholm",
+      "summary": "En man går omkring naken på ett badhus.",
+      "url": "/aktuellt/handelser/2026/maj/18/18-maj-18.59-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32528870518233,
+      "longitude": 18.06765896133309,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635551,
+      "datetime": "2026-05-18 21:29:43 +02:00",
+      "name": "18 maj 19.56, Rån, Stockholm",
+      "summary": "En man anmäler att han tidigare blivit rånad på Årstafältet.",
+      "url": "/aktuellt/handelser/2026/maj/18/18-maj-19.56-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.328026741935574,
+      "longitude": 18.06773571275253,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-18T15:41:58.466655",
-    "total_events": 553,
+    "last_updated": "2026-05-18T19:49:05.665725",
+    "total_events": 555,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
