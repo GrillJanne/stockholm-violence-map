@@ -9637,11 +9637,27 @@
       "longitude": 18.06773571275253,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635916,
+      "datetime": "2026-05-21 17:07:55 +02:00",
+      "name": "21 maj 15.17, Misshandel, Stockholm",
+      "summary": "En utåtagerande man vid Slussen transporteras till annan plats.",
+      "url": "/aktuellt/handelser/2026/maj/21/21-maj-15.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3316986000119,
+      "longitude": 18.06487701540886,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-21T09:51:37.201570",
-    "total_events": 555,
+    "last_updated": "2026-05-21T15:38:06.567352",
+    "total_events": 556,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
