@@ -9669,11 +9669,27 @@
       "longitude": 18.0719588393425,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 636071,
+      "datetime": "2026-05-22 21:47:51 +02:00",
+      "name": "22 maj 20.29, Olaga intrång, Stockholm",
+      "summary": "Fyra ungdomar är misstänkta för olaga intrång och skadegörelse i Farsta.",
+      "url": "/aktuellt/handelser/2026/maj/22/22-maj-20.29-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32602412432549,
+      "longitude": 18.06963945625599,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-22T14:48:12.579005",
-    "total_events": 557,
+    "last_updated": "2026-05-22T19:54:02.573195",
+    "total_events": 558,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
