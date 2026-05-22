@@ -9653,11 +9653,27 @@
       "longitude": 18.06487701540886,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635960,
+      "datetime": "2026-05-22 7:12:44 +02:00",
+      "name": "22 maj 04.45, Misshandel, Stockholm",
+      "summary": "En granne ringer och larmar om att det är skrik och bråk i en grannlägenhet. En man grips och en kvinna får åk",
+      "url": "/aktuellt/handelser/2026/maj/22/22-maj-04.45-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32436645256605,
+      "longitude": 18.0719588393425,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-22T04:05:35.351791",
-    "total_events": 556,
+    "last_updated": "2026-05-22T09:36:38.568578",
+    "total_events": 557,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
