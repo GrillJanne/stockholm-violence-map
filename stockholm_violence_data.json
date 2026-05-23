@@ -9685,11 +9685,27 @@
       "longitude": 18.06963945625599,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 636115,
+      "datetime": "2026-05-23 11:26:18 +02:00",
+      "name": "23 maj 10.33, Mord/dråp, försök, Stockholm",
+      "summary": "Trer personer har skottskadats vid en villa i Älvsjö. En misstänkt är gripen och ett arbete pågår för att ta r",
+      "url": "/aktuellt/handelser/2026/maj/23/23-maj-10.33-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32539900310098,
+      "longitude": 18.064085982081103,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-23T08:24:46.441955",
-    "total_events": 558,
+    "last_updated": "2026-05-23T13:46:31.388277",
+    "total_events": 559,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
