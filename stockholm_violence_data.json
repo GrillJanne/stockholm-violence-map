@@ -9717,11 +9717,27 @@
       "longitude": 18.071503684359055,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 636165,
+      "datetime": "2026-05-24 7:11:45 +02:00",
+      "name": "24 maj 02.17, Misshandel, Stockholm",
+      "summary": "Ett bråk uppstår i tunnelbanan då en person åker utan att betala. Mannen som inte vill betala är också misstän",
+      "url": "/aktuellt/handelser/2026/maj/24/24-maj-02.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3281107798466,
+      "longitude": 18.067835762614802,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-05-24T04:04:50.693959",
-    "total_events": 560,
+    "last_updated": "2026-05-24T08:35:20.606951",
+    "total_events": 561,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
