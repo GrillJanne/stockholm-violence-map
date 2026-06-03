@@ -9813,11 +9813,27 @@
       "longitude": 18.069698114990018,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640407,
+      "datetime": "2026-06-03 7:31:21 +02:00",
+      "name": "03 juni 00.11, Misshandel, Stockholm",
+      "summary": "Flera personer uppgavs vara inblandade i ett bråk på en nattklubb på Norrmalm.",
+      "url": "/aktuellt/handelser/2026/juni/3/03-juni-00.11-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325439232064646,
+      "longitude": 18.070256208323553,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-03T04:44:35.543204",
-    "total_events": 566,
+    "last_updated": "2026-06-03T11:08:08.659801",
+    "total_events": 567,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
