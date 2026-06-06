@@ -9829,11 +9829,27 @@
       "longitude": 18.070256208323553,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640811,
+      "datetime": "2026-06-06 11:36:46 +02:00",
+      "name": "06 juni 07.41, Misshandel, Stockholm",
+      "summary": "En man har misshandlat sin flickvän.",
+      "url": "/aktuellt/handelser/2026/juni/6/06-juni-07.41-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325887614472286,
+      "longitude": 18.066652652665624,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-06T08:39:36.190196",
-    "total_events": 567,
+    "last_updated": "2026-06-06T13:53:43.746521",
+    "total_events": 568,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
