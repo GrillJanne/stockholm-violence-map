@@ -9845,11 +9845,75 @@
       "longitude": 18.066652652665624,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640864,
+      "datetime": "2026-06-07 8:24:26 +02:00",
+      "name": "07 juni 02.29, Misshandel, Stockholm",
+      "summary": "En man grips misstänkt för att slagit sin fru.",
+      "url": "/aktuellt/handelser/2026/juni/7/07-juni-02.29-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.328376567590006,
+      "longitude": 18.06516980307215,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640863,
+      "datetime": "2026-06-07 8:24:21 +02:00",
+      "name": "06 juni 23.42, Misshandel, Stockholm",
+      "summary": "Högljutt bråk i lägenhet.",
+      "url": "/aktuellt/handelser/2026/juni/6/06-juni-23.42-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32634011399756,
+      "longitude": 18.06527347514231,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640862,
+      "datetime": "2026-06-07 8:24:16 +02:00",
+      "name": "06 juni 23.39, Misshandel, Stockholm",
+      "summary": "Larm om misstänkt brott i nära relation.",
+      "url": "/aktuellt/handelser/2026/juni/6/06-juni-23.39-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32543471943739,
+      "longitude": 18.067638242829815,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640859,
+      "datetime": "2026-06-07 8:24:11 +02:00",
+      "name": "07 juni 23.27, Misshandel, Stockholm",
+      "summary": "Slagsmål på Hornsgatan.",
+      "url": "/aktuellt/handelser/2026/juni/7/07-juni-23.27-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325945478814184,
+      "longitude": 18.070869697060743,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-07T04:22:43.621209",
-    "total_events": 568,
+    "last_updated": "2026-06-07T09:21:42.397230",
+    "total_events": 572,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
