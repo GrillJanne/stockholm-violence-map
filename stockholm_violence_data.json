@@ -9909,11 +9909,27 @@
       "longitude": 18.070869697060743,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 640905,
+      "datetime": "2026-06-08 8:15:42 +02:00",
+      "name": "07 juni 18.31, Rån, försök, Stockholm",
+      "summary": "Rånförsök med pistolliknande föremål i Spånga.",
+      "url": "/aktuellt/handelser/2026/juni/8/07-juni-18.31-ran-forsok-stockholm/",
+      "type": "Rån, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33120808649326,
+      "longitude": 18.066088912578824,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-08T04:26:51.038541",
-    "total_events": 572,
+    "last_updated": "2026-06-08T11:05:49.863841",
+    "total_events": 573,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
