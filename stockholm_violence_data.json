@@ -9925,11 +9925,59 @@
       "longitude": 18.066088912578824,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641087,
+      "datetime": "2026-06-09 8:53:20 +02:00",
+      "name": "09 juni 02.25, Misshandel, grov, Stockholm",
+      "summary": "Lägenhetsfest spårar och festdeltagarna misshandlar varandra.",
+      "url": "/aktuellt/handelser/2026/juni/9/09-juni-02.25-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32495483525242,
+      "longitude": 18.068953706751795,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641084,
+      "datetime": "2026-06-09 8:53:14 +02:00",
+      "name": "09 juni 01.23, Misshandel, Stockholm",
+      "summary": "En okänd man använder en stol som tillhygge.",
+      "url": "/aktuellt/handelser/2026/juni/9/09-juni-01.23-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32986980463153,
+      "longitude": 18.06486187888148,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641079,
+      "datetime": "2026-06-09 8:53:05 +02:00",
+      "name": "08 juni 23.49, Olaga hot, Stockholm",
+      "summary": "En berusad man hotar sin kamrat.",
+      "url": "/aktuellt/handelser/2026/juni/8/08-juni-23.49-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33380966846642,
+      "longitude": 18.06486130765983,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-09T03:58:48.740458",
-    "total_events": 573,
+    "last_updated": "2026-06-09T09:53:47.118337",
+    "total_events": 576,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
