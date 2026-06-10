@@ -9973,11 +9973,27 @@
       "longitude": 18.06486130765983,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641248,
+      "datetime": "2026-06-10 8:02:54 +02:00",
+      "name": "10 juni 02.36, Olaga hot, Stockholm",
+      "summary": "En man i 20-årsåldern har blivit hotad med kniv av en annan man på en snabbmatsrestaurang på Södermalm i Stock",
+      "url": "/aktuellt/handelser/2026/juni/10/10-juni-02.36-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326667849736445,
+      "longitude": 18.0683423862717,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-10T04:10:38.864866",
-    "total_events": 576,
+    "last_updated": "2026-06-10T10:11:10.772276",
+    "total_events": 577,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
