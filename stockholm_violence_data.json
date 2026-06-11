@@ -9989,11 +9989,27 @@
       "longitude": 18.0683423862717,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641525,
+      "datetime": "2026-06-11 19:46:54 +02:00",
+      "name": "11 juni 18.25, Misshandel, Stockholm",
+      "summary": "Polisen larmas om slagsmål på Slussbron.",
+      "url": "/aktuellt/handelser/2026/juni/11/11-juni-18.25-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32472049234863,
+      "longitude": 18.065006792988843,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-11T16:10:43.956728",
-    "total_events": 577,
+    "last_updated": "2026-06-11T20:26:31.546360",
+    "total_events": 578,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
