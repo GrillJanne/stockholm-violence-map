@@ -10005,11 +10005,27 @@
       "longitude": 18.065006792988843,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641749,
+      "datetime": "2026-06-13 7:57:34 +02:00",
+      "name": "13 juni 02.24, Mord/dråp, försök, Stockholm",
+      "summary": "En man grips misstänkt för att ha knivskadat två personer i samband med ett bråk i en lägenhet i Sätra.",
+      "url": "/aktuellt/handelser/2026/juni/13/13-juni-02.24-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33010656394583,
+      "longitude": 18.067293852097876,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-13T04:14:42.096573",
-    "total_events": 578,
+    "last_updated": "2026-06-13T09:22:51.964648",
+    "total_events": 579,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
