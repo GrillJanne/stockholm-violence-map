@@ -10021,11 +10021,27 @@
       "longitude": 18.067293852097876,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641806,
+      "datetime": "2026-06-14 14:10:36 +02:00",
+      "name": "14 juni 13.08, Misshandel, Stockholm",
+      "summary": "Ett vittne observerar en kvinna som vid flera tillfällen slår en man under en argumentation vid en promenad på",
+      "url": "/aktuellt/handelser/2026/juni/14/14-juni-13.08-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33377563502425,
+      "longitude": 18.07342009488521,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-14T09:43:03.620178",
-    "total_events": 579,
+    "last_updated": "2026-06-14T14:13:16.454179",
+    "total_events": 580,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
