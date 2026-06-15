@@ -10037,11 +10037,27 @@
       "longitude": 18.07342009488521,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641961,
+      "datetime": "2026-06-15 20:41:04 +02:00",
+      "name": "15 juni 20.01, Sexualbrott, Stockholm",
+      "summary": "En man blottar sig i närheten av tunnelbanestationen i Farsta. Polis hittar mannen och en anmälan skrivs om se",
+      "url": "/aktuellt/handelser/2026/juni/15/15-juni-20.01-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33031111210928,
+      "longitude": 18.067110396108376,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-15T12:25:46.317541",
-    "total_events": 580,
+    "last_updated": "2026-06-15T21:09:37.241362",
+    "total_events": 581,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
