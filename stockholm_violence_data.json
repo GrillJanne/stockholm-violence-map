@@ -10053,11 +10053,27 @@
       "longitude": 18.067110396108376,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641969,
+      "datetime": "2026-06-16 5:05:16 +02:00",
+      "name": "16 juni 03.25, Explosion, Stockholm",
+      "summary": "Ett föremål har exploderat i en port till ett flerfamiljshus i Hagsätra. Ingen person är skadad och ingen miss",
+      "url": "/aktuellt/handelser/2026/juni/16/16-juni-03.25-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330115995738055,
+      "longitude": 18.06794895051719,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-15T21:09:37.241362",
-    "total_events": 581,
+    "last_updated": "2026-06-16T04:54:10.084449",
+    "total_events": 582,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
