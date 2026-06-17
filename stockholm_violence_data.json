@@ -10069,11 +10069,27 @@
       "longitude": 18.06794895051719,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643178,
+      "datetime": "2026-06-17 15:53:52 +02:00",
+      "name": "17 juni 14.03, Sexualbrott, Stockholm",
+      "summary": "En person som städar en tvättstuga i Bandhagen utsätts för blottning.",
+      "url": "/aktuellt/handelser/2026/juni/17/17-juni-14.03-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33167333100715,
+      "longitude": 18.07050708347324,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-17T11:05:20.755966",
-    "total_events": 582,
+    "last_updated": "2026-06-17T15:46:13.508735",
+    "total_events": 583,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
