@@ -10085,11 +10085,59 @@
       "longitude": 18.07050708347324,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643373,
+      "datetime": "2026-06-19 20:54:20 +02:00",
+      "name": "19 juni 17.41, Misshandel, Stockholm",
+      "summary": "Köttjuv på Södermalm slår butikspersonal.",
+      "url": "/aktuellt/handelser/2026/juni/19/19-juni-17.41-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326097246932456,
+      "longitude": 18.067046526045697,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643362,
+      "datetime": "2026-06-19 19:28:33 +02:00",
+      "name": "19 juni 17.37, Misshandel, Stockholm",
+      "summary": "Bråk på en restaurang vid Gullmarsplan.",
+      "url": "/aktuellt/handelser/2026/juni/19/19-juni-17.37-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33112067786898,
+      "longitude": 18.0694701770121,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643363,
+      "datetime": "2026-06-19 19:28:29 +02:00",
+      "name": "19 juni 16.39, Misshandel, Stockholm",
+      "summary": "En lösspringande hund hoppar på ett barn på en förskola.",
+      "url": "/aktuellt/handelser/2026/juni/19/19-juni-16.39-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33103765778313,
+      "longitude": 18.068559177406232,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-19T15:30:12.854144",
-    "total_events": 583,
+    "last_updated": "2026-06-19T19:54:07.348957",
+    "total_events": 586,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
