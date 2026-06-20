@@ -10133,11 +10133,27 @@
       "longitude": 18.068559177406232,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643426,
+      "datetime": "2026-06-20 17:06:25 +02:00",
+      "name": "20 juni 16.02, Sexualbrott, Stockholm",
+      "summary": "Offentlig onani i Skärholmen.",
+      "url": "/aktuellt/handelser/2026/juni/20/20-juni-16.02-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326874856489084,
+      "longitude": 18.07206600142982,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-20T14:13:10.360106",
-    "total_events": 586,
+    "last_updated": "2026-06-20T19:43:49.499786",
+    "total_events": 587,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
