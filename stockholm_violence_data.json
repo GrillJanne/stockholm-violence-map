@@ -10149,11 +10149,27 @@
       "longitude": 18.07206600142982,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643454,
+      "datetime": "2026-06-21 7:34:35 +02:00",
+      "name": "21 juni 02.51, Olaga intrång, Stockholm",
+      "summary": "Ett kameralarm indikerade att någon olovligt rört sig inne i en lokal i södra Ängby.",
+      "url": "/aktuellt/handelser/2026/juni/21/21-juni-02.51-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32548718741382,
+      "longitude": 18.066988169538728,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-21T04:49:25.498325",
-    "total_events": 587,
+    "last_updated": "2026-06-21T09:56:02.866442",
+    "total_events": 588,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
