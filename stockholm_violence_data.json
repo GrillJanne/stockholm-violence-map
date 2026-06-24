@@ -10165,11 +10165,27 @@
       "longitude": 18.066988169538728,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643784,
+      "datetime": "2026-06-24 7:21:18 +02:00",
+      "name": "24 juni 03.27, Misshandel, Stockholm",
+      "summary": "En kvinna blev slagen av en annan kvinna utanför en bar på centrala Norrmalm.",
+      "url": "/aktuellt/handelser/2026/juni/24/24-juni-03.27-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.328934204840216,
+      "longitude": 18.072161293566406,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-24T04:00:44.178387",
-    "total_events": 588,
+    "last_updated": "2026-06-24T09:38:39.883056",
+    "total_events": 589,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
