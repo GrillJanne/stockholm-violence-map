@@ -10197,11 +10197,27 @@
       "longitude": 18.072610874101652,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643977,
+      "datetime": "2026-06-25 11:32:01 +02:00",
+      "name": "25 juni 09.39, Trafikolycka, smitning från, Stockholm",
+      "summary": "I samband med ett byggarbete på Ringvägen på Södermalm blir en person påkörd av en bilist.",
+      "url": "/aktuellt/handelser/2026/juni/25/25-juni-09.39-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32929556391494,
+      "longitude": 18.07125845463885,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-25T09:31:09.131371",
-    "total_events": 590,
+    "last_updated": "2026-06-25T14:42:22.553659",
+    "total_events": 591,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
