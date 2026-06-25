@@ -10181,11 +10181,27 @@
       "longitude": 18.072161293566406,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 643943,
+      "datetime": "2026-06-25 8:01:28 +02:00",
+      "name": "25 juni 02.47, Misshandel, Stockholm",
+      "summary": "En person är misstänkt för misshandel efter bråk i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/juni/25/25-juni-02.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33326441991452,
+      "longitude": 18.072610874101652,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-25T04:01:01.525480",
-    "total_events": 589,
+    "last_updated": "2026-06-25T09:31:09.131371",
+    "total_events": 590,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
