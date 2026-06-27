@@ -10229,11 +10229,27 @@
       "longitude": 18.06421221777194,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 644172,
+      "datetime": "2026-06-27 7:16:15 +02:00",
+      "name": "27 juni 05.31, Misshandel, Stockholm",
+      "summary": "Slagsmål uppstod på centrala Norrmalm mellan yngre män, ett tiotal personer sågs i sällskapet.",
+      "url": "/aktuellt/handelser/2026/juni/27/27-juni-05.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3333705342861,
+      "longitude": 18.064550524579463,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-27T03:54:19.580484",
-    "total_events": 592,
+    "last_updated": "2026-06-27T08:41:52.454939",
+    "total_events": 593,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
