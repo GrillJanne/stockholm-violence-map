@@ -10245,11 +10245,27 @@
       "longitude": 18.064550524579463,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 644237,
+      "datetime": "2026-06-28 7:18:56 +02:00",
+      "name": "28 juni 02.46, Rån, Stockholm",
+      "summary": "En man på Östermalm blev rånad på sin klocka när han var på väg hem.",
+      "url": "/aktuellt/handelser/2026/juni/28/28-juni-02.46-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3324964640853,
+      "longitude": 18.06824848660647,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-28T04:16:41.548385",
-    "total_events": 593,
+    "last_updated": "2026-06-28T09:17:17.904793",
+    "total_events": 594,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
