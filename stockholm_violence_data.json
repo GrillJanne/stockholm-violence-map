@@ -10261,11 +10261,43 @@
       "longitude": 18.06824848660647,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 644300,
+      "datetime": "2026-06-29 7:11:52 +02:00",
+      "name": "29 juni 02.43, Misshandel, Stockholm",
+      "summary": "En man på en bar på Östermalm frihetsberövades enligt lagen om omhändertagande av berusade personer.",
+      "url": "/aktuellt/handelser/2026/juni/29/29-juni-02.43-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3305377860576,
+      "longitude": 18.069163228262592,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 644298,
+      "datetime": "2026-06-29 7:07:14 +02:00",
+      "name": "29 juni 04.47, Misshandel, Stockholm",
+      "summary": "Ett antal personer stoppade ett slagsmål mellan två män på Södermalm. En man blev avlägsnad och misstänkt för ",
+      "url": "/aktuellt/handelser/2026/juni/29/29-juni-04.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.328284291524874,
+      "longitude": 18.064224496045167,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-06-29T04:23:09.472548",
-    "total_events": 594,
+    "last_updated": "2026-06-29T11:08:47.070976",
+    "total_events": 596,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
