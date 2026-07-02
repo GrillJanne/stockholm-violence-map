@@ -10293,11 +10293,27 @@
       "longitude": 18.064224496045167,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646013,
+      "datetime": "2026-07-02 16:13:38 +02:00",
+      "name": "2 juli 14.20, Trafikolycka, smitning från, Stockholm",
+      "summary": "En fotgängare vid Mariatorget på Södermalm ska ha fått foten överkörd av en bilföraren som efter olyckan lämna",
+      "url": "/aktuellt/handelser/2026/juli/2/2-juli-14.20-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32570542077681,
+      "longitude": 18.06964504948775,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-02T14:11:22.496247",
-    "total_events": 596,
+    "last_updated": "2026-07-02T19:38:23.683955",
+    "total_events": 597,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
