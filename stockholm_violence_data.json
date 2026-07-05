@@ -10309,11 +10309,27 @@
       "longitude": 18.06964504948775,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646223,
+      "datetime": "2026-07-05 7:10:57 +02:00",
+      "name": "5 juli 00.05, Våldtäkt, Stockholm",
+      "summary": "En man misstänks ha våldtagit en kvinna inne i en bostad. Mannen grips och tas med för vidare förhör.",
+      "url": "/aktuellt/handelser/2026/juli/5/5-juli-00.05-valdtakt-stockholm/",
+      "type": "Våldtäkt",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.331437233742314,
+      "longitude": 18.065821744342507,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-05T03:54:06.365881",
-    "total_events": 597,
+    "last_updated": "2026-07-05T09:11:44.463775",
+    "total_events": 598,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
