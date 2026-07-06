@@ -10325,11 +10325,27 @@
       "longitude": 18.065821744342507,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646282,
+      "datetime": "2026-07-06 7:22:47 +02:00",
+      "name": "6 juli 02.07, Misshandel, Stockholm",
+      "summary": "Ett tiotal personer sågs bråka ute på en gata på Kungsholmen.",
+      "url": "/aktuellt/handelser/2026/juli/6/6-juli-02.07-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33165609082602,
+      "longitude": 18.064257976089596,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-06T04:00:44.496118",
-    "total_events": 598,
+    "last_updated": "2026-07-06T10:46:21.416589",
+    "total_events": 599,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
