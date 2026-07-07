@@ -10357,11 +10357,27 @@
       "longitude": 18.073120742147243,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646437,
+      "datetime": "2026-07-07 16:08:22 +02:00",
+      "name": "7 juli 15.19, Rån, Stockholm",
+      "summary": "Polis kallas till Husby med anledning av personrån.",
+      "url": "/aktuellt/handelser/2026/juli/7/7-juli-15.19-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32660777694071,
+      "longitude": 18.067715418403882,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-07T09:50:07.973382",
-    "total_events": 600,
+    "last_updated": "2026-07-07T14:47:09.535316",
+    "total_events": 601,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
