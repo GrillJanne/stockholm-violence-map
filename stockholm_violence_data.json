@@ -10373,11 +10373,27 @@
       "longitude": 18.067715418403882,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646620,
+      "datetime": "2026-07-09 17:16:21 +02:00",
+      "name": "9 juli 16.02, Misshandel, Stockholm",
+      "summary": "Slagsmål i Vårberg.",
+      "url": "/aktuellt/handelser/2026/juli/9/9-juli-16.02-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32985060106445,
+      "longitude": 18.07186451229371,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-09T09:57:52.947981",
-    "total_events": 601,
+    "last_updated": "2026-07-09T15:19:41.277161",
+    "total_events": 602,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
