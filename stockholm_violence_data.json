@@ -10389,11 +10389,43 @@
       "longitude": 18.07186451229371,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646722,
+      "datetime": "2026-07-10 18:22:33 +02:00",
+      "name": "10 juli 14.31, Misshandel, Stockholm",
+      "summary": "Kvinna åker till sjukhus med smärta efter att ha skadat sig på ett säte på en buss.",
+      "url": "/aktuellt/handelser/2026/juli/10/10-juli-14.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32464295968825,
+      "longitude": 18.07210581512912,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646719,
+      "datetime": "2026-07-10 18:22:19 +02:00",
+      "name": "10 juli 13.09, Olaga intrång, Stockholm",
+      "summary": "Tre män grips efter att ha brutit sig in i ett cykelförråd.",
+      "url": "/aktuellt/handelser/2026/juli/10/10-juli-13.09-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332382625337246,
+      "longitude": 18.07220246868581,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-10T14:37:44.399958",
-    "total_events": 602,
+    "last_updated": "2026-07-10T19:38:40.882348",
+    "total_events": 604,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
