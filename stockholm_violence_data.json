@@ -10421,11 +10421,27 @@
       "longitude": 18.07220246868581,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646754,
+      "datetime": "2026-07-11 9:39:55 +02:00",
+      "name": "11 juli 09.07, Explosion, Stockholm",
+      "summary": "Polis och räddningstjänst kallas till ett flerbostadshus i Marieberg med uppgifter om en explosion i en lägenh",
+      "url": "/aktuellt/handelser/2026/juli/11/11-juli-09.07-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32978312625141,
+      "longitude": 18.066571446881934,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-11T03:13:21.254966",
-    "total_events": 604,
+    "last_updated": "2026-07-11T08:02:44.828038",
+    "total_events": 605,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
