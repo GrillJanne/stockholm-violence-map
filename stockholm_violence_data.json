@@ -10437,11 +10437,27 @@
       "longitude": 18.066571446881934,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646811,
+      "datetime": "2026-07-12 9:16:43 +02:00",
+      "name": "12 juli 02.23, Mordbrand, Stockholm",
+      "summary": "Polis och räddningstjänst kallades till Ulvsunda med anledning av brand i trästuga.",
+      "url": "/aktuellt/handelser/2026/juli/12/12-juli-02.23-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32585688112704,
+      "longitude": 18.071686376796514,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-12T03:24:48.977311",
-    "total_events": 605,
+    "last_updated": "2026-07-12T08:23:40.067754",
+    "total_events": 606,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
