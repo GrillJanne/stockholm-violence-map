@@ -10469,11 +10469,27 @@
       "longitude": 18.065900733133144,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646902,
+      "datetime": "2026-07-13 21:11:16 +02:00",
+      "name": "13 juli 19.46, Misshandel, Stockholm",
+      "summary": "Två personer har bråkat på Södermalm och den ena parten har fått skador och får åka ambulans till sjukhus.",
+      "url": "/aktuellt/handelser/2026/juli/13/13-juli-19.46-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3318705347138,
+      "longitude": 18.069618739168835,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-13T14:44:20.207162",
-    "total_events": 607,
+    "last_updated": "2026-07-13T19:34:20.914212",
+    "total_events": 608,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
