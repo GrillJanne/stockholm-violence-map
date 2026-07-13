@@ -10453,11 +10453,27 @@
       "longitude": 18.071686376796514,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646850,
+      "datetime": "2026-07-13 7:29:30 +02:00",
+      "name": "13 juli 03.50, Misshandel, grov, Stockholm",
+      "summary": "Polisen har under en insats på Södermalm gripit en man som knivhuggit en butiksanställd under en ett rån.",
+      "url": "/aktuellt/handelser/2026/juli/13/13-juli-03.50-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33225852468685,
+      "longitude": 18.065900733133144,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-13T03:27:52.057831",
-    "total_events": 606,
+    "last_updated": "2026-07-13T09:35:36.947228",
+    "total_events": 607,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
