@@ -10485,11 +10485,43 @@
       "longitude": 18.069618739168835,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646999,
+      "datetime": "2026-07-14 20:56:30 +02:00",
+      "name": "14 juli 19.29, Sexualbrott, Stockholm",
+      "summary": "En man ofredar en pojke sexuellt.",
+      "url": "/aktuellt/handelser/2026/juli/14/14-juli-19.29-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33011837442332,
+      "longitude": 18.06724241693894,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646981,
+      "datetime": "2026-07-14 18:21:00 +02:00",
+      "name": "14 juli 16.03, Misshandel, Stockholm",
+      "summary": "Kvinna kastar glas på restaurang.",
+      "url": "/aktuellt/handelser/2026/juli/14/14-juli-16.03-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.325158507171516,
+      "longitude": 18.06643893651034,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-14T13:54:29.059641",
-    "total_events": 608,
+    "last_updated": "2026-07-14T19:25:48.995473",
+    "total_events": 610,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
