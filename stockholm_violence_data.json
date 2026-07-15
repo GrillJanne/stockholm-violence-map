@@ -10549,11 +10549,27 @@
       "longitude": 18.0672961400848,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647006,
+      "datetime": "2026-07-15 2:29:05 +02:00",
+      "name": "15 juli 00.40, Mord/dråp, Stockholm",
+      "summary": "Polis och ambulans kallas till en lägenhet i Sköndal med anledning av att en man sticksskadats.",
+      "url": "/aktuellt/handelser/2026/juli/15/15-juli-00.40-morddrap-stockholm/",
+      "type": "Mord/dråp",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32493919990914,
+      "longitude": 18.064104957409615,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-15T13:51:42.750126",
-    "total_events": 612,
+    "last_updated": "2026-07-15T19:18:00.090104",
+    "total_events": 613,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
