@@ -10517,11 +10517,43 @@
       "longitude": 18.06643893651034,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647006,
+      "datetime": "2026-07-15 2:29:05 +02:00",
+      "name": "15 juli 00.40, Mord/dråp, försök, Stockholm",
+      "summary": "Polis och ambulans kallas till en lägenhet i Sköndal med anledning av att en man sticksskadats.",
+      "url": "/aktuellt/handelser/2026/juli/15/15-juli-00.40-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3324896635764,
+      "longitude": 18.07243338638889,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647005,
+      "datetime": "2026-07-15 1:30:09 +02:00",
+      "name": "15 juli 00.07, Explosion, Stockholm",
+      "summary": "Polis kallas till Hässelby gård med anledning av att flera inringare hört en hög smäll i ett bostadsområde med",
+      "url": "/aktuellt/handelser/2026/juli/15/15-juli-00.07-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32689620701878,
+      "longitude": 18.0672961400848,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-14T19:25:48.995473",
-    "total_events": 610,
+    "last_updated": "2026-07-15T02:48:57.105602",
+    "total_events": 612,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
