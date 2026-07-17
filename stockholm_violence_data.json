@@ -10597,11 +10597,27 @@
       "longitude": 18.06543587043716,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647260,
+      "datetime": "2026-07-17 20:34:28 +02:00",
+      "name": "17 juli 19.54, Misshandel, Stockholm",
+      "summary": "Ett vittne uppger sig ha sett en man misshandla en kvinna. Polis kontaktar paret och mannen grips.",
+      "url": "/aktuellt/handelser/2026/juli/17/17-juli-19.54-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3309738725759,
+      "longitude": 18.06411320823767,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-17T13:47:48.045324",
-    "total_events": 615,
+    "last_updated": "2026-07-17T19:16:37.077472",
+    "total_events": 616,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
