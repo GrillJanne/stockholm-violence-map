@@ -10565,11 +10565,43 @@
       "longitude": 18.064104957409615,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647172,
+      "datetime": "2026-07-17 8:20:12 +02:00",
+      "name": "17 juli 01.32, Misshandel, Stockholm",
+      "summary": "Misstänkt våld i nära relation mellan två kvinnor.",
+      "url": "/aktuellt/handelser/2026/juli/17/17-juli-01.32-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33284213207791,
+      "longitude": 18.067116487512614,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647166,
+      "datetime": "2026-07-17 8:20:02 +02:00",
+      "name": "16 juli 23.37, Olaga hot, Stockholm",
+      "summary": "Barn flyr från en hotfull man i södra Stockholm",
+      "url": "/aktuellt/handelser/2026/juli/16/16-juli-23.37-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33036041289018,
+      "longitude": 18.06543587043716,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-17T03:12:36.336049",
-    "total_events": 613,
+    "last_updated": "2026-07-17T08:17:18.423739",
+    "total_events": 615,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
