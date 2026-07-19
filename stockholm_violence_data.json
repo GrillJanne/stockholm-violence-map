@@ -10629,11 +10629,27 @@
       "longitude": 18.06701030852315,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647343,
+      "datetime": "2026-07-19 7:20:52 +02:00",
+      "name": "18 juli 22.52, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en man och en kvinna som är misstänkta för mordförsök efter det att en man fallit från en b",
+      "url": "/aktuellt/handelser/2026/juli/1/18-juli-22.52-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.327394030027826,
+      "longitude": 18.07340241243386,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-19T03:20:49.331597",
-    "total_events": 617,
+    "last_updated": "2026-07-19T08:26:14.122735",
+    "total_events": 618,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
