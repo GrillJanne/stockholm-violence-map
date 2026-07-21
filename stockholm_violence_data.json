@@ -10661,11 +10661,27 @@
       "longitude": 18.06659012243565,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647532,
+      "datetime": "2026-07-21 15:14:52 +02:00",
+      "name": "21 juli 07.12, Misshandel, Stockholms län",
+      "summary": "Man rapporteras för psykiskt våld, grov kvinnofridskränkning, misshandel och barnfridsbrott,.",
+      "url": "/aktuellt/handelser/2026/juli/21/21-juli-07.12-misshandel-stockholms-lan/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33110214844815,
+      "longitude": 18.072450465947675,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-21T08:35:37.169090",
-    "total_events": 619,
+    "last_updated": "2026-07-21T14:03:04.562917",
+    "total_events": 620,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
