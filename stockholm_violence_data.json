@@ -10645,11 +10645,27 @@
       "longitude": 18.07340241243386,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647476,
+      "datetime": "2026-07-21 7:29:15 +02:00",
+      "name": "20 juli 22.17, Misshandel, Stockholm",
+      "summary": "En kvinna ringer in till polisen om en misshandel i hemmet i Råcksta.",
+      "url": "/aktuellt/handelser/2026/juli/20/20-juli-22.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32884434227107,
+      "longitude": 18.06659012243565,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-21T03:15:41.853056",
-    "total_events": 618,
+    "last_updated": "2026-07-21T08:35:37.169090",
+    "total_events": 619,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
