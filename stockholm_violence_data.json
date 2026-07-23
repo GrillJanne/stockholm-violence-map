@@ -10741,11 +10741,27 @@
       "longitude": 18.066621520121434,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647721,
+      "datetime": "2026-07-23 17:52:59 +02:00",
+      "name": "23 juli 16.48, Rån, Stockholm",
+      "summary": "Polisen söker en man som rånat en butik i Årsta.",
+      "url": "/aktuellt/handelser/2026/juli/23/23-juli-16.48-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.328846719329015,
+      "longitude": 18.065039510698348,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-23T14:11:17.636218",
-    "total_events": 624,
+    "last_updated": "2026-07-23T19:24:30.777857",
+    "total_events": 625,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
