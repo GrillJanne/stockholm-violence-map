@@ -10693,11 +10693,59 @@
       "longitude": 18.071014629573593,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647675,
+      "datetime": "2026-07-23 8:29:18 +02:00",
+      "name": "23 juli 03.10, Misshandel, Stockholm",
+      "summary": "Två personer bråkar längst bak i en SL-buss på väg mot Södertälje.",
+      "url": "/aktuellt/handelser/2026/juli/23/23-juli-03.10-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32716869070107,
+      "longitude": 18.064964481495593,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647674,
+      "datetime": "2026-07-23 8:11:22 +02:00",
+      "name": "23 juli 00.59, Misshandel, Stockholm",
+      "summary": "En man grips i Östberga misstänkt för brott i nära relation.",
+      "url": "/aktuellt/handelser/2026/juli/23/23-juli-00.59-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326927175296134,
+      "longitude": 18.06867256123533,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647671,
+      "datetime": "2026-07-23 7:57:21 +02:00",
+      "name": "23 juli 00.51, Misshandel, Stockholm",
+      "summary": "Två män slåss med varandra på Medborgarplatsens tunnelbaneperrong på Södermalm.",
+      "url": "/aktuellt/handelser/2026/juli/23/23-juli-00.51-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33416064862887,
+      "longitude": 18.066621520121434,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-23T03:20:21.907328",
-    "total_events": 621,
+    "last_updated": "2026-07-23T08:36:36.018751",
+    "total_events": 624,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
