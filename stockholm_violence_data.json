@@ -10805,11 +10805,27 @@
       "longitude": 18.071732450278738,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648214,
+      "datetime": "2026-07-30 8:12:59 +02:00",
+      "name": "30 juli 07.43, Misshandel, Stockholm",
+      "summary": "Polisen har gripit en man som tagit sig in i en villa och där slagit till en kvinna som bodde i fastigheten.",
+      "url": "/aktuellt/handelser/2026/juli/30/30-juli-07.43-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332044797796506,
+      "longitude": 18.06474204882332,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-30T02:43:23.258196",
-    "total_events": 628,
+    "last_updated": "2026-07-30T08:33:52.691650",
+    "total_events": 629,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
