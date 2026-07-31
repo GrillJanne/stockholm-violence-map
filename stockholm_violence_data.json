@@ -10821,11 +10821,27 @@
       "longitude": 18.06474204882332,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648349,
+      "datetime": "2026-07-31 21:35:15 +02:00",
+      "name": "31 juli 20.28, Misshandel, Stockholm",
+      "summary": "En påverkad man hotar personal på en restaurang på Södermalm.",
+      "url": "/aktuellt/handelser/2026/juli/31/31-juli-20.28-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32621263635598,
+      "longitude": 18.068028106490043,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-07-31T14:18:48.481288",
-    "total_events": 629,
+    "last_updated": "2026-07-31T19:40:20.124583",
+    "total_events": 630,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
