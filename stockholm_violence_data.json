@@ -10853,11 +10853,27 @@
       "longitude": 18.0687926270015,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648388,
+      "datetime": "2026-08-01 12:40:52 +02:00",
+      "name": "1 augusti 12.39, Mord/dråp, försök, Stockholm",
+      "summary": "Två personer i Sätra skadade med vasst föremål.",
+      "url": "/aktuellt/handelser/2026/augusti/1/1-augusti-12.39-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.324747081210056,
+      "longitude": 18.06924605633767,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-01T08:26:35.164144",
-    "total_events": 631,
+    "last_updated": "2026-08-01T13:36:55.520631",
+    "total_events": 632,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
