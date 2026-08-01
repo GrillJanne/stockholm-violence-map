@@ -10837,11 +10837,27 @@
       "longitude": 18.068028106490043,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648363,
+      "datetime": "2026-08-01 7:54:27 +02:00",
+      "name": "1 augusti 03.05, Misshandel, Stockholm",
+      "summary": "Man greps efter misshandel vid Hornstull.",
+      "url": "/aktuellt/handelser/2026/augusti/1/1-augusti-03.05-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32667621727693,
+      "longitude": 18.0687926270015,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-01T03:24:24.537167",
-    "total_events": 630,
+    "last_updated": "2026-08-01T08:26:35.164144",
+    "total_events": 631,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
