@@ -10885,11 +10885,27 @@
       "longitude": 18.063935449208167,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648781,
+      "datetime": "2026-08-06 20:18:36 +02:00",
+      "name": "6 augusti 20.06, Sexualbrott, Stockholm",
+      "summary": "Polisen är på väg med två patruller till en park i Vasastaden. Där observeras en man som växlar mellan att plo",
+      "url": "/aktuellt/handelser/2026/augusti/6/6-augusti-20.06-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326951349496774,
+      "longitude": 18.068779427857706,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-06T14:22:19.714586",
-    "total_events": 633,
+    "last_updated": "2026-08-07T00:05:21.713098",
+    "total_events": 634,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
