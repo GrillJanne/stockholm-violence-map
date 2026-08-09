@@ -10917,11 +10917,43 @@
       "longitude": 18.06849923829854,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648934,
+      "datetime": "2026-08-09 9:24:27 +02:00",
+      "name": "9 augusti 05.59, Misshandel, Stockholm",
+      "summary": "En man grips misstänkt för misshandel i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/augusti/9/9-augusti-05.59-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32902728491405,
+      "longitude": 18.07191345891419,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648933,
+      "datetime": "2026-08-09 9:11:21 +02:00",
+      "name": "9 augusti 07.59, Trafikolycka, smitning från, Stockholm",
+      "summary": "En lyktstolpe i Årsta partihandlarområde har blivit påkörd.",
+      "url": "/aktuellt/handelser/2026/augusti/9/9-augusti-07.59-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.329560381709584,
+      "longitude": 18.072543441786852,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-09T07:02:18.086178",
-    "total_events": 635,
+    "last_updated": "2026-08-09T12:59:30.168383",
+    "total_events": 637,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
