@@ -10901,11 +10901,27 @@
       "longitude": 18.068779427857706,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 648931,
+      "datetime": "2026-08-09 8:50:57 +02:00",
+      "name": "9 augusti 08.08, Olaga intrång, Stockholm",
+      "summary": "En person grips på Södermalm misstänkt för olaga intrång.",
+      "url": "/aktuellt/handelser/2026/augusti/9/9-augusti-08.08-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33260146381475,
+      "longitude": 18.06849923829854,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-09T02:02:39.469491",
-    "total_events": 634,
+    "last_updated": "2026-08-09T07:02:18.086178",
+    "total_events": 635,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
