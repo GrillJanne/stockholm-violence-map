@@ -10949,11 +10949,27 @@
       "longitude": 18.072543441786852,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 649141,
+      "datetime": "2026-08-12 7:23:19 +02:00",
+      "name": "12 augusti 01.19, Olaga hot, Stockholm",
+      "summary": "En man hotade en ordningsvakt utanför en krog på Kungsholmen. Den misstänkte mannen är identifierad.",
+      "url": "/aktuellt/handelser/2026/augusti/12/12-augusti-01.19-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33352407983527,
+      "longitude": 18.06693986519398,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-12T02:19:04.466649",
-    "total_events": 637,
+    "last_updated": "2026-08-12T07:38:12.816084",
+    "total_events": 638,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
