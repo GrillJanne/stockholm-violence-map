@@ -10965,11 +10965,27 @@
       "longitude": 18.06693986519398,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 649275,
+      "datetime": "2026-08-13 8:20:00 +02:00",
+      "name": "13 augusti 05.09, Misshandel, Stockholm",
+      "summary": "En ordningsvakt ringer in om ett nyligen inträffat slagsmål vid Stureplan.",
+      "url": "/aktuellt/handelser/2026/augusti/13/13-augusti-05.09-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33104150461211,
+      "longitude": 18.067251597428914,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-13T02:21:14.604346",
-    "total_events": 638,
+    "last_updated": "2026-08-13T07:40:16.454543",
+    "total_events": 639,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
