@@ -11013,11 +11013,27 @@
       "longitude": 18.073031290677736,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 649940,
+      "datetime": "2026-08-19 12:57:11 +02:00",
+      "name": "19 augusti 12.14, Mord/dråp, försök, Stockholm",
+      "summary": "Polis kallas till Björns trädgård på Södermalm med anledning av att en man stickskadats.",
+      "url": "/aktuellt/handelser/2026/augusti/19/19-augusti-12.14-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33158828020239,
+      "longitude": 18.066411538207877,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-19T06:50:45.076256",
-    "total_events": 641,
+    "last_updated": "2026-08-19T12:54:41.647412",
+    "total_events": 642,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
