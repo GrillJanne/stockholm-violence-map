@@ -11029,11 +11029,27 @@
       "longitude": 18.066411538207877,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650271,
+      "datetime": "2026-08-22 8:13:44 +02:00",
+      "name": "22 augusti 03.47, Misshandel, Stockholm",
+      "summary": "En man misstänks ha misshandlat en kvinna han har en relation med. Mannen grips och tas med för fortsatta förh",
+      "url": "/aktuellt/handelser/2026/augusti/22/22-augusti-03.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3302555296922,
+      "longitude": 18.070019079894884,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-22T01:26:00.536297",
-    "total_events": 642,
+    "last_updated": "2026-08-22T06:46:55.321684",
+    "total_events": 643,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
