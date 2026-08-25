@@ -11061,11 +11061,27 @@
       "longitude": 18.068634184724274,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650499,
+      "datetime": "2026-08-25 7:29:04 +02:00",
+      "name": "25 augusti 02.57, Rån, Stockholm",
+      "summary": "Polis kallas till ett flerbostadshus i Ulvsunda med anledning av rån i bostad.",
+      "url": "/aktuellt/handelser/2026/augusti/25/25-augusti-02.57-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33322150638088,
+      "longitude": 18.069751613796445,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-25T01:33:34.024901",
-    "total_events": 644,
+    "last_updated": "2026-08-25T06:54:46.202309",
+    "total_events": 645,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
