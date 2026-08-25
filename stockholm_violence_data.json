@@ -11077,11 +11077,27 @@
       "longitude": 18.069751613796445,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650590,
+      "datetime": "2026-08-25 16:05:45 +02:00",
+      "name": "25 augusti 15.55, Misshandel, Stockholm",
+      "summary": "Ett 15-tal individer bråkar och slåss med varandra i Hornstull. Ett vittne säger att det är ca 5 personer som ",
+      "url": "/aktuellt/handelser/2026/augusti/25/25-augusti-15.55-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.329776049568366,
+      "longitude": 18.06645758272248,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-25T12:54:06.703633",
-    "total_events": 645,
+    "last_updated": "2026-08-25T18:43:58.815171",
+    "total_events": 646,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
