@@ -11093,11 +11093,27 @@
       "longitude": 18.06645758272248,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650608,
+      "datetime": "2026-08-25 20:45:00 +02:00",
+      "name": "25 augusti 20.26, Sexualbrott, Stockholm",
+      "summary": "En man har tagit tag i en ung kvinna på Södermalm. Han tryckte sitt kön mot henne och frågade efter hennes nam",
+      "url": "/aktuellt/handelser/2026/augusti/25/25-augusti-20.26-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.327767493441016,
+      "longitude": 18.065965787861707,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-25T18:43:58.815171",
-    "total_events": 646,
+    "last_updated": "2026-08-26T01:38:00.443699",
+    "total_events": 647,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
