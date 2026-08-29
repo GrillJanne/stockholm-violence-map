@@ -11157,11 +11157,27 @@
       "longitude": 18.07087469038342,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650981,
+      "datetime": "2026-08-29 8:32:46 +02:00",
+      "name": "29 augusti 02.42, Misshandel, grov, Stockholm",
+      "summary": "Fyra män i 20-årsåldern grips misstänkta för grov misshandel i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/augusti/29/29-augusti-02.42-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330203487331765,
+      "longitude": 18.067260098064924,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-29T06:30:20.971960",
-    "total_events": 650,
+    "last_updated": "2026-08-29T16:29:49.711152",
+    "total_events": 651,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
