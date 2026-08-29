@@ -11109,11 +11109,59 @@
       "longitude": 18.065965787861707,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650974,
+      "datetime": "2026-08-29 7:54:07 +02:00",
+      "name": "29 augusti 03.48, Misshandel, Stockholm",
+      "summary": "Polisen får in samtal om bråk i en lägenhet i Bagarmossen.",
+      "url": "/aktuellt/handelser/2026/augusti/29/29-augusti-03.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33250722176953,
+      "longitude": 18.0703689508227,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650973,
+      "datetime": "2026-08-29 7:36:57 +02:00",
+      "name": "29 augusti 01.34, Olaga hot, Stockholm",
+      "summary": "Två män grips vid Skanstullsbron misstänkta för ett flertal brott.",
+      "url": "/aktuellt/handelser/2026/augusti/29/29-augusti-01.34-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326464689039,
+      "longitude": 18.072425502864085,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650964,
+      "datetime": "2026-08-29 7:09:11 +02:00",
+      "name": "29 augusti 05.49, Misshandel, Stockholm",
+      "summary": "Polisen får in samtal om en misshandel på en adress i Rinkeby.",
+      "url": "/aktuellt/handelser/2026/augusti/29/29-augusti-05.49-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32583309618432,
+      "longitude": 18.07087469038342,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-28T21:59:33.322947",
-    "total_events": 647,
+    "last_updated": "2026-08-29T06:30:20.971960",
+    "total_events": 650,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
