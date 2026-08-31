@@ -11173,11 +11173,27 @@
       "longitude": 18.067260098064924,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651143,
+      "datetime": "2026-08-31 14:45:13 +02:00",
+      "name": "31 augusti 12.10, Misshandel, Stockholm",
+      "summary": "Polisen griper en man i Hässelby gård som blir misstänkt för misshandel.",
+      "url": "/aktuellt/handelser/2026/augusti/31/31-augusti-12.10-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33231645597209,
+      "longitude": 18.067289036707944,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-31T04:46:07.972838",
-    "total_events": 651,
+    "last_updated": "2026-08-31T13:11:54.943852",
+    "total_events": 652,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
