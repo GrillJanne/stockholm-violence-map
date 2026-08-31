@@ -11189,11 +11189,59 @@
       "longitude": 18.067289036707944,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651191,
+      "datetime": "2026-08-31 21:10:51 +02:00",
+      "name": "31 augusti 19.51, Misshandel, grov, Stockholm",
+      "summary": "Två tonåringar grips i Rågsved misstänkta för grov misshandel.",
+      "url": "/aktuellt/handelser/2026/augusti/31/31-augusti-19.51-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33137869325633,
+      "longitude": 18.07084173218489,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651163,
+      "datetime": "2026-08-31 16:48:32 +02:00",
+      "name": "31 augusti 11.55, Misshandel, Stockholm",
+      "summary": "En man grips i Husby efter misstänkt misshandel under natten.",
+      "url": "/aktuellt/handelser/2026/augusti/31/31-augusti-11.55-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.331577951428265,
+      "longitude": 18.063751829374596,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651159,
+      "datetime": "2026-08-31 16:17:39 +02:00",
+      "name": "31 augusti 15.07, Trafikolycka, smitning från, Stockholm",
+      "summary": "En person får sin fot överkörd av en bilist i Vällingby centrum.",
+      "url": "/aktuellt/handelser/2026/augusti/31/31-augusti-15.07-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33105593079921,
+      "longitude": 18.066087557325044,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-31T13:11:54.943852",
-    "total_events": 652,
+    "last_updated": "2026-08-31T22:40:12.130319",
+    "total_events": 655,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
