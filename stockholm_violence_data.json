@@ -11269,11 +11269,27 @@
       "longitude": 18.07347780715133,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651339,
+      "datetime": "2026-09-02 7:16:46 +02:00",
+      "name": "2 september 03.21, Olaga intrång, Stockholm",
+      "summary": "Tre personer fångades på en övervakningskamera inne i en kontorsbyggnad på Norrmalm.",
+      "url": "/aktuellt/handelser/2026/september/2/2-september-03.21-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32895047241457,
+      "longitude": 18.06592404781149,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-02T03:49:18.646100",
-    "total_events": 657,
+    "last_updated": "2026-09-02T10:57:14.342872",
+    "total_events": 658,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
