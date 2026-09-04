@@ -11285,11 +11285,27 @@
       "longitude": 18.06592404781149,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651637,
+      "datetime": "2026-09-04 10:05:14 +02:00",
+      "name": "3 september 23.28, Olaga intrång, Stockholm",
+      "summary": "Obehöriga personer i en källare.",
+      "url": "/aktuellt/handelser/2026/september/3/3-september-23.28-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3314268186127,
+      "longitude": 18.07197947105092,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-04T03:49:55.752667",
-    "total_events": 658,
+    "last_updated": "2026-09-04T10:56:30.448680",
+    "total_events": 659,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
