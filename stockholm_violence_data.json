@@ -11301,11 +11301,43 @@
       "longitude": 18.07197947105092,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651981,
+      "datetime": "2026-09-04 21:59:18 +02:00",
+      "name": "4 september 21.22, Misshandel, Stockholm",
+      "summary": "En kvinnlig gäst bråkar med personalen på en krog i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/september/4/4-september-21.22-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33298318285197,
+      "longitude": 18.071907566319172,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651978,
+      "datetime": "2026-09-04 21:30:39 +02:00",
+      "name": "4 september 20.18, Misshandel, Stockholm",
+      "summary": "En man misshandlar sin fru.",
+      "url": "/aktuellt/handelser/2026/september/4/4-september-20.18-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32451526388932,
+      "longitude": 18.067489624356828,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-04T16:03:01.258896",
-    "total_events": 659,
+    "last_updated": "2026-09-04T20:33:26.100945",
+    "total_events": 661,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
