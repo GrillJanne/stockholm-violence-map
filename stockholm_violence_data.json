@@ -11333,11 +11333,27 @@
       "longitude": 18.067489624356828,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652003,
+      "datetime": "2026-09-05 7:28:55 +02:00",
+      "name": "5 september 00.11, Misshandel, Stockholm",
+      "summary": "En ordningsvakt utanför en krog på Södermalm ringde in om att denne blivit slagen av en person som inte blev i",
+      "url": "/aktuellt/handelser/2026/september/5/5-september-00.11-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.334197221320736,
+      "longitude": 18.06427595905696,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-05T03:48:10.284121",
-    "total_events": 661,
+    "last_updated": "2026-09-05T10:17:21.354826",
+    "total_events": 662,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
