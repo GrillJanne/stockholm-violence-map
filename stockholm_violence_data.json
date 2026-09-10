@@ -11365,11 +11365,43 @@
       "longitude": 18.07281130466551,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652454,
+      "datetime": "2026-09-10 10:40:26 +02:00",
+      "name": "10 september 06.55, Olaga intrång, Stockholm",
+      "summary": "Polisen får in samtal om ett inbrott ett förråd i Liljeholmen.",
+      "url": "/aktuellt/handelser/2026/september/10/10-september-06.55-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.327924361247184,
+      "longitude": 18.069997513206285,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652450,
+      "datetime": "2026-09-10 10:32:50 +02:00",
+      "name": "10 september 05.27, Olaga intrång, Stockholm",
+      "summary": "Polisen får in samtal om inbrott på en arbetsplats på östra Södermalm.",
+      "url": "/aktuellt/handelser/2026/september/10/10-september-05.27-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.331587598414735,
+      "longitude": 18.068284891095413,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-10T03:58:39.577619",
-    "total_events": 663,
+    "last_updated": "2026-09-10T10:57:37.310787",
+    "total_events": 665,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
