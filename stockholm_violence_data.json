@@ -11397,11 +11397,27 @@
       "longitude": 18.068284891095413,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652521,
+      "datetime": "2026-09-10 20:36:18 +02:00",
+      "name": "10 september 15.31, Misshandel, Stockholm",
+      "summary": "Kvinna misshandlad i tvättstuga.",
+      "url": "/aktuellt/handelser/2026/september/10/10-september-15.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33107913293201,
+      "longitude": 18.071543935982334,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-10T16:07:30.846914",
-    "total_events": 665,
+    "last_updated": "2026-09-10T20:39:23.299564",
+    "total_events": 666,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
