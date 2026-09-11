@@ -11413,11 +11413,27 @@
       "longitude": 18.071543935982334,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652539,
+      "datetime": "2026-09-11 7:20:55 +02:00",
+      "name": "11 september 04.23, Misshandel, Stockholm",
+      "summary": "En person vid en butik i Vasastan frihetsberövades enligt lagen om omhändertagande av berusade personer.",
+      "url": "/aktuellt/handelser/2026/september/11/11-september-04.23-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33149975680321,
+      "longitude": 18.066333476240175,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-11T03:55:30.875300",
-    "total_events": 666,
+    "last_updated": "2026-09-11T10:56:07.031458",
+    "total_events": 667,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
