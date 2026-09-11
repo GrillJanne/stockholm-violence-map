@@ -11429,11 +11429,27 @@
       "longitude": 18.066333476240175,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652599,
+      "datetime": "2026-09-11 15:36:08 +02:00",
+      "name": "11 september 13.16, Misshandel, Stockholm",
+      "summary": "Två män börjar slåss med varandra i närheten av tunnelbanestationen i Blackeberg.",
+      "url": "/aktuellt/handelser/2026/september/11/11-september-13.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333052785150386,
+      "longitude": 18.065781533276258,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-11T10:56:07.031458",
-    "total_events": 667,
+    "last_updated": "2026-09-11T16:11:09.558196",
+    "total_events": 668,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
