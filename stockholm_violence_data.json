@@ -11445,11 +11445,27 @@
       "longitude": 18.065781533276258,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652645,
+      "datetime": "2026-09-11 21:56:38 +02:00",
+      "name": "11 september 19.47, Misshandel, Stockholm",
+      "summary": "Polisen får in samtal om en pågående misshandel i en lägenhet på Östermalm.",
+      "url": "/aktuellt/handelser/2026/september/11/11-september-19.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330630995181245,
+      "longitude": 18.06798900392932,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-11T16:11:09.558196",
-    "total_events": 668,
+    "last_updated": "2026-09-11T20:44:38.333411",
+    "total_events": 669,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
