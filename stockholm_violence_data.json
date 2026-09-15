@@ -11477,11 +11477,27 @@
       "longitude": 18.07348870715007,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652950,
+      "datetime": "2026-09-15 12:12:51 +02:00",
+      "name": "15 september 08.31, Misshandel, Stockholm",
+      "summary": "En kvinna ringer in om en misshandel i Solberga.",
+      "url": "/aktuellt/handelser/2026/september/15/15-september-08.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32740044514113,
+      "longitude": 18.07246805661887,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-15T04:14:41.847274",
-    "total_events": 670,
+    "last_updated": "2026-09-15T11:25:46.142408",
+    "total_events": 671,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
