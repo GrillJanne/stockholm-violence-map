@@ -11493,11 +11493,27 @@
       "longitude": 18.07246805661887,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653045,
+      "datetime": "2026-09-16 8:22:28 +02:00",
+      "name": "16 september 07.25, Misshandel, Stockholm",
+      "summary": "En man misshandlar en kvinna i Bromma, västra Stockholm.",
+      "url": "/aktuellt/handelser/2026/september/16/16-september-07.25-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32976949009405,
+      "longitude": 18.068900192151688,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-16T04:10:37.613143",
-    "total_events": 671,
+    "last_updated": "2026-09-16T11:11:15.698662",
+    "total_events": 672,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
