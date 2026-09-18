@@ -11509,11 +11509,27 @@
       "longitude": 18.068900192151688,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653298,
+      "datetime": "2026-09-18 8:35:34 +02:00",
+      "name": "18 september 01.05, Misshandel, Stockholm",
+      "summary": "Polisen larmas till en närbutik på Vasagatan efter larm om att en kvinna slagit en annan kvinna.",
+      "url": "/aktuellt/handelser/2026/september/18/18-september-01.05-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33002523580648,
+      "longitude": 18.07098847343162,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-18T04:00:57.696775",
-    "total_events": 672,
+    "last_updated": "2026-09-18T10:53:40.639039",
+    "total_events": 673,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
