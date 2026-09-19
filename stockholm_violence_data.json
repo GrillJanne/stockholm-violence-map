@@ -11525,11 +11525,27 @@
       "longitude": 18.07098847343162,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653389,
+      "datetime": "2026-09-19 7:51:17 +02:00",
+      "name": "19 september 00.39, Misshandel, Stockholm",
+      "summary": "En inringare blev vittne till en misshandel utanför en restaurang på Norrmalm.",
+      "url": "/aktuellt/handelser/2026/september/19/19-september-00.39-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32949432191464,
+      "longitude": 18.064252880050585,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-19T03:58:50.590701",
-    "total_events": 673,
+    "last_updated": "2026-09-19T10:36:52.527768",
+    "total_events": 674,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
