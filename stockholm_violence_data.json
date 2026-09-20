@@ -11541,11 +11541,43 @@
       "longitude": 18.064252880050585,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653426,
+      "datetime": "2026-09-20 7:20:12 +02:00",
+      "name": "20 september 02.53, Misshandel, Stockholm",
+      "summary": "En väktare ringde in angående att en man på Östermalm tog bilder på några kvinnor samt uppträdde hotfullt.",
+      "url": "/aktuellt/handelser/2026/september/20/20-september-02.53-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32844598703533,
+      "longitude": 18.067367880372,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653425,
+      "datetime": "2026-09-20 7:15:40 +02:00",
+      "name": "20 september 03.18, Misshandel, Stockholm",
+      "summary": "Utanför en restaurang på Norrmalm var det en större folksamling där minst två personer hamnade i slagsmål.",
+      "url": "/aktuellt/handelser/2026/september/20/20-september-03.18-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32521026145887,
+      "longitude": 18.068445306678463,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-20T04:17:10.932530",
-    "total_events": 674,
+    "last_updated": "2026-09-20T10:59:25.296275",
+    "total_events": 676,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
