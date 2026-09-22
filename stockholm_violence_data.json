@@ -11573,11 +11573,27 @@
       "longitude": 18.068445306678463,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653599,
+      "datetime": "2026-09-22 7:09:02 +02:00",
+      "name": "22 september 02.30, Rån, Stockholm",
+      "summary": "En inringare hörde av sig angående att en taxichaufför i Råcksta uppgav att han blivit rånad.",
+      "url": "/aktuellt/handelser/2026/september/22/22-september-02.30-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.329629802818296,
+      "longitude": 18.06533461855165,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-22T04:10:45.872814",
-    "total_events": 676,
+    "last_updated": "2026-09-22T11:15:42.241028",
+    "total_events": 677,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
