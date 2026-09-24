@@ -11829,11 +11829,27 @@
       "longitude": 18.072403513676,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653911,
+      "datetime": "2026-09-24 18:30:41 +02:00",
+      "name": "24 september 16.16, Misshandel, Stockholm",
+      "summary": "Misshandel i Gamla stan.",
+      "url": "/aktuellt/handelser/2026/september/24/24-september-16.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32952067226868,
+      "longitude": 18.067731625265967,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-24T11:24:58.947026",
-    "total_events": 692,
+    "last_updated": "2026-09-24T16:50:27.935160",
+    "total_events": 693,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
