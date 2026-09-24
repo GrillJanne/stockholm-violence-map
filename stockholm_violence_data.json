@@ -11589,11 +11589,251 @@
       "longitude": 18.06533461855165,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 653838,
+      "datetime": "2026-09-24 9:29:49 +02:00",
+      "name": "24 september 08.42, Misshandel, Stockholm",
+      "summary": "En kvinna har gripits misstänkt för misshandel av en annan kvinna på Hässleby torg.",
+      "url": "/aktuellt/handelser/2026/september/24/24-september-08.42-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.331822511205736,
+      "longitude": 18.066341435038254,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 652003,
+      "datetime": "2026-09-05 7:28:55 +02:00",
+      "name": "5 september 00.11, Misshandel, Stockholm",
+      "summary": "En ordningsvakt utanför en krog på Södermalm ringde in om att denne blivit slagen av en person som inte blev insläppt.",
+      "url": "/aktuellt/handelser/2026/september/5/5-september-00.11-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3338518219866,
+      "longitude": 18.07003843058375,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 651326,
+      "datetime": "2026-09-02 2:36:12 +02:00",
+      "name": "2 september 00.22, Mordbrand, Stockholm",
+      "summary": "Det har brunnit på en restaurang och en förundersökning gällande grov mordbrand är inledd. Två misstänkta är gripna.",
+      "url": "/aktuellt/handelser/2026/september/2/2-september-00.22-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33310860725892,
+      "longitude": 18.0690180250841,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 650271,
+      "datetime": "2026-08-22 8:13:44 +02:00",
+      "name": "22 augusti 03.47, Misshandel, Stockholm",
+      "summary": "En man misstänks ha misshandlat en kvinna han har en relation med. Mannen grips och tas med för fortsatta förhör.",
+      "url": "/aktuellt/handelser/2026/augusti/22/22-augusti-03.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32685834529259,
+      "longitude": 18.073511242624345,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647343,
+      "datetime": "2026-07-19 7:20:52 +02:00",
+      "name": "18 juli 22.52, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en man och en kvinna som är misstänkta för mordförsök efter det att en man fallit från en balkong i Hässelby gård.",
+      "url": "/aktuellt/handelser/2026/juli/1/18-juli-22.52-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333384400844466,
+      "longitude": 18.067351333333296,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647285,
+      "datetime": "2026-07-18 7:19:36 +02:00",
+      "name": "18 juli 02.23, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen har gripit en man som är misstänkt för mordförsök på en kvinna som på ett just nu okänt sätt har fallit från en balkong på Gärdet.",
+      "url": "/aktuellt/handelser/2026/juli/18/18-juli-02.23-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33348268264086,
+      "longitude": 18.06676167786961,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 647005,
+      "datetime": "2026-07-15 1:30:09 +02:00",
+      "name": "15 juli 00.07, Explosion, Stockholm",
+      "summary": "Polis kallas till Hässelby gård med anledning av att flera inringare hört en hög smäll i ett bostadsområde med flerbostadshus.",
+      "url": "/aktuellt/handelser/2026/juli/15/15-juli-00.07-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32811462704078,
+      "longitude": 18.069471584189383,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 646754,
+      "datetime": "2026-07-11 9:39:55 +02:00",
+      "name": "11 juli 09.07, Explosion, Stockholm",
+      "summary": "Polis och räddningstjänst kallas till ett flerbostadshus i Marieberg med uppgifter om en explosion i en lägenhet.",
+      "url": "/aktuellt/handelser/2026/juli/11/11-juli-09.07-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3286448052209,
+      "longitude": 18.069973990149126,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 644298,
+      "datetime": "2026-06-29 7:07:14 +02:00",
+      "name": "29 juni 04.47, Misshandel, Stockholm",
+      "summary": "Ett antal personer stoppade ett slagsmål mellan två män på Södermalm. En man blev avlägsnad och misstänkt för misshandel.",
+      "url": "/aktuellt/handelser/2026/juni/29/29-juni-04.47-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33110258300663,
+      "longitude": 18.066582280398347,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641969,
+      "datetime": "2026-06-16 5:05:16 +02:00",
+      "name": "16 juni 03.25, Explosion, Stockholm",
+      "summary": "Ett föremål har exploderat i en port till ett flerfamiljshus i Hagsätra. Ingen person är skadad och ingen misstänkt har gripits.",
+      "url": "/aktuellt/handelser/2026/juni/16/16-juni-03.25-explosion-stockholm/",
+      "type": "Explosion",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33090657850563,
+      "longitude": 18.068568703353957,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 641248,
+      "datetime": "2026-06-10 8:02:54 +02:00",
+      "name": "10 juni 02.36, Olaga hot, Stockholm",
+      "summary": "En man i 20-årsåldern har blivit hotad med kniv av en annan man på en snabbmatsrestaurang på Södermalm i Stockholm.",
+      "url": "/aktuellt/handelser/2026/juni/10/10-juni-02.36-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33042095709135,
+      "longitude": 18.065693442803042,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 636165,
+      "datetime": "2026-05-24 7:11:45 +02:00",
+      "name": "24 maj 02.17, Misshandel, Stockholm",
+      "summary": "Ett bråk uppstår i tunnelbanan då en person åker utan att betala. Mannen som inte vill betala är också misstänkt för skadegörelse.",
+      "url": "/aktuellt/handelser/2026/maj/24/24-maj-02.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332434719854554,
+      "longitude": 18.064590870246658,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635960,
+      "datetime": "2026-05-22 7:12:44 +02:00",
+      "name": "22 maj 04.45, Misshandel, Stockholm",
+      "summary": "En granne ringer och larmar om att det är skrik och bråk i en grannlägenhet. En man grips och en kvinna får åka ambulans till sjukhus.",
+      "url": "/aktuellt/handelser/2026/maj/22/22-maj-04.45-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332803543644424,
+      "longitude": 18.072344545211653,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 635323,
+      "datetime": "2026-05-16 7:42:18 +02:00",
+      "name": "15 maj 23.28, Olaga intrång, Stockholm",
+      "summary": "Polis larmas till ett flerfamiljshus på Södermalm med anledning av att obehöriga tagit sig in i fastighetens tvättstuga.",
+      "url": "/aktuellt/handelser/2026/maj/15/15-maj-23.28-olaga-intrang-stockholm/",
+      "type": "Olaga intrång",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.327477007081825,
+      "longitude": 18.069642475555227,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 631295,
+      "datetime": "2026-04-19 7:22:14 +02:00",
+      "name": "19 april 00.09, Misshandel, grov, Stockholm",
+      "summary": "Ett bråk uppstod mellan två bilister på centrala Norrmalm. Tre personer i den ena bilen misshandlade den andre bilisten.",
+      "url": "/aktuellt/handelser/2026/april/19/19-april-00.09-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.332929587911515,
+      "longitude": 18.072403513676,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-24T04:03:00.744350",
-    "total_events": 677,
+    "last_updated": "2026-09-24T11:24:58.947026",
+    "total_events": 692,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
