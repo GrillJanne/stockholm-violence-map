@@ -11845,11 +11845,27 @@
       "longitude": 18.067731625265967,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 654398,
+      "datetime": "2026-09-25 21:33:51 +02:00",
+      "name": "25 september 20.39, Mordbrand, Stockholm",
+      "summary": "Misstänkt anlagd brand i Hägerstensåsen.",
+      "url": "/aktuellt/handelser/2026/september/25/25-september-20.39-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33285498970842,
+      "longitude": 18.066092673591704,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-25T16:55:04.131356",
-    "total_events": 693,
+    "last_updated": "2026-09-25T21:19:19.606432",
+    "total_events": 694,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
