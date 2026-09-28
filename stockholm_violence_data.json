@@ -11893,11 +11893,27 @@
       "longitude": 18.064934145001114,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 654610,
+      "datetime": "2026-09-28 20:50:07 +02:00",
+      "name": "28 september 19.28, Rån, Stockholm",
+      "summary": "Polisen får in larm om ett rån mot en butik på Valhallavägen.",
+      "url": "/aktuellt/handelser/2026/september/28/28-september-19.28-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33250061337199,
+      "longitude": 18.06929174257711,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-28T13:23:45.080919",
-    "total_events": 696,
+    "last_updated": "2026-09-28T23:04:51.702296",
+    "total_events": 697,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
