@@ -11877,11 +11877,27 @@
       "longitude": 18.06727411479594,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 654559,
+      "datetime": "2026-09-28 14:49:02 +02:00",
+      "name": "28 september 12.18, Misshandel, Stockholm",
+      "summary": "Två män blir misstänkta för ett flertal brott efter ett bråk de sinsemellan i Högdalen.",
+      "url": "/aktuellt/handelser/2026/september/28/28-september-12.18-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33025839082453,
+      "longitude": 18.064934145001114,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-09-28T04:39:57.505957",
-    "total_events": 695,
+    "last_updated": "2026-09-28T13:23:45.080919",
+    "total_events": 696,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
