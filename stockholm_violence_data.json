@@ -11909,11 +11909,43 @@
       "longitude": 18.06929174257711,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 654912,
+      "datetime": "2026-10-01 16:13:53 +02:00",
+      "name": "1 oktober 15.34, Trafikolycka, smitning från, Stockholm",
+      "summary": "En personbil och en buss krockar i hörnet av Magnus Ladulåsgatan och Swedenborgsgatan på Södermalm.",
+      "url": "/aktuellt/handelser/2026/oktober/1/1-oktober-15.34-trafikolycka-smitning-fran-stockholm/",
+      "type": "Trafikolycka, smitning från",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33094065147823,
+      "longitude": 18.066268554654553,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 654901,
+      "datetime": "2026-10-01 15:02:01 +02:00",
+      "name": "1 oktober 09.48, Misshandel, Stockholm",
+      "summary": "En kvinna i Fagersjö ringer in till polisen om ett nyligen mottaget hot från en man.",
+      "url": "/aktuellt/handelser/2026/oktober/1/1-oktober-09.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3305659570684,
+      "longitude": 18.066125490797607,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-01T12:47:44.210510",
-    "total_events": 697,
+    "last_updated": "2026-10-01T22:30:15.474506",
+    "total_events": 699,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
