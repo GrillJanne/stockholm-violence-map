@@ -11941,11 +11941,27 @@
       "longitude": 18.066125490797607,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 655086,
+      "datetime": "2026-10-04 7:05:50 +02:00",
+      "name": "4 oktober 22.46, Mord/dråp, försök, Stockholm",
+      "summary": "En man misstänks ha skadat en annan man med ett vasst föremål. Brottet har skett utomhus i Farsta.",
+      "url": "/aktuellt/handelser/2026/oktober/4/4-oktober-22.46-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330395599571226,
+      "longitude": 18.07018392160805,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-03T20:49:21.928532",
-    "total_events": 699,
+    "last_updated": "2026-10-04T05:11:09.877132",
+    "total_events": 700,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
