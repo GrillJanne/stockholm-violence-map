@@ -11973,11 +11973,27 @@
       "longitude": 18.064026189843297,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 655591,
+      "datetime": "2026-10-08 14:02:38 +02:00",
+      "name": "8 oktober 09.14, Misshandel, Stockholm",
+      "summary": "Polisen får in tips om en misshandel som ägt rum under onsdagen i Kista.",
+      "url": "/aktuellt/handelser/2026/oktober/8/8-oktober-09.14-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33139530566253,
+      "longitude": 18.06612918395254,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-08T05:24:11.814664",
-    "total_events": 701,
+    "last_updated": "2026-10-08T13:06:55.842304",
+    "total_events": 702,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
