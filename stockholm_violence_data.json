@@ -11989,11 +11989,27 @@
       "longitude": 18.06612918395254,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 655775,
+      "datetime": "2026-10-10 5:03:20 +02:00",
+      "name": "10 oktober 02.05, Rån, Stockholm",
+      "summary": "En man misshandlas och rånas i Drakenbergparken.",
+      "url": "/aktuellt/handelser/2026/oktober/10/10-oktober-02.05-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32959161288801,
+      "longitude": 18.07045883616413,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-09T22:27:27.955950",
-    "total_events": 702,
+    "last_updated": "2026-10-10T05:11:31.852872",
+    "total_events": 703,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
