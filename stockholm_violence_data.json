@@ -12021,11 +12021,27 @@
       "longitude": 18.069979628563086,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 655908,
+      "datetime": "2026-10-12 7:02:54 +02:00",
+      "name": "12 oktober 00.12, Mordbrand, Stockholm",
+      "summary": "Någon har hällt brännbar vätska på en ytterdörr i Blåsut.",
+      "url": "/aktuellt/handelser/2026/oktober/12/12-oktober-00.12-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32957745862194,
+      "longitude": 18.06735791182581,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-11T21:40:58.266535",
-    "total_events": 704,
+    "last_updated": "2026-10-12T05:16:10.227582",
+    "total_events": 705,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
