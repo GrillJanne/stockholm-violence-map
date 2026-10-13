@@ -12037,11 +12037,27 @@
       "longitude": 18.06735791182581,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656116,
+      "datetime": "2026-10-13 16:09:01 +02:00",
+      "name": "13 oktober 14.25, Misshandel, Stockholm",
+      "summary": "En person i Stureby blir slagen på bröstet av en kvinna efter att hon bett henne koppla sin hund.",
+      "url": "/aktuellt/handelser/2026/oktober/13/13-oktober-14.25-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33115958840904,
+      "longitude": 18.064410546533082,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-13T13:53:09.646702",
-    "total_events": 705,
+    "last_updated": "2026-10-13T22:27:23.186778",
+    "total_events": 706,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
