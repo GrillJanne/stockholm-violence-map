@@ -12069,11 +12069,27 @@
       "longitude": 18.072304820551217,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656506,
+      "datetime": "2026-10-16 21:42:16 +02:00",
+      "name": "16 oktober 21.08, Mord/dråp, försök, Stockholm",
+      "summary": "En person skadas allvarligt vid en skottlossning i Solberga.",
+      "url": "/aktuellt/handelser/2026/oktober/16/16-oktober-21.08-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.329159570067915,
+      "longitude": 18.07354747461781,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-16T16:22:02.786792",
-    "total_events": 707,
+    "last_updated": "2026-10-16T20:44:31.710472",
+    "total_events": 708,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
