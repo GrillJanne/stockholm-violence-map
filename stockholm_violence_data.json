@@ -12085,11 +12085,27 @@
       "longitude": 18.07354747461781,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656634,
+      "datetime": "2026-10-19 7:21:00 +02:00",
+      "name": "18 oktober 23.07, Misshandel, Stockholm",
+      "summary": "Polisen får in samtal om en man som slår en kvinna i Vasastan.",
+      "url": "/aktuellt/handelser/2026/oktober/18/18-oktober-23.07-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32509172901225,
+      "longitude": 18.07348462640402,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-19T04:01:14.250417",
-    "total_events": 708,
+    "last_updated": "2026-10-19T12:39:47.628358",
+    "total_events": 709,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
