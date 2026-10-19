@@ -12101,11 +12101,27 @@
       "longitude": 18.07348462640402,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656725,
+      "datetime": "2026-10-19 19:18:17 +02:00",
+      "name": "19 oktober 14.54, Sexualbrott, Stockholm",
+      "summary": "Sexuellt ofredande i en trädgård.",
+      "url": "/aktuellt/handelser/2026/oktober/19/19-oktober-14.54-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.326957598364935,
+      "longitude": 18.07338666226285,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-19T12:39:47.628358",
-    "total_events": 709,
+    "last_updated": "2026-10-19T22:09:16.031581",
+    "total_events": 710,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
