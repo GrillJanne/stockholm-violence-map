@@ -12117,11 +12117,43 @@
       "longitude": 18.07338666226285,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656755,
+      "datetime": "2026-10-20 7:00:18 +02:00",
+      "name": "20 oktober 02.31, Misshandel, Stockholm",
+      "summary": "Bråk på bar, Hornsgatan.",
+      "url": "/aktuellt/handelser/2026/oktober/20/20-oktober-02.31-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32606669187736,
+      "longitude": 18.065769263541252,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 656738,
+      "datetime": "2026-10-20 6:26:18 +02:00",
+      "name": "19 oktober 22.38, Misshandel, Stockholm",
+      "summary": "Larm om misshandel, Albano.",
+      "url": "/aktuellt/handelser/2026/oktober/20/19-oktober-22.38-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33148323291052,
+      "longitude": 18.065956469469295,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-20T04:14:20.531620",
-    "total_events": 710,
+    "last_updated": "2026-10-20T11:11:55.780800",
+    "total_events": 712,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
