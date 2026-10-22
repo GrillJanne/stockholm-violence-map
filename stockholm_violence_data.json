@@ -12149,11 +12149,27 @@
       "longitude": 18.065956469469295,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657114,
+      "datetime": "2026-10-22 21:00:11 +02:00",
+      "name": "22 oktober 19.12, Rån, Stockholm",
+      "summary": "En man vid Östermalmstorgs tunnelbanestation har stulit en mobiltelefon från en annan man och blivit upptäckt.",
+      "url": "/aktuellt/handelser/2026/oktober/22/22-oktober-19.12-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32845434245652,
+      "longitude": 18.072571307166747,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-22T16:54:37.657267",
-    "total_events": 712,
+    "last_updated": "2026-10-22T21:21:15.360523",
+    "total_events": 713,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
