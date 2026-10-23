@@ -12165,11 +12165,27 @@
       "longitude": 18.072571307166747,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657211,
+      "datetime": "2026-10-23 17:40:55 +02:00",
+      "name": "23 oktober 16.47, Skottlossning, Stockholm",
+      "summary": "Person skjuten i Bagarmossen.",
+      "url": "/aktuellt/handelser/2026/oktober/23/23-oktober-16.47-skottlossning-stockholm/",
+      "type": "Skottlossning",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3302953009821,
+      "longitude": 18.06673657010687,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-23T11:17:32.845110",
-    "total_events": 713,
+    "last_updated": "2026-10-23T16:46:13.551974",
+    "total_events": 714,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
