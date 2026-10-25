@@ -12181,11 +12181,27 @@
       "longitude": 18.06673657010687,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657280,
+      "datetime": "2026-10-25 7:25:50 +01:00",
+      "name": "25 oktober 01.34, Misshandel, grov, Stockholm",
+      "summary": "En taxichaufför har misshandlats grovt av en passagerare då taxin befann sig i Östberga. Den misstänkte mannen hart gripits.",
+      "url": "/aktuellt/handelser/2026/oktober/25/25-oktober-01.34-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33195103157219,
+      "longitude": 18.07357066504979,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-25T04:00:15.951588",
-    "total_events": 714,
+    "last_updated": "2026-10-25T11:01:01.754081",
+    "total_events": 715,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
