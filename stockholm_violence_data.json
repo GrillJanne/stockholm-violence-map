@@ -12197,11 +12197,27 @@
       "longitude": 18.07357066504979,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657468,
+      "datetime": "2026-10-27 8:52:56 +01:00",
+      "name": "27 oktober 01.04, Misshandel, Stockholm",
+      "summary": "Slagsmål mellan två personer på Östermalm.",
+      "url": "/aktuellt/handelser/2026/oktober/27/27-oktober-01.04-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.327732627487165,
+      "longitude": 18.069126206841077,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-27T04:24:36.463865",
-    "total_events": 715,
+    "last_updated": "2026-10-27T11:51:26.898370",
+    "total_events": 716,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
