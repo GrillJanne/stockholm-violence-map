@@ -12229,11 +12229,27 @@
       "longitude": 18.065488337517344,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657575,
+      "datetime": "2026-10-27 21:12:37 +01:00",
+      "name": "27 oktober 17.59, Sexualbrott, Stockholm",
+      "summary": "En kvinna ringer 112 och ber om hjälp med en man som inte vill lämna bostaden.",
+      "url": "/aktuellt/handelser/2026/oktober/27/27-oktober-17.59-sexualbrott-stockholm/",
+      "type": "Sexualbrott",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33024979033501,
+      "longitude": 18.071238185464818,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-27T17:45:29.345740",
-    "total_events": 717,
+    "last_updated": "2026-10-27T21:58:47.504094",
+    "total_events": 718,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
