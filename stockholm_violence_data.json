@@ -12245,11 +12245,59 @@
       "longitude": 18.071238185464818,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657702,
+      "datetime": "2026-10-28 20:09:08 +01:00",
+      "name": "28 oktober 19.35, Mord/dråp, försök, Stockholm",
+      "summary": "Polisen griper två män efter bråk och våld i ett trapphus.",
+      "url": "/aktuellt/handelser/2026/oktober/28/28-oktober-19.35-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33427538026335,
+      "longitude": 18.072575983158114,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657683,
+      "datetime": "2026-10-28 16:48:35 +01:00",
+      "name": "28 oktober 15.11, Misshandel, grov, Stockholm",
+      "summary": "Polisen letar efter ungdomar i Farsta strand som skjuter med laser på tågförare.",
+      "url": "/aktuellt/handelser/2026/oktober/28/28-oktober-15.11-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33050391172459,
+      "longitude": 18.07113544079696,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657681,
+      "datetime": "2026-10-28 16:48:16 +01:00",
+      "name": "28 oktober 13.16, Misshandel, Stockholm",
+      "summary": "En kvinna blir slagen på Mariatorgets tunnelbanestation.",
+      "url": "/aktuellt/handelser/2026/oktober/28/28-oktober-13.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32511280970939,
+      "longitude": 18.070524637129314,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-28T12:26:38.068303",
-    "total_events": 718,
+    "last_updated": "2026-10-28T22:23:03.574489",
+    "total_events": 721,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
