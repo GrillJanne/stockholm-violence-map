@@ -12293,11 +12293,27 @@
       "longitude": 18.070524637129314,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657737,
+      "datetime": "2026-10-29 8:04:15 +01:00",
+      "name": "29 oktober 00.21, Mordbrand, Stockholm",
+      "summary": "Larm om brand på Södermalm.",
+      "url": "/aktuellt/handelser/2026/oktober/29/29-oktober-00.21-mordbrand-stockholm/",
+      "type": "Mordbrand",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333277682774664,
+      "longitude": 18.06771422006597,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-29T05:06:38.475497",
-    "total_events": 721,
+    "last_updated": "2026-10-29T12:36:30.118431",
+    "total_events": 722,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
