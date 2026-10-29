@@ -12309,11 +12309,27 @@
       "longitude": 18.06771422006597,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657841,
+      "datetime": "2026-10-29 20:48:51 +01:00",
+      "name": "29 oktober 19.17, Misshandel, Stockholm",
+      "summary": "Polis kallas till en lägenhet i Johanneshov med uppgifter om att en man har slagit en kvinna.",
+      "url": "/aktuellt/handelser/2026/oktober/29/29-oktober-19.17-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32640081274398,
+      "longitude": 18.063828755004653,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-29T12:36:30.118431",
-    "total_events": 722,
+    "last_updated": "2026-10-29T22:36:01.446761",
+    "total_events": 723,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
