@@ -12325,11 +12325,27 @@
       "longitude": 18.063828755004653,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 657884,
+      "datetime": "2026-10-30 8:24:08 +01:00",
+      "name": "30 oktober 04.36, Misshandel, Stockholm",
+      "summary": "Inringare larmar om att en man går omkring i Spånga i bara kalsongerna.",
+      "url": "/aktuellt/handelser/2026/oktober/30/30-oktober-04.36-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33168045497585,
+      "longitude": 18.07024072799247,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-30T05:06:10.432928",
-    "total_events": 723,
+    "last_updated": "2026-10-30T12:27:52.824867",
+    "total_events": 724,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
