@@ -12341,11 +12341,27 @@
       "longitude": 18.07024072799247,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 658029,
+      "datetime": "2026-10-31 7:05:57 +01:00",
+      "name": "31 oktober 04.41, Mord/dråp, försök, Stockholm",
+      "summary": "En person larmar om att han har skadats med vasst föremål i ryggen på en restaurang i Stadshagen.",
+      "url": "/aktuellt/handelser/2026/oktober/31/31-oktober-04.41-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330779768047464,
+      "longitude": 18.06841073909999,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-31T04:52:51.666839",
-    "total_events": 724,
+    "last_updated": "2026-10-31T11:56:27.296628",
+    "total_events": 725,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
