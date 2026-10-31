@@ -12357,11 +12357,27 @@
       "longitude": 18.06841073909999,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 658080,
+      "datetime": "2026-10-31 18:58:42 +01:00",
+      "name": "31 oktober 15.25, Misshandel, Stockholms län",
+      "summary": "Misshandel vid utställningsmässa i Älvsjö",
+      "url": "/aktuellt/handelser/2026/oktober/31/31-oktober-15.25-misshandel-stockholms-lan/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3305877357392,
+      "longitude": 18.066486470512842,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-10-31T17:09:54.810803",
-    "total_events": 725,
+    "last_updated": "2026-10-31T21:14:06.163492",
+    "total_events": 726,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
