@@ -12373,11 +12373,27 @@
       "longitude": 18.066486470512842,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 658570,
+      "datetime": "2026-11-05 19:01:16 +01:00",
+      "name": "5 november 17.48, Misshandel, Stockholm",
+      "summary": "En kvinna i 30-årsåldern blir spottad i ansiktet och dragen i håret av en annan kvinna ombord på ett tunnelbanetåg vid Gullmarsplan.",
+      "url": "/aktuellt/handelser/2026/november/5/5-november-17.48-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33338207559391,
+      "longitude": 18.06975067515987,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-05T14:28:13.700054",
-    "total_events": 726,
+    "last_updated": "2026-11-05T23:28:10.596489",
+    "total_events": 727,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
