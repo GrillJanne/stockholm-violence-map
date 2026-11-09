@@ -12389,11 +12389,27 @@
       "longitude": 18.06975067515987,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 658882,
+      "datetime": "2026-11-09 10:40:47 +01:00",
+      "name": "9 november 08.44, Misshandel, Stockholm",
+      "summary": "En kvinna i Västertorp ringer in om en nyligen skedd misshandel.",
+      "url": "/aktuellt/handelser/2026/november/9/9-november-08.44-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33141066403929,
+      "longitude": 18.0650822721818,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-09T05:33:23.014941",
-    "total_events": 727,
+    "last_updated": "2026-11-09T15:42:51.406625",
+    "total_events": 728,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
