@@ -12405,11 +12405,27 @@
       "longitude": 18.0650822721818,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 658966,
+      "datetime": "2026-11-10 7:53:14 +01:00",
+      "name": "9 november 23.22, Misshandel, grov, Stockholm",
+      "summary": "En man i 50-årsåldern grips efter att ha misshandlat och hotat sin flickvän.",
+      "url": "/aktuellt/handelser/2026/november/9/9-november-23.22-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33150574990062,
+      "longitude": 18.0654078417703,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-10T01:20:42.423561",
-    "total_events": 728,
+    "last_updated": "2026-11-10T14:37:04.747407",
+    "total_events": 729,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
