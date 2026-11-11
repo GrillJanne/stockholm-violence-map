@@ -12421,11 +12421,43 @@
       "longitude": 18.0654078417703,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659101,
+      "datetime": "2026-11-11 10:16:03 +01:00",
+      "name": "11 november 09.12, Misshandel, Stockholm",
+      "summary": "En person på arbete i Nockebyhov blir slagen i nacken av en man.",
+      "url": "/aktuellt/handelser/2026/november/11/11-november-09.12-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33413785871061,
+      "longitude": 18.06743228558649,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659056,
+      "datetime": "2026-11-11 7:13:53 +01:00",
+      "name": "11 november 01.11, Misshandel, Stockholm",
+      "summary": "En taxichaufför ringer in om nyligen inträffad misshandel i centrala Stockholm.",
+      "url": "/aktuellt/handelser/2026/november/11/11-november-01.11-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32914423280661,
+      "longitude": 18.07017126817728,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-11T05:30:39.436031",
-    "total_events": 729,
+    "last_updated": "2026-11-11T13:51:49.082206",
+    "total_events": 731,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
