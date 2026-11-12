@@ -12453,11 +12453,27 @@
       "longitude": 18.07017126817728,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659158,
+      "datetime": "2026-11-11 18:06:52 +01:00",
+      "name": "11 november 14.46, Misshandel, Stockholm",
+      "summary": "En man grips efter larm om att han tagit stryptag på sin fru.",
+      "url": "/aktuellt/handelser/2026/november/11/11-november-14.46-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.3282475473176,
+      "longitude": 18.069807520108956,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-11T13:51:49.082206",
-    "total_events": 731,
+    "last_updated": "2026-11-12T00:17:21.616713",
+    "total_events": 732,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
