@@ -12501,11 +12501,43 @@
       "longitude": 18.065633911204042,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659497,
+      "datetime": "2026-11-13 21:39:40 +01:00",
+      "name": "13 november 20.13, Mord/dråp, försök, Stockholm",
+      "summary": "Ett skott har avlossats mot en lägenhetsdörr i ett flerbostadshus på Gärdet, Stockholms kommun.",
+      "url": "/aktuellt/handelser/2026/november/13/13-november-20.13-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33393886873597,
+      "longitude": 18.067697351267707,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659475,
+      "datetime": "2026-11-13 16:59:23 +01:00",
+      "name": "13 november 14.40, Misshandel, grov, Stockholm",
+      "summary": "En man är misstänkt för försök till grov misshandel och grovt brott mot knivlagen efter ett bråk i en bostad i Akalla, Stockholms kommun.",
+      "url": "/aktuellt/handelser/2026/november/13/13-november-14.40-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32451176346656,
+      "longitude": 18.065435152172448,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-13T14:18:47.229221",
-    "total_events": 734,
+    "last_updated": "2026-11-13T23:24:12.323204",
+    "total_events": 736,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
