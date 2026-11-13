@@ -12485,11 +12485,27 @@
       "longitude": 18.069707706588822,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659402,
+      "datetime": "2026-11-13 7:48:02 +01:00",
+      "name": "13 november 00.16, Misshandel, Stockholm",
+      "summary": "Polisen åker på ett larm om ett bråk i en bostad i Skärholmen.",
+      "url": "/aktuellt/handelser/2026/november/13/13-november-00.16-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33308876709776,
+      "longitude": 18.065633911204042,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-13T05:54:31.319612",
-    "total_events": 733,
+    "last_updated": "2026-11-13T14:18:47.229221",
+    "total_events": 734,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
