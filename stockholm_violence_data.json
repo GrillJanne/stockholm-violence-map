@@ -12533,11 +12533,27 @@
       "longitude": 18.065435152172448,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659526,
+      "datetime": "2026-11-14 8:42:11 +01:00",
+      "name": "14 november 07.35, Olaga hot, Stockholm",
+      "summary": "En taxichaufför ringer från Vällingby torg till polisens ledningscentral och uppger att han blivit hotad av en kund under taxifärd.",
+      "url": "/aktuellt/handelser/2026/november/14/14-november-07.35-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33149304896251,
+      "longitude": 18.069299994973253,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-14T05:43:31.472433",
-    "total_events": 736,
+    "last_updated": "2026-11-14T13:14:58.943517",
+    "total_events": 737,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
