@@ -12549,11 +12549,27 @@
       "longitude": 18.069299994973253,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659559,
+      "datetime": "2026-11-14 20:25:49 +01:00",
+      "name": "14 november 19.46, Misshandel, Stockholm",
+      "summary": "En inringare larmar om skrik och dunsar från grannlägenheten i ett flerbostadshus i Stockholms innerstad.",
+      "url": "/aktuellt/handelser/2026/november/14/14-november-19.46-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33410655393091,
+      "longitude": 18.071525017540427,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-14T13:14:58.943517",
-    "total_events": 737,
+    "last_updated": "2026-11-14T22:08:54.370431",
+    "total_events": 738,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
