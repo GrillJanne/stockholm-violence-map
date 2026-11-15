@@ -12565,11 +12565,27 @@
       "longitude": 18.071525017540427,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659586,
+      "datetime": "2026-11-15 8:26:08 +01:00",
+      "name": "15 november 05.06, Mord/dråp, försök, Stockholm",
+      "summary": "Polis och ambulans kallas till Kungsgatan i centrala Stockholm med anledning av att en man blivit påkörd av en bil.",
+      "url": "/aktuellt/handelser/2026/november/15/15-november-05.06-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33162005154358,
+      "longitude": 18.06697913116675,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-15T05:43:20.507462",
-    "total_events": 738,
+    "last_updated": "2026-11-15T13:43:03.990979",
+    "total_events": 739,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
