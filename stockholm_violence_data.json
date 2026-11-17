@@ -12597,11 +12597,43 @@
       "longitude": 18.072663152614094,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659783,
+      "datetime": "2026-11-17 8:47:04 +01:00",
+      "name": "16 november 22.30, Olaga hot, Stockholm",
+      "summary": "En man blir utkastad av sin hyresvärd.",
+      "url": "/aktuellt/handelser/2026/november/16/16-november-22.30-olaga-hot-stockholm/",
+      "type": "Olaga hot",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.33312151279581,
+      "longitude": 18.072654950328435,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659788,
+      "datetime": "2026-11-17 8:46:54 +01:00",
+      "name": "16 november 23.14, Misshandel, Stockholm",
+      "summary": "Hotellpersonal låser in sig eftersom två personer börjat slåss med varandra i lobbyn",
+      "url": "/aktuellt/handelser/2026/november/16/16-november-23.14-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32631804596929,
+      "longitude": 18.0706604463439,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-17T01:45:23.852187",
-    "total_events": 740,
+    "last_updated": "2026-11-17T15:43:48.129768",
+    "total_events": 742,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
