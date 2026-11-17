@@ -12581,11 +12581,27 @@
       "longitude": 18.06697913116675,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659748,
+      "datetime": "2026-11-16 21:48:12 +01:00",
+      "name": "16 november 19.26, Misshandel, Stockholm",
+      "summary": "Polisen får in larm om ett lägenhetsbråk i Bromsten.",
+      "url": "/aktuellt/handelser/2026/november/16/16-november-19.26-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32701562523551,
+      "longitude": 18.072663152614094,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-16T15:18:16.335982",
-    "total_events": 739,
+    "last_updated": "2026-11-17T01:45:23.852187",
+    "total_events": 740,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
