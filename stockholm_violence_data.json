@@ -12629,11 +12629,27 @@
       "longitude": 18.0706604463439,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 659879,
+      "datetime": "2026-11-17 18:24:40 +01:00",
+      "name": "17 november 16.04, Misshandel, Stockholm",
+      "summary": "Man gripen misstänkt för att misshandlat en kvinna han har en relation med.",
+      "url": "/aktuellt/handelser/2026/november/17/17-november-16.04-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32922062164013,
+      "longitude": 18.066671947302105,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-17T15:43:48.129768",
-    "total_events": 742,
+    "last_updated": "2026-11-18T00:46:13.991590",
+    "total_events": 743,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
