@@ -12661,11 +12661,27 @@
       "longitude": 18.06460450247482,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 660448,
+      "datetime": "2026-11-21 22:56:46 +01:00",
+      "name": "21 november 21.49, Misshandel, grov, Stockholm",
+      "summary": "Flertalet personer i bråk på Östermalm.",
+      "url": "/aktuellt/handelser/2026/november/21/21-november-21.49-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.330073286007156,
+      "longitude": 18.063623392719784,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-21T18:54:53.298368",
-    "total_events": 744,
+    "last_updated": "2026-11-22T05:56:27.330603",
+    "total_events": 745,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
