@@ -12709,11 +12709,27 @@
       "longitude": 18.071103985016368,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 660691,
+      "datetime": "2026-11-24 7:23:41 +01:00",
+      "name": "24 november 02.04, Mord/dråp, försök, Stockholm",
+      "summary": "En kvinna grips misstänkt för mordförsök på en man.",
+      "url": "/aktuellt/handelser/2026/november/24/24-november-02.04-morddrap-forsok-stockholm/",
+      "type": "Mord/dråp, försök",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.334059432025825,
+      "longitude": 18.07050337267926,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-23T23:38:12.821946",
-    "total_events": 747,
+    "last_updated": "2026-11-24T09:13:49.374697",
+    "total_events": 748,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
