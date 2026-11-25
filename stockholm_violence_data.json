@@ -12725,11 +12725,27 @@
       "longitude": 18.07050337267926,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 660781,
+      "datetime": "2026-11-25 7:59:01 +01:00",
+      "name": "25 november 03.50, Misshandel, Stockholm",
+      "summary": "Larm om bråk i bostad leder till att en man grips som misstänkt för misshandel.",
+      "url": "/aktuellt/handelser/2026/november/25/25-november-03.50-misshandel-stockholm/",
+      "type": "Misshandel",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.333939872749625,
+      "longitude": 18.07110569944783,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-24T22:08:48.006212",
-    "total_events": 748,
+    "last_updated": "2026-11-25T07:49:01.417617",
+    "total_events": 749,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
