@@ -12741,11 +12741,27 @@
       "longitude": 18.07110569944783,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 660858,
+      "datetime": "2026-11-26 6:57:34 +01:00",
+      "name": "26 november 03.51, Rån, Stockholm",
+      "summary": "En man och en kvinna som bor i en läghenhet mitt i city har rånats av en man med tillhygge inne i bostaden.",
+      "url": "/aktuellt/handelser/2026/november/26/26-november-03.51-ran-stockholm/",
+      "type": "Rån",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32860363153475,
+      "longitude": 18.06612871619707,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-25T21:25:12.201537",
-    "total_events": 749,
+    "last_updated": "2026-11-26T07:40:12.873955",
+    "total_events": 750,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
