@@ -12789,11 +12789,27 @@
       "longitude": 18.065665506151927,
       "location_confidence": 50,
       "improvement_method": "intelligent_distribution"
+    },
+    {
+      "id": 661035,
+      "datetime": "2026-11-27 7:10:48 +01:00",
+      "name": "27 november 00.45, Misshandel, grov, Stockholm",
+      "summary": "En man har gripits och är misstänkt för grov misshandel. Han har tillfogat två andra män skador med en skruvmejsel i en bostad i Hökarängen.",
+      "url": "/aktuellt/handelser/2026/november/27/27-november-00.45-misshandel-grov-stockholm/",
+      "type": "Misshandel, grov",
+      "location": {
+        "name": "Stockholms län",
+        "gps": "59.602496,18.138438"
+      },
+      "latitude": 59.32763536046535,
+      "longitude": 18.06419524472518,
+      "location_confidence": 50,
+      "improvement_method": "intelligent_distribution"
     }
   ],
   "metadata": {
-    "last_updated": "2026-11-26T21:11:28.064438",
-    "total_events": 752,
+    "last_updated": "2026-11-27T07:38:50.049554",
+    "total_events": 753,
     "data_source": "polisen.se",
     "version": "2.0",
     "duplicate_removal": true,
